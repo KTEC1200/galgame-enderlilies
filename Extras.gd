@@ -360,7 +360,9 @@ func _build_settings() -> void:
 		var b := _button("%d×" % int(speed))
 		b.toggle_mode = true
 		b.button_pressed = game.playback_speed == speed
-		b.pressed.connect(func(): game._set_speed(speed))
+		b.pressed.connect(func():
+			game._set_speed(speed)
+			open("settings"))
 		speed_row.add_child(b)
 	# 打字机
 	var type_row := HBoxContainer.new()
@@ -372,6 +374,29 @@ func _build_settings() -> void:
 		game._set_typewriter(not game.typewriter_enabled)
 		open("settings"))
 	type_row.add_child(type_b)
+	# 对话字号
+	var size_row := HBoxContainer.new()
+	size_row.add_theme_constant_override("separation", 10)
+	box.add_child(size_row)
+	size_row.add_child(_label("对话字号"))
+	for size in [22, 24, 26, 28, 30, 32]:
+		var sb := _button(str(size))
+		sb.toggle_mode = true
+		sb.button_pressed = game.dialogue_size == size
+		sb.pressed.connect(func():
+			game._set_dialogue_size(size)
+			open("settings"))
+		size_row.add_child(sb)
+	# 快进未读
+	var skip_row := HBoxContainer.new()
+	skip_row.add_theme_constant_override("separation", 10)
+	box.add_child(skip_row)
+	skip_row.add_child(_label("快进跳过未读"))
+	var skip_b := _button("开" if game.skip_unread else "关")
+	skip_b.pressed.connect(func():
+		game._set_skip_unread(not game.skip_unread)
+		open("settings"))
+	skip_row.add_child(skip_b)
 	# 音量
 	var vol_row := HBoxContainer.new()
 	vol_row.add_theme_constant_override("separation", 10)

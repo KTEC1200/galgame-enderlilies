@@ -53,8 +53,10 @@ var typewriter_timer: Timer
 var auto_mode: bool = false
 var playback_speed: float = 1.0
 var skip_held: bool = false
+var skip_unread: bool = false
 var current_was_read: bool = false
 var auto_timer: Timer
+var dialogue_size: int = 26
 
 # ---- 进度数据（持久化到 user://el_profile.json）----
 var profile: Dictionary = {"version": 1, "unlocked": {}, "read": {}, "speed": 1.0, "typewriter": true, "volume": 0.8, "flow_seen": {}, "checkpoints": {}}
@@ -605,6 +607,7 @@ func _render(d: Dictionary) -> void:
 	typewriter_index = 0
 	typewriter_active = typewriter_enabled and not text.is_empty()
 	body_label.text = text
+	body_label.add_theme_font_size_override("normal_font_size", dialogue_size)
 	body_label.visible_characters = 0 if typewriter_active else -1
 	if typewriter_active:
 		typewriter_timer.start()
@@ -635,10 +638,10 @@ func _trace_flow(node_id: String) -> void:
 	if block_id == "":
 		return
 	profile["flow_seen"][block_id] = true
-	if active_flow != "" and active_flow != block_id:
-		# 进入新场景块时保存检查点，供分支树回溯
+	if checkpoint_flow != block_id:
+		# 每个场景块首次进入时保存检查点（含首块），供分支树回溯
 		checkpoint_flow = block_id
-		profile["checkpoints"][block_id] = _save_data()
+		profile["checkpoints"][block_id] = _save_data(true)
 		_progress_changed()
 	active_flow = block_id
 
@@ -742,14 +745,20 @@ func _schedule_auto() -> void:
 	auto_timer.stop()
 	if in_title or _is_modal() or finished or ui_hidden:
 		return
-	if typewriter_active or not current.get("choices", []).is_empty():
-		return
 	if skip_held:
-		if current_was_read:
+		# 快进：已读（或开了跳过未读）立即补完文字并高速推进
+		if current_was_read or skip_unread:
+			if typewriter_active:
+				_complete_typing()
+			if not current.get("choices", []).is_empty():
+				return
 			auto_timer.start(0.09)
 		else:
 			hint.text = "未读文本 · 已暂停快进（松开 Ctrl 恢复）"
-	elif auto_mode:
+		return
+	if typewriter_active or not current.get("choices", []).is_empty():
+		return
+	if auto_mode:
 		auto_timer.start(_page_delay())
 
 func _page_delay() -> float:
@@ -772,6 +781,16 @@ func _set_typewriter(enabled: bool) -> void:
 func _set_volume(value: float) -> void:
 	profile["volume"] = clampf(value, 0.0, 1.0)
 	bgm.set_level(float(profile["volume"]))
+	_progress_changed()
+
+func _set_dialogue_size(value: int) -> void:
+	dialogue_size = clampi(value, 22, 32)
+	profile["dialogue_size"] = dialogue_size
+	_progress_changed()
+
+func _set_skip_unread(enabled: bool) -> void:
+	skip_unread = enabled
+	profile["skip_unread"] = enabled
 	_progress_changed()
 
 # ---------------------------------------------------------------- 打字机
@@ -804,8 +823,8 @@ func _music(cue: String, outro: String = "") -> void:
 
 # ---------------------------------------------------------------- 存读档与进度
 
-func _save_data() -> Dictionary:
-	return {
+func _save_data(include_backlog: bool = false) -> Dictionary:
+	var payload := {
 		"version": SAVE_VERSION,
 		"node": current.get("id", ""),
 		"flags": flags.duplicate(true),
@@ -818,6 +837,9 @@ func _save_data() -> Dictionary:
 		"finished": finished,
 		"time": Time.get_datetime_string_from_system(),
 	}
+	if include_backlog:
+		payload["backlog"] = backlog.duplicate(true)
+	return payload
 
 func _slot_path(slot: int) -> String:
 	return "user://" + SLOT_PREFIX + str(slot) + ".json"
@@ -833,7 +855,7 @@ func _has_resume() -> bool:
 	if not FileAccess.file_exists(RESUME_PATH):
 		return false
 	var saved: Variant = JSON.parse_string(FileAccess.get_file_as_string(RESUME_PATH))
-	return saved is Dictionary and saved.get("version") == SAVE_VERSION and lookup.has(str(saved.get("node", "")))
+	return saved is Dictionary and saved.get("version") == SAVE_VERSION and _resolve_saved_node(saved) != ""
 
 func _existing_slots() -> Array[int]:
 	var slots: Array[int] = []
@@ -867,11 +889,26 @@ func _slots(save_mode: bool) -> void:
 	_open_overlay("保存旅程" if save_mode else "读取旅程", buttons)
 
 func _save_slot(slot: int) -> void:
-	_write_json(_slot_path(slot), _save_data())
+	_write_json(_slot_path(slot), _save_data(true))
 	_close_overlay()
 
 func _load_slot(slot: int) -> void:
 	_load_state(_slot_path(slot))
+
+func _resolve_saved_node(saved: Dictionary) -> String:
+	# 剧情重编译后节点 id 可能整体变化：优先按 id，失败则按「章节 + 场景标题」
+	# 回退到该场景的第一个节点，让旧存档在修订后的剧情里继续可用。
+	var node := str(saved.get("node", ""))
+	if lookup.has(node):
+		return node
+	var target_chapter := str(saved.get("chapter", ""))
+	var target_title := str(saved.get("title", ""))
+	if target_title != "":
+		for n in nodes:
+			if n.get("type") == "stage" and str(n.get("title", "")) == target_title \
+					and (target_chapter == "" or str(n.get("date", "")) == target_chapter):
+				return str(n["id"])
+	return ""
 
 func _load_state(path: String) -> void:
 	var file := FileAccess.open(path, FileAccess.READ)
@@ -884,9 +921,11 @@ func _load_state(path: String) -> void:
 	if saved.get("version") != SAVE_VERSION:
 		push_error("存档版本不匹配: " + path)
 		return
-	if not lookup.has(str(saved.get("node", ""))):
+	var node := _resolve_saved_node(saved)
+	if node == "":
 		push_error("存档指向的剧情节点已不存在: " + str(saved.get("node", "")))
 		return
+	saved["node"] = node
 	_close_overlay()
 	_apply_snapshot(saved)
 
@@ -898,6 +937,8 @@ func _apply_snapshot(saved: Dictionary) -> void:
 	chapter = str(saved.get("chapter", ""))
 	scene_title = str(saved.get("title", ""))
 	music_name = str(saved.get("music", ""))
+	if saved.has("backlog"):
+		backlog = saved["backlog"].duplicate(true)
 	if music_name != "":
 		_music(music_name)
 	hud.get_node("Header").text = _header_caption()
@@ -917,13 +958,23 @@ func _load_profile() -> void:
 			for key in ["unlocked", "read", "flow_seen", "checkpoints"]:
 				if stored.get(key) is Dictionary:
 					profile[key] = stored[key]
-			for key in ["speed", "volume", "typewriter"]:
+			for key in ["speed", "volume", "typewriter", "dialogue_size", "skip_unread"]:
 				if stored.has(key):
 					profile[key] = stored[key]
 	playback_speed = float(profile.get("speed", 1.0))
 	if playback_speed not in [1.0, 2.0, 4.0, 8.0]:
 		playback_speed = 1.0
 	typewriter_enabled = bool(profile.get("typewriter", true))
+	dialogue_size = clampi(int(profile.get("dialogue_size", 26)), 22, 32)
+	skip_unread = bool(profile.get("skip_unread", false))
+	# 剧情重编译后，失效的检查点按章节/场景标题迁移，救不回来的丢弃
+	for block_id in profile["checkpoints"].keys():
+		var snapshot: Dictionary = profile["checkpoints"][block_id]
+		var rescued := _resolve_saved_node(snapshot)
+		if rescued == "":
+			profile["checkpoints"].erase(block_id)
+		elif rescued != str(snapshot.get("node", "")):
+			snapshot["node"] = rescued
 
 func _progress_changed() -> void:
 	progress_dirty = true
@@ -1072,10 +1123,31 @@ func _run_smoke() -> void:
 		print("SMOKE pass branch=%d pages=%d visited=%d finished=%s" % [branch, pages, visited.size(), str(finished)])
 		if not finished:
 			all_ok = false
-	# 分支树 checkpoint：必须生成过检查点
-	if profile["checkpoints"].is_empty():
+	# 分支树 checkpoint：5 个场景块都应有检查点
+	if profile["checkpoints"].size() < 5:
 		all_ok = false
-		print("SMOKE 未生成任何分支树检查点")
+		print("SMOKE 分支树检查点不足: %d" % profile["checkpoints"].size())
+	# 分支树回溯：从检查点恢复到场景开头并继续推进
+	if not profile["checkpoints"].is_empty():
+		var block_id: String = profile["checkpoints"].keys()[0]
+		var rewind_node := str(profile["checkpoints"][block_id].get("node", ""))
+		_flow_rewind(block_id)
+		await get_tree().process_frame
+		if in_title or current.is_empty() or str(current.get("id", "")) != rewind_node:
+			all_ok = false
+			print("SMOKE 分支树回溯失败: %s -> %s (current=%s)" % [block_id, rewind_node, str(current.get("id", ""))])
+		else:
+			print("SMOKE 分支树回溯成功: %s -> %s" % [block_id, rewind_node])
+	# 设置项
+	_set_speed(4.0)
+	_set_dialogue_size(30)
+	_set_skip_unread(true)
+	if playback_speed != 4.0 or dialogue_size != 30 or not skip_unread:
+		all_ok = false
+		print("SMOKE 设置项未生效")
+	_set_speed(1.0)
+	_set_dialogue_size(26)
+	_set_skip_unread(false)
 	# 附加面板：逐个打开再关闭，确保不崩溃
 	for view in ["gallery", "flowchart", "backlog", "settings"]:
 		extras.open(view)
