@@ -1,0 +1,292 @@
+{
+ "version": "auto-from-music-dir",
+ "crossfade_seconds": 1.2,
+ "pairs": {
+  "boss_castle_intro": "boss_castle_outro",
+  "boss_cave_intro": "boss_cave_outro",
+  "boss_church_intro": "boss_church_outro",
+  "boss_final_intro": "boss_final_outro",
+  "boss_forest_intro": "boss_forest_outro",
+  "boss_fort_intro": "boss_fort_outro",
+  "boss_oubliette_intro": "boss_oubliette_outro",
+  "boss_swamp_intro": "boss_swamp_outro",
+  "boss_village_intro": "boss_village_outro"
+ },
+ "tracks": [
+  {
+   "id": "abyss",
+   "title": "If You Gaze Long into an Abyss",
+   "area": "深渊",
+   "path": "res://assets/audio/abyss.ogg",
+   "seconds": 125.5
+  },
+  {
+   "id": "awakening",
+   "title": "Awakening",
+   "area": "白教区",
+   "path": "res://assets/audio/awakening.ogg",
+   "seconds": 187.9
+  },
+  {
+   "id": "boss_castle_intro",
+   "title": "Accolade",
+   "area": "边陲之都城",
+   "path": "res://assets/audio/boss_castle_intro.ogg",
+   "seconds": 202.6,
+   "pair": "boss_castle_outro"
+  },
+  {
+   "id": "boss_castle_outro",
+   "title": "Accolade",
+   "area": "边陲之都城",
+   "path": "res://assets/audio/boss_castle_outro.ogg",
+   "seconds": 215.8
+  },
+  {
+   "id": "boss_cave_intro",
+   "title": "Bible",
+   "area": "地下墓穴",
+   "path": "res://assets/audio/boss_cave_intro.ogg",
+   "seconds": 304.6,
+   "pair": "boss_cave_outro"
+  },
+  {
+   "id": "boss_cave_outro",
+   "title": "Bible",
+   "area": "地下墓穴",
+   "path": "res://assets/audio/boss_cave_outro.ogg",
+   "seconds": 124.4
+  },
+  {
+   "id": "boss_church_intro",
+   "title": "Rosary",
+   "area": "白教区",
+   "path": "res://assets/audio/boss_church_intro.ogg",
+   "seconds": 279.3,
+   "pair": "boss_church_outro"
+  },
+  {
+   "id": "boss_church_outro",
+   "title": "Rosary",
+   "area": "白教区",
+   "path": "res://assets/audio/boss_church_outro.ogg",
+   "seconds": 195.8
+  },
+  {
+   "id": "boss_final_intro",
+   "title": "Mother",
+   "area": "深渊最深处",
+   "path": "res://assets/audio/boss_final_intro.ogg",
+   "seconds": 204.9,
+   "pair": "boss_final_outro"
+  },
+  {
+   "id": "boss_final_outro",
+   "title": "Mother",
+   "area": "深渊最深处",
+   "path": "res://assets/audio/boss_final_outro.ogg",
+   "seconds": 270.3
+  },
+  {
+   "id": "boss_forest_intro",
+   "title": "Communication",
+   "area": "魔女森林",
+   "path": "res://assets/audio/boss_forest_intro.ogg",
+   "seconds": 195.6,
+   "pair": "boss_forest_outro"
+  },
+  {
+   "id": "boss_forest_outro",
+   "title": "Communication",
+   "area": "魔女森林",
+   "path": "res://assets/audio/boss_forest_outro.ogg",
+   "seconds": 180.0
+  },
+  {
+   "id": "boss_fort_intro",
+   "title": "Bloom",
+   "area": "双生堡垒",
+   "path": "res://assets/audio/boss_fort_intro.ogg",
+   "seconds": 213.2,
+   "pair": "boss_fort_outro"
+  },
+  {
+   "id": "boss_fort_outro",
+   "title": "Bloom",
+   "area": "双生堡垒",
+   "path": "res://assets/audio/boss_fort_outro.ogg",
+   "seconds": 353.6
+  },
+  {
+   "id": "boss_oubliette_intro",
+   "title": "The Sun",
+   "area": "地牢",
+   "path": "res://assets/audio/boss_oubliette_intro.ogg",
+   "seconds": 158.6,
+   "pair": "boss_oubliette_outro"
+  },
+  {
+   "id": "boss_oubliette_outro",
+   "title": "The Sun",
+   "area": "地牢",
+   "path": "res://assets/audio/boss_oubliette_outro.ogg",
+   "seconds": 160.3
+  },
+  {
+   "id": "boss_swamp_intro",
+   "title": "Evil",
+   "area": "禁区",
+   "path": "res://assets/audio/boss_swamp_intro.ogg",
+   "seconds": 168.9,
+   "pair": "boss_swamp_outro"
+  },
+  {
+   "id": "boss_swamp_outro",
+   "title": "Evil",
+   "area": "禁区",
+   "path": "res://assets/audio/boss_swamp_outro.ogg",
+   "seconds": 158.9
+  },
+  {
+   "id": "boss_village_intro",
+   "title": "Helplessness",
+   "area": "悬崖村",
+   "path": "res://assets/audio/boss_village_intro.ogg",
+   "seconds": 242.6,
+   "pair": "boss_village_outro"
+  },
+  {
+   "id": "boss_village_outro",
+   "title": "Helplessness",
+   "area": "悬崖村",
+   "path": "res://assets/audio/boss_village_outro.ogg",
+   "seconds": 194.4
+  },
+  {
+   "id": "castle",
+   "title": "Debris and Bugs",
+   "area": "边陲之都城",
+   "path": "res://assets/audio/castle.ogg",
+   "seconds": 223.0
+  },
+  {
+   "id": "castle_quiet",
+   "title": "Debris and Bugs",
+   "area": "边陲之都城",
+   "path": "res://assets/audio/castle_quiet.ogg",
+   "seconds": 223.0
+  },
+  {
+   "id": "cave",
+   "title": "The Grudge",
+   "area": "地下墓穴",
+   "path": "res://assets/audio/cave.ogg",
+   "seconds": 222.5
+  },
+  {
+   "id": "cave_quiet",
+   "title": "The Grudge",
+   "area": "地下墓穴",
+   "path": "res://assets/audio/cave_quiet.ogg",
+   "seconds": 222.5
+  },
+  {
+   "id": "church",
+   "title": "Holy Land",
+   "area": "白教区",
+   "path": "res://assets/audio/church.ogg",
+   "seconds": 154.8
+  },
+  {
+   "id": "church_quiet",
+   "title": "Holy Land",
+   "area": "白教区",
+   "path": "res://assets/audio/church_quiet.ogg",
+   "seconds": 154.8
+  },
+  {
+   "id": "forest",
+   "title": "The Witch's Breath",
+   "area": "魔女森林",
+   "path": "res://assets/audio/forest.ogg",
+   "seconds": 140.9
+  },
+  {
+   "id": "forest_quiet",
+   "title": "The Witch's Breath",
+   "area": "魔女森林",
+   "path": "res://assets/audio/forest_quiet.ogg",
+   "seconds": 140.9
+  },
+  {
+   "id": "fort",
+   "title": "North",
+   "area": "双生堡垒",
+   "path": "res://assets/audio/fort.ogg",
+   "seconds": 225.8
+  },
+  {
+   "id": "fort_quiet",
+   "title": "North",
+   "area": "双生堡垒",
+   "path": "res://assets/audio/fort_quiet.ogg",
+   "seconds": 225.8
+  },
+  {
+   "id": "opening",
+   "title": "Main Theme",
+   "area": "序章",
+   "path": "res://assets/audio/opening.ogg",
+   "seconds": 66.4
+  },
+  {
+   "id": "oubliette",
+   "title": "Abandonment",
+   "area": "地牢",
+   "path": "res://assets/audio/oubliette.ogg",
+   "seconds": 162.5
+  },
+  {
+   "id": "oubliette_quiet",
+   "title": "Abandonment",
+   "area": "地牢",
+   "path": "res://assets/audio/oubliette_quiet.ogg",
+   "seconds": 162.5
+  },
+  {
+   "id": "swamp",
+   "title": "Compounding",
+   "area": "禁区",
+   "path": "res://assets/audio/swamp.ogg",
+   "seconds": 174.1
+  },
+  {
+   "id": "swamp_quiet",
+   "title": "Compounding",
+   "area": "禁区",
+   "path": "res://assets/audio/swamp_quiet.ogg",
+   "seconds": 174.1
+  },
+  {
+   "id": "title",
+   "title": "Lilie",
+   "area": "标题画面",
+   "path": "res://assets/audio/title.ogg",
+   "seconds": 190.9
+  },
+  {
+   "id": "village",
+   "title": "Harmonious",
+   "area": "悬崖村",
+   "path": "res://assets/audio/village.ogg",
+   "seconds": 188.4
+  },
+  {
+   "id": "village_quiet",
+   "title": "Harmonious",
+   "area": "悬崖村",
+   "path": "res://assets/audio/village_quiet.ogg",
+   "seconds": 188.4
+  }
+ ]
+}

@@ -1,0 +1,343 @@
+{
+ "c01_n001": [],
+ "c01_n002": [],
+ "c01_n003": [
+  "sprite/knight/normal"
+ ],
+ "c01_n004": [
+  "sprite/knight/normal"
+ ],
+ "c01_n005": [
+  "sprite/knight/normal"
+ ],
+ "c01_n007": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n008": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n009": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n010": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_choice_start": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_look_around": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n013": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n014": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/soft"
+ ],
+ "c01_n015": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_follow_voice": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n018": [
+  "background/church_nave",
+  "sprite/lily/surprised",
+  "sprite/knight/normal"
+ ],
+ "c01_n022": [
+  "background/church_nave",
+  "sprite/lily/normal"
+ ],
+ "c01_n023": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c01_n024": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c01_n025": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c01_n026": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/serious"
+ ],
+ "c01_n027": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c01_n028": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c02_n001": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c02_n002": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/angry"
+ ],
+ "c02_n003": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/angry"
+ ],
+ "c02_n004": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n005": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n006": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n007": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n008": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n010": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c02_n011": [
+  "background/church_bell",
+  "sprite/lily/normal",
+  "sprite/knight/normal",
+  "sprite/siegrid/normal"
+ ],
+ "c03_n001": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n002": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n003": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n004": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n006": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n007": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n008": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n009": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n010": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n011": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n012": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n013": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n014": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n015": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n016": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n017": [
+  "background/church_nave",
+  "cg/cg_awaken"
+ ],
+ "c03_n019": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n020": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n021": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c03_n022": [
+  "background/church_nave",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n001": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n002": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n003": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n004": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n005": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n006": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n007": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c04_n008": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c05_n001": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c05_n002": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c05_n003": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c05_n004": [
+  "background/church_alcove",
+  "sprite/lily/soft",
+  "sprite/knight/normal"
+ ],
+ "c05_n007": [
+  "background/church_nave",
+  "sprite/lily/normal"
+ ],
+ "c05_n008": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c05_parting": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ],
+ "c05_thanks": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/soft"
+ ],
+ "c05_nod": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/soft"
+ ],
+ "c05_epilogue": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/soft"
+ ],
+ "c05_n015": [
+  "background/church_nave",
+  "sprite/lily/normal",
+  "sprite/knight/normal"
+ ]
+}
