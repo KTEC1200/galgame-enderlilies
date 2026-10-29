@@ -499,10 +499,13 @@ def main():
     # --- 美术需求清单（模拟运行时渲染状态）---
     art_index = {}
     state_bg, state_cast, state_cg = "black", [], ""
+    state_title, state_chapter = "", ""
     for n in all_nodes:
         if n.get("type") == "stage":
             state_bg = n.get("bg", state_bg)
             state_cg = n.get("cg", state_cg)
+            state_title = n.get("title", state_title)
+            state_chapter = n.get("date", state_chapter)
             mode = n.get("_cast_mode", "replace")
             if "cast" in n:
                 if mode == "replace":
@@ -531,7 +534,7 @@ def main():
                 if a["id"] in n.get("reactions", {}):
                     expr = n["reactions"][a["id"]]
                 arts.append("sprite/%s/%s" % (a["id"], expr))
-        art_index[n["id"]] = arts
+        art_index[n["id"]] = {"arts": arts, "title": state_title, "chapter": state_chapter}
 
     # --- 报告（有错误则不写产物）---
     n_pages = sum(1 for n in all_nodes if n.get("type", "line") == "line")
@@ -602,7 +605,7 @@ def main():
     with open(os.path.join(OUT_DIR, "flowchart.json"), "w", encoding="utf-8") as f:
         json.dump(flow, f, ensure_ascii=False, indent=1)
 
-    art_needs = sorted({k for v in art_index.values() for k in v})
+    art_needs = sorted({k for entry in art_index.values() for k in entry["arts"]})
     print("美术需求 %d 项（其中立绘 %d / 背景 %d / CG %d）" % (
         len(art_needs),
         sum(1 for a in art_needs if a.startswith("sprite/")),
