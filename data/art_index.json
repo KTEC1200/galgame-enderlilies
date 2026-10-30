@@ -627,5 +627,77 @@
   ],
   "title": "离开白教区",
   "chapter": "第一章"
+ },
+ "c06_n001": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c07_n001": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c08_n001": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下墓穴",
+  "chapter": "第四章"
+ },
+ "c09_n001": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c10_n001": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c11_n001": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c12_n001": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c13_n001": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
  }
 }

@@ -621,6 +621,110 @@
    "type": "line",
    "text": "—— 第一章 · 白教区 完 ——",
    "id": "c05_n015"
+  },
+  {
+   "type": "stage",
+   "date": "第二章",
+   "title": "悬崖村",
+   "bg": "village_hut",
+   "music": "village",
+   "id": "c06_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c06_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第三章",
+   "title": "魔女森林",
+   "bg": "forest_path",
+   "music": "forest",
+   "id": "c07_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c07_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第四章",
+   "title": "地下墓穴",
+   "bg": "catacomb_hall",
+   "music": "cave",
+   "id": "c08_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c08_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第五章",
+   "title": "地牢",
+   "bg": "dungeon_cell",
+   "music": "oubliette",
+   "id": "c09_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c09_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第六章",
+   "title": "禁区",
+   "bg": "forbidden_pool",
+   "music": "swamp",
+   "id": "c10_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c10_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第七章",
+   "title": "双生堡垒",
+   "bg": "fort_wall",
+   "music": "fort",
+   "id": "c11_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c11_n001"
+  },
+  {
+   "type": "stage",
+   "date": "第八章",
+   "title": "边陲之都城",
+   "bg": "castle_hall",
+   "music": "castle",
+   "id": "c12_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c12_n001"
+  },
+  {
+   "type": "stage",
+   "date": "终章",
+   "title": "边境之泉",
+   "bg": "spring",
+   "music": "awakening",
+   "id": "c13_n000"
+  },
+  {
+   "type": "line",
+   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "id": "c13_n001"
   }
  ]
 }
