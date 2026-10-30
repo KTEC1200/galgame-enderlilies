@@ -19,17 +19,19 @@ godot --headless --path . --import   # 首次/资源变更后导入
 godot --headless --path . -- --smoke # 两条分支自动跑通 + 存读档往返校验
 ```
 
-## 剧情开发工作流（日常只碰 story-src/）
+## 剧情开发工作流（台词创作分工给 Gemini）
 
-1. 编辑 `story-src/*.md`（格式见 `docs/源稿格式.md`）
-2. `python tools/build_story.py` → 0 错误（校验跳转/角色/表情/音乐/flag/不可达节点）
-3. `--smoke` 冒烟测试 → 打开 Godot 实玩
+1. 章节结构与素材指引见 `docs/剧情规划.md`；`story-src/06~13` 是已建好的章节骨架
+2. 按 `docs/源稿格式.md` 语法填写场景源稿（台词原文从根目录文本集搬运，禁止改写）
+3. `python tools/build_story.py` → 0 错误（校验跳转/角色/表情/音乐/flag/不可达节点）
+4. `--smoke` 冒烟测试 → 打开 Godot 实玩
 
 ## 目录
 
 ```
 story-src/              剧情源稿（00_设定 + 每场景一个 .md）← 剧情的唯一出处
 Main.gd                 运行时（剧情渲染/选项/条件/打字机/存读档）
+Extras.gd               图库 / 剧情分支树 / 回看 / 设置
 BgmPlayer.gd            双声道交叉淡入淡出 BGM（支持 Boss Intro→Outro 接力）
 data/story.json         编译产物（勿手改）
 data/flowchart.json     分支树布局（编译产物）
@@ -38,6 +40,8 @@ data/music_catalog.json 由 tools/build_music_catalog.py 从仓库 music/ 生成
 assets/                 占位美术（按正式规格生成，正式美术覆盖同名文件即可）+ 原作 OST
 docs/源稿格式.md         源稿语法
 docs/数据规范.md         story.json 节点格式、角色/背景/表情/BGM 命名约定
+docs/剧情规划.md         改编总纲：章节规划 / 结局路由 / Gemini 写作规范
+export_presets.cfg      Windows 导出配置（export/ 目录产出 exe+pck）
 tools/                  构建脚本（剧情编译器、音乐目录、占位美术）
 ```
 

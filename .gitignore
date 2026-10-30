@@ -4,3 +4,6 @@
 # 系统杂项
 *.tmp
 .DS_Store
+
+# 导出产物（构建生成）
+export/
