@@ -496,6 +496,18 @@ func _condition(requirements: Variant) -> bool:
 			return false
 	return true
 
+func _visible_choices(d: Dictionary) -> Array:
+	# 选项级 @when 过滤；全部被过滤掉时按未过滤显示并报错（兜底防卡死）
+	var choices: Array = d.get("choices", [])
+	var visible: Array = []
+	for option in choices:
+		if _condition(option.get("when", {})):
+			visible.append(option)
+	if not choices.is_empty() and visible.is_empty():
+		push_error("选项页 %s 所有选项均不满足条件" % str(d.get("id", "")))
+		visible = choices
+	return visible
+
 func _goto(id: String) -> void:
 	if not lookup.has(id):
 		push_error("剧情跳转目标不存在: " + id)
@@ -611,10 +623,10 @@ func _render(d: Dictionary) -> void:
 	body_label.visible_characters = 0 if typewriter_active else -1
 	if typewriter_active:
 		typewriter_timer.start()
-	var choices: Array = d.get("choices", [])
-	choice_box.visible = not choices.is_empty()
-	hint.text = "请选择" if not choices.is_empty() else "空格 / 点击推进　·　Esc 菜单"
-	for option in choices:
+	var visible_choices: Array = _visible_choices(d)
+	choice_box.visible = not visible_choices.is_empty()
+	hint.text = "请选择" if not visible_choices.is_empty() else "空格 / 点击推进　·　Esc 菜单"
+	for option in visible_choices:
 		var b := _button(str(option["label"]), choose.bind(option))
 		b.custom_minimum_size = Vector2(960, 52)
 		b.add_theme_font_size_override("font_size", 21)
@@ -879,7 +891,7 @@ func _slots(save_mode: bool) -> void:
 		buttons.append([_button("＋ 新建存档", _save_slot.bind(next_slot))])
 	for slot in _existing_slots():
 		var saved: Variant = JSON.parse_string(FileAccess.get_file_as_string(_slot_path(slot)))
-		var valid: bool = saved is Dictionary and saved.get("version") == SAVE_VERSION and lookup.has(str(saved.get("node", "")))
+		var valid: bool = saved is Dictionary and saved.get("version") == SAVE_VERSION and _resolve_saved_node(saved) != ""
 		var description := "（空）"
 		if saved is Dictionary:
 			description = "%s · %s\n%s" % [saved.get("chapter", ""), saved.get("title", ""), saved.get("time", "")]
@@ -930,7 +942,12 @@ func _load_state(path: String) -> void:
 	_apply_snapshot(saved)
 
 func _apply_snapshot(saved: Dictionary) -> void:
-	flags = saved.get("flags", {}).duplicate(true)
+	# 旧存档缺新增 flag 时先按 initial_flags 补默认值，再覆盖已保存的值
+	var saved_flags: Dictionary = saved.get("flags", {})
+	var merged_flags: Dictionary = data.get("initial_flags", {}).duplicate(true)
+	for key in saved_flags:
+		merged_flags[key] = saved_flags[key]
+	flags = merged_flags
 	cast = saved.get("cast", []).duplicate(true)
 	bg_id = str(saved.get("bg", "black"))
 	cg_id = str(saved.get("cg", ""))
@@ -1114,10 +1131,10 @@ func _run_smoke() -> void:
 				if str(current.get("id", "")) != str(snapshot["node"]) or flags.get("curious") != snapshot["flags"].get("curious"):
 					all_ok = false
 					print("SMOKE 存读档往返不一致: node=%s vs %s" % [str(current.get("id", "")), str(snapshot["node"])])
-			var choices: Array = current.get("choices", [])
-			if not choices.is_empty():
-				var index: int = min(smoke_branch, choices.size() - 1)
-				choose(choices[index])
+			var visible: Array = _visible_choices(current)
+			if not visible.is_empty():
+				var index: int = min(smoke_branch, visible.size() - 1)
+				choose(visible[index])
 			else:
 				advance()
 		print("SMOKE pass branch=%d pages=%d visited=%d finished=%s" % [branch, pages, visited.size(), str(finished)])
@@ -1138,6 +1155,48 @@ func _run_smoke() -> void:
 			print("SMOKE 分支树回溯失败: %s -> %s (current=%s)" % [block_id, rewind_node, str(current.get("id", ""))])
 		else:
 			print("SMOKE 分支树回溯成功: %s -> %s" % [block_id, rewind_node])
+	# 终章路由：条件选项（C 需八枚石板齐全），C 路线须独立收束
+	if lookup.has("c13_finale_choice"):
+		flags = data.get("initial_flags", {}).duplicate(true)
+		_goto("c13_finale_choice")
+		current = {}
+		_show_next()
+		var locked: Array = _visible_choices(current)
+		if str(current.get("id", "")) != "c13_finale_choice" or locked.size() != 2:
+			all_ok = false
+			print("SMOKE 终章路由失败: 石板不齐时应只显示 A/B（实际 %d 个选项）" % locked.size())
+		for i in range(1, 9):
+			flags["relic_%d" % i] = true
+		_show_next()
+		var unlocked: Array = _visible_choices(current)
+		if unlocked.size() != 3:
+			all_ok = false
+			print("SMOKE 终章路由失败: 八枚齐全时应显示 A/B/C（实际 %d 个选项）" % unlocked.size())
+		else:
+			choose(unlocked[2])
+			await get_tree().process_frame
+			if str(current.get("id", "")) != "c13_ending_c":
+				all_ok = false
+				print("SMOKE 终章路由失败: C 选项未进入结局 C（当前 %s）" % str(current.get("id", "")))
+			var guard_c := 0
+			while not finished and guard_c < 20000:
+				guard_c += 1
+				await get_tree().process_frame
+				if finished:
+					break
+				if typewriter_active:
+					_complete_typing()
+				if current.is_empty() or not current.get("choices", []).is_empty():
+					continue
+				advance()
+			if not finished:
+				all_ok = false
+				print("SMOKE 终章路由失败: 结局 C 未能收束")
+			else:
+				print("SMOKE 终章路由成功: C 路线独立收束")
+	else:
+		all_ok = false
+		print("SMOKE 缺少终章路由节点 c13_finale_choice")
 	# 设置项
 	_set_speed(4.0)
 	_set_dialogue_size(30)

@@ -7,7 +7,7 @@
   - 空行分页；普通文本=旁白；`角色id(表情)「台词」`=对话
   - `@bg/@music/@cg/@cast/@set` 独立成块 = stage 节点；`@reaction` 附于当页
   - `@when k=v,k!=v,k>=n` 附于下一页；`| when: k=v | 文本` = 变体
-  - `* 选项文本 -> 目标` = 选项，缩进的 `@set` 附于该选项；`-> 目标` 独立成块 = jump
+  - `* 选项文本 -> 目标` = 选项，缩进的 `@set`/`@when` 附于该选项；`-> 目标` 独立成块 = jump
   - `#标签` 给下一页命名；`## 标题` 改场景标题；`//` 注释
 
 校验：跳转目标、角色/表情/背景/音乐/CG 引用、flag 未初始化、不可达节点。
@@ -300,8 +300,12 @@ def build_page(block, base, label, fileid, where):
                 role, _, expr = arg.partition("/")
                 reactions.append((role.strip(), expr.strip() or "normal"))
             elif key == "when":
-                # 页内 when：视为对下一页的声明（写在块首）
-                page["when"] = parse_condition(arg, where)
+                if indent >= 2 and choices:
+                    # 缩进在选项下：该选项的显示条件（多条 @when 合并）
+                    choices[current_choice[0]].setdefault("when", {}).update(parse_condition(arg, where))
+                else:
+                    # 页内 when：视为对下一页的声明（写在块首）
+                    page["when"] = parse_condition(arg, where)
             else:
                 err("%s: 指令 @%s 不能写在页面块内（请独立成块）" % (where, key))
             continue
@@ -420,7 +424,8 @@ def main():
         for src in ([n.get("set", {})] + [c.get("set", {}) for c in n.get("choices", [])]):
             for k, v in src.items():
                 set_flags.setdefault(k, v)
-        for cond in [n.get("when")] + [v.get("when") for v in n.get("variants", [])]:
+        for cond in ([n.get("when")] + [v.get("when") for v in n.get("variants", [])]
+                     + [c.get("when") for c in n.get("choices", [])]):
             if cond:
                 collect_flag_uses(cond)
     used_flags = flag_uses
@@ -548,6 +553,9 @@ def main():
     if errors:
         print("编译失败（%d 个错误），未写出任何产物" % len(errors))
         sys.exit(1)
+    if check_only:
+        print("校验通过（--check），未写出产物")
+        return
 
     # 清理内部字段后再输出
     for n in all_nodes:
@@ -559,7 +567,7 @@ def main():
     story = {
         "version": "el-vn-1",
         "title": config["title"],
-        "release_version": "0.2.0",
+        "release_version": "0.4.0",
         "cast_names": cast_names,
         "initial_flags": {k: config["initial_flags"][k] for k in sorted(config["initial_flags"])},
         "nodes": all_nodes,
