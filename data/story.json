@@ -1,7 +1,7 @@
 {
  "version": "el-vn-1",
  "title": "ENDER LILIES · 终焉之雨",
- "release_version": "0.2.0",
+ "release_version": "0.4.0",
  "cast_names": {
   "lily": "莉莉",
   "knight": "费林",
@@ -9,10 +9,19 @@
   "true_lily": "白巫女"
  },
  "initial_flags": {
+  "chose_abyss": false,
   "curious": false,
   "knows_name": false,
   "met_knight": false,
   "observed": false,
+  "relic_1": false,
+  "relic_2": false,
+  "relic_3": false,
+  "relic_4": false,
+  "relic_5": false,
+  "relic_6": false,
+  "relic_7": false,
+  "relic_8": false,
   "sield_purified": false
  },
  "nodes": [
@@ -535,6 +544,9 @@
   },
   {
    "type": "line",
+   "set": {
+    "relic_1": true
+   },
    "text": "石板上的纹路亮起，又暗下去。一枚护身符从光里落进你的掌心，微温。",
    "id": "c05_n003"
   },
@@ -723,8 +735,196 @@
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "speaker": "knight",
+   "text": "……就是这里。雨的尽头，泉水的源头。",
    "id": "c13_n001"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "莉莉，等一等。泉水的记忆还没有退去——一路上错过的东西，也许还来得及找回。",
+   "id": "c13_n002"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "要回头找找吗？还是……就这样走下去。",
+   "choices": [
+    {
+     "label": "回想白教区的石板",
+     "when": {
+      "relic_1": false
+     },
+     "set": {
+      "relic_1": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想悬崖村的石板",
+     "when": {
+      "relic_2": false
+     },
+     "set": {
+      "relic_2": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想魔女森林的石板",
+     "when": {
+      "relic_3": false
+     },
+     "set": {
+      "relic_3": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想地下墓穴的石板",
+     "when": {
+      "relic_4": false
+     },
+     "set": {
+      "relic_4": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想地牢的石板",
+     "when": {
+      "relic_5": false
+     },
+     "set": {
+      "relic_5": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想禁区的石板",
+     "when": {
+      "relic_6": false
+     },
+     "set": {
+      "relic_6": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想双生堡垒的石板",
+     "when": {
+      "relic_7": false
+     },
+     "set": {
+      "relic_7": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "回想都城的石板",
+     "when": {
+      "relic_8": false
+     },
+     "set": {
+      "relic_8": true
+     },
+     "next": "c13_recall"
+    },
+    {
+     "label": "已经足够了。走向泉水深处",
+     "next": "c13_finale_choice"
+    }
+   ],
+   "id": "c13_recall"
+  },
+  {
+   "type": "line",
+   "text": "（占位正文：泉水中央，芙莉蒂雅的幻影——对话剧情 769-812 的引文将在此展开。）",
+   "choices": [
+    {
+     "label": "净化她",
+     "next": "c13_ending_a"
+    },
+    {
+     "label": "放弃净化，走向深渊最深处",
+     "set": {
+      "chose_abyss": true
+     },
+     "next": "c13_abyss_route"
+    },
+    {
+     "label": "唤醒古代咒术，修复守护宝具",
+     "when": {
+      "relic_1": true,
+      "relic_2": true,
+      "relic_3": true,
+      "relic_4": true,
+      "relic_5": true,
+      "relic_6": true,
+      "relic_7": true,
+      "relic_8": true
+     },
+     "next": "c13_ending_c"
+    }
+   ],
+   "id": "c13_finale_choice"
+  },
+  {
+   "type": "line",
+   "text": "（占位正文：结局 A——净化。文本集 223-240。）",
+   "id": "c13_ending_a"
+  },
+  {
+   "type": "line",
+   "text": "（完）",
+   "id": "c13_n006"
+  },
+  {
+   "type": "jump",
+   "id": "c13_n007",
+   "next": "c13_coda"
+  },
+  {
+   "type": "stage",
+   "bg": "abyss",
+   "music": "boss_final_intro",
+   "music_outro": "boss_final_outro",
+   "id": "c13_abyss_route"
+  },
+  {
+   "type": "line",
+   "text": "（占位正文：结局 B——深渊最深处。对话剧情 869-924。）",
+   "id": "c13_n009"
+  },
+  {
+   "type": "line",
+   "text": "（完）",
+   "id": "c13_n010"
+  },
+  {
+   "type": "jump",
+   "id": "c13_n011",
+   "next": "c13_coda"
+  },
+  {
+   "type": "line",
+   "text": "（占位正文：结局 C——尾声，全员解放。文本集 241-282。）",
+   "id": "c13_ending_c"
+  },
+  {
+   "type": "line",
+   "text": "（完）",
+   "id": "c13_n013"
+  },
+  {
+   "type": "jump",
+   "id": "c13_n014",
+   "next": "c13_coda"
+  },
+  {
+   "type": "line",
+   "text": "—— ENDER LILIES · 终焉之雨 完 ——",
+   "id": "c13_coda"
   }
  ]
 }

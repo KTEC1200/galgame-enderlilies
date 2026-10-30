@@ -699,5 +699,95 @@
   ],
   "title": "边境之泉",
   "chapter": "终章"
+ },
+ "c13_n002": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_recall": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_finale_choice": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_ending_a": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n006": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n009": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n010": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_ending_c": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n013": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_coda": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
  }
 }
