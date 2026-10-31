@@ -1,23 +1,16 @@
 {
  "c01_n001": {
-  "arts": [
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
+  "arts": [],
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
  "c01_n002": {
-  "arts": [
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
+  "arts": [],
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
  "c01_n003": {
   "arts": [
-   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -25,7 +18,6 @@
  },
  "c01_n004": {
   "arts": [
-   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -33,7 +25,6 @@
  },
  "c01_n005": {
   "arts": [
-   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -2535,9 +2526,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/knight/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -2547,19 +2536,129 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_recall": {
+ "c13_n003": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_reminiscence": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_memory_converge": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n006": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n007": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n008": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/worried",
+   "sprite/knight/worried",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n009": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n010": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n011": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n013": {
+  "arts": [
+   "background/spring",
+   "cg/fretia_memory"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n014": {
+  "arts": [
+   "background/spring",
+   "cg/fretia_memory"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n015": {
+  "arts": [
+   "background/spring",
+   "cg/fretia_memory"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n016": {
+  "arts": [
+   "background/spring",
+   "cg/fretia_memory"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -2569,8 +2668,7 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -2580,41 +2678,167 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n006": {
+ "c13_n020": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n009": {
+ "c13_n021": {
   "arts": [
-   "background/abyss",
+   "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/soft"
   ],
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n010": {
+ "c13_n022": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/worried"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n023": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n024": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n028": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n029": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n030": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/worried"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n031": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/worried"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n032": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n033": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n034": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n035": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/worried",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n036": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/worried"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n037": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n038": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -2624,19 +2848,97 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n013": {
+ "c13_n041": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n042": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n043": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n044": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n045": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n046": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n047": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n048": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n049": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -2646,8 +2948,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/normal",
-   "sprite/julius/normal"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"

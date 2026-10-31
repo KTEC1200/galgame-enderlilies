@@ -676,200 +676,6 @@
   },
   {
    "type": "stage",
-   "date": "第一章",
-   "title": "长眠者之堂",
-   "bg": "black",
-   "music": "opening",
-   "id": "c01_n000"
-  },
-  {
-   "type": "line",
-   "text": "意识从无梦的沉眠中浮起。",
-   "id": "c01_n001"
-  },
-  {
-   "type": "line",
-   "text": "黑暗的尽头有雨声。除此之外，什么都没有。",
-   "id": "c01_n002"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "看来你终于醒了……",
-   "id": "c01_n003"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "身体……应该没事……",
-   "id": "c01_n004"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "吓到了吗？",
-   "id": "c01_n005"
-  },
-  {
-   "type": "stage",
-   "bg": "church_nave",
-   "cast": [
-    {
-     "id": "lily",
-     "expression": "surprised"
-    }
-   ],
-   "id": "c01_n006"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "我没有肉体的事，正是和巫女有关。在这国家发生的事……有什么记忆吗？",
-   "id": "c01_n007"
-  },
-  {
-   "type": "line",
-   "text": "你试着回想。什么都没有——名字、来处、为何在此，一片空白。",
-   "id": "c01_n008"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "……你也失去了记忆么",
-   "id": "c01_n009"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "总之先离开这里吧。外面的情况，还是你自己确认一下好。",
-   "id": "c01_n010"
-  },
-  {
-   "type": "line",
-   "text": "你扶着祭坛站起来。那个声音安静地等着，不催促。",
-   "choices": [
-    {
-     "label": "想先弄清楚这里是什么地方",
-     "set": {
-      "observed": true
-     },
-     "next": "c01_look_around"
-    },
-    {
-     "label": "先跟着那个声音走",
-     "set": {
-      "curious": true
-     },
-     "next": "c01_follow_voice"
-    }
-   ],
-   "id": "c01_choice_start"
-  },
-  {
-   "type": "line",
-   "text": "你环顾四周。破碎的彩色玻璃悬在穹顶，雨从窟窿里落进来，在石板上积成浅浅的水洼。",
-   "id": "c01_look_around"
-  },
-  {
-   "type": "line",
-   "text": "倒下的骑士像手里还握着断剑。祭坛的白布上，落着几片被风卷进来的白花。",
-   "id": "c01_n013"
-  },
-  {
-   "type": "line",
-   "expression": "soft",
-   "speaker": "knight",
-   "text": "……先看了四周，再回应我。很好。在如今的边陲，谨慎是难得的美德。",
-   "id": "c01_n014"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "这里曾是白教的据点。人们在此祈求白巫女的守护——直到雨落下来。",
-   "id": "c01_n015"
-  },
-  {
-   "type": "jump",
-   "id": "c01_n016",
-   "next": "c01_converge"
-  },
-  {
-   "type": "line",
-   "text": "你朝着声音的方向走去。它不近，也不远，像是一直等在那里。",
-   "id": "c01_follow_voice"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "好奇心是好事。活着的人，不该只是听命前行。",
-   "id": "c01_n018"
-  },
-  {
-   "type": "jump",
-   "id": "c01_n019",
-   "next": "c01_converge"
-  },
-  {
-   "type": "stage",
-   "title": "雨之大圣堂",
-   "id": "c01_converge"
-  },
-  {
-   "type": "stage",
-   "bg": "church_nave",
-   "cast": [
-    {
-     "id": "lily",
-     "expression": "normal"
-    }
-   ],
-   "music": "church",
-   "set": {
-    "met_knight": true
-   },
-   "id": "c01_n021"
-  },
-  {
-   "type": "line",
-   "text": "你推开侧廊的门。大圣堂敞露在雨里——半座穹顶已经塌了，光从裂缝里漏下来，照着满地的水洼与白花。",
-   "id": "c01_n022"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "堕秽之后变得不死的存在……它们曾经被叫做『秽鬼』。",
-   "id": "c01_n023"
-  },
-  {
-   "type": "line",
-   "speaker": "knight",
-   "text": "它们曾经是人。是守护者，是骑士，是这座国家的人民。",
-   "id": "c01_n024"
-  },
-  {
-   "type": "line",
-   "text": "远处传来石头拖行的声音。很沉，很慢，正在靠近。",
-   "id": "c01_n025"
-  },
-  {
-   "type": "line",
-   "expression": "serious",
-   "speaker": "knight",
-   "text": "浓郁的污秽气息……小心点儿……",
-   "id": "c01_n026"
-  },
-  {
-   "type": "line",
-   "text": "黑甲骑士的身后浮出一柄剑——他没有实体，剑却像影子一样有了轮廓。",
-   "id": "c01_n027"
-  },
-  {
-   "type": "line",
-   "text": "可你分明感觉到，那道影子愿意为你而挥。",
-   "id": "c01_n028"
-  },
-  {
-   "type": "stage",
    "date": "第二章",
    "title": "悬崖村",
    "bg": "village_hut",
@@ -2815,115 +2621,235 @@
    "title": "边境之泉",
    "bg": "spring",
    "music": "awakening",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c13_n000"
   },
   {
    "type": "line",
-   "speaker": "knight",
-   "text": "……就是这里。雨的尽头，泉水的源头。",
+   "text": "白色的水雾笼罩着这片远离尘世的圣域。无休止的死亡之雨落入池中，激荡起纯净而幽深的涟漪。\n泉之白巫女虚弱的幻影在水面上若隐若现。",
    "id": "c13_n001"
   },
   {
    "type": "line",
-   "speaker": "knight",
-   "text": "莉莉，等一等。泉水的记忆还没有退去——一路上错过的东西，也许还来得及找回。",
+   "speaker": "fretia",
+   "text": "……」「……这是……最后了……」「我的……」「净……化……",
    "id": "c13_n002"
   },
   {
    "type": "line",
+   "expression": "soft",
    "speaker": "knight",
-   "text": "要回头找找吗？还是……就这样走下去。",
-   "choices": [
-    {
-     "label": "回想白教区的石板",
-     "when": {
-      "relic_1": false
-     },
-     "set": {
-      "relic_1": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想悬崖村的石板",
-     "when": {
-      "relic_2": false
-     },
-     "set": {
-      "relic_2": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想魔女森林的石板",
-     "when": {
-      "relic_3": false
-     },
-     "set": {
-      "relic_3": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想地下墓穴的石板",
-     "when": {
-      "relic_4": false
-     },
-     "set": {
-      "relic_4": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想地牢的石板",
-     "when": {
-      "relic_5": false
-     },
-     "set": {
-      "relic_5": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想禁区的石板",
-     "when": {
-      "relic_6": false
-     },
-     "set": {
-      "relic_6": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想双生堡垒的石板",
-     "when": {
-      "relic_7": false
-     },
-     "set": {
-      "relic_7": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "回想都城的石板",
-     "when": {
-      "relic_8": false
-     },
-     "set": {
-      "relic_8": true
-     },
-     "next": "c13_recall"
-    },
-    {
-     "label": "已经足够了。走向泉水深处",
-     "next": "c13_finale_choice"
-    }
-   ],
-   "id": "c13_recall"
+   "text": "泉水倒映着一路走来的景象。若是还有未被唤醒的石板记忆，就试着在此补全吧。",
+   "id": "c13_n003"
   },
   {
    "type": "line",
-   "text": "（占位正文：泉水中央，芙莉蒂雅的幻影——对话剧情 769-812 的引文将在此展开。）",
+   "text": "泉底泛起微光，沉睡在各处的石板残片与水流共鸣。若是还有遗落的思念，便在此处铭记。",
+   "choices": [
+    {
+     "label": "追忆白教区的石板",
+     "set": {
+      "relic_1": true
+     },
+     "when": {
+      "relic_1": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆悬崖村的石板",
+     "set": {
+      "relic_2": true
+     },
+     "when": {
+      "relic_2": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆魔女森林的石板",
+     "set": {
+      "relic_3": true
+     },
+     "when": {
+      "relic_3": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆地下墓穴的石板",
+     "set": {
+      "relic_4": true
+     },
+     "when": {
+      "relic_4": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆地牢的石板",
+     "set": {
+      "relic_5": true
+     },
+     "when": {
+      "relic_5": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆禁区的石板",
+     "set": {
+      "relic_6": true
+     },
+     "when": {
+      "relic_6": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆双生堡垒的石板",
+     "set": {
+      "relic_7": true
+     },
+     "when": {
+      "relic_7": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "追忆都城寝宫的石板",
+     "set": {
+      "relic_8": true
+     },
+     "when": {
+      "relic_8": {
+       "neq": true
+      }
+     },
+     "next": "c13_reminiscence"
+    },
+    {
+     "label": "迈向泉水深处",
+     "next": "c13_memory_converge"
+    }
+   ],
+   "id": "c13_reminiscence"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "……充斥四方的污秽」「也许这已超出你能承受的范围……",
+   "id": "c13_memory_converge"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "莉莉……」「污秽……在被净化……",
+   "id": "c13_n006"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "……你能走动了吗？」「……泉之白巫女她正在努力……」「净化你身上和整个边陲之国的污秽……」「虽然幻影已经消失，但是她本身一定还在哪里",
+   "id": "c13_n007"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "我只能陪你走到这里……」「很久以前和巫女立下的不死契约的效果依在……」「我会照顾好这里的事……",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c13_n008"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "泉之白巫女的遗愿就靠你了」「那也是我无法实现的愿望」「你替我做……我已经做不到的事情吧……",
+   "id": "c13_n009"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "希望你……自由地……」「……活下去」「别这样……」「这旅途挺辛苦的对吧……",
+   "id": "c13_n010"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "但是，对我而言，和你一路走来挺不错的……」「契约总有一天会有所牵引」「只要还活着……",
+   "id": "c13_n011"
+  },
+  {
+   "type": "stage",
+   "cg": "fretia_memory",
+   "id": "c13_n012"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "我好像已经沉睡了好久」「也不知道算是活着还是死了」「只知道永无止尽的痛苦」「我醒过来时躺在黑色的台子上",
+   "id": "c13_n013"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "发现手里传来温暖的感觉」「幼小的白巫女们紧握着我的手」「这些白巫女是为了替我承受污秽而被复制出来的",
+   "id": "c13_n014"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "隐隐约约地可以听到魔术师们的声音」「他们想要进行转移污秽的仪式」「白巫女们什么都不知道，向我靠过来」「为了苟活……牺牲这些孩子们……」「有意义吗……？",
+   "id": "c13_n015"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "与这些孩子们一同度过的时光……才是我唯一的救赎」「如果说这些孩子……是替代我的存在……」「我想交给她们的是希望……而不是污秽……",
+   "id": "c13_n016"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c13_n017"
+  },
+  {
+   "type": "line",
+   "text": "凝望着被污秽缠绕的核心，最后的抉择摆在面前。",
    "choices": [
     {
      "label": "净化她",
@@ -2955,54 +2881,195 @@
   },
   {
    "type": "line",
-   "text": "（占位正文：结局 A——净化。文本集 223-240。）",
+   "text": "你伸出双手，温柔地触碰那团被无尽污秽侵蚀的灵魂。\n白光自掌心决堤般涌出，整个泉眼被神圣的光辉彻底淹没。",
    "id": "c13_ending_a"
   },
   {
    "type": "line",
+   "text": "Truth remains in the Abyss.\nTragedy, never ceasing.\n真相埋在深渊里，\n悲剧尚未结束",
+   "id": "c13_n020"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "我一直都在看着你……」「你和大家一样……努力想要拯救我」「但是……这不是你应该承担的",
+   "id": "c13_n021"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "这充斥着污秽的世界，是我自己」「是我招来的灾难……」「你存在的意义只不过为了背负别人的污秽……那也太可悲了吧？",
+   "id": "c13_n022"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "要是你能诞生在遥远的未来」「一个污秽被净化的未来，那会有多好啊」「现在只希望……你能」「自由地……活着……",
+   "id": "c13_n023"
+  },
+  {
+   "type": "line",
    "text": "（完）",
-   "id": "c13_n006"
+   "id": "c13_n024"
   },
   {
    "type": "jump",
-   "id": "c13_n007",
+   "id": "c13_n025",
    "next": "c13_coda"
   },
   {
    "type": "stage",
    "bg": "abyss",
-   "music": "boss_final_intro",
-   "music_outro": "boss_final_outro",
    "id": "c13_abyss_route"
   },
   {
+   "type": "stage",
+   "music": "boss_final_intro",
+   "music_outro": "boss_final_outro",
+   "id": "c13_n027"
+  },
+  {
    "type": "line",
-   "text": "（占位正文：结局 B——深渊最深处。对话剧情 869-924。）",
-   "id": "c13_n009"
+   "text": "步入深渊的最深处，无边无际的黑暗与暴虐的狂气彻底吞噬了光明。",
+   "id": "c13_n028"
+  },
+  {
+   "type": "line",
+   "text": "She whispers from the abyss,\n“Being as one, we shall never be apart.”\n在深渊里，少女说了\n“你就是我，所以一定要在一起”",
+   "id": "c13_n029"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "这里……来不得啊」「快逃，你不能有事」「我已经",
+   "id": "c13_n030"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "为什么……」「为什么啊，莉莉……」「错的是我……」「我根本不值得谁来救我……」「住手吧，这样下去……」「你会被我的污秽吞噬……",
+   "id": "c13_n031"
+  },
+  {
+   "type": "line",
+   "speaker": "fretia",
+   "text": "在来到这里之前，有看到途中的花吧……」「降临边陲之国的死亡之雨……」「都是侵蚀我身体的污秽扎根繁衍，溢出到外面而造成的……",
+   "id": "c13_n032"
+  },
+  {
+   "type": "line",
+   "speaker": "fretia",
+   "text": "不知道需要等到什么时候……」「但是如果能抑制体内的污秽」「即使无法彻底消除污秽」「至少能避免产生新的污秽……",
+   "id": "c13_n033"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "虽然这么说已经没什么意义了……」「但是，真希望你能生活在一个无需背负污秽的世界……」「因为我的分身，就只……剩你了……",
+   "id": "c13_n034"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "莉莉……即使如此……」「你还是想要陪伴泉之白巫女」「一起背负……污秽……",
+   "id": "c13_n035"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "fretia",
+   "text": "唔……」「怎么能……」「这种痛苦，我一个人承担就好……」「听我的好吗，别这样……」「拜托了……",
+   "id": "c13_n036"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "莉莉……」「原来如此……」「你……就是我啊」「对不起……」「还有，谢谢……」「……我……终于……能够安眠了……",
+   "id": "c13_n037"
   },
   {
    "type": "line",
    "text": "（完）",
-   "id": "c13_n010"
+   "id": "c13_n038"
   },
   {
    "type": "jump",
-   "id": "c13_n011",
+   "id": "c13_n039",
    "next": "c13_coda"
   },
   {
    "type": "line",
-   "text": "（占位正文：结局 C——尾声，全员解放。文本集 241-282。）",
+   "text": "八枚石板在掌心齐齐绽放璀璨的神圣光华。\n沉睡于边陲之国的古代咒术彻底复苏，破损的白巫女护身符重聚圆满，筑起坚不可摧的守护奇迹。",
    "id": "c13_ending_c"
   },
   {
    "type": "line",
+   "text": "Amidst a Collapsed world, her words echo out,\n“Thank you for finding your way to me.”\n在崩溃的世界里，少女说了\n“感谢你一直陪伴着我”",
+   "id": "c13_n041"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "……这道光是……」「怎么可能……这是怎么一回事……」「只靠白巫女一个人的力量……」「……难道是，那个护身符……",
+   "id": "c13_n042"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "你收集了所需的一切，把它们合在一起……」「就连我不知道的过去也都……」「从今以后……难道全部都由你背负……」「原来如此……",
+   "id": "c13_n043"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "你和大家携手来到了这里……」「……谢谢」「……你解放了大家」「也解放了我……」「莉莉……",
+   "id": "c13_n044"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "……我，终于有点儿明白了」「我并不孤单……」「大家都在帮我……」「通过你……我终于看清了这一点」「莉莉……后事就托付给你吧",
+   "id": "c13_n045"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "你完成了我所做不到的事情……」「我之前说错了一件事」「……“边陲之巫女”」「你就是你，不是什么我的分身……",
+   "id": "c13_n046"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "……你长大了……」「……是时候了……我差不多该走了」「我会一直……看守着你……」「无论什么时候都……一直在你身旁……",
+   "id": "c13_n047"
+  },
+  {
+   "type": "line",
+   "text": "「结束了……」\n「终于……完成了大家的坟墓……」\n「有我们，不再寂寞了吧？」\n「即使灵魂堕污……大家都在看守着你」\n「……你也有我」",
+   "id": "c13_n048"
+  },
+  {
+   "type": "line",
    "text": "（完）",
-   "id": "c13_n013"
+   "id": "c13_n049"
   },
   {
    "type": "jump",
-   "id": "c13_n014",
+   "id": "c13_n050",
    "next": "c13_coda"
   },
   {

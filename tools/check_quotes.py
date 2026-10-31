@@ -31,6 +31,7 @@ CHAPTERS = {
     "10": "10_禁区.md",
     "11": "11_双生堡垒.md",
     "12": "12_边陲之都城.md",
+    "13": "13_终章.md",
 }
 
 
@@ -61,6 +62,10 @@ def extract_pack_quotes(path):
             inline_optional = True
         target = optional if (subsection_optional or inline_optional) else required
         body = stripped.lstrip("> ").strip()
+        # 「说话人：『引文』」形式（13 终章资料包）→ 从第一个「 起取
+        m_spk = re.match(r"^[^「]{1,10}：", body)
+        if m_spk:
+            body = body[m_spk.end():]
         if body.startswith("「"):
             for q in QUOTE_RE.findall(body):
                 q = q.strip()
