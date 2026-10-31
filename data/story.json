@@ -237,44 +237,52 @@
    "id": "c01_n028"
   },
   {
+   "type": "line",
+   "text": "剑影劈开雨幕，为你引路。登上倾颓的旋梯，雨声的尽头——钟楼之上，白影正在徘徊。",
+   "id": "c01_n029"
+  },
+  {
    "type": "stage",
-   "date": "第一章",
    "title": "钟楼之上",
+   "id": "c01_n030"
+  },
+  {
+   "type": "stage",
    "bg": "church_bell",
    "music": "boss_church_intro",
    "music_outro": "boss_church_outro",
-   "id": "c02_n000"
+   "id": "c01_n031"
   },
   {
    "type": "line",
    "text": "钟楼之上，白影在狂气中徘徊。她的甲胄还端正着，剑却已经挥向一切靠近的东西。",
-   "id": "c02_n001"
+   "id": "c01_n032"
   },
   {
    "type": "line",
    "expression": "angry",
    "speaker": "siegrid",
    "text": "为……了……守护……",
-   "id": "c02_n002"
+   "id": "c01_n033"
   },
   {
    "type": "line",
    "expression": "angry",
    "speaker": "siegrid",
    "text": "粉碎……粉碎……粉碎，粉……碎……",
-   "id": "c02_n003"
+   "id": "c01_n034"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "守护者西丽德。生前以性命守护白巫女，最终被狂气吞噬。",
-   "id": "c02_n004"
+   "id": "c01_n035"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "她的意识已被污秽掩埋。要让她安息，只能净化。",
-   "id": "c02_n005"
+   "id": "c01_n036"
   },
   {
    "type": "line",
@@ -287,28 +295,28 @@
      "text": "祭坛边的白花在她脚下轻轻发亮，像在为你引路。"
     }
    ],
-   "id": "c02_n006"
+   "id": "c01_n037"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "上吧。我在你身边。",
-   "id": "c02_n007"
+   "id": "c01_n038"
   },
   {
    "type": "line",
    "text": "战斗很短，也很安静。雨声盖过了一切。",
-   "id": "c02_n008"
+   "id": "c01_n039"
   },
   {
    "type": "stage",
    "music": "church_quiet",
-   "id": "c02_n009"
+   "id": "c01_n040"
   },
   {
    "type": "line",
    "text": "白影跪倒下去，狂气从她的眼里褪去。她望着你，像透过你在望着别的什么。",
-   "id": "c02_n010"
+   "id": "c01_n041"
   },
   {
    "type": "line",
@@ -316,141 +324,143 @@
    "expression": "soft",
    "speaker": "siegrid",
    "text": "应该是我……是我要守护好的……",
-   "id": "c02_n011"
+   "id": "c01_n042"
   },
   {
    "type": "stage",
    "set": {
     "sield_purified": true
    },
-   "id": "c02_n012"
+   "id": "c01_n043"
   },
   {
    "type": "stage",
-   "date": "第一章",
    "title": "净化的记忆",
+   "id": "c01_n044"
+  },
+  {
+   "type": "stage",
    "bg": "church_nave",
-   "music": "church_quiet",
    "cast": [
     {
      "id": "lily",
      "expression": "soft"
     }
    ],
-   "id": "c03_n000"
+   "id": "c01_n045"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "这家伙的意识被净化了，不再受污秽所困。可算是脱离苦海了吧……",
-   "id": "c03_n001"
+   "id": "c01_n046"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "净化的瞬间，出现了秽鬼生前的记忆……",
-   "id": "c03_n002"
+   "id": "c01_n047"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "记忆中反复出现一个名字——『莉莉』。想必，就是你的名字吧……",
-   "id": "c03_n003"
+   "id": "c01_n048"
   },
   {
    "type": "line",
    "text": "莉莉。这个名字落进心里的时候，像一枚石子落进井里，很远，很轻。",
-   "id": "c03_n004"
+   "id": "c01_n049"
   },
   {
    "type": "stage",
    "cg": "cg_awaken",
-   "id": "c03_memory_start"
+   "id": "c01_memory_start"
   },
   {
    "type": "line",
    "text": "记忆的画面涌来——那是另一个女孩的往事，一个真正叫做莉莉的女孩。",
-   "id": "c03_n006"
+   "id": "c01_n051"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "siegrid",
    "text": "泉之白巫女大人是我敬仰的对象。她是我们对抗不死之秽鬼唯一的希望。",
-   "id": "c03_n007"
+   "id": "c01_n052"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "siegrid",
    "text": "大人她坚强又温柔，即便身负重担，却依然面带微笑，照耀着大家。",
-   "id": "c03_n008"
+   "id": "c01_n053"
   },
   {
    "type": "line",
    "speaker": "siegrid",
    "text": "支撑着我黑暗心灵的，是与泉之白巫女相似、开朗又温柔的孩子——『莉莉』。",
-   "id": "c03_n009"
+   "id": "c01_n054"
   },
   {
    "type": "line",
    "speaker": "siegrid",
    "text": "她迟早会成为白巫女。那时候我也许无法继续跟随她，但至少现在，我会倾尽全力守护她。",
-   "id": "c03_n010"
+   "id": "c01_n055"
   },
   {
    "type": "line",
    "expression": "worried",
    "speaker": "siegrid",
    "text": "就在那时候，雨开始下了。",
-   "id": "c03_n011"
+   "id": "c01_n056"
   },
   {
    "type": "line",
    "expression": "worried",
    "speaker": "siegrid",
    "text": "同时也传来了凄惨的哭号。守护者之长称之为——死亡之雨。",
-   "id": "c03_n012"
+   "id": "c01_n057"
   },
   {
    "type": "line",
    "expression": "worried",
    "speaker": "siegrid",
    "text": "死亡之雨，无止无休。",
-   "id": "c03_n013"
+   "id": "c01_n058"
   },
   {
    "type": "line",
    "expression": "happy",
    "speaker": "true_lily",
    "text": "我叫莉莉。是母亲给我的、宝贵的名字。",
-   "id": "c03_n014"
+   "id": "c01_n059"
   },
   {
    "type": "line",
    "expression": "happy",
    "speaker": "true_lily",
    "text": "我长大后要成为白巫女，去帮帮母亲……",
-   "id": "c03_n015"
+   "id": "c01_n060"
   },
   {
    "type": "line",
    "expression": "happy",
    "speaker": "true_lily",
    "text": "只有西丽德在，这里真闷对不对？……醒来后一定要一起玩玩哦！",
-   "id": "c03_n016"
+   "id": "c01_n061"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "true_lily",
    "text": "我会再来的！",
-   "id": "c03_n017"
+   "id": "c01_n062"
   },
   {
    "type": "stage",
    "cg": "",
-   "id": "c03_n018"
+   "id": "c01_n063"
   },
   {
    "type": "line",
@@ -465,121 +475,130 @@
      "text": "……先弄清自己再往前走，不算逃避。有些名字，本来就该慢慢想起来。"
     }
    ],
-   "id": "c03_n019"
+   "id": "c01_n064"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "……那守护者记忆里的莉莉，是这白巫女吗……？",
-   "id": "c03_n020"
+   "id": "c01_n065"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "要是能继承那白巫女的遗愿，接管莉莉的名字，也无妨。",
-   "id": "c03_n021"
+   "id": "c01_n066"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "即使不持有任何宝贵的记忆也没关系。幸存者能够继承逝者的记忆与遗愿……",
-   "id": "c03_n022"
+   "id": "c01_n067"
   },
   {
    "type": "stage",
    "set": {
     "knows_name": true
    },
-   "id": "c03_n023"
+   "id": "c01_n068"
   },
   {
    "type": "stage",
-   "date": "第一章",
    "title": "祭坛的祷言",
+   "id": "c01_n069"
+  },
+  {
+   "type": "stage",
    "bg": "church_alcove",
-   "music": "church_quiet",
-   "id": "c04_n000"
+   "id": "c01_n070"
   },
   {
    "type": "line",
    "text": "祭坛四周，游荡着细小的声音。不是秽鬼——是还未散尽的祈祷。",
-   "id": "c04_n001"
+   "id": "c01_n071"
   },
   {
    "type": "line",
    "text": "「白巫女大人……请……净化……」",
-   "id": "c04_n002"
+   "id": "c01_n072"
   },
   {
    "type": "line",
    "text": "「请救救我……赐予白光之安宁……」",
-   "id": "c04_n003"
+   "id": "c01_n073"
   },
   {
    "type": "line",
    "text": "「还好……莉莉没事就好……」",
-   "id": "c04_n004"
+   "id": "c01_n074"
   },
   {
    "type": "line",
    "text": "「孩子们……请让他们活下去……」",
-   "id": "c04_n005"
+   "id": "c01_n075"
   },
   {
    "type": "line",
    "text": "「请原谅我……辜负了你为村子付出的一切……」",
-   "id": "c04_n006"
+   "id": "c01_n076"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "……听见了吗。这些声音，都曾把希望托付给白巫女。",
-   "id": "c04_n007"
+   "id": "c01_n077"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "如今，托付给你了。",
-   "id": "c04_n008"
+   "id": "c01_n078"
   },
   {
-   "type": "stage",
-   "date": "第一章",
-   "title": "启程",
-   "bg": "church_alcove",
-   "music": "church",
-   "id": "c05_n000"
+   "type": "line",
+   "speaker": "knight",
+   "text": "……而在那之前，还有一件事，需要你搭把手。",
+   "id": "c01_n079"
+  },
+  {
+   "type": "line",
+   "text": "祭坛之后的地下石室里，散落的石板残片静静躺着。你们花了些工夫，才把它们重新凑合成一册古老的文书。",
+   "id": "c01_n080"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "在这里唤醒古代咒术，就可以恢复白巫女的护身符真实的力量。",
-   "id": "c05_n001"
+   "id": "c01_n081"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "……开始解读我们辛苦凑合的石板文书吧。",
-   "id": "c05_n002"
+   "id": "c01_n082"
   },
   {
-   "type": "line",
+   "type": "stage",
    "set": {
     "relic_1": true
    },
+   "id": "c01_n083"
+  },
+  {
+   "type": "line",
    "text": "石板上的纹路亮起，又暗下去。一枚护身符从光里落进你的掌心，微温。",
-   "id": "c05_n003"
+   "id": "c01_n084"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "……虽然有点儿沉重，但还是戴上它比较好。希望这真的能够减轻净化的负担。",
-   "id": "c05_n004"
+   "id": "c01_n085"
   },
   {
    "type": "stage",
    "title": "离开白教区",
-   "id": "c05_farewell"
+   "id": "c01_n086"
   },
   {
    "type": "stage",
@@ -590,18 +609,19 @@
      "expression": "normal"
     }
    ],
-   "id": "c05_n006"
+   "music": "church",
+   "id": "c01_n087"
   },
   {
    "type": "line",
    "text": "雨还在下。你最后看了一眼大圣堂——白教区的钟，再也不会为谁响起了。",
-   "id": "c05_n007"
+   "id": "c01_n088"
   },
   {
    "type": "line",
    "speaker": "knight",
    "text": "走吧。顺着雨去的方向——下一站，悬崖村。那里还有一位老战士的残响。",
-   "id": "c05_n008"
+   "id": "c01_n089"
   },
   {
    "type": "line",
@@ -609,50 +629,244 @@
    "choices": [
     {
      "label": "向费林道谢",
-     "next": "c05_thanks"
+     "next": "c01_thanks"
     },
     {
      "label": "默默点头",
-     "next": "c05_nod"
+     "next": "c01_nod"
     }
    ],
-   "id": "c05_parting"
+   "id": "c01_parting"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "knight",
    "text": "不必道谢。护送巫女，本就是我的誓约。",
-   "id": "c05_thanks"
+   "id": "c01_thanks"
   },
   {
    "type": "jump",
-   "id": "c05_n011",
-   "next": "c05_epilogue"
+   "id": "c01_n092",
+   "next": "c01_epilogue"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "knight",
    "text": "……无言也是一种回答。走吧。",
-   "id": "c05_nod"
+   "id": "c01_nod"
   },
   {
    "type": "jump",
-   "id": "c05_n013",
-   "next": "c05_epilogue"
+   "id": "c01_n094",
+   "next": "c01_epilogue"
   },
   {
    "type": "line",
    "expression": "soft",
    "speaker": "knight",
    "text": "旅途才刚刚开始。莉莉。",
-   "id": "c05_epilogue"
+   "id": "c01_epilogue"
   },
   {
    "type": "line",
    "text": "—— 第一章 · 白教区 完 ——",
-   "id": "c05_n015"
+   "id": "c01_n096"
+  },
+  {
+   "type": "stage",
+   "date": "第一章",
+   "title": "长眠者之堂",
+   "bg": "black",
+   "music": "opening",
+   "id": "c01_n000"
+  },
+  {
+   "type": "line",
+   "text": "意识从无梦的沉眠中浮起。",
+   "id": "c01_n001"
+  },
+  {
+   "type": "line",
+   "text": "黑暗的尽头有雨声。除此之外，什么都没有。",
+   "id": "c01_n002"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "看来你终于醒了……",
+   "id": "c01_n003"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "身体……应该没事……",
+   "id": "c01_n004"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "吓到了吗？",
+   "id": "c01_n005"
+  },
+  {
+   "type": "stage",
+   "bg": "church_nave",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "surprised"
+    }
+   ],
+   "id": "c01_n006"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "我没有肉体的事，正是和巫女有关。在这国家发生的事……有什么记忆吗？",
+   "id": "c01_n007"
+  },
+  {
+   "type": "line",
+   "text": "你试着回想。什么都没有——名字、来处、为何在此，一片空白。",
+   "id": "c01_n008"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "……你也失去了记忆么",
+   "id": "c01_n009"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "总之先离开这里吧。外面的情况，还是你自己确认一下好。",
+   "id": "c01_n010"
+  },
+  {
+   "type": "line",
+   "text": "你扶着祭坛站起来。那个声音安静地等着，不催促。",
+   "choices": [
+    {
+     "label": "想先弄清楚这里是什么地方",
+     "set": {
+      "observed": true
+     },
+     "next": "c01_look_around"
+    },
+    {
+     "label": "先跟着那个声音走",
+     "set": {
+      "curious": true
+     },
+     "next": "c01_follow_voice"
+    }
+   ],
+   "id": "c01_choice_start"
+  },
+  {
+   "type": "line",
+   "text": "你环顾四周。破碎的彩色玻璃悬在穹顶，雨从窟窿里落进来，在石板上积成浅浅的水洼。",
+   "id": "c01_look_around"
+  },
+  {
+   "type": "line",
+   "text": "倒下的骑士像手里还握着断剑。祭坛的白布上，落着几片被风卷进来的白花。",
+   "id": "c01_n013"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "……先看了四周，再回应我。很好。在如今的边陲，谨慎是难得的美德。",
+   "id": "c01_n014"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "这里曾是白教的据点。人们在此祈求白巫女的守护——直到雨落下来。",
+   "id": "c01_n015"
+  },
+  {
+   "type": "jump",
+   "id": "c01_n016",
+   "next": "c01_converge"
+  },
+  {
+   "type": "line",
+   "text": "你朝着声音的方向走去。它不近，也不远，像是一直等在那里。",
+   "id": "c01_follow_voice"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "好奇心是好事。活着的人，不该只是听命前行。",
+   "id": "c01_n018"
+  },
+  {
+   "type": "jump",
+   "id": "c01_n019",
+   "next": "c01_converge"
+  },
+  {
+   "type": "stage",
+   "title": "雨之大圣堂",
+   "id": "c01_converge"
+  },
+  {
+   "type": "stage",
+   "bg": "church_nave",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    }
+   ],
+   "music": "church",
+   "set": {
+    "met_knight": true
+   },
+   "id": "c01_n021"
+  },
+  {
+   "type": "line",
+   "text": "你推开侧廊的门。大圣堂敞露在雨里——半座穹顶已经塌了，光从裂缝里漏下来，照着满地的水洼与白花。",
+   "id": "c01_n022"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "堕秽之后变得不死的存在……它们曾经被叫做『秽鬼』。",
+   "id": "c01_n023"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "它们曾经是人。是守护者，是骑士，是这座国家的人民。",
+   "id": "c01_n024"
+  },
+  {
+   "type": "line",
+   "text": "远处传来石头拖行的声音。很沉，很慢，正在靠近。",
+   "id": "c01_n025"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "浓郁的污秽气息……小心点儿……",
+   "id": "c01_n026"
+  },
+  {
+   "type": "line",
+   "text": "黑甲骑士的身后浮出一柄剑——他没有实体，剑却像影子一样有了轮廓。",
+   "id": "c01_n027"
+  },
+  {
+   "type": "line",
+   "text": "可你分明感觉到，那道影子愿意为你而挥。",
+   "id": "c01_n028"
   },
   {
    "type": "stage",
@@ -1072,12 +1286,237 @@
    "title": "魔女森林",
    "bg": "forest_path",
    "music": "forest",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c07_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "穿过悬崖村下方的悬崖与泥沼，潮湿的风里开始带着腐败的水草气息。雨势丝毫没有减弱，前方的林木被深深浸泡在漫上来的积水之中。",
    "id": "c07_n001"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "好一片茂密的树林，但几乎全被水淹没了……",
+   "id": "c07_n002"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "这花……有点熟悉」「到底是在哪看过……？",
+   "id": "c07_n003"
+  },
+  {
+   "type": "stage",
+   "title": "水下遗迹",
+   "id": "c07_n004"
+  },
+  {
+   "type": "stage",
+   "bg": "forest_flooded",
+   "id": "c07_n005"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "被叫做魔术协会的地方应该就在这下方」「虽然被水淹没了，我们得想办法潜入里面",
+   "id": "c07_n006"
+  },
+  {
+   "type": "line",
+   "text": "半淹在水中的回廊漂浮着破碎的书页，微弱的意识在水光中游荡。\n「魔术协会被淹没了……」\n「在这里，知识与魔术师聚集在一起……」",
+   "id": "c07_n007"
+  },
+  {
+   "type": "line",
+   "text": "沉入水底的石柱旁，几个残存的幻影还在雨水中绝望地挣扎。\n「放下我吧……我不想成为拖累……」\n「哈哈……竟然连死都做不到……」",
+   "id": "c07_n008"
+  },
+  {
+   "type": "line",
+   "text": "水声浸没了一切呼救与惨叫，我望着漫过脚踝的冰冷死水，胸口一阵阵发紧。",
+   "id": "c07_n009"
+  },
+  {
+   "type": "stage",
+   "title": "花之回廊",
+   "id": "c07_n010"
+  },
+  {
+   "type": "stage",
+   "bg": "forest_flowers",
+   "id": "c07_n011"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "回廊深处的温室残骸里，盛开着与死寂格格不入的鲜花。病榻上的身影已被污秽同化，却依然固执地等候着远方。\n「因重病卧床的美丽魔女被花朵包围，孤独地等候恋人的归来。」「恋人离去是为了找寻治愈重病的方法，但魔女最大的希望是与恋人一起生活，多一天是一天。」「梅尔维尔……你在哪里……」",
+   "id": "c07_n012"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "来晚了么……",
+   "id": "c07_n013"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "安息吧……",
+   "id": "c07_n014"
+  },
+  {
+   "type": "stage",
+   "title": "魔女的工坊",
+   "id": "c07_n015"
+  },
+  {
+   "type": "stage",
+   "bg": "forest_flooded",
+   "id": "c07_n016"
+  },
+  {
+   "type": "stage",
+   "music": "boss_forest_intro",
+   "music_outro": "boss_forest_outro",
+   "id": "c07_n017"
+  },
+  {
+   "type": "line",
+   "text": "深水之底的广阔大厅中，巨型的结界术式正疯狂旋转。\n漆黑的魔女漂浮在半空，暴乱的魔力与暗紫色的水流在狂气中呼啸翻涌。",
+   "id": "c07_n018"
+  },
+  {
+   "type": "line",
+   "text": "紫色的魔法弹如暴雨般倾泻。\n黑骑士挥剑破开水幕，白光自掌心迸发，撕裂了暴走的术式核心。\n伴随着魔力溃散的轰鸣，巨大的黑影终于脱力下坠，落入沉寂的水面。",
+   "id": "c07_n019"
+  },
+  {
+   "type": "stage",
+   "title": "魔女的记忆",
+   "id": "c07_n020"
+  },
+  {
+   "type": "stage",
+   "music": "forest_quiet",
+   "id": "c07_n021"
+  },
+  {
+   "type": "line",
+   "text": "你伸出手，温柔的白光覆上魔女冰冷的额头。\n「生于魔术协会并在那里成长，小时候就被称为天才魔术师。」「当她快被孤独与他人的期望逼到边缘时，她遇见了一名叫泉之白巫女的少女。」\n我闭上双眼，看见了在泛黄的记忆里，两个女孩并肩的身影。",
+   "id": "c07_n022"
+  },
+  {
+   "type": "stage",
+   "cg": "elaine_memory",
+   "id": "c07_n023"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "elaine",
+   "text": "魔术协会被雨淹没」「唯一一个让我拼了命守护的地方」「我所建立起来的一切，化为乌有",
+   "id": "c07_n024"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "elaine",
+   "text": "拼了一切只为守护她」「芙莉蒂雅……你可不能有事」「我第一个，也是唯一一个的朋友",
+   "id": "c07_n025"
+  },
+  {
+   "type": "line",
+   "speaker": "elaine",
+   "text": "我现在也忘不了，沦为秽鬼的母亲被你所救，脱离苦海的那一天」「芙莉蒂雅成为泉之白巫女的那一天」「我所剥夺的宝贵时间……一去不复返」「为了减轻白巫女的重担，抵消其苦难，我持续不懈地进行研究",
+   "id": "c07_n026"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "elaine",
+   "text": "一切功亏一篑吗……岂能如此」「片刻也行，直到雨停那天，能守护多久就多久，持续吧」「我细心凝聚而成的魔法」「一切为了这一刻，这瞬间",
+   "id": "c07_n027"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c07_n028"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "soft",
+   "speaker": "elaine",
+   "text": "我的魔术师之道……竟然在这种地方……」「你……在那里吗？……",
+   "id": "c07_n029"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "就算她的意识消失，守护协会的结界也不会消失吧……」「这好像是巫女的房间，她曾在这里生活吗……？",
+   "id": "c07_n030"
+  },
+  {
+   "type": "line",
+   "text": "在工坊的书桌上，静静放着一封未封口的信笺。原来在白教区从西丽德手中接过的那枚护身符，其加护正源于此。\n「致西丽德」\n「请你把护身符递给你那里的白巫女」\n「虽然是给与每一位白巫女的项链」\n「但是我把加护的魔法加上了」",
+   "id": "c07_n031"
+  },
+  {
+   "type": "line",
+   "text": "信笺的字迹工整而坚定，字里行间凝结着魔术师至死未休的执念。\n「面对秽鬼的威胁时」\n「结界一定会保护她」\n「结界即使破裂也可以修复，但是只有白巫女才能做到」\n「拜托了」\n「伊莱恩致上」",
+   "id": "c07_n032"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_forest": true
+   },
+   "id": "c07_n033"
+  },
+  {
+   "type": "stage",
+   "title": "探寻深渊",
+   "id": "c07_n034"
+  },
+  {
+   "type": "stage",
+   "bg": "forest_path",
+   "id": "c07_n035"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "幸存者能做的也就只有继承她们的遗愿……",
+   "reactions": {
+    "lily": "soft"
+   },
+   "id": "c07_n036"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_3": true
+   },
+   "id": "c07_n037"
+  },
+  {
+   "type": "line",
+   "text": "石桌上的古老文字在白光中亮起，第三枚石板文书的智慧悄然沉入心中。\n根据悬崖村留下的线索与魔术师的记载，前方的道路直指王国的地底深处——那里囚禁着灾难源头的秽鬼，沉寂的地下墓穴正静候着白巫女的脚步。",
+   "id": "c07_n038"
   },
   {
    "type": "stage",
@@ -1085,12 +1524,265 @@
    "title": "地下墓穴",
    "bg": "catacomb_hall",
    "music": "cave",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c08_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "沿着湿滑的石阶步入幽深的地下，空气中充斥着古旧岩石与霉湿的气息。远古雕刻的石柱静静伫立在黑暗中，雨水顺着裂隙渗入，汇成微弱的水声。",
    "id": "c08_n001"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "看来前方是地下墓穴……」「有很多古老时期的遗迹依在，这里的变化不大」「……这边陲之国……原本是古老民族居住的国家」「古老民族的故乡、家族、荣耀全都被剥夺……",
+   "id": "c08_n002"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "虽然不死的我也许不能算是幸存者」「但我曾经是古老民族的战士」「战败后过了一段时间，醒来时……」「只有我的不死契约没有消失……」「身为唯一幸存者的心情……我也很有感受",
+   "id": "c08_n003"
+  },
+  {
+   "type": "stage",
+   "title": "废墟深处",
+   "id": "c08_n004"
+  },
+  {
+   "type": "stage",
+   "bg": "catacomb_room",
+   "id": "c08_n005"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "看来不少的道路被雨水冲毁，无法通过了……」「也许能够找到至今未被发现的古老民族遗物或秘地」「看来这里是泉之白巫女的房间」「似乎她喜欢画画……",
+   "id": "c08_n006"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "坍塌的石棺旁倒卧着枯槁的遗骸，即使化为枯骨，双手依然紧扣着锈迹斑斑的钥匙。\n「长期在地下生活，守护地下墓穴的守墓人。」「最后的愿望是同样身为守墓人的儿子能够和自己度过最后的日子，给自己送终。」「最后能见到白巫女大人，真是太好了……」",
+   "id": "c08_n007"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "断裂的长弓横倚在潮湿的墓壁下，黑色的残烟记录着曾经无匹的神射手最后的遗憾。\n「边陲之国第一的弓箭手，为了帮助他的守护者妹妹而沦为罪犯。」「所有成为罪犯的前士兵们都被选为不死骑士，被赶去参加堡垒的防御战。」「要优先保护自己，都吩咐了那么多次……」",
+   "id": "c08_n008"
+  },
+  {
+   "type": "line",
+   "text": "走过这些残破的墓碑与执念，我握紧了胸前的护身符，指尖满是冰凉。",
+   "id": "c08_n009"
+  },
+  {
+   "type": "stage",
+   "title": "悲鸣的回廊",
+   "id": "c08_n010"
+  },
+  {
+   "type": "stage",
+   "bg": "catacomb_hall",
+   "id": "c08_n011"
+  },
+  {
+   "type": "line",
+   "text": "昏暗的回廊两侧，无数渗入泥土的残响在石缝间颤抖呻吟。\n「请逃出去……千万不能去地下……」\n「从地下出现了……污秽之根……」",
+   "id": "c08_n012"
+  },
+  {
+   "type": "line",
+   "text": "游荡的幽影在石阶上聚散，向着黑暗深处发出绝望的祈祷与挽歌。\n「白巫女大人……请，请拯救……」\n「这里是墓地，求求你……让我在这里长眠吧……」\n「还没有结束，白巫女大人还活着……」",
+   "id": "c08_n013"
+  },
+  {
+   "type": "stage",
+   "title": "地下教堂",
+   "id": "c08_n014"
+  },
+  {
+   "type": "stage",
+   "bg": "catacomb_church",
+   "id": "c08_n015"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "地下教堂……这里有白巫女和守护者的踪迹……」「这地方好像也作为白巫女的守护者用的修炼场」「能想起什么吗……？」「是从哪里逃出来的白巫女么……」「竟然在这种地方……",
+   "id": "c08_n016"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "负责泉之白巫女护卫的守护者……」「那么，应该就在这附近……」「污秽的侵蚀果然加深了……」「巫女受污秽侵蚀也不会失去自我意识」「但是污秽所带来的痛苦……」「虽然净化重要，也该为自己着想」「存活下来的，可能也就剩你了……」「没有人会责怪你……」「选择逃走并不是什么可耻的事」「我希望你能活着逃离这国家……",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c08_n017"
+  },
+  {
+   "type": "line",
+   "text": "空旷死寂的圣堂深处，突然传来撕心裂肺的呼唤。",
+   "id": "c08_n018"
+  },
+  {
+   "type": "line",
+   "text": "西丽德……",
+   "id": "c08_n019"
+  },
+  {
+   "type": "stage",
+   "music": "boss_cave_intro",
+   "music_outro": "boss_cave_outro",
+   "id": "c08_n020"
+  },
+  {
+   "type": "line",
+   "text": "巨大畸变的身影从阴影中猛然跃出。\n曾经高洁端庄的守护者甲胄彻底扭曲，黑紫色的污秽之根如暴走的触须狂乱挥舞。",
+   "id": "c08_n021"
+  },
+  {
+   "type": "line",
+   "text": "利刃与狂乱的重击在墓穴中轰鸣。\n黑骑士的影子在电光火石间封锁了狂暴的攻势，白光如破晓般自你手中贯穿核心。\n伴随着甲胄碎裂的声响，扭曲的身躯颓然跪倒在地。",
+   "id": "c08_n022"
+  },
+  {
+   "type": "stage",
+   "title": "守护者的记忆",
+   "id": "c08_n023"
+  },
+  {
+   "type": "stage",
+   "music": "cave_quiet",
+   "id": "c08_n024"
+  },
+  {
+   "type": "line",
+   "text": "你走上前去，白光轻柔地笼罩住她痛苦的面容。那是西丽德的姐姐，曾背负至深爱意与重担的守护者。\n「西丽亚为了她挚爱的妹妹而成为了守护者，接下了维护泉之白巫女的重任。」「虽然她知道这会令妹妹嫉妒并且疏远自己。」\n我闭上双眼，看见了这对姐妹曾经背道而驰、却又紧紧相系的身影。",
+   "id": "c08_n025"
+  },
+  {
+   "type": "stage",
+   "cg": "shilda_memory",
+   "id": "c08_n026"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "shilda",
+   "text": "我不配当泉之白巫女的守护者」「以为自己找到了摆脱污秽的解救之法」「最后除了逃跑我什么都没做到",
+   "id": "c08_n027"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "shilda",
+   "text": "污秽之根泛滥……吞噬了很多……」「地下教堂的信徒和守护者……全都变成了秽鬼」「……被一种莫名的力量操控，仿佛不是自己的身体一样",
+   "id": "c08_n028"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "shilda",
+   "text": "魔术师们说……服用他们的药……是为了帮助白巫女」「一切都是谎言……不只没帮上什么……甚至亲手断送了许多生命……」「这是污秽带来的狂气吗……？，还是真实的我？",
+   "id": "c08_n029"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "shilda",
+   "text": "在意识消失之前……好想见西丽德最后一面……」「我真正想要守护的……」「我亲爱的妹妹，用这……双……手……",
+   "id": "c08_n030"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c08_n031"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "soft",
+   "speaker": "shilda",
+   "text": "西丽德，你在那里吗……？」「……对不起，让你……增添了负担……」「对不起，对不起……",
+   "id": "c08_n032"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_catacomb": true
+   },
+   "id": "c08_n033"
+  },
+  {
+   "type": "stage",
+   "title": "泉之幻影",
+   "id": "c08_n034"
+  },
+  {
+   "type": "line",
+   "text": "碎裂的祭坛上方，忽然浮现出一道纯白而虚幻的身影。",
+   "id": "c08_n035"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "fretia",
+   "text": "你本不应该醒来……」「可是，只能托付给你了……」「原谅我……",
+   "id": "c08_n036"
+  },
+  {
+   "type": "line",
+   "text": "白色的光尘在风中飘摇，哀伤的叹息回荡在静止的空气中。",
+   "id": "c08_n037"
+  },
+  {
+   "type": "line",
+   "speaker": "fretia",
+   "text": "只有你……能斩断这污秽的命运……」「起程吧……前往边境之泉……」「纯净之水尚存之地……",
+   "id": "c08_n038"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "那是……",
+   "id": "c08_n039"
+  },
+  {
+   "type": "stage",
+   "title": "深渊的暗门",
+   "id": "c08_n040"
+  },
+  {
+   "type": "stage",
+   "bg": "catacomb_hall",
+   "id": "c08_n041"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_4": true
+   },
+   "id": "c08_n042"
+  },
+  {
+   "type": "line",
+   "text": "祭坛下方古老的法阵泛起幽蓝的荧光，第四枚石板文书自碎石中缓缓升起，微光悄然烙印入掌心。\n穿过地下教堂崩塌的后壁，一道厚重冰冷的玄铁巨门矗立在岩壁尽头——那是王国关押重刑犯与受污秽感染者的地牢，死寂的铁索声在深渊里回响。",
+   "id": "c08_n043"
   },
   {
    "type": "stage",
@@ -1098,12 +1790,246 @@
    "title": "地牢",
    "bg": "dungeon_cell",
    "music": "oubliette",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c09_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "穿过玄铁巨门，刺鼻的铁锈与血腥味扑面而来。阴暗潮湿的石廊两侧是排列密集的铁栅牢房，水滴从嶙峋的石顶坠下，在死寂中发出清脆的回响。",
    "id": "c09_n001"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "这里挺暗的……得小心前进」「死亡之雨降临之前，想必有许多受污秽感染的人被关在这里……",
+   "id": "c09_n002"
+  },
+  {
+   "type": "stage",
+   "title": "幽暗中的微光",
+   "id": "c09_n003"
+  },
+  {
+   "type": "stage",
+   "bg": "dungeon_flower",
+   "id": "c09_n004"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "竟然没有枯萎……」「那是幻光之花」「在阴暗的地方发光的……不可思议的花……",
+   "id": "c09_n005"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "我经常在晚上睡不着时望着它」「记得那家伙同样也非常喜欢……」「没什么……不是什么重要的事……",
+   "id": "c09_n006"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "与你无关，所以不必操心」「怎么了……生气了吗？",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c09_n007"
+  },
+  {
+   "type": "line",
+   "text": "我停下脚步默默注视着他，在幽幽的花光里轻轻摇了摇头。",
+   "id": "c09_n008"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "是因为……没叫过你的名字？」「……好吧，莉莉……",
+   "id": "c09_n009"
+  },
+  {
+   "type": "stage",
+   "title": "囚徒的回廊",
+   "id": "c09_n010"
+  },
+  {
+   "type": "stage",
+   "bg": "dungeon_cell",
+   "id": "c09_n011"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "被污秽吞噬的古老民族的战士……」「沦为秽鬼后被关在这里么……」「泉之白巫女应该在更深处的某个地方……」「禁区么……",
+   "id": "c09_n012"
+  },
+  {
+   "type": "line",
+   "text": "锈蚀的囚牢深处蜷缩着扭曲的黑影，在锁链的摩擦声中发出狂乱的低语。\n「竟然要救如此罪恶的我……？」\n「那些魔术师……他们都是恶魔……」\n「死之……巫女……来了……」",
+   "id": "c09_n013"
+  },
+  {
+   "type": "line",
+   "text": "地牢底层的水洼里漂浮着折断的枷锁，弥留的残响向着黑骑士投来战栗的目光。\n「古老民族的血永不断绝……」\n「真令人怀恋，巫女……不死的战士……」",
+   "id": "c09_n014"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "这里是……刑场……」「竟然把白巫女作为实验体……",
+   "id": "c09_n015"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "破碎的大瓦罐散落在刑具旁边，里面蜷缩着早已异化的干瘪躯体。\n「被称为侠盗的男子无所畏惧，是个充满信心的家伙。」「他遭逮捕后被送去禁区当实验体，但这家伙时而藏入罐子里，躲开了不少的实验。」「本想趁乱逃走……结果就变成这样了……」",
+   "id": "c09_n016"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "断裂的行刑台柱下，一名身着漆黑暗部斗篷的战士靠在冰冷的墙边，胸口残留着狰狞的伤痕。\n「无名无姓的暗部执行人从小和骑士长尤利乌斯一起训练，两人是互相切磋的伙伴。」「因为自己是罪人的后代，成为骑士的梦想终成泡影。」「不要管我……快逃……」",
+   "id": "c09_n017"
+  },
+  {
+   "type": "stage",
+   "title": "深渊之刑场",
+   "id": "c09_n018"
+  },
+  {
+   "type": "stage",
+   "bg": "dungeon_execution",
+   "id": "c09_n019"
+  },
+  {
+   "type": "stage",
+   "music": "boss_oubliette_intro",
+   "music_outro": "boss_oubliette_outro",
+   "id": "c09_n020"
+  },
+  {
+   "type": "line",
+   "text": "高耸的刑具与断头台阴影中，魁梧沉重的黑影拖着双爪步步逼近。\n深渊的守卫面覆铁面，暗红色的狂气在血槽与利爪间如烈火般灼烧沸腾。",
+   "id": "c09_n021"
+  },
+  {
+   "type": "line",
+   "text": "铁爪撕裂坚硬的石壁。\n黑骑士横剑格挡下致命的挥击，火星四溅。\n你趁隙疾步切入空隙，白光如利刃般没入狂暴的核心。\n庞大的行刑官身形骤然僵滞，伴随着铁面的龟裂轰然倒地。",
+   "id": "c09_n022"
+  },
+  {
+   "type": "stage",
+   "title": "深渊守卫的记忆",
+   "id": "c09_n023"
+  },
+  {
+   "type": "stage",
+   "music": "oubliette_quiet",
+   "id": "c09_n024"
+  },
+  {
+   "type": "line",
+   "text": "你伸出双手，温暖的白光驱散了残存的杀意与血腥。\n「暗部执行人的统领队长。」「从黑暗中支助着堡垒骑士，沉默寡言的海尼尔，比任何人更担心这个国家。」\n我闭上双眼，听见钢铁铠甲下那颗忠诚而沉默的心脏最后的跳动。",
+   "id": "c09_n025"
+  },
+  {
+   "type": "stage",
+   "cg": "helnir_memory",
+   "id": "c09_n026"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "helnir",
+   "text": "源自地下的污秽泛滥，淹没一切时」「抱着原本该是遥不可及的白巫女，我试图逃脱」「为了逃脱秽鬼抵达的地方……」「竟然是我最熟悉的刑场",
+   "id": "c09_n027"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "helnir",
+   "text": "我忘不了……那天在禁区的地下深处……」「看到的泉之白巫女……」「不嫌弃暗部的我们，背负我们的污秽，而拯救了我们同伴的她」「求着谁能去救救白巫女们的，最后的那句话……",
+   "id": "c09_n028"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "helnir",
+   "text": "承受着背负污秽所带来的痛苦，为了这国家付出一切的人的……」「唯一的希望」「虽然扮演的角色不同，但同样是为了国家付出一切的人」「所以必须去守护」「绝不允许任何人的践踏",
+   "id": "c09_n029"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c09_n030"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "worried",
+   "speaker": "helnir",
+   "text": "白巫女……没事……就好了……",
+   "id": "c09_n031"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_dungeon": true
+   },
+   "id": "c09_n032"
+  },
+  {
+   "type": "stage",
+   "title": "禁区的边缘",
+   "id": "c09_n033"
+  },
+  {
+   "type": "stage",
+   "bg": "dungeon_cell",
+   "id": "c09_n034"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "应该是被暗部的执行人带着从地下室逃出来的吧」「可惜就差那一步……",
+   "id": "c09_n035"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "终于能够出去了……",
+   "reactions": {
+    "lily": "soft"
+   },
+   "id": "c09_n036"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_5": true
+   },
+   "id": "c09_n037"
+  },
+  {
+   "type": "line",
+   "text": "崩塌的刑台下，古老的法阵在碎石间流转着纯白的光辉，第五枚石板文书悄然化入掌心。\n刑场后方深陷的竖井向下通往不见天日的极深地层——那是王国秘密封锁的禁区，一切污秽与残酷实验的发源地。",
+   "id": "c09_n038"
   },
   {
    "type": "stage",
@@ -1111,12 +2037,277 @@
    "title": "禁区",
    "bg": "forbidden_pool",
    "music": "swamp",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c10_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "深不见底的竖井之下，泥泞的剧毒沼泽散发着刺鼻的甜腥味。四周弥漫着肉眼可见的浓重暗雾，残存的荧光在浑浊的水洼间明灭不定。",
    "id": "c10_n001"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "前方的污秽之雾，只要吸入一点儿就有危险」「要是有能够抵御雾气的魔术工具就好了……",
+   "id": "c10_n002"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "这里是古老民族的最后战场」「我出生在古老民族的国家时污秽就已经存在，我们一直都在与污秽共存",
+   "id": "c10_n003"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "现在却充斥着如此浓郁的污秽……」「是触犯了操魂大忌的咒术所制造出来的么……",
+   "id": "c10_n004"
+  },
+  {
+   "type": "stage",
+   "title": "禁忌的研究室",
+   "id": "c10_n005"
+  },
+  {
+   "type": "stage",
+   "bg": "forbidden_lab",
+   "id": "c10_n006"
+  },
+  {
+   "type": "line",
+   "text": "废弃的实验室里散落着破碎的烧瓶与泛黄的手稿，那些记载着古代魔术的石板残片，曾试图在此修补守护巫女的宝具。",
+   "id": "c10_n007"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "接近后我有种感觉……」「我的不死契约和泉之白巫女有联系」「找到污秽的根源就等于找到泉之白巫女……」「我会见证一切……直到最后……",
+   "id": "c10_n008"
+  },
+  {
+   "type": "line",
+   "text": "污浊的泥沼中横陈着古老民族战士早已石化的残骨，铠甲的断痕见证了昔日残酷的死斗。",
+   "id": "c10_n009"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "被污秽吞噬的古老民族的战士……」「兄弟啊，一路好走……",
+   "id": "c10_n010"
+  },
+  {
+   "type": "line",
+   "text": "我看着黑骑士低头静默的侧脸，隐约触碰到了他深埋在岁月深处的哀伤。",
+   "id": "c10_n011"
+  },
+  {
+   "type": "line",
+   "text": "通道前方的菌丝丛中，蜷缩着一具生满毒蕈的躯壳。那正是魔女森林的花之魔女至死等候的恋人，如今却沦为保留着残存理智的异变体。\n「魔术师离开边陲之国学到了很多东西。」「可惜归来时无缘相见守在魔术协会的恋人。」",
+   "id": "c10_n012"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "worried",
+   "speaker": "miriel",
+   "text": "再一点点就能见到她了……",
+   "id": "c10_n013"
+  },
+  {
+   "type": "stage",
+   "title": "浸毒的牢狱",
+   "id": "c10_n014"
+  },
+  {
+   "type": "stage",
+   "bg": "forbidden_pool",
+   "id": "c10_n015"
+  },
+  {
+   "type": "line",
+   "text": "浑浊的毒池边浸泡着无数失败的实验残骸，微弱的残响在泥泞中痉挛抽搐。\n「已经不想待在这种地方了……好痛苦……可是身体动不了……」\n「这里连死亡都不被应许……不死者的监狱……」",
+   "id": "c10_n016"
+  },
+  {
+   "type": "line",
+   "text": "从淤泥中伸出的白骨在白巫女的微光前渐渐平静，终于得到了迟来的救赎。\n「现在终于理解了，变成秽鬼的人们的痛苦……」\n「谢谢你……找到了我……」",
+   "id": "c10_n017"
+  },
+  {
+   "type": "stage",
+   "title": "异端实验场",
+   "id": "c10_n018"
+  },
+  {
+   "type": "stage",
+   "bg": "forbidden_lab",
+   "id": "c10_n019"
+  },
+  {
+   "type": "stage",
+   "music": "boss_swamp_intro",
+   "music_outro": "boss_swamp_outro",
+   "id": "c10_n020"
+  },
+  {
+   "type": "line",
+   "text": "高耸的玻璃培养罐在深处碎裂，恶臭的培养液翻滚倾泻。\n异端魔术师法腾悬浮于脓液之上，畸变的长袍下伸出无数扭曲的毒触与疯狂的魔弹。",
+   "id": "c10_n021"
+  },
+  {
+   "type": "line",
+   "text": "毒雾如暴雨般横扫。\n黑骑士横剑劈碎袭来的骨刺，剑风撕裂翻涌的毒瘴。\n你踏着泥泞疾步跃起，净化之光直贯术式核心。\n狂暴的魔力骤然溃散，魔术师高傲的头颅无力垂落，摔在满地污浊之中。",
+   "id": "c10_n022"
+  },
+  {
+   "type": "stage",
+   "title": "异端者的记忆",
+   "id": "c10_n023"
+  },
+  {
+   "type": "stage",
+   "music": "swamp_quiet",
+   "id": "c10_n024"
+  },
+  {
+   "type": "line",
+   "text": "你伸出双手，纯净的光芒穿透了满是血污与怨恨的躯壳。\n「法腾是直属国王下的魔术师团的团长。」「失去心爱的情人后，变得对秽鬼的人体实验异常地着迷，行为举止也时不时会突然变得凶猛。」\n我闭上双眼，看见了在陷入疯狂之前，那份试图对抗命运的绝望执念。",
+   "id": "c10_n025"
+  },
+  {
+   "type": "stage",
+   "cg": "faden_memory",
+   "id": "c10_n026"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "faden",
+   "text": "迷瑞尔……我曾经的助手和恋人……你变成了秽鬼」「但是到现在从未攻击过我」「即使沦为秽鬼，变成不死之身，也未必会失去灵魂及意识」「你亲自替我证明了这一点",
+   "id": "c10_n027"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "faden",
+   "text": "为了让她恢复正常我尝试了无数的实验，但是这已经是我的极限了……」「污秽的研究成就了不死骑士团……」「就连白巫女……都被卷了进来」「最后连国王也成为敌人……被逐出这里是迟早的事吧……",
+   "id": "c10_n028"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "faden",
+   "text": "呵……呵呵呵……」「看来我没有迷瑞尔还真的是什么也做不到……」「……尽管如此我还是不能放弃」「必须完成她的希望……拯救白巫女……",
+   "id": "c10_n029"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "faden",
+   "text": "迷瑞尔……求求你……」「让我听一听你的声音……",
+   "id": "c10_n030"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c10_n031"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "worried",
+   "speaker": "faden",
+   "text": "已经……太迟了……",
+   "id": "c10_n032"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_forbidden": true
+   },
+   "id": "c10_n033"
+  },
+  {
+   "type": "stage",
+   "title": "残骸的墓所",
+   "id": "c10_n034"
+  },
+  {
+   "type": "stage",
+   "bg": "forbidden_bones",
+   "id": "c10_n035"
+  },
+  {
+   "type": "line",
+   "text": "雨声从极高的地表缝隙渗入，黑骑士凝视着阴影深处的骨堆，久久不语。",
+   "id": "c10_n036"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "我曾经负责守护巫女，但那孩子被夺走」「我也被困在这里」「和巫女立下的不死契约还存在」「但靠仅存的力量，连动都动不了……」「过了一段时间，觉醒后……",
+   "id": "c10_n037"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "找到了继承不死契约的白巫女时」「那时候其实想过为了斩断不死的诅咒……」「……用这双手结束白巫女的生命」「但是和她在一起我明白了一件事……」「这国家的白巫女和我以前守护的巫女一样」「因为她继承了巫女的意志……」「所以说，她也可以算是古老民族最后的希望",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c10_n038"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "让我们一起解救泉之白巫女吧」「我相信解救泉之白巫女一定是」「被污秽吞噬的古老民族最后的愿望……",
+   "id": "c10_n039"
+  },
+  {
+   "type": "line",
+   "text": "石堆深处的残骸忽然泛起微弱的灵光，那是战死的不死战士们跨越漫长岁月的叹息与嘱托。\n「最终遗留在这里的只剩我们……」「一个变得不死的战士，巫女的死意味他的结束」「和我立下契约的巫女已经不在了……」「意识即将消失……只有枯朽的残骸会遗留下来……」「费林啊……儿汝莉德她……」「唔……」",
+   "id": "c10_n040"
+  },
+  {
+   "type": "line",
+   "text": "「在战争中落败，故乡被夺……连巫女都失去的民族除了憎恨还剩什么？」「怨念积成污秽，污秽又无法净化，情况超出掌控，造成无法挽回的局面……」「费林……最后的不死战士啊……」「不死的契约印……将会由新的巫女继承……」「我们的意志……就由你继承了……」「请守护最后的巫女……替我们……」",
+   "id": "c10_n041"
+  },
+  {
+   "type": "stage",
+   "title": "双生之路",
+   "id": "c10_n042"
+  },
+  {
+   "type": "stage",
+   "bg": "forbidden_pool",
+   "id": "c10_n043"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_6": true
+   },
+   "id": "c10_n044"
+  },
+  {
+   "type": "line",
+   "text": "灵光消散之际，第六枚石板文书自古老民族的残骸中浮现，温润的光芒融入护身符，洗去了一路积压的毒瘴。\n穿过禁区后方险峻的上升坑道，冷冽的疾风夹杂着浓重的暴雨呼啸而下。\n高耸入云的双生要塞在大雨中巍然矗立——那是王国阻挡污秽的最前线双生堡垒，也是不死骑士团驻扎的铁血之地。",
+   "id": "c10_n045"
   },
   {
    "type": "stage",
@@ -1124,12 +2315,234 @@
    "title": "双生堡垒",
    "bg": "fort_wall",
    "music": "fort",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c11_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "寒风卷着冰晶掠过高耸的石墙，雨滴在极高的海拔冻结成了大片洁白的雪花。古老冷峻的要塞在苍茫白雪中沉寂，唯有风声如泣如诉地穿过垛口。",
    "id": "c11_n001"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "死亡之雨到这里变成了雪」「死亡之雨降临之前，这堡垒应该抵御了不少秽鬼的来袭……",
+   "id": "c11_n002"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "虽然你看起来完全不辛苦……但不冷吗？」「要是护身符连寒冷都能抵御，也真是太方便了",
+   "id": "c11_n003"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "knight",
+   "text": "我最怕冷了……」「虽然这身体解决了怕冷的问题」「完全没有知觉总像是少了些什么",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c11_n004"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "……先休息一会儿，暖和一下身体再上路吧",
+   "id": "c11_n005"
+  },
+  {
+   "type": "stage",
+   "title": "积雪的回廊",
+   "id": "c11_n006"
+  },
+  {
+   "type": "stage",
+   "bg": "fort_wall",
+   "id": "c11_n007"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "城墙背风的廊柱下倒卧着畸变的躯壳，背部撕裂开生着枯骨羽翼的肉翅，残破的卫兵长枪断成两截。\n「堡垒防御战后被分配到双生堡垒的士兵们，都收到了异端魔术师分发的能够提高身体素质的灵药。」「服用灵药的士兵们在死亡之雨开始下起后，变成了身长翼翅，外观奇特的秽鬼。」「已经……累了……」",
+   "id": "c11_n008"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "兵舍废墟的角落里蜷缩着娇小瘦弱的骸骨，周围散落着未完工的木剑，污秽的鳞甲已覆满稚嫩的胸膛。\n「双生堡垒保护着许多不允许住在都城的孩子，孩子们在这里接受成为骑士的培训。」「其中有身怀王族血统的私生子，也有从战地捡来的孤儿。」「我的身体怎么了……到底是什么一回事……」",
+   "id": "c11_n009"
+  },
+  {
+   "type": "line",
+   "text": "我伸出微颤的双手轻轻拭去遗骸上厚厚的积雪，漫天飞雪落进衣领，却比冰雪更冷。",
+   "id": "c11_n010"
+  },
+  {
+   "type": "line",
+   "text": "结满冰霜的营帐外，微弱的悲鸣顺着寒风在雪地里飘散。\n「喝下了魔术师给我的灵药后，就什么都记不得了……」\n「冷……好冷……」",
+   "id": "c11_n011"
+  },
+  {
+   "type": "line",
+   "text": "残存的骑士头盔半掩在冻土中，残魂在白光临近时发出颤抖的呼喊。\n「求求你……请净化骑士们吧……」",
+   "id": "c11_n012"
+  },
+  {
+   "type": "stage",
+   "title": "雪之花田",
+   "id": "c11_n013"
+  },
+  {
+   "type": "stage",
+   "bg": "fort_snowfield",
+   "id": "c11_n014"
+  },
+  {
+   "type": "line",
+   "text": "穿过要塞外缘崩塌的关口，一片在风雪中傲然绽放的花海映入眼帘。白雪掩映着娇艳的花瓣，不可思议地铺满了整座山谷。",
+   "id": "c11_n015"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "竟然在这种地方找到花田……」「那骑士……」「你守护的这花田……",
+   "id": "c11_n016"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "虽然已染上了污秽」「我还是觉得它非常美丽……」「是他保护了这里吗……？",
+   "id": "c11_n017"
+  },
+  {
+   "type": "stage",
+   "music": "boss_fort_intro",
+   "music_outro": "boss_fort_outro",
+   "id": "c11_n018"
+  },
+  {
+   "type": "line",
+   "text": "花田中央伫立着犹如孤狼般的狂暴骑士。\n披风早已碎成布条，长剑插在积雪中，听到踏雪声的瞬间，猩红的暴戾光芒自重盔下骤然点燃。",
+   "id": "c11_n019"
+  },
+  {
+   "type": "line",
+   "text": "大剑横扫激起漫天飞雪与残红的花瓣。\n狂暴的斩击如狂风骤雨，黑骑士持剑死守，在漫天落英中寻觅破绽。\n你自飞雪中疾步穿行，白光自掌心绽放，精准点在骑士的甲胄裂纹之上。\n庞大的身躯猛然一震，手中重剑脱手插在雪地中，双膝轰然沉入花丛。",
+   "id": "c11_n020"
+  },
+  {
+   "type": "stage",
+   "title": "狂骑士的记忆",
+   "id": "c11_n021"
+  },
+  {
+   "type": "stage",
+   "music": "fort_quiet",
+   "id": "c11_n022"
+  },
+  {
+   "type": "line",
+   "text": "你放轻脚步走上前去，温润的白光拂去他铠甲上的霜雪与污秽。\n「它是被骑士团里其他的人们恐惧，有着狂骑士绰号的狼。」「在堡垒防御战后，像是忘记了战斗一般，平静地，照顾并保护着雪之花园。」\n我闭上双眼，听见在狂暴的嘶吼之下，那份笨拙而温柔的守护之心。",
+   "id": "c11_n023"
+  },
+  {
+   "type": "stage",
+   "cg": "wolf_memory",
+   "id": "c11_n024"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "wolf",
+   "text": "堡垒之战是老子经历过最长，最艰难的战役」「虽然干掉了秽鬼大军，成功保护了国家，没有一个家伙会说自己高兴」「不死之身的我们，和秽鬼有啥不同」「在战场上一直想着怎样去死的老子，现在是想挂也挂不掉的臭怪物",
+   "id": "c11_n025"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "wolf",
+   "text": "看着周围，到处都是被白雪覆盖的花田」「教老子花的名字的是泉之白巫女」「她也真奇葩，老子除了战斗啥也不懂，她也不在乎，要教就教",
+   "id": "c11_n026"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "wolf",
+   "text": "老子很少和其他人来往，这嘴巴不怎么灵通」「泉之白巫女看到了就笑了起来，但老子也没啥不爽",
+   "id": "c11_n027"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "wolf",
+   "text": "这次打完后，应该就不会再见面了」「想一想这也好吧」「泉之白巫女说她喜欢这花田」「要是以后她来的时候花田还在，她一定会开心吧",
+   "id": "c11_n028"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c11_n029"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "worried",
+   "speaker": "wolf",
+   "text": "花……花田，给……女 也……",
+   "id": "c11_n030"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_fort": true
+   },
+   "id": "c11_n031"
+  },
+  {
+   "type": "stage",
+   "title": "风雪中的余音",
+   "id": "c11_n032"
+  },
+  {
+   "type": "stage",
+   "bg": "fort_snowfield",
+   "id": "c11_n033"
+  },
+  {
+   "type": "line",
+   "text": "暴烈的狂气彻底褪去，风雪中的花田重新恢复了宁静。白雪覆盖的花瓣在微光下轻轻摇曳，仿佛那名白巫女真的曾在此驻足微笑。",
+   "id": "c11_n034"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_7": true
+   },
+   "id": "c11_n035"
+  },
+  {
+   "type": "line",
+   "text": "残破的墓石下，第七枚石板文书自雪地中缓缓浮现。温热的符文融入白巫女护身符，在冰封的大地上亮起清澈的微芒。",
+   "id": "c11_n036"
+  },
+  {
+   "type": "line",
+   "text": "要塞的吊桥缓缓在风雪中放下，悬崖下方直通王国统治的核心——宏伟肃穆的边陲之都城已在暴雨与云雾中显露轮廓。",
+   "id": "c11_n037"
   },
   {
    "type": "stage",
@@ -1137,12 +2550,264 @@
    "title": "边陲之都城",
    "bg": "castle_hall",
    "music": "castle",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c12_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "穿过要塞巍峨的大门，整座边陲之都城展现在眼前。曾经庄严奢华的白石街道与巨型宫殿在大雨中崩塌剥落，昔日的王都如今只剩下一片死一般的沉寂。",
    "id": "c12_n001"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "真令人意外……没想到竟会有这么巨大的都城」「看样子都城里有幸存者的希望也……",
+   "id": "c12_n002"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "请……安息……",
+   "id": "c12_n003"
+  },
+  {
+   "type": "stage",
+   "title": "雨蚀的长廊",
+   "id": "c12_n004"
+  },
+  {
+   "type": "stage",
+   "bg": "castle_hall",
+   "id": "c12_n005"
+  },
+  {
+   "type": "line",
+   "text": "回廊深处的王家立柱旁，无数扭曲的幻影在石壁上徘徊低泣。\n「有看见……城堡的狗狗……吗？」\n「谁想到王之盾会这样瓦解……」\n「父王……为什么……」\n「一直……守护你……」",
+   "id": "c12_n006"
+  },
+  {
+   "type": "stage",
+   "title": "王家寝宫",
+   "id": "c12_n007"
+  },
+  {
+   "type": "stage",
+   "bg": "castle_bedroom",
+   "id": "c12_n008"
+  },
+  {
+   "type": "line",
+   "text": "穿过冷清的走廊，侧翼的寝宫深处忽然传来微弱的犬吠与断断续续的呼唤声。\n我停下脚步望向幽暗的帷幔，仿佛听到有什么在呼唤着那个名字。",
+   "id": "c12_n009"
+  },
+  {
+   "type": "line",
+   "text": "侧殿的帷幔深处传出微弱的回响，而主廊尽头的大门正通向王座。",
+   "choices": [
+    {
+     "label": "深入寝宫，回应那声呼唤",
+     "next": "c12_relic8_route"
+    },
+    {
+     "label": "直接前往王座大殿",
+     "next": "c12_throne_route"
+    }
+   ],
+   "id": "c12_n010"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "text": "破损的寝床旁卧着一只早已僵硬的大狗，紧紧护卫着身后的娇小身影。那一瞬的回响与真正的白巫女重叠在一起，令人心碎。\n「一位住在城堡里照顾狗的姑娘，被死亡之雨染身。」「狗为了保护女孩，一直陪在她的身边。」「莉莉……」",
+   "id": "c12_relic8_route"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_8": true
+   },
+   "id": "c12_n012"
+  },
+  {
+   "type": "jump",
+   "id": "c12_n013",
+   "next": "c12_throne_route"
+  },
+  {
+   "type": "stage",
+   "title": "王座大殿",
+   "id": "c12_throne_route"
+  },
+  {
+   "type": "stage",
+   "bg": "castle_throne",
+   "id": "c12_n015"
+  },
+  {
+   "type": "stage",
+   "music": "boss_castle_intro",
+   "music_outro": "boss_castle_outro",
+   "id": "c12_n016"
+  },
+  {
+   "type": "line",
+   "text": "推开沉重的雕金巨门，宽广而破败的王座大殿显露在雨雾中。",
+   "id": "c12_n017"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "前方应该就是王座大殿吧……",
+   "id": "c12_n018"
+  },
+  {
+   "type": "line",
+   "text": "残破的殿门前，独眼的巨汉挥舞着断盾悍然阻挡，即便双眼充血，依然恪尽职守。\n「守护边陲之国都城的精英部队“王之盾”的首领。」「没有败给死亡之雨，保护都城直到最后。」「可是当被“王之盾”的队友从背后袭击时，他最终被狂气吞噬了。」",
+   "id": "c12_n019"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "serious",
+   "speaker": "shield",
+   "text": "还没……还没有结束，国王呢……王在哪里……",
+   "id": "c12_n020"
+  },
+  {
+   "type": "line",
+   "text": "黑气溃散，王座之上端坐着已化为肉瘤怪物的残暴国王，正发出含糊刺耳的呻吟。\n而在王座前方的阴影中，一名手持长枪、身披破损骑士斗篷的高挑战士缓缓转身。\n枪尖还滴着黑色的脓血，猩红的瞳孔死死锁定着你。",
+   "id": "c12_n021"
+  },
+  {
+   "type": "line",
+   "text": "枪芒如暴风骤雨般刺裂大理石地面。\n黑骑士横剑架开长枪的突刺，两道剑影在王座下激烈碰撞。\n你踏破碎石疾步前冲，白光撕裂了长枪掀起的狂气狂澜，精准按上尤利乌斯的胸甲。\n狂暴的枪势骤止，长枪坠地，高大的骑士长终于脱力单膝跪倒。",
+   "id": "c12_n022"
+  },
+  {
+   "type": "stage",
+   "title": "骑士长的记忆",
+   "id": "c12_n023"
+  },
+  {
+   "type": "stage",
+   "music": "castle_quiet",
+   "id": "c12_n024"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "边陲之国的国王……」「一个出生为国王之子」「被逐出都城的骑士……」「竟被如此刻骨的怨恨吞噬……」「残杀同族么……",
+   "id": "c12_n025"
+  },
+  {
+   "type": "line",
+   "text": "「尤利乌斯是继承了国王之血的私生子。」「忍受艰苦的生活，为了得到父亲的青睐而努力，成为了骑士长的男人是那么的激烈又正直。」",
+   "id": "c12_n026"
+  },
+  {
+   "type": "line",
+   "text": "我闭上双眼，看见了那个在轻蔑与冷眼深处、拼命渴望得到认可的背影。",
+   "id": "c12_n027"
+  },
+  {
+   "type": "stage",
+   "cg": "julius_memory",
+   "id": "c12_n028"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "julius",
+   "text": "边陲之国面临亡国之患」「本该被守护的国民沦为不死的怪物，奋战到底的同胞们也疯了，消失于雨中",
+   "id": "c12_n029"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "julius",
+   "text": "艰难地维护着自己衰弱的意识，我来到了王座大殿」「我把剑锋对准了自己本该守护的国王",
+   "id": "c12_n030"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "julius",
+   "text": "国王身体抖了抖，呻吟道难听的狂言」「鞠躬尽瘁，为国家做出种种牺牲的骑士与泉之白巫女不过是无关紧要的炮灰」「我看清了令国王疯狂着迷的不死力量所带来的后果」「充斥着自私及仇恨的言语无疑是国王吐露出来的真相",
+   "id": "c12_n031"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "julius",
+   "text": "我明白的很，因为我体内也流着相同的王族血统」「我也一样，一切都是为了自己，而不是因为想要捍卫国土」「我只不过是想逼他承认抛弃我是他的愚昧，有眼无珠",
+   "id": "c12_n032"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "julius",
+   "text": "当我把剑锋对准他时，他那充满恐惧的眼里，映着我的脸孔」「终于逼他正视我，我等这等了好久",
+   "id": "c12_n033"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "id": "c12_n034"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "worried",
+   "speaker": "julius",
+   "text": "……对不起，又让你……背负……",
+   "id": "c12_n035"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "cleared_castle": true
+   },
+   "id": "c12_n036"
+  },
+  {
+   "type": "stage",
+   "title": "王座之后",
+   "id": "c12_n037"
+  },
+  {
+   "type": "stage",
+   "bg": "castle_throne",
+   "id": "c12_n038"
+  },
+  {
+   "type": "line",
+   "text": "王座之上的畸形肉块随之化作飞灰，整座被欲望与狂乱统治的王都终于迎来了真正的宁静。\n王座后的秘龛中，古老石板的纹路在白巫女的凝视下静静泛着荧光。",
+   "id": "c12_n039"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "走吧。一切的源头与终点，都在那片最初的泉水之中。",
+   "id": "c12_n040"
+  },
+  {
+   "type": "line",
+   "text": "走下王座后的隐秘高台，前方的风雨中泛起纯净而幽深的水汽。\n那是边陲之国的最深处——边境之泉。泉之白巫女沉睡之地，等待着最后命运的降临。",
+   "id": "c12_n041"
   },
   {
    "type": "stage",
