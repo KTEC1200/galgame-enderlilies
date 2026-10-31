@@ -41,6 +41,15 @@ def warn(msg):
     warnings.append(msg)
 
 
+def split_groan(text):
+    """剥离行尾的（亡语）标记：返回 (剩余文本, 是否亡语)。标记是知识库的元标注，
+    不进入显示文本；台词行因此仍能按 DIALOGUE_RE 解析为对话页。"""
+    mark = "（亡语）"
+    if text.endswith(mark):
+        return text[: -len(mark)].rstrip(), True
+    return text, False
+
+
 def parse_value(text):
     text = text.strip()
     if text == "true":
@@ -168,7 +177,8 @@ def compile_file(path, config):
             opening["music_outro"] = parts[1]
             opening["music"] = parts[0]
     if fm.get("cast"):
-        opening["cast"] = [{"id": p.split("/")[0], "expression": p.split("/")[1] if "/" in p else "normal"}
+        opening["cast"] = [{"id": p.split("/")[0].strip(),
+                            "expression": p.split("/")[1].strip() if "/" in p else "normal"}
                            for p in re.split(r"[,，]", fm["cast"]) if p.strip()]
     if len(opening) > 3 or "bg" in opening or "cast" in opening:
         new_node(opening)
@@ -194,6 +204,8 @@ def compile_file(path, config):
             first = block[0].strip()
         # --- 场景小标题 ---
         if first.startswith("##"):
+            if len(block) > 1:
+                err("%s: 小标题 %r 必须独立成块（其后内容另起一块，否则会被丢弃）" % (where, first))
             new_node({"type": "stage", "title": first.lstrip("#").strip()}, label)
             continue        # --- 独立跳转 ---
         if first.startswith("->"):
@@ -313,14 +325,17 @@ def build_page(block, base, label, fileid, where):
             body = line.lstrip("|").strip()
             cond_text, _, vtext = body.partition("|")
             variant = {"when": parse_condition(cond_text.replace("when:", "", 1), where)}
-            dm = DIALOGUE_RE.match(vtext.strip())
+            vbody, vgroan = split_groan(vtext.strip())
+            dm = DIALOGUE_RE.match(vbody)
+            if vgroan:
+                variant["groan"] = True
             if dm:  # 变体可整体替换为另一角色的台词
                 variant["speaker"] = dm.group(1)
                 if dm.group(2):
                     variant["expression"] = dm.group(2)
                 variant["text"] = dm.group(3)
             else:
-                variant["text"] = vtext.strip()
+                variant["text"] = vbody
             variants.append(variant)
             continue
         if line.startswith("*"):
@@ -333,13 +348,19 @@ def build_page(block, base, label, fileid, where):
             choice_refs.append((target.strip(), len(choices) - 1))
             current_choice[0] = len(choices) - 1
             continue
-        dm = DIALOGUE_RE.match(line)
+        body, groan = split_groan(line)
+        dm = DIALOGUE_RE.match(body)
         if dm and dialogue is None and not choices:
             dialogue = {"speaker": dm.group(1), "text": dm.group(3)}
+            if groan:
+                page["groan"] = True
             if dm.group(2):
                 page.setdefault("expression", dm.group(2))
             continue
-        text_lines.append(line)
+        if body or groan:
+            if groan:
+                page["groan"] = True
+            text_lines.append(body)
     # 未缩进的 @set 落到页面
     if page_set:
         page["set"] = page_set
