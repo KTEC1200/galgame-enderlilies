@@ -4,7 +4,7 @@
 剧情知识库见仓库根目录（`entities/` `events/` `concepts/` `sources/`），游戏本体在本目录。
 
 > 同人作品 · ENDER LILIES © Live Wire / Adglobe
-> 公开发布前需完成素材授权核查（官方 IP 条款限制 OST 分发，见 `docs/剧情规划.md` 第八节）
+> 配乐使用已获权利方许可（2026-10-31）；发布相关事项见 `docs/剧情规划.md` 第八节
 
 ## 运行
 
