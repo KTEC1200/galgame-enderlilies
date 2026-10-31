@@ -6,10 +6,18 @@
   "lily": "莉莉",
   "knight": "费林",
   "siegrid": "西丽德",
-  "true_lily": "白巫女"
+  "true_lily": "白巫女",
+  "gerold": "格落特"
  },
  "initial_flags": {
   "chose_abyss": false,
+  "cleared_castle": false,
+  "cleared_catacomb": false,
+  "cleared_dungeon": false,
+  "cleared_forbidden": false,
+  "cleared_forest": false,
+  "cleared_fort": false,
+  "cleared_village": false,
   "curious": false,
   "knows_name": false,
   "met_knight": false,
