@@ -625,6 +625,8 @@ func _menu(kind: String) -> void:
 			_slots(false)
 		"resume":
 			_close_overlay()
+		"menu":
+			_game_menu()
 		"log":
 			extras.open("backlog")
 		"gallery":
@@ -1549,6 +1551,18 @@ func _run_shots() -> void:
 	await get_tree().create_timer(0.3).timeout
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(dir + "/4_flowchart.png")
+	extras.close()
+	# 锁定态预览：临时只把前 4 块记为已走过，截完立即恢复（不落盘）
+	var saved_seen: Dictionary = profile["flow_seen"].duplicate(true)
+	var saved_active: String = active_flow
+	profile["flow_seen"] = {"c01": true, "c06": true, "c07": true, "c08": true}
+	active_flow = "c08"
+	extras.open("flowchart")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/5_flowchart_locked.png")
+	profile["flow_seen"] = saved_seen
+	active_flow = saved_active
 	extras.close()
 	print("SHOTS saved to " + dir)
 	get_tree().quit(0)

@@ -453,6 +453,7 @@ func _build_flowchart() -> void:
 		var btn := Button.new()
 		var is_seen: bool = seen.has(str(block["id"]))
 		var is_current: bool = str(game.active_flow) == str(block["id"]) and is_seen
+		var can_enter: bool = is_seen and game.profile["checkpoints"].has(str(block["id"]))
 		if is_seen:
 			btn.text = "%s\n%d 页 · 已完成%s" % [block.get("title", block.get("id", "?")), block.get("pages", 0), "（当前所在）" if is_current else ""]
 		else:
@@ -460,6 +461,8 @@ func _build_flowchart() -> void:
 		btn.position = Vector2(float(block.get("x", 0)), float(block.get("y", 0)))
 		btn.size = BLOCK_SIZE
 		btn.focus_mode = Control.FOCUS_NONE
+		btn.disabled = not can_enter
+		btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND if can_enter else Control.CURSOR_ARROW
 		btn.add_theme_font_size_override("font_size", 16)
 		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		var normal := StyleBoxFlat.new()
@@ -477,14 +480,18 @@ func _build_flowchart() -> void:
 			normal.shadow_size = 6
 			normal.shadow_offset = Vector2(0, 2)
 		else:
-			normal.bg_color = Color("0a0e16cc")
-			normal.border_color = Color("232c3c")
+			# 未解锁：灰暗锁定样式，按钮直接禁用不可点
+			normal.bg_color = Color("0a0e16b4")
+			normal.border_color = Color("20283a")
 		btn.add_theme_stylebox_override("normal", normal)
+		btn.add_theme_stylebox_override("disabled", normal.duplicate())
 		var hover := normal.duplicate()
-		hover.border_color = Color("c8f000") if is_seen else Color("39456a")
+		hover.border_color = Color("c8f000") if can_enter else normal.border_color
 		btn.add_theme_stylebox_override("hover", hover)
-		btn.add_theme_color_override("font_color", Color("eef3fa") if is_seen else Color("4d5666"))
-		btn.add_theme_color_override("font_hover_color", Color("ffffff") if is_seen else Color("6c7a92"))
+		var font_col := Color("eef3fa") if is_seen else Color("4d5666")
+		btn.add_theme_color_override("font_color", font_col)
+		btn.add_theme_color_override("font_disabled_color", font_col)
+		btn.add_theme_color_override("font_hover_color", Color("ffffff") if can_enter else font_col)
 		btn.pressed.connect(func(): _block_clicked(str(block["id"]), is_seen))
 		canvas.add_child(btn)
 
@@ -655,18 +662,14 @@ func _build_settings() -> void:
 		b.pressed.connect(func(): game._set_skip_mode(entry[0]))
 		skip_row.add_child(b)
 
-	# ---- 右列：关于 ----
-	right.add_child(_section("关于"))
-	var about := Label.new()
-	about.text = "终焉之雨 v%s\nENDER LILIES 同人视觉小说 · 免费发布\n© Live Wire / Adglobe" % ProjectSettings.get_setting("application/config/version", "0.5")
-	about.add_theme_font_size_override("font_size", 14)
-	about.add_theme_color_override("font_color", Color("8a94a6"))
-	right.add_child(about)
-
+	# 操作提示：用撑满的占位把它压到面板最底部
 	var note := _label("操作：点击 / 空格 / 滚轮↓ 推进 · 滚轮↑ 打开历史 · Ctrl 或「快进」跳过文本（遇选项自动停下）· 右键返回 · H 隐藏界面")
 	note.add_theme_font_size_override("font_size", 13)
 	note.add_theme_color_override("font_color", Color("5f6c80"))
 	note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	var bottom_spacer := Control.new()
+	bottom_spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	content.add_child(bottom_spacer)
 	content.add_child(note)
 
 func _label(text: String) -> Label:
