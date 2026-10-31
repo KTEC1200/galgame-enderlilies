@@ -588,7 +588,7 @@ def main():
     story = {
         "version": "el-vn-1",
         "title": config["title"],
-        "release_version": "0.4.0",
+        "release_version": "0.5.0",
         "cast_names": cast_names,
         "initial_flags": {k: config["initial_flags"][k] for k in sorted(config["initial_flags"])},
         "nodes": all_nodes,

@@ -1,6 +1,9 @@
 extends Control
 ## 附加界面：旅途图库 / 剧情分支树 / 旅途回看 / 游戏设置。
 ## 由 Main.gd 创建并挂载；面板打开时 Main.modal_open 由 Main 统一管理。
+##
+## v0.5：参考图风格 —— 分区标题（蓝色斜标+渐延长线）、滑杆（黄绿填充+菱形滑块）、
+## 胶囊开关、黄绿描边下拉框；分支树改为一行三列网格；右键单击关闭面板（返回）。
 
 var game: Node  # Main
 
@@ -11,7 +14,9 @@ var content: Control       # 当前视图容器
 var thumbs: Dictionary = {}  # 缓存缩略图
 
 const CATEGORY_NAMES := {"cg": "事件 CG", "background": "背景", "sprite": "立绘"}
-const CANVAS_BLOCK := Vector2(260, 110)
+const BLOCK_SIZE := Vector2(300, 140)
+const BLOCK_GAP := Vector2(40, 48)
+const BLOCK_COLS := 3
 
 
 func _ready() -> void:
@@ -22,37 +27,41 @@ func _ready() -> void:
 	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(root)
 	var dim := ColorRect.new()
-	dim.color = Color("050810cc")
+	dim.color = Color("050810d9")
 	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	dim.mouse_filter = Control.MOUSE_FILTER_STOP
 	dim.gui_input.connect(func(event: InputEvent):
-		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if event is InputEventMouseButton and event.pressed \
+				and event.button_index in [MOUSE_BUTTON_LEFT, MOUSE_BUTTON_RIGHT]:
 			close())
 	root.add_child(dim)
 	panel = PanelContainer.new()
 	panel.set_anchors_preset(Control.PRESET_CENTER)
 	panel.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	panel.grow_vertical = Control.GROW_DIRECTION_BOTH
-	panel.custom_minimum_size = Vector2(940, 620)
+	panel.custom_minimum_size = Vector2(1080, 680)
 	var style := StyleBoxFlat.new()
-	style.bg_color = Color("0b111acc")
-	style.border_color = Color("46536a99")
+	style.bg_color = Color("0c1218f7")
+	style.border_color = Color("2e6bff80")
 	style.set_border_width_all(1)
-	style.set_corner_radius_all(14)
-	style.content_margin_left = 22
-	style.content_margin_right = 22
-	style.content_margin_top = 14
-	style.content_margin_bottom = 16
+	style.set_corner_radius_all(16)
+	style.shadow_color = Color(0, 0, 0, 0.5)
+	style.shadow_size = 24
+	style.shadow_offset = Vector2(0, 6)
+	style.content_margin_left = 26
+	style.content_margin_right = 26
+	style.content_margin_top = 18
+	style.content_margin_bottom = 20
 	panel.add_theme_stylebox_override("panel", style)
 	root.add_child(panel)
 	var box := VBoxContainer.new()
-	box.add_theme_constant_override("separation", 10)
+	box.add_theme_constant_override("separation", 12)
 	panel.add_child(box)
 	var head := HBoxContainer.new()
 	box.add_child(head)
 	title_label = Label.new()
-	title_label.add_theme_font_size_override("font_size", 24)
-	title_label.add_theme_color_override("font_color", Color("dfe6f0"))
+	title_label.add_theme_font_size_override("font_size", 26)
+	title_label.add_theme_color_override("font_color", Color("eef3fa"))
 	title_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	head.add_child(title_label)
 	var close_b := _button("关闭 (Esc)")
@@ -62,17 +71,27 @@ func _ready() -> void:
 	content.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	box.add_child(content)
 
+func _input(event: InputEvent) -> void:
+	# 右键单击返回：附加面板打开时任意位置右键即关闭
+	if visible and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+		close()
+		get_viewport().set_input_as_handled()
+
 func _button(text: String) -> Button:
 	var b := Button.new()
 	b.text = text
 	b.focus_mode = Control.FOCUS_NONE
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	b.add_theme_color_override("font_color", Color("c9d4e4"))
-	b.add_theme_color_override("font_hover_color", Color("eef3fa"))
+	b.add_theme_color_override("font_hover_color", Color("f2f6fc"))
+	b.add_theme_color_override("font_pressed_color", Color("c8f000"))
+	b.add_theme_color_override("font_disabled_color", Color("5c6674"))
 	var normal := StyleBoxFlat.new()
-	normal.bg_color = Color("141a24e6")
-	normal.border_color = Color("46536a99")
+	normal.bg_color = Color("141b2ae6")
+	normal.border_color = Color("2c3650")
+	normal.border_width_left = 3
 	normal.set_border_width_all(1)
+	normal.border_width_left = 3
 	normal.set_corner_radius_all(8)
 	normal.content_margin_left = 14
 	normal.content_margin_right = 14
@@ -80,9 +99,13 @@ func _button(text: String) -> Button:
 	normal.content_margin_bottom = 4
 	b.add_theme_stylebox_override("normal", normal)
 	var hover := normal.duplicate()
-	hover.bg_color = Color("1d2736f0")
+	hover.bg_color = Color("1c2639f2")
 	hover.border_color = Color("7d93b5")
 	b.add_theme_stylebox_override("hover", hover)
+	var pressed := normal.duplicate()
+	pressed.bg_color = Color("22304a")
+	pressed.border_color = Color("c8f000")
+	b.add_theme_stylebox_override("pressed", pressed)
 	return b
 
 func open(view: String) -> void:
@@ -103,10 +126,153 @@ func open(view: String) -> void:
 			title_label.text = "游戏设置"
 			_build_settings()
 	visible = true
-	root.modulate = Color.WHITE
+	# 淡入过渡
+	root.modulate = Color(1, 1, 1, 0)
+	create_tween().tween_property(root, "modulate:a", 1.0, 0.12)
 
 func close() -> void:
 	visible = false
+
+# ---------------------------------------------------------------- 通用小部件
+
+## 分区标题：蓝色竖标 + 标题 + 渐延长线（参考图「▎系统 ——」样式）
+func _section(title: String) -> Control:
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation", 10)
+	var mark := ColorRect.new()
+	mark.color = Color("2e6bff")
+	mark.custom_minimum_size = Vector2(4, 20)
+	mark.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	row.add_child(mark)
+	var label := Label.new()
+	label.text = title
+	label.add_theme_font_size_override("font_size", 20)
+	label.add_theme_color_override("font_color", Color("eef3fa"))
+	row.add_child(label)
+	var line := TextureRect.new()
+	var grad := Gradient.new()
+	grad.offsets = PackedFloat32Array([0.0, 1.0])
+	grad.colors = PackedColorArray([Color("2e6bffaa"), Color("2e6bff00")])
+	var tex := GradientTexture2D.new()
+	tex.gradient = grad
+	tex.width = 128
+	tex.height = 2
+	tex.fill_from = Vector2(0, 0)
+	tex.fill_to = Vector2(1, 0)
+	line.texture = tex
+	line.custom_minimum_size = Vector2(0, 2)
+	line.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	line.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	line.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	line.stretch_mode = TextureRect.STRETCH_SCALE
+	line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	row.add_child(line)
+	return row
+
+## 设置行首的标签（固定列宽对齐）
+func _row_label(text: String, width: float = 118.0) -> Label:
+	var l := Label.new()
+	l.text = text
+	l.add_theme_font_size_override("font_size", 16)
+	l.add_theme_color_override("font_color", Color("c9d4e4"))
+	l.custom_minimum_size = Vector2(width, 0)
+	l.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	return l
+
+## 滑杆行：标签 + 滑杆 + 当前置值（黄绿小字，参考图样式）
+func _slider_row(parent: Control, label_text: String, min_v: float, max_v: float, step: float,
+		value: float, setter: Callable, fmt: Callable) -> void:
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation", 14)
+	parent.add_child(row)
+	row.add_child(_row_label(label_text))
+	var col := VBoxContainer.new()
+	col.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	col.add_theme_constant_override("separation", 1)
+	row.add_child(col)
+	var s := HSlider.new()
+	s.min_value = min_v
+	s.max_value = max_v
+	s.step = step
+	s.value = value
+	s.custom_minimum_size = Vector2(0, 22)
+	s.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	s.focus_mode = Control.FOCUS_NONE
+	var groove := StyleBoxFlat.new()
+	groove.bg_color = Color("161d2c")
+	groove.border_color = Color("2a3448")
+	groove.set_border_width_all(1)
+	groove.set_corner_radius_all(2)
+	groove.content_margin_top = 3
+	groove.content_margin_bottom = 3
+	s.add_theme_stylebox_override("slider", groove)
+	var fill := StyleBoxFlat.new()
+	fill.bg_color = Color("c8f000")
+	fill.set_corner_radius_all(2)
+	fill.content_margin_top = 3
+	fill.content_margin_bottom = 3
+	s.add_theme_stylebox_override("grabber_area", fill)
+	s.add_theme_stylebox_override("grabber_area_highlight", fill)
+	s.add_theme_icon_override("grabber", game._diamond_texture(18, Color("101828"), Color("c8f000")))
+	s.add_theme_icon_override("grabber_highlight", game._diamond_texture(18, Color("c8f000"), Color("f4ffd0")))
+	col.add_child(s)
+	var val := Label.new()
+	val.add_theme_font_size_override("font_size", 13)
+	val.add_theme_color_override("font_color", Color("c8f000"))
+	val.text = str(fmt.call(value))
+	col.add_child(val)
+	s.value_changed.connect(func(v: float):
+		setter.call(v)
+		val.text = str(fmt.call(v)))
+
+## 胶囊开关（参考图样式：开=黄绿、关=暗灰，旋钮滑动过渡）
+class SwitchButton extends Button:
+	var knob: Panel
+	func _init() -> void:
+		toggle_mode = true
+		custom_minimum_size = Vector2(58, 26)
+		focus_mode = Control.FOCUS_NONE
+		var off := StyleBoxFlat.new()
+		off.bg_color = Color("1a2130")
+		off.border_color = Color("3a4458")
+		off.set_border_width_all(1)
+		off.set_corner_radius_all(13)
+		var on := off.duplicate()
+		on.bg_color = Color("c8f000")
+		on.border_color = Color("c8f000")
+		add_theme_stylebox_override("normal", off)
+		add_theme_stylebox_override("hover", off.duplicate())
+		add_theme_stylebox_override("pressed", on)
+		add_theme_stylebox_override("hover_pressed", on)
+		add_theme_stylebox_override("focus", StyleBoxEmpty.new())
+		knob = Panel.new()
+		knob.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		var ks := StyleBoxFlat.new()
+		ks.bg_color = Color("8a94a6")
+		ks.set_corner_radius_all(10)
+		knob.add_theme_stylebox_override("panel", ks)
+		add_child(knob)
+		toggled.connect(func(_on: bool): _sync(true))
+		resized.connect(func(): _sync(false))
+	func _sync(animate: bool) -> void:
+		if knob == null:
+			return
+		var target_x := size.x - 23.0 if button_pressed else 3.0
+		if animate and is_inside_tree():
+			create_tween().tween_property(knob, "position:x", target_x, 0.12)
+		else:
+			knob.position = Vector2(target_x, 3.0)
+		var ks: StyleBoxFlat = knob.get_theme_stylebox("panel")
+		ks.bg_color = Color("101828") if button_pressed else Color("8a94a6")
+	func _notification(what: int) -> void:
+		if what == NOTIFICATION_RESIZED and knob != null:
+			_sync(false)
+
+func _toggle_switch(initial: bool, on_toggle: Callable) -> SwitchButton:
+	var sw := SwitchButton.new()
+	sw.button_pressed = initial
+	sw.toggled.connect(on_toggle)
+	return sw
 
 # ---------------------------------------------------------------- 图库
 
@@ -156,9 +322,15 @@ func _gallery_cell(key: String, item: Dictionary, unlocked: bool) -> Control:
 	cell.custom_minimum_size = Vector2(212, 168)
 	var style := StyleBoxFlat.new()
 	style.bg_color = Color("0e1420e6")
-	style.border_color = Color("46536a66") if not unlocked else Color("7d93b5aa")
 	style.set_border_width_all(1)
 	style.set_corner_radius_all(10)
+	if unlocked:
+		style.border_color = Color("2e6bffaa")
+		style.shadow_color = Color(0, 0, 0, 0.35)
+		style.shadow_size = 6
+		style.shadow_offset = Vector2(0, 2)
+	else:
+		style.border_color = Color("232c3c88")
 	cell.add_theme_stylebox_override("panel", style)
 	var box := VBoxContainer.new()
 	box.add_theme_constant_override("separation", 2)
@@ -241,6 +413,7 @@ func _art_path(key: String) -> String:
 	return "res://assets/" + key + ".png"
 
 # ---------------------------------------------------------------- 分支树
+## 一行三列网格排布（参考图卡片观感）；绿蓝连线表示两端都走过的边。
 
 func _build_flowchart() -> void:
 	var flow: Dictionary = game.flow_data
@@ -249,49 +422,76 @@ func _build_flowchart() -> void:
 		content.add_child(_label("（flowchart.json 为空：请先编译剧情）"))
 		return
 	var seen: Dictionary = game.profile["flow_seen"]
-	var summary := _label("已走过 %d / %d 个场景（点击已走过的场景可回溯）" % [seen.size(), blocks.size()])
+	# 网格重排：覆盖编译器输出的长条坐标（一行三列，观感饱满）
+	var rows := int(ceil(blocks.size() / float(BLOCK_COLS)))
+	var canvas_width := 24.0 + BLOCK_COLS * BLOCK_SIZE.x + (BLOCK_COLS - 1) * BLOCK_GAP.x + 24.0
+	var canvas_height := 24.0 + rows * BLOCK_SIZE.y + (rows - 1) * BLOCK_GAP.y + 24.0
+	for i in range(blocks.size()):
+		var block: Dictionary = blocks[i]
+		block["x"] = 24.0 + (i % BLOCK_COLS) * (BLOCK_SIZE.x + BLOCK_GAP.x)
+		block["y"] = 24.0 + float(i / BLOCK_COLS) * (BLOCK_SIZE.y + BLOCK_GAP.y)
+	var summary := _label("已完成 %d / %d 个场景　·　点击已完成的场景可从该处回溯" % [seen.size(), blocks.size()])
+	summary.add_theme_font_size_override("font_size", 15)
+	summary.add_theme_color_override("font_color", Color("8a94a6"))
 	content.add_child(summary)
 	var scroll := ScrollContainer.new()
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	content.add_child(scroll)
 	var canvas := Control.new()
-	canvas.custom_minimum_size = Vector2(float(flow.get("width", 1200)), maxf(float(flow.get("height", 300)), 320.0))
+	canvas.custom_minimum_size = Vector2(canvas_width, canvas_height)
 	scroll.add_child(canvas)
 	var edges := FlowEdges.new()
 	edges.blocks = blocks
 	edges.seen = seen
+	edges.block_size = BLOCK_SIZE
 	edges.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	edges.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	canvas.add_child(edges)
 	for b in blocks:
 		var block: Dictionary = b
 		var btn := Button.new()
-		btn.text = "%s\n%d 页" % [block.get("title", block.get("id", "?")), block.get("pages", 0)]
-		btn.position = Vector2(float(block.get("x", 0)), float(block.get("y", 0)))
-		btn.size = CANVAS_BLOCK
-		btn.focus_mode = Control.FOCUS_NONE
-		btn.add_theme_font_size_override("font_size", 15)
-		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		var is_seen: bool = seen.has(str(block["id"]))
+		var is_current: bool = str(game.active_flow) == str(block["id"]) and is_seen
+		if is_seen:
+			btn.text = "%s\n%d 页 · 已完成%s" % [block.get("title", block.get("id", "?")), block.get("pages", 0), "（当前所在）" if is_current else ""]
+		else:
+			btn.text = "？？？\n未解锁"
+		btn.position = Vector2(float(block.get("x", 0)), float(block.get("y", 0)))
+		btn.size = BLOCK_SIZE
+		btn.focus_mode = Control.FOCUS_NONE
+		btn.add_theme_font_size_override("font_size", 16)
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		var normal := StyleBoxFlat.new()
-		normal.bg_color = Color("16202ecc") if is_seen else Color("0c111acc")
-		normal.border_color = Color("9db4d8aa") if is_seen else Color("2c354288")
-		normal.set_border_width_all(1)
 		normal.set_corner_radius_all(10)
-		normal.content_margin_left = 10
-		normal.content_margin_right = 10
+		normal.set_border_width_all(1)
+		normal.content_margin_left = 14
+		normal.content_margin_right = 14
+		if is_current:
+			normal.bg_color = Color("16223ccc")
+			normal.border_color = Color("c8f000")
+		elif is_seen:
+			normal.bg_color = Color("101a30ee")
+			normal.border_color = Color("3a6cffcc")
+			normal.shadow_color = Color(0, 0, 0, 0.35)
+			normal.shadow_size = 6
+			normal.shadow_offset = Vector2(0, 2)
+		else:
+			normal.bg_color = Color("0a0e16cc")
+			normal.border_color = Color("232c3c")
 		btn.add_theme_stylebox_override("normal", normal)
 		var hover := normal.duplicate()
-		hover.border_color = Color("eef3fa")
+		hover.border_color = Color("c8f000") if is_seen else Color("39456a")
 		btn.add_theme_stylebox_override("hover", hover)
-		btn.add_theme_color_override("font_color", Color("dfe6f0") if is_seen else Color("5c6674"))
-		btn.add_theme_color_override("font_hover_color", Color("ffffff"))
+		btn.add_theme_color_override("font_color", Color("eef3fa") if is_seen else Color("4d5666"))
+		btn.add_theme_color_override("font_hover_color", Color("ffffff") if is_seen else Color("6c7a92"))
 		btn.pressed.connect(func(): _block_clicked(str(block["id"]), is_seen))
 		canvas.add_child(btn)
 
 class FlowEdges extends Control:
 	var blocks: Array = []
 	var seen: Dictionary = {}
+	var block_size := Vector2(300, 140)
 	func _draw() -> void:
 		var by_id := {}
 		for b in blocks:
@@ -301,14 +501,22 @@ class FlowEdges extends Control:
 				var to = by_id.get(str(e["to"]))
 				if to == null:
 					continue
-				var from_pt := Vector2(float(b["x"]) + 262.0, float(b["y"]) + 55.0)
-				var to_pt := Vector2(float(to["x"]), float(to["y"]) + 55.0)
-				var both_seen: bool = seen.has(str(b["id"])) and seen.has(str(e["to"]))
-				draw_line(from_pt, to_pt, Color("9db4d8") if both_seen else Color("2a3547"), 2.0)
-				# 箭头
+				var fp := Vector2(float(b["x"]), float(b["y"]))
+				var tp := Vector2(float(to["x"]), float(to["y"]))
+				var col: Color = Color("4a7dff") if seen.has(str(b["id"])) and seen.has(str(e["to"])) else Color("26314a")
+				# 横向顺序连接走左右边中点；换行走上下边中点
+				var from_pt: Vector2
+				var to_pt: Vector2
+				if tp.x > fp.x:
+					from_pt = fp + Vector2(block_size.x, block_size.y * 0.5)
+					to_pt = tp + Vector2(0, block_size.y * 0.5)
+				else:
+					from_pt = fp + Vector2(block_size.x * 0.5, block_size.y)
+					to_pt = tp + Vector2(block_size.x * 0.5, 0)
+				draw_line(from_pt, to_pt, col, 2.0)
 				var dir := (to_pt - from_pt).normalized()
-				draw_line(to_pt - dir * 10.0 + dir.rotated(2.5) * 6.0, to_pt, Color("9db4d8") if both_seen else Color("2a3547"), 2.0)
-				draw_line(to_pt - dir * 10.0 - dir.rotated(2.5) * 6.0, to_pt, Color("9db4d8") if both_seen else Color("2a3547"), 2.0)
+				draw_line(to_pt - dir * 10.0 + dir.rotated(2.5) * 6.0, to_pt, col, 2.0)
+				draw_line(to_pt - dir * 10.0 - dir.rotated(2.5) * 6.0, to_pt, col, 2.0)
 
 func _block_clicked(block_id: String, is_seen: bool) -> void:
 	if not is_seen:
@@ -340,81 +548,126 @@ func _build_backlog() -> void:
 		var head: String = "[%s · %s] " % [entry.get("chapter", ""), entry.get("title", "")]
 		line.text = (head + who + "：" + str(entry.get("text", ""))) if who != "" else (head + str(entry.get("text", "")))
 		line.add_theme_font_size_override("font_size", 16)
-		line.add_theme_color_override("font_color", Color("aebac9") if who == "" else Color("dfe6f0"))
+		line.add_theme_color_override("font_color", Color("8a94a6") if who == "" else Color("dfe6f0"))
 		box.add_child(line)
 	await get_tree().process_frame
 	scroll.scroll_vertical = int(scroll.get_v_scroll_bar().max_value)
 
 # ---------------------------------------------------------------- 设置
+## 两列布局（参考图）：左=系统/音频，右=对话/关于；滑杆连续可调。
 
 func _build_settings() -> void:
-	var box := VBoxContainer.new()
-	box.add_theme_constant_override("separation", 14)
-	content.add_child(box)
-	# 自动播放倍速
-	var speed_row := HBoxContainer.new()
-	speed_row.add_theme_constant_override("separation", 10)
-	box.add_child(speed_row)
-	speed_row.add_child(_label("自动播放倍速"))
-	for speed in [1.0, 2.0, 4.0, 8.0]:
-		var b := _button("%d×" % int(speed))
-		b.toggle_mode = true
-		b.button_pressed = game.playback_speed == speed
-		b.pressed.connect(func():
-			game._set_speed(speed)
-			open("settings"))
-		speed_row.add_child(b)
-	# 打字机
+	var columns := HBoxContainer.new()
+	columns.add_theme_constant_override("separation", 36)
+	content.add_child(columns)
+	var left := VBoxContainer.new()
+	left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	left.add_theme_constant_override("separation", 12)
+	var right := VBoxContainer.new()
+	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	right.add_theme_constant_override("separation", 12)
+	columns.add_child(left)
+	columns.add_child(right)
+
+	# ---- 左列：系统 ----
+	left.add_child(_section("系统"))
+	var disp_row := HBoxContainer.new()
+	disp_row.add_theme_constant_override("separation", 14)
+	left.add_child(disp_row)
+	disp_row.add_child(_row_label("画面尺寸"))
+	var ob := OptionButton.new()
+	ob.focus_mode = Control.FOCUS_NONE
+	ob.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var options := [["fullscreen", "全屏"], ["2560x1440", "2560 × 1440"], ["1920x1080", "1920 × 1080"], ["window", "窗口 · 1280 × 720"]]
+	var current_idx := 0
+	for i in range(options.size()):
+		ob.add_item(options[i][1])
+		ob.set_item_metadata(i, options[i][0])
+		if str(game.profile.get("display", "window")) == options[i][0]:
+			current_idx = i
+	ob.selected = current_idx
+	var ob_style := StyleBoxFlat.new()
+	ob_style.bg_color = Color("131a28e8")
+	ob_style.border_color = Color("c8f000aa")
+	ob_style.set_border_width_all(1)
+	ob_style.set_corner_radius_all(6)
+	ob_style.content_margin_left = 12
+	ob_style.content_margin_right = 12
+	ob_style.content_margin_top = 5
+	ob_style.content_margin_bottom = 5
+	ob.add_theme_stylebox_override("normal", ob_style)
+	var ob_hover := ob_style.duplicate()
+	ob_hover.bg_color = Color("1c2639f2")
+	ob.add_theme_stylebox_override("hover", ob_hover)
+	ob.add_theme_stylebox_override("pressed", ob_hover)
+	ob.add_theme_stylebox_override("focus", ob_style.duplicate())
+	ob.add_theme_color_override("font_color", Color("c8f000"))
+	ob.add_theme_color_override("font_hover_color", Color("e8ff7a"))
+	ob.add_theme_color_override("font_pressed_color", Color("e8ff7a"))
+	var popup := ob.get_popup()
+	var popup_style := StyleBoxFlat.new()
+	popup_style.bg_color = Color("0e1420f7")
+	popup_style.border_color = Color("2e6bffaa")
+	popup_style.set_border_width_all(1)
+	popup_style.set_corner_radius_all(8)
+	popup_style.content_margin_top = 6
+	popup_style.content_margin_bottom = 6
+	popup.add_theme_stylebox_override("panel", popup_style)
+	popup.add_theme_color_override("font_color", Color("c9d4e4"))
+	popup.add_theme_color_override("font_hover_color", Color("c8f000"))
+	ob.item_selected.connect(func(idx: int): game._set_display_mode(str(ob.get_item_metadata(idx))))
+	disp_row.add_child(ob)
+
+	left.add_child(_section("音频"))
+	_slider_row(left, "音乐音量", 0.0, 1.0, 0.05, float(game.profile.get("volume", 0.8)),
+		func(v: float): game._set_volume(v),
+		func(v: float): return "%d%%" % roundi(v * 100))
+
+	# ---- 右列：对话 ----
+	right.add_child(_section("对话"))
+	_slider_row(right, "对话字号", 20, 40, 1, float(game.dialogue_size),
+		func(v: float): game._set_dialogue_size(int(v)),
+		func(v: float): return "%d px" % int(v))
+	_slider_row(right, "文字速度", 10, 90, 5, game.text_speed,
+		func(v: float): game._set_text_speed(v),
+		func(v: float): return "%d 字/秒" % int(v))
+	_slider_row(right, "自动前进速度", 1.0, 8.0, 0.5, game.playback_speed,
+		func(v: float): game._set_speed(v),
+		func(v: float): return "%.1f×" % v)
 	var type_row := HBoxContainer.new()
-	type_row.add_theme_constant_override("separation", 10)
-	box.add_child(type_row)
-	type_row.add_child(_label("逐字显示"))
-	var type_b := _button("开" if game.typewriter_enabled else "关")
-	type_b.pressed.connect(func():
-		game._set_typewriter(not game.typewriter_enabled)
-		open("settings"))
-	type_row.add_child(type_b)
-	# 对话字号
-	var size_row := HBoxContainer.new()
-	size_row.add_theme_constant_override("separation", 10)
-	box.add_child(size_row)
-	size_row.add_child(_label("对话字号"))
-	for size in [22, 24, 26, 28, 30, 32]:
-		var sb := _button(str(size))
-		sb.toggle_mode = true
-		sb.button_pressed = game.dialogue_size == size
-		sb.pressed.connect(func():
-			game._set_dialogue_size(size)
-			open("settings"))
-		size_row.add_child(sb)
-	# 快进未读
+	type_row.add_theme_constant_override("separation", 14)
+	right.add_child(type_row)
+	type_row.add_child(_row_label("逐字显示"))
+	var spacer := Control.new()
+	spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	type_row.add_child(spacer)
+	type_row.add_child(_toggle_switch(game.typewriter_enabled, func(on: bool): game._set_typewriter(on)))
 	var skip_row := HBoxContainer.new()
 	skip_row.add_theme_constant_override("separation", 10)
-	box.add_child(skip_row)
-	skip_row.add_child(_label("快进跳过未读"))
-	var skip_b := _button("开" if game.skip_unread else "关")
-	skip_b.pressed.connect(func():
-		game._set_skip_unread(not game.skip_unread)
-		open("settings"))
-	skip_row.add_child(skip_b)
-	# 音量
-	var vol_row := HBoxContainer.new()
-	vol_row.add_theme_constant_override("separation", 10)
-	box.add_child(vol_row)
-	vol_row.add_child(_label("音乐音量"))
-	var slider := HSlider.new()
-	slider.min_value = 0.0
-	slider.max_value = 1.0
-	slider.step = 0.05
-	slider.value = float(game.profile.get("volume", 0.8))
-	slider.custom_minimum_size = Vector2(280, 24)
-	slider.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	slider.value_changed.connect(func(v: float): game._set_volume(v))
-	vol_row.add_child(slider)
-	var note := _label("提示：Ctrl 快进已读内容，遇未读自动停下；H / 右键隐藏界面。")
-	note.add_theme_font_size_override("font_size", 14)
+	right.add_child(skip_row)
+	skip_row.add_child(_row_label("跳过模式", 118))
+	var group := ButtonGroup.new()
+	for entry in [["read", "已读跳过"], ["all", "全部跳过"]]:
+		var b := _button(entry[1])
+		b.toggle_mode = true
+		b.button_group = group
+		b.button_pressed = game.skip_mode == entry[0]
+		b.pressed.connect(func(): game._set_skip_mode(entry[0]))
+		skip_row.add_child(b)
+
+	# ---- 右列：关于 ----
+	right.add_child(_section("关于"))
+	var about := Label.new()
+	about.text = "终焉之雨 v%s\nENDER LILIES 同人视觉小说 · 免费发布\n© Live Wire / Adglobe" % ProjectSettings.get_setting("application/config/version", "0.5")
+	about.add_theme_font_size_override("font_size", 14)
+	about.add_theme_color_override("font_color", Color("8a94a6"))
+	right.add_child(about)
+
+	var note := _label("操作：点击 / 空格 / 滚轮↓ 推进 · 滚轮↑ 打开历史 · Ctrl 或「快进」跳过文本（遇选项自动停下）· 右键返回 · H 隐藏界面")
+	note.add_theme_font_size_override("font_size", 13)
 	note.add_theme_color_override("font_color", Color("5f6c80"))
-	box.add_child(note)
+	note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	content.add_child(note)
 
 func _label(text: String) -> Label:
 	var l := Label.new()

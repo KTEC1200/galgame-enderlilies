@@ -1,10 +1,13 @@
 extends Control
-## ENDER LILIES —— 视觉小说运行时 v0.3
+## 终焉之雨（ENDER LILIES 同人）—— 视觉小说运行时 v0.5
 ##
 ## 架构：引擎不包含任何剧情；全部剧情来自 data/story.json（line / stage / jump
 ## 三种节点，由 tools/build_story.py 从 story-src/*.md 编译生成）。
 ## 附加系统在 Extras.gd（图库 / 分支树 / 回看 / 设置）。
 ## 美术缺失时自动降级为按文件名着色的占位图，音乐缺失只记错误，不中断流程。
+##
+## v0.5 UI：参考图风格重构 —— 深底 + 蓝主色 + 黄绿点缀 + 阴影立体感；
+## 鼠标点击/滚轮推进、右键返回、文本快进、连续滑杆设置、窗口尺寸切换。
 
 const STORY_PATH := "res://data/story.json"
 const MUSIC_PATH := "res://data/music_catalog.json"
@@ -15,6 +18,15 @@ const SAVE_VERSION := "el-vn-1"
 const SLOT_PREFIX := "el_slot_"
 const RESUME_PATH := "user://el_resume.json"
 const PROFILE_PATH := "user://el_profile.json"
+
+# ---- UI 调色板（深底 / 蓝主色 / 黄绿点缀）----
+const COL_BG := "070a10"
+const COL_BLUE := "2e6bff"
+const COL_BLUE_SOFT := "7d93b5"
+const COL_LIME := "c8f000"
+const COL_TEXT := "e8edf6"
+const COL_TEXT_DIM := "9aa5b8"
+const COL_TEXT_FAINT := "5f6c80"
 
 const SPEAKER_COLORS := {
 	"lily": "dfe6f0",
@@ -52,15 +64,18 @@ var typewriter_timer: Timer
 # ---- 自动播放 / 快进 ----
 var auto_mode: bool = false
 var playback_speed: float = 1.0
-var skip_held: bool = false
-var skip_unread: bool = false
+var text_speed: float = 45.0            # 文字速度（字/秒）
+var skip_held: bool = false             # Ctrl 按住快进
+var skip_active: bool = false           # 「快进」按钮开关
+var skip_mode: String = "read"          # read=已读跳过 / all=全部跳过
 var current_was_read: bool = false
 var auto_timer: Timer
 var dialogue_size: int = 26
 
 # ---- 进度数据（持久化到 user://el_profile.json）----
-var profile: Dictionary = {"version": 1, "unlocked": {}, "read": {}, "speed": 1.0, "typewriter": true, "volume": 0.8, "flow_seen": {}, "checkpoints": {}}
+var profile: Dictionary = {"version": 1, "unlocked": {}, "read": {}, "speed": 1.0, "typewriter": true, "volume": 0.8, "flow_seen": {}, "checkpoints": {}, "text_speed": 45.0, "skip_mode": "read", "display": "window"}
 var progress_dirty: bool = false
+var resume_dirty: bool = false
 var progress_timer: Timer
 
 # ---- 回看 / 图库 / 分支树数据 ----
@@ -90,12 +105,16 @@ var continue_button: Button
 var overlay: Control
 var overlay_box: VBoxContainer
 var auto_button: Button
-var speed_button: Button
+var skip_button: Button
+var pulse_label: Label
+var name_bar: ColorRect
 var extras: Control
 var bgm: Node
 
 
 func _ready() -> void:
+	# 根节点必须放行鼠标事件：否则整屏 STOP 会吞掉点击，剧情只能用空格推进。
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_build_theme()
 	var file := FileAccess.open(STORY_PATH, FileAccess.READ)
 	if file == null:
@@ -118,7 +137,7 @@ func _ready() -> void:
 	extras.game = self
 	add_child(extras)
 	typewriter_timer = Timer.new()
-	typewriter_timer.wait_time = 0.03
+	typewriter_timer.wait_time = 1.0 / text_speed
 	typewriter_timer.timeout.connect(_typewriter_tick)
 	add_child(typewriter_timer)
 	auto_timer = Timer.new()
@@ -131,10 +150,13 @@ func _ready() -> void:
 	progress_timer.timeout.connect(_flush_profile)
 	add_child(progress_timer)
 	if DisplayServer.get_name() != "headless":
-		get_window().title = "ENDER LILIES · 终焉之雨 · v%s" % ProjectSettings.get_setting("application/config/version", "0.2")
+		_apply_display_mode()
+		get_window().title = "终焉之雨 · v%s" % ProjectSettings.get_setting("application/config/version", "0.5")
 	_show_title()
 	if OS.get_cmdline_user_args().has("--smoke"):
 		_run_smoke()
+	elif OS.get_cmdline_user_args().has("--shots"):
+		_run_shots()
 
 func _load_derived_data() -> void:
 	var art_file := FileAccess.open(ART_INDEX_PATH, FileAccess.READ)
@@ -173,7 +195,7 @@ func _build_theme() -> void:
 	theme_new.default_font_size = 24
 	theme = theme_new
 
-func _panel_style(fill: Color, border: Color, radius: int = 10) -> StyleBoxFlat:
+func _panel_style(fill: Color, border: Color, radius: int = 10, shadow: int = 0) -> StyleBoxFlat:
 	var s := StyleBoxFlat.new()
 	s.bg_color = fill
 	s.border_color = border
@@ -183,23 +205,76 @@ func _panel_style(fill: Color, border: Color, radius: int = 10) -> StyleBoxFlat:
 	s.content_margin_right = 16
 	s.content_margin_top = 8
 	s.content_margin_bottom = 8
+	if shadow > 0:
+		s.shadow_color = Color(0, 0, 0, 0.45)
+		s.shadow_size = shadow
+		s.shadow_offset = Vector2(0, 3)
 	return s
 
 func _button(text: String, action: Callable) -> Button:
+	# 卡片按钮：左侧蓝条 + 悬停亮边 + 按下黄绿，配轻投影提供立体感
 	var b := Button.new()
 	b.text = text
 	b.focus_mode = Control.FOCUS_NONE
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	b.add_theme_color_override("font_color", Color("c9d4e4"))
-	b.add_theme_color_override("font_hover_color", Color("eef3fa"))
-	b.add_theme_color_override("font_pressed_color", Color("ffffff"))
+	b.add_theme_color_override("font_hover_color", Color("f2f6fc"))
+	b.add_theme_color_override("font_pressed_color", Color(COL_LIME))
 	b.add_theme_color_override("font_disabled_color", Color("5c6674"))
-	b.add_theme_stylebox_override("normal", _panel_style(Color("141a24e6"), Color("46536a99")))
-	b.add_theme_stylebox_override("hover", _panel_style(Color("1d2736f0"), Color("7d93b5")))
-	b.add_theme_stylebox_override("pressed", _panel_style(Color("28344a"), Color("9db4d8")))
-	b.add_theme_stylebox_override("disabled", _panel_style(Color("10151d80"), Color("2c354255")))
+	var normal := _panel_style(Color("141b2ae6"), Color("2c3650"), 8)
+	normal.border_width_left = 3
+	normal.shadow_color = Color(0, 0, 0, 0.3)
+	normal.shadow_size = 3
+	normal.shadow_offset = Vector2(0, 2)
+	b.add_theme_stylebox_override("normal", normal)
+	var hover := _panel_style(Color("1c2639f2"), Color(COL_BLUE_SOFT), 8)
+	hover.border_width_left = 3
+	b.add_theme_stylebox_override("hover", hover)
+	var pressed := _panel_style(Color("22304a"), Color(COL_LIME), 8)
+	pressed.border_width_left = 3
+	b.add_theme_stylebox_override("pressed", pressed)
+	var disabled := _panel_style(Color("10151d80"), Color("2c354255"), 8)
+	disabled.border_width_left = 3
+	b.add_theme_stylebox_override("disabled", disabled)
 	b.pressed.connect(action)
 	return b
+
+func _flat_button(text: String, action: Callable) -> Button:
+	# 对话框快捷条上的文字按钮：平时只有文字，悬停浮出亮底
+	var b := Button.new()
+	b.text = text
+	b.focus_mode = Control.FOCUS_NONE
+	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	b.add_theme_font_size_override("font_size", 15)
+	b.add_theme_color_override("font_color", Color("9aa5b8"))
+	b.add_theme_color_override("font_hover_color", Color(COL_LIME))
+	b.add_theme_color_override("font_pressed_color", Color("ffffff"))
+	b.add_theme_stylebox_override("normal", StyleBoxEmpty.new())
+	b.add_theme_stylebox_override("focus", StyleBoxEmpty.new())
+	var hover := StyleBoxFlat.new()
+	hover.bg_color = Color("1c2639b0")
+	hover.set_corner_radius_all(6)
+	hover.content_margin_left = 10
+	hover.content_margin_right = 10
+	hover.content_margin_top = 3
+	hover.content_margin_bottom = 3
+	b.add_theme_stylebox_override("hover", hover)
+	b.add_theme_stylebox_override("pressed", hover)
+	b.pressed.connect(action)
+	return b
+
+func _diamond_texture(px: int, fill: Color, outline: Color) -> ImageTexture:
+	# 滑杆菱形滑块（参考图样式）
+	var img := Image.create(px, px, false, Image.FORMAT_RGBA8)
+	var c := (px - 1) / 2.0
+	for y in px:
+		for x in px:
+			var d := absf(x - c) + absf(y - c)
+			if d <= c - 1.5:
+				img.set_pixel(x, y, fill)
+			elif d <= c:
+				img.set_pixel(x, y, outline)
+	return ImageTexture.create_from_image(img)
 
 func _image(parent: Node) -> TextureRect:
 	var rect := TextureRect.new()
@@ -232,27 +307,39 @@ func _build_ui() -> void:
 	header.name = "Header"
 	header.position = Vector2(24, 14)
 	header.add_theme_font_size_override("font_size", 17)
-	header.add_theme_color_override("font_color", Color("7d8ea6"))
+	header.add_theme_color_override("font_color", Color("6c7a92"))
 	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(header)
 
+	# 对话框：深底 + 蓝边 + 投影，左上/右下角标呼应参考图
 	var panel := Panel.new()
 	panel.name = "DialoguePanel"
-	panel.position = Vector2(30, 500)
-	panel.size = Vector2(1220, 190)
+	panel.position = Vector2(30, 466)
+	panel.size = Vector2(1220, 214)
 	panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	panel.add_theme_stylebox_override("panel", _panel_style(Color("0b1019cc"), Color("3c4a6180"), 12))
+	panel.add_theme_stylebox_override("panel", _panel_style(Color("0a0f18ee"), Color("2e6bff7a"), 12, 14))
 	hud.add_child(panel)
+	var accent := FrameAccent.new()
+	accent.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	accent.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	panel.add_child(accent)
 
+	# 说话人名牌：黄绿短标 + 名字
+	name_bar = ColorRect.new()
+	name_bar.color = Color(COL_LIME)
+	name_bar.position = Vector2(56, 448)
+	name_bar.size = Vector2(5, 24)
+	name_bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	hud.add_child(name_bar)
 	speaker_label = Label.new()
-	speaker_label.position = Vector2(56, 478)
-	speaker_label.add_theme_font_size_override("font_size", 26)
+	speaker_label.position = Vector2(74, 440)
+	speaker_label.add_theme_font_size_override("font_size", 24)
 	speaker_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(speaker_label)
 
 	body_label = RichTextLabel.new()
-	body_label.position = Vector2(62, 540)
-	body_label.size = Vector2(1156, 128)
+	body_label.position = Vector2(74, 504)
+	body_label.size = Vector2(1132, 124)
 	body_label.bbcode_enabled = false
 	body_label.scroll_active = false
 	body_label.add_theme_font_size_override("normal_font_size", 24)
@@ -262,28 +349,39 @@ func _build_ui() -> void:
 	hud.add_child(body_label)
 
 	hint = Label.new()
-	hint.position = Vector2(62, 662)
-	hint.text = "空格 / 点击推进　·　Esc 菜单"
+	hint.position = Vector2(74, 644)
+	hint.text = "点击 / 空格推进　·　滚轮↑ 历史　·　Esc 菜单"
 	hint.add_theme_font_size_override("font_size", 14)
-	hint.add_theme_color_override("font_color", Color("5f6c80"))
+	hint.add_theme_color_override("font_color", Color(COL_TEXT_FAINT))
 	hint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(hint)
 
-	# 右下角播放控制条
+	# 推进提示箭头（页面读完且非自动/快进时脉冲闪烁）
+	pulse_label = Label.new()
+	pulse_label.text = "▶"
+	pulse_label.add_theme_font_size_override("font_size", 20)
+	pulse_label.add_theme_color_override("font_color", Color(COL_LIME))
+	pulse_label.position = Vector2(1204, 642)
+	pulse_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	pulse_label.visible = false
+	hud.add_child(pulse_label)
+	var pulse_tween := create_tween().set_loops()
+	pulse_tween.tween_property(pulse_label, "modulate:a", 0.25, 0.55)
+	pulse_tween.tween_property(pulse_label, "modulate:a", 1.0, 0.55)
+
+	# 对话框内快捷文字菜单（参考图右下样式）
 	var controls := HBoxContainer.new()
-	controls.position = Vector2(650, 652)
-	controls.add_theme_constant_override("separation", 7)
+	controls.position = Vector2(660, 644)
+	controls.add_theme_constant_override("separation", 12)
 	hud.add_child(controls)
-	for item in [["回看", "log"], ["自动", "auto"], ["1×", "speed"], ["菜单", "menu"]]:
-		var b := _button(item[0], _menu.bind(item[1]))
-		b.custom_minimum_size = Vector2(88, 30)
-		b.add_theme_font_size_override("font_size", 14)
+	for item in [["历史", "log"], ["快进", "skip"], ["自动", "auto"], ["保存", "save"], ["载入", "load"], ["设置", "settings"], ["隐藏", "hide_ui"], ["菜单", "menu"]]:
+		var b := _flat_button(item[0], _quick.bind(item[1]))
+		b.custom_minimum_size = Vector2(0, 28)
 		controls.add_child(b)
 		if item[1] == "auto":
 			auto_button = b
-		elif item[1] == "speed":
-			speed_button = b
-			b.tooltip_text = "切换自动播放倍速：1× / 2× / 4× / 8×"
+		elif item[1] == "skip":
+			skip_button = b
 
 	choice_box = VBoxContainer.new()
 	choice_box.position = Vector2(160, 140)
@@ -297,12 +395,21 @@ func _build_ui() -> void:
 	overlay.z_index = 30
 	overlay.visible = false
 	add_child(overlay)
+	overlay.gui_input.connect(func(event: InputEvent):
+		# 右键单击返回（关闭弹窗）
+		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+			_close_overlay()
+			get_viewport().set_input_as_handled())
+	var card := PanelContainer.new()
+	card.set_anchors_preset(Control.PRESET_CENTER)
+	card.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	card.grow_vertical = Control.GROW_DIRECTION_BOTH
+	card.add_theme_stylebox_override("panel", _panel_style(Color("0c1220f7"), Color("2e6bff88"), 16, 22))
+	card.custom_minimum_size = Vector2(540, 0)
+	overlay.add_child(card)
 	overlay_box = VBoxContainer.new()
-	overlay_box.add_theme_constant_override("separation", 8)
-	overlay_box.set_anchors_preset(Control.PRESET_CENTER)
-	overlay_box.grow_horizontal = Control.GROW_DIRECTION_BOTH
-	overlay_box.grow_vertical = Control.GROW_DIRECTION_BOTH
-	overlay.add_child(overlay_box)
+	overlay_box.add_theme_constant_override("separation", 10)
+	card.add_child(overlay_box)
 
 	_build_title_screen()
 
@@ -313,41 +420,102 @@ func _build_title_screen() -> void:
 	title_screen.z_index = 20
 	add_child(title_screen)
 	_image(title_screen)
-	var dim := ColorRect.new()
-	dim.color = Color("070a1066")
-	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	dim.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	title_screen.add_child(dim)
-	var name_label := Label.new()
-	name_label.text = "ENDER LILIES"
-	name_label.position = Vector2(84, 130)
-	name_label.add_theme_font_size_override("font_size", 52)
-	name_label.add_theme_color_override("font_color", Color("dfe6f0"))
-	name_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	title_screen.add_child(name_label)
+	# 左侧渐变压暗（右透出立绘），比整片纯色遮罩更有层次
+	var shade := TextureRect.new()
+	var grad := Gradient.new()
+	grad.offsets = PackedFloat32Array([0.0, 0.6, 1.0])
+	grad.colors = PackedColorArray([Color("05070de8"), Color("05070d99"), Color("05070d00")])
+	var grad_tex := GradientTexture2D.new()
+	grad_tex.gradient = grad
+	grad_tex.width = 128
+	grad_tex.height = 128
+	grad_tex.fill_from = Vector2(0, 0)
+	grad_tex.fill_to = Vector2(1, 0)
+	shade.texture = grad_tex
+	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	shade.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(shade)
+
+	# 标题组：黄绿短杠 + 英文副题 + 大标题（蓝色错位阴影）
+	var bar := ColorRect.new()
+	bar.color = Color(COL_LIME)
+	bar.position = Vector2(88, 116)
+	bar.size = Vector2(56, 8)
+	bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(bar)
 	var sub_label := Label.new()
-	sub_label.text = "终焉之雨 · 同人视觉小说（开发中样章）"
-	sub_label.position = Vector2(88, 200)
-	sub_label.add_theme_font_size_override("font_size", 20)
-	sub_label.add_theme_color_override("font_color", Color("9db4d8"))
+	sub_label.text = "ENDER LILIES FAN VISUAL NOVEL"
+	sub_label.position = Vector2(88, 136)
+	sub_label.add_theme_font_size_override("font_size", 17)
+	sub_label.add_theme_color_override("font_color", Color(COL_BLUE_SOFT))
 	sub_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(sub_label)
+	var name_label := Label.new()
+	name_label.text = "终焉之雨"
+	name_label.position = Vector2(82, 166)
+	name_label.add_theme_font_size_override("font_size", 84)
+	name_label.add_theme_color_override("font_color", Color("f2f6fc"))
+	name_label.add_theme_color_override("shadow_color", Color("2e6bff8c"))
+	name_label.add_theme_constant_override("shadow_offset_x", 4)
+	name_label.add_theme_constant_override("shadow_offset_y", 4)
+	name_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(name_label)
+	var tagline := Label.new()
+	tagline.text = "把悲哀带往世界尽头 —— 同人视觉小说"
+	tagline.position = Vector2(88, 284)
+	tagline.add_theme_font_size_override("font_size", 17)
+	tagline.add_theme_color_override("font_color", Color(COL_TEXT_DIM))
+	tagline.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(tagline)
+
+	# 菜单：左侧蓝竖线，悬停时黄绿箭头滑入
+	var menu_line := ColorRect.new()
+	menu_line.color = Color(COL_BLUE)
+	menu_line.position = Vector2(88, 342)
+	menu_line.size = Vector2(3, 280)
+	menu_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(menu_line)
+	var arrow := Label.new()
+	arrow.text = "▶"
+	arrow.add_theme_font_size_override("font_size", 20)
+	arrow.add_theme_color_override("font_color", Color(COL_LIME))
+	arrow.position = Vector2(102, 348)
+	arrow.visible = false
+	arrow.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_screen.add_child(arrow)
 	var menu := VBoxContainer.new()
-	menu.position = Vector2(88, 272)
-	menu.add_theme_constant_override("separation", 6)
+	menu.position = Vector2(122, 336)
+	menu.add_theme_constant_override("separation", 15)
 	title_screen.add_child(menu)
-	for item in [["从头开始", "start"], ["继续游戏", "continue"], ["读取存档", "load"], ["旅途图库", "gallery"], ["剧情分支树", "flowchart"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
-		var b := _button(item[0], _menu.bind(item[1]))
-		b.custom_minimum_size = Vector2(280, 40)
-		b.add_theme_font_size_override("font_size", 19)
+	for item in [["继续游戏", "continue"], ["从头开始", "start"], ["读取存档", "load"], ["旅途图库", "gallery"], ["剧情分支树", "flowchart"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
+		var b := Button.new()
+		b.text = item[0]
+		b.focus_mode = Control.FOCUS_NONE
+		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		b.custom_minimum_size = Vector2(280, 0)
+		b.add_theme_font_size_override("font_size", 22)
+		b.add_theme_color_override("font_color", Color("b9c4d6"))
+		b.add_theme_color_override("font_hover_color", Color("ffffff"))
+		b.add_theme_color_override("font_pressed_color", Color(COL_LIME))
+		b.add_theme_color_override("font_disabled_color", Color("4d5666"))
+		for state in ["normal", "hover", "pressed", "disabled", "focus"]:
+			b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+		b.pressed.connect(_menu.bind(item[1]))
+		b.mouse_entered.connect(func():
+			arrow.visible = true
+			arrow.position.y = menu.position.y + b.position.y + 8)
 		menu.add_child(b)
 		if item[1] == "continue":
 			continue_button = b
+	menu.mouse_exited.connect(func(): arrow.visible = false)
+
 	var footer := Label.new()
-	footer.text = "同人作品 · 免费发布 · ENDER LILIES © Live Wire / Adglobe"
-	footer.position = Vector2(88, 678)
+	footer.text = "v%s // 终焉之雨 · ENDER LILIES 同人作品 · 免费发布 · © Live Wire / Adglobe" % ProjectSettings.get_setting("application/config/version", "0.5")
+	footer.position = Vector2(88, 676)
 	footer.add_theme_font_size_override("font_size", 13)
-	footer.add_theme_color_override("font_color", Color("5f6c80"))
+	footer.add_theme_color_override("font_color", Color(COL_TEXT_FAINT))
 	footer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(footer)
 
@@ -382,6 +550,8 @@ func start() -> void:
 	ui_hidden = false
 	auto_mode = false
 	skip_held = false
+	skip_active = false
+	_update_playback_buttons()
 	backlog = []
 	active_flow = ""
 	checkpoint_flow = ""
@@ -401,23 +571,42 @@ func _open_overlay(title: String, buttons: Array) -> void:
 		child.queue_free()
 	var caption := Label.new()
 	caption.text = title
-	caption.add_theme_font_size_override("font_size", 22)
-	caption.add_theme_color_override("font_color", Color("dfe6f0"))
+	caption.add_theme_font_size_override("font_size", 24)
+	caption.add_theme_color_override("font_color", Color(COL_TEXT))
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	overlay_box.add_child(caption)
 	for item in buttons:
 		var b: Button = item[0]
-		b.custom_minimum_size = Vector2(460, 42)
+		b.custom_minimum_size = Vector2(460, 44)
 		overlay_box.add_child(b)
 	var close := _button("关闭", _close_overlay)
-	close.custom_minimum_size = Vector2(460, 42)
+	close.custom_minimum_size = Vector2(460, 44)
 	overlay_box.add_child(close)
+	overlay_box.modulate = Color(1, 1, 1, 0)
+	create_tween().tween_property(overlay_box, "modulate:a", 1.0, 0.12)
+	_update_pulse()
 
 func _close_overlay() -> void:
 	modal_open = false
 	overlay.visible = false
+	_update_pulse()
+
+func _quick(kind: String) -> void:
+	# 对话框快捷条入口：快进/隐藏特殊处理，其余走菜单路由
+	match kind:
+		"skip":
+			skip_active = not skip_active
+			_update_playback_buttons()
+			_schedule_auto()
+		"hide_ui":
+			_hide_ui(true)
+		_:
+			_menu(kind)
 
 func _menu(kind: String) -> void:
+	# 打开任何面板都退出快进态
+	if not kind in ["auto", "skip", "resume", "start", "continue", "quit"]:
+		skip_active = false
 	match kind:
 		"start":
 			start()
@@ -448,9 +637,6 @@ func _menu(kind: String) -> void:
 			auto_mode = not auto_mode
 			_update_playback_buttons()
 			_schedule_auto()
-		"speed":
-			var speeds := [1.0, 2.0, 4.0, 8.0]
-			_set_speed(speeds[(speeds.find(playback_speed) + 1) % speeds.size()])
 		"game_menu":
 			_game_menu()
 
@@ -468,10 +654,12 @@ func _game_menu() -> void:
 	])
 
 func _update_playback_buttons() -> void:
-	if speed_button != null:
-		speed_button.text = "%d×" % int(playback_speed)
 	if auto_button != null:
-		auto_button.text = "自动中" if auto_mode else "自动"
+		auto_button.text = "自动·开" if auto_mode else "自动"
+		auto_button.add_theme_color_override("font_color", Color(COL_LIME) if auto_mode else Color("9aa5b8"))
+	if skip_button != null:
+		skip_button.text = "快进·开" if skip_active else "快进"
+		skip_button.add_theme_color_override("font_color", Color(COL_LIME) if skip_active else Color("9aa5b8"))
 
 
 # ---------------------------------------------------------------- 剧情执行
@@ -601,6 +789,7 @@ func _render(d: Dictionary) -> void:
 		bg.texture = _texture(ART + "backgrounds/" + bg_id + ".png")
 	speaker_label.text = _display_name(who) if who != "我" else who
 	speaker_label.visible = who != ""
+	name_bar.visible = who != ""
 	speaker_label.add_theme_color_override("font_color", Color(SPEAKER_COLORS.get(who, "aeb8c6")))
 	var is_narration := who == ""
 	body_label.add_theme_color_override("default_color", Color("aebac9") if is_narration else Color("e2e8f2"))
@@ -625,7 +814,7 @@ func _render(d: Dictionary) -> void:
 		typewriter_timer.start()
 	var visible_choices: Array = _visible_choices(d)
 	choice_box.visible = not visible_choices.is_empty()
-	hint.text = "请选择" if not visible_choices.is_empty() else "空格 / 点击推进　·　Esc 菜单"
+	hint.text = "请选择" if not visible_choices.is_empty() else "点击 / 空格推进　·　滚轮↑ 历史　·　Esc 菜单"
 	for option in visible_choices:
 		var b := _button(str(option["label"]), choose.bind(option))
 		b.custom_minimum_size = Vector2(960, 52)
@@ -633,7 +822,9 @@ func _render(d: Dictionary) -> void:
 		b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		b.alignment = HORIZONTAL_ALIGNMENT_CENTER
 		choice_box.add_child(b)
-	_write_json(RESUME_PATH, _save_data())
+	# 续玩存档改为去抖写入：每页同步写盘是自动推进卡顿的主因
+	resume_dirty = true
+	_progress_changed()
 	_schedule_auto()
 
 func _unlock_art(node_id: String) -> void:
@@ -663,6 +854,7 @@ func _flow_rewind(block_id: String) -> void:
 	var snapshot: Dictionary = profile["checkpoints"][block_id].duplicate(true)
 	auto_mode = false
 	skip_held = false
+	skip_active = false
 	_update_playback_buttons()
 	_apply_snapshot(snapshot)
 
@@ -711,6 +903,8 @@ func choose(option: Dictionary) -> void:
 	if in_title or _is_modal():
 		return
 	auto_timer.stop()
+	skip_active = false
+	_update_playback_buttons()
 	for key in option.get("set", {}):
 		flags[key] = option["set"][key]
 	current = {}
@@ -740,9 +934,10 @@ func _finish() -> void:
 	auto_timer.stop()
 	body_label.visible_characters = -1
 	speaker_label.visible = false
-	body_label.text = "—— 样章到这里暂时告一段落 ——"
+	body_label.text = "—— 全篇到这里暂告一段落 ——"
 	hint.text = "分支树与图库可回看已走过的路 · Esc 菜单"
 	choice_box.visible = false
+	_update_pulse()
 	var b := _button("回到标题", _menu.bind("back_title"))
 	b.custom_minimum_size = Vector2(960, 52)
 	choice_box.add_child(b)
@@ -753,20 +948,24 @@ func _finish() -> void:
 func _auto_tick() -> void:
 	advance()
 
+func _is_skipping() -> bool:
+	return skip_held or skip_active
+
 func _schedule_auto() -> void:
 	auto_timer.stop()
+	_update_pulse()
 	if in_title or _is_modal() or finished or ui_hidden:
 		return
-	if skip_held:
-		# 快进：已读（或开了跳过未读）立即补完文字并高速推进
-		if current_was_read or skip_unread:
+	if _is_skipping():
+		# 文本快进：补完文字后高速推进；遇选项自动停下（选项不由快进代答）
+		if current_was_read or skip_mode == "all":
 			if typewriter_active:
 				_complete_typing()
 			if not current.get("choices", []).is_empty():
 				return
 			auto_timer.start(0.09)
 		else:
-			hint.text = "未读文本 · 已暂停快进（松开 Ctrl 恢复）"
+			hint.text = "未读文本 · 已暂停快进（设置中切换为「全部跳过」可继续）"
 		return
 	if typewriter_active or not current.get("choices", []).is_empty():
 		return
@@ -774,14 +973,21 @@ func _schedule_auto() -> void:
 		auto_timer.start(_page_delay())
 
 func _page_delay() -> float:
-	return maxf(0.30, maxf(2.4, float(typewriter_text.length()) * 0.13) / playback_speed)
+	return maxf(0.35, maxf(2.2, float(typewriter_text.length()) * 0.12) / playback_speed)
 
 func _set_speed(value: float) -> void:
-	playback_speed = value if value in [1.0, 2.0, 4.0, 8.0] else 1.0
+	playback_speed = clampf(value, 1.0, 8.0)
 	profile["speed"] = playback_speed
 	_progress_changed()
 	_update_playback_buttons()
 	_schedule_auto()
+
+func _set_text_speed(value: float) -> void:
+	text_speed = clampf(value, 10.0, 90.0)
+	profile["text_speed"] = text_speed
+	if typewriter_timer != null:
+		typewriter_timer.wait_time = 1.0 / text_speed
+	_progress_changed()
 
 func _set_typewriter(enabled: bool) -> void:
 	typewriter_enabled = enabled
@@ -796,14 +1002,42 @@ func _set_volume(value: float) -> void:
 	_progress_changed()
 
 func _set_dialogue_size(value: int) -> void:
-	dialogue_size = clampi(value, 22, 32)
+	dialogue_size = clampi(value, 20, 40)
 	profile["dialogue_size"] = dialogue_size
+	if body_label != null:
+		body_label.add_theme_font_size_override("normal_font_size", dialogue_size)
+	_progress_changed()
+
+func _set_skip_mode(mode: String) -> void:
+	skip_mode = "all" if mode == "all" else "read"
+	profile["skip_mode"] = skip_mode
 	_progress_changed()
 
 func _set_skip_unread(enabled: bool) -> void:
-	skip_unread = enabled
-	profile["skip_unread"] = enabled
+	# 旧接口，兼容保留：true=全部跳过 / false=已读跳过
+	_set_skip_mode("all" if enabled else "read")
+
+func _set_display_mode(mode: String) -> void:
+	profile["display"] = str(mode)
 	_progress_changed()
+	_apply_display_mode()
+
+func _apply_display_mode() -> void:
+	if DisplayServer.get_name() == "headless":
+		return
+	var mode := str(profile.get("display", "window"))
+	if mode == "fullscreen":
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		return
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+	var parts := mode.split("x")
+	if parts.size() == 2 and parts[0].is_valid_int() and parts[1].is_valid_int():
+		var size := Vector2i(int(parts[0]), int(parts[1]))
+		DisplayServer.window_set_size(size)
+		var screen := DisplayServer.window_get_current_screen()
+		var screen_pos := DisplayServer.screen_get_position(screen)
+		var screen_size := DisplayServer.screen_get_size(screen)
+		DisplayServer.window_set_position(screen_pos + (screen_size - size) / 2)
 
 # ---------------------------------------------------------------- 打字机
 
@@ -813,7 +1047,7 @@ func _typewriter_tick() -> void:
 		return
 	if in_title or _is_modal() or ui_hidden or finished:
 		return
-	typewriter_index += int(playback_speed) if auto_mode else 1
+	typewriter_index += maxi(1, int(playback_speed)) if auto_mode else 1
 	body_label.visible_characters = mini(typewriter_index, typewriter_text.length())
 	if typewriter_index >= typewriter_text.length():
 		_complete_typing()
@@ -975,17 +1209,30 @@ func _load_profile() -> void:
 			for key in ["unlocked", "read", "flow_seen", "checkpoints"]:
 				if stored.get(key) is Dictionary:
 					profile[key] = stored[key]
-			for key in ["speed", "volume", "typewriter", "dialogue_size", "skip_unread"]:
+			for key in ["speed", "volume", "typewriter", "dialogue_size", "text_speed", "skip_mode", "display"]:
 				if stored.has(key):
 					profile[key] = stored[key]
-	playback_speed = float(profile.get("speed", 1.0))
-	if playback_speed not in [1.0, 2.0, 4.0, 8.0]:
-		playback_speed = 1.0
+			# 旧版「快进跳过未读」开关 → 跳过模式迁移
+			if not stored.has("skip_mode") and bool(stored.get("skip_unread", false)):
+				profile["skip_mode"] = "all"
+	playback_speed = clampf(float(profile.get("speed", 1.0)), 1.0, 8.0)
 	typewriter_enabled = bool(profile.get("typewriter", true))
-	dialogue_size = clampi(int(profile.get("dialogue_size", 26)), 22, 32)
-	skip_unread = bool(profile.get("skip_unread", false))
-	# 剧情重编译后，失效的检查点按章节/场景标题迁移，救不回来的丢弃
+	dialogue_size = clampi(int(profile.get("dialogue_size", 26)), 20, 40)
+	text_speed = clampf(float(profile.get("text_speed", 45.0)), 10.0, 90.0)
+	skip_mode = "all" if str(profile.get("skip_mode", "read")) == "all" else "read"
+	profile["skip_mode"] = skip_mode
+	# 剧情重编译后场景块 id 会变：清掉已失效的「已走过」记录，避免分支树
+	# 出现「已完成 13 / 9」这类计数虚高；检查点同样清理，救得回的按标题迁移。
+	var block_ids := {}
+	for b in flow_data.get("blocks", []):
+		block_ids[str(b["id"])] = true
+	for block_id in profile["flow_seen"].keys():
+		if not block_ids.has(block_id):
+			profile["flow_seen"].erase(block_id)
 	for block_id in profile["checkpoints"].keys():
+		if not block_ids.has(block_id):
+			profile["checkpoints"].erase(block_id)
+			continue
 		var snapshot: Dictionary = profile["checkpoints"][block_id]
 		var rescued := _resolve_saved_node(snapshot)
 		if rescued == "":
@@ -1002,6 +1249,10 @@ func _flush_profile() -> void:
 	if not progress_dirty:
 		return
 	_write_json(PROFILE_PATH, profile)
+	# 续玩存档随进度一起落盘（去抖后统一写入，避免每页一次磁盘 IO）
+	if resume_dirty and not in_title and not str(current.get("id", "")).is_empty():
+		_write_json(RESUME_PATH, _save_data())
+		resume_dirty = false
 	progress_dirty = false
 
 func _notification(what: int) -> void:
@@ -1010,6 +1261,8 @@ func _notification(what: int) -> void:
 		get_tree().quit()
 	elif what == NOTIFICATION_APPLICATION_FOCUS_OUT:
 		skip_held = false
+		skip_active = false
+		_update_playback_buttons()
 		_schedule_auto()
 
 func _exit_tree() -> void:
@@ -1080,7 +1333,16 @@ func _unhandled_input(event: InputEvent) -> void:
 				advance()
 			get_viewport().set_input_as_handled()
 		elif event.button_index == MOUSE_BUTTON_RIGHT and not in_title and not _is_modal():
+			# 右键：隐藏/呼出对话界面（面板关闭走 Extras 与 overlay 各自的右键处理）
 			_hide_ui(not ui_hidden)
+			get_viewport().set_input_as_handled()
+		elif event.button_index == MOUSE_BUTTON_WHEEL_UP and not in_title and not _is_modal():
+			# 滚轮上：直接翻出历史对话
+			extras.open("backlog")
+			get_viewport().set_input_as_handled()
+		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN and not in_title and not _is_modal():
+			# 滚轮下：等价一次空格（打字中先补完，再推一页）
+			advance()
 			get_viewport().set_input_as_handled()
 
 func _input(event: InputEvent) -> void:
@@ -1093,6 +1355,25 @@ func _input(event: InputEvent) -> void:
 func _hide_ui(hidden: bool) -> void:
 	ui_hidden = hidden
 	hud.visible = not hidden
+	_update_pulse()
+
+func _update_pulse() -> void:
+	# 页面读完、无选项、非自动/快进/弹窗时显示推进箭头
+	if pulse_label == null:
+		return
+	var show := not in_title and not _is_modal() and not finished and not ui_hidden \
+			and not auto_mode and not _is_skipping() and not current.is_empty()
+	pulse_label.visible = show and not typewriter_active and current.get("choices", []).is_empty()
+
+## 对话框边框角标：左上蓝 L、右下黄绿 L（参考图样式）
+class FrameAccent extends Control:
+	func _draw() -> void:
+		var blue := Color("4a86ff")
+		var lime := Color("c8f000")
+		draw_line(Vector2(1, 26), Vector2(1, 1), blue, 2.0)
+		draw_line(Vector2(1, 1), Vector2(30, 1), blue, 2.0)
+		draw_line(Vector2(size.x - 1, size.y - 26), Vector2(size.x - 1, size.y - 1), lime, 2.0)
+		draw_line(Vector2(size.x - 30, size.y - 1), Vector2(size.x - 1, size.y - 1), lime, 2.0)
 
 # ---------------------------------------------------------------- 冒烟测试
 ## godot --headless --path . -- --smoke
@@ -1199,14 +1480,17 @@ func _run_smoke() -> void:
 		print("SMOKE 缺少终章路由节点 c13_finale_choice")
 	# 设置项
 	_set_speed(4.0)
+	_set_text_speed(90.0)
 	_set_dialogue_size(30)
-	_set_skip_unread(true)
-	if playback_speed != 4.0 or dialogue_size != 30 or not skip_unread:
+	_set_skip_mode("all")
+	_set_display_mode("window")
+	if playback_speed != 4.0 or dialogue_size != 30 or skip_mode != "all" or text_speed != 90.0:
 		all_ok = false
 		print("SMOKE 设置项未生效")
 	_set_speed(1.0)
+	_set_text_speed(45.0)
 	_set_dialogue_size(26)
-	_set_skip_unread(false)
+	_set_skip_mode("read")
 	# 附加面板：逐个打开再关闭，确保不崩溃
 	for view in ["gallery", "flowchart", "backlog", "settings"]:
 		extras.open(view)
@@ -1231,3 +1515,40 @@ func _run_smoke() -> void:
 	else:
 		print("SMOKE FAIL")
 		get_tree().quit(1)
+
+## UI 截图调试：Godot --path . -- --shots（输出到 SHOTS_DIR，默认 user://shots）
+## 依次截取标题 / 对话页 / 设置 / 分支树，供美术排查用，不参与剧情流程。
+func _run_shots() -> void:
+	var dir := OS.get_environment("SHOTS_DIR")
+	if dir.is_empty():
+		dir = OS.get_user_data_dir() + "/shots"
+	DirAccess.make_dir_recursive_absolute(dir)
+	await get_tree().process_frame
+	await get_tree().process_frame
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/1_title.png")
+	start()
+	for i in range(6):
+		if typewriter_active:
+			_complete_typing()
+		if not current.is_empty() and not current.get("choices", []).is_empty():
+			choose(_visible_choices(current)[0])
+		else:
+			advance()
+		await get_tree().process_frame
+	if typewriter_active:
+		_complete_typing()
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/2_dialogue.png")
+	extras.open("settings")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/3_settings.png")
+	extras.close()
+	extras.open("flowchart")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/4_flowchart.png")
+	extras.close()
+	print("SHOTS saved to " + dir)
+	get_tree().quit(0)
