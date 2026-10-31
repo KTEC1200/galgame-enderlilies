@@ -9,7 +9,7 @@
 
 | 位置 | 内容 | 注意 |
 |---|---|---|
-| `C:\Users\27025\Desktop\iii\enderlilies\game\` | 游戏工程本体 = 独立 git 仓库，remote `git@github.com:KTEC1200/galgame-enderlilies.git`，分支 main | **所有工作都在本仓库内**；改动一律提交推送。仓库建议保持 Private（除音频外还含全部改编文本） |
+| `C:\Users\27025\Desktop\iii\enderlilies\game\` | 游戏工程本体 = 独立 git 仓库，remote `git@github.com:KTEC1200/galgame-enderlilies.git`，分支 main | **所有工作都在本仓库内**；改动一律提交推送（含音频与剧情文本） |
 | `C:\Users\27025\Desktop\iii\enderlilies\` | 剧情知识库（Obsidian vault，GitHub 同步） | **只读**（剧情和台词原文不许动）；`sources/ENDER LILIES 文本集.md` 是台词唯一权威来源 |
 
 ## 2. 当前状态（2026-10-31 晚）
@@ -26,7 +26,7 @@
   每章合入流程；`tools/build_story.py --check` 只读校验。
 - **素材许可已取得（2026-10-31，作者确认）**：OST 配乐方案保留，发布关卡中的
   授权项解除。许可凭证建议存档（如 `docs/licenses/`）。
-- 音频已移出 git 跟踪（`assets/audio/` 本地保留，见坑 10 相关说明）。
+- 音频已入库（`assets/audio/` 38 首 OST，作者确认后恢复跟踪）。
 - Windows 导出包 v0.4.0 为旧版（不含 07~13 与 4.7 迁移），仅作存档；
   **下次导出前需安装 4.7.2 导出模板**。
 
