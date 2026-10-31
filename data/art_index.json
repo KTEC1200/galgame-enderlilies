@@ -285,7 +285,7 @@
    "background/church_bell",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/siegrid/normal"
+   "sprite/siegrid/soft"
   ],
   "title": "钟楼之上",
   "chapter": "第一章"
@@ -637,11 +637,482 @@
   "title": "悬崖村",
   "chapter": "第二章"
  },
+ "c06_n002": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n003": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n004": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n005": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n006": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/worried",
+   "sprite/knight/soft"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n007": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "悬崖村",
+  "chapter": "第二章"
+ },
+ "c06_n010": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n011": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n012": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n013": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n014": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n016": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n017": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n020": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n021": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n022": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n023": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n024": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n025": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n026": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n027": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n028": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n029": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n030": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n031": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n032": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n033": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n034": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n035": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n039": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n040": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n041": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n042": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n043": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n044": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n047": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n048": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n049": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n051": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n052": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n053": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n054": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n055": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n056": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n058": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/serious"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n059": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/soft",
+   "sprite/knight/soft",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n060": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n061": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n065": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
+ "c06_n066": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
+ "c06_n067": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
+ "c06_n068": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
  "c07_n001": {
   "arts": [
    "background/forest_path",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "魔女森林",
   "chapter": "第三章"
@@ -650,7 +1121,8 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "地下墓穴",
   "chapter": "第四章"
@@ -659,7 +1131,8 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "地牢",
   "chapter": "第五章"
@@ -668,7 +1141,8 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -677,7 +1151,8 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -686,7 +1161,8 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -695,7 +1171,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -704,7 +1181,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -713,7 +1191,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -722,7 +1201,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -731,7 +1211,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -740,7 +1221,8 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -749,7 +1231,8 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -758,7 +1241,8 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -767,7 +1251,8 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -776,7 +1261,8 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -785,7 +1271,8 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"

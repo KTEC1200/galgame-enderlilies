@@ -303,7 +303,10 @@
   },
   {
    "type": "line",
-   "text": "siegrid(soft)「应该是我……是我要守护好的……」（亡语）",
+   "groan": true,
+   "expression": "soft",
+   "speaker": "siegrid",
+   "text": "应该是我……是我要守护好的……",
    "id": "c02_n011"
   },
   {
@@ -648,12 +651,411 @@
    "title": "悬崖村",
    "bg": "village_hut",
    "music": "village",
+   "cast": [
+    {
+     "id": "lily",
+     "expression": "normal"
+    },
+    {
+     "id": "knight",
+     "expression": "normal"
+    }
+   ],
    "id": "c06_n000"
   },
   {
    "type": "line",
-   "text": "（本章剧情待撰写——章节结构与素材指引见 docs/剧情规划.md）",
+   "text": "雨水顺着破损的木檐不停淌落。正如离开白教区时所闻，曾守护此地的老战士，其残响正徘徊在村落深处。",
    "id": "c06_n001"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "招来污秽的……死亡之雨……」「来到这里的时候，这边已经是这般惨况」「每个人不是被雨化为秽鬼……就是被秽鬼杀掉了吧……",
+   "id": "c06_n002"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "这雨……毫无停下来的样子」「死亡之雨不停，这国家的祸难也不息",
+   "id": "c06_n003"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "我和你一样，醒来时什么都记不起」「连重要的使命也都……」「但这一切我毫不在乎",
+   "id": "c06_n004"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "……我和巫女算有些渊源」「虽然我这模样无法为你排除一切危险，但是至少能成为你灭敌的利剑",
+   "id": "c06_n005"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "……你那是什么表情啊」「我看起来像是那种会袖手旁观，让小孩子在雨中自生自灭的家伙吗？",
+   "reactions": {
+    "lily": "worried"
+   },
+   "id": "c06_n006"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "别逞强，你还无法发出声音对吧？」「……我们走吧",
+   "id": "c06_n007"
+  },
+  {
+   "type": "stage",
+   "title": "雨蚀的村道",
+   "id": "c06_n008"
+  },
+  {
+   "type": "stage",
+   "bg": "village_cliff",
+   "id": "c06_n009"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "这里看来曾经是个村庄……」「所有的一切……被雨融化了……",
+   "id": "c06_n010"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "污秽对你来说是种力量」「虽然有些代价，但是想要活下去就得利用这力量",
+   "id": "c06_n011"
+  },
+  {
+   "type": "line",
+   "text": "塌陷的土墙上残留着稚拙的线条，那是很久以前被雨水掩盖的痕迹。",
+   "id": "c06_n012"
+  },
+  {
+   "type": "line",
+   "text": "「滑石笔的涂鸦」「呈现着泉之白巫女和村里的孩子们」「在阳光照耀下一同玩耍的模样」",
+   "id": "c06_n013"
+  },
+  {
+   "type": "line",
+   "text": "我望着墙上的阳光与笑脸，胸口泛起一阵陌生的酸楚。",
+   "id": "c06_n014"
+  },
+  {
+   "type": "stage",
+   "bg": "village_hut",
+   "id": "c06_n015"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "以我的能力恐怕无法，破坏覆盖地面的肉瘤」「要是能够对地面，发出强烈的一击或许……",
+   "id": "c06_n016"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "那里有间小屋，先休息一下吧……」「里面似乎有条路……要进去吗？",
+   "id": "c06_n017"
+  },
+  {
+   "type": "stage",
+   "title": "残响的村落",
+   "id": "c06_n018"
+  },
+  {
+   "type": "stage",
+   "bg": "village_cliff",
+   "id": "c06_n019"
+  },
+  {
+   "type": "line",
+   "text": "断壁残垣间游荡着微弱的执念，暴雨冲刷不去他们最后的悲鸣。",
+   "id": "c06_n020"
+  },
+  {
+   "type": "line",
+   "text": "「在因雨而起的混乱中，少年与母亲失散了。」「他为了寻求帮助而向白教区前进，但是最终还是没能到达目的地。」「好冷……你在哪里，妈……妈妈……」「救救我……好痛苦……」",
+   "id": "c06_n021"
+  },
+  {
+   "type": "line",
+   "text": "「求求你……净化……」",
+   "id": "c06_n022"
+  },
+  {
+   "type": "line",
+   "text": "泥泞的货车旁散落着异国的货物，残存的思念在雨中低泣。",
+   "id": "c06_n023"
+  },
+  {
+   "type": "line",
+   "text": "「商人来自位于边陲之国西部的某个国家。」「他从外面购买东西，走遍边陲之国。」「国人购买稀有物品时那欢喜的笑容，是他工作的动力。」「好想与家乡的老婆和女儿，见最后一面……」",
+   "id": "c06_n024"
+  },
+  {
+   "type": "line",
+   "text": "「痛苦……好痛苦……」",
+   "id": "c06_n025"
+  },
+  {
+   "type": "line",
+   "text": "腐化的木桩下倒卧着畸形的躯壳，残留的悔恨依然回荡在风中。",
+   "id": "c06_n026"
+  },
+  {
+   "type": "line",
+   "text": "「被死亡之雨淋到的身体开始腐化并且变异，悬崖村村长与家畜合为一体了。」「竟然变成了这番丑恶的模样……」",
+   "id": "c06_n027"
+  },
+  {
+   "type": "line",
+   "text": "「……没能保护……对……不起……」",
+   "id": "c06_n028"
+  },
+  {
+   "type": "line",
+   "text": "「为了村庄费尽全力，最终竟然是这样……」",
+   "id": "c06_n029"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "秽鬼不都是因雨而生的……",
+   "id": "c06_n030"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "难道你感到熟悉？」「看来是在彻底疯狂之前失去了意识」「虽然感受不到敌意，安全起见还是别靠近比较好",
+   "id": "c06_n031"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "慢着，有动静」「……一路跟来的么」「看来即便没有意识，还是被你的护身符引了过来",
+   "id": "c06_n032"
+  },
+  {
+   "type": "line",
+   "speaker": "knight",
+   "text": "也许是曾经为白巫女服务的马」「那家伙好像愿意帮助我们，白巫女的身份果真非同凡响啊",
+   "id": "c06_n033"
+  },
+  {
+   "type": "line",
+   "text": "倒下的无头甲胄散作黑烟，生前的执念与悲叹浮现在雨中。",
+   "id": "c06_n034"
+  },
+  {
+   "type": "line",
+   "text": "「因为崇拜乡村英雄格落特而成为骑士的男人。」「在成为不死骑士后污秽的侵蚀十分快速，上战场前线前暴走。」「因为被指控攻击了骑士同胞们，而被砍头。」「早知如此还不如失去意识，被狂气吞噬呢……」",
+   "id": "c06_n035"
+  },
+  {
+   "type": "stage",
+   "title": "村落广场",
+   "id": "c06_n036"
+  },
+  {
+   "type": "stage",
+   "bg": "village_square",
+   "id": "c06_n037"
+  },
+  {
+   "type": "stage",
+   "music": "boss_village_intro",
+   "music_outro": "boss_village_outro",
+   "id": "c06_n038"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "knight",
+   "text": "这是广场么，到处都是秽鬼……",
+   "id": "c06_n039"
+  },
+  {
+   "type": "line",
+   "text": "暴雨撕裂了视野。",
+   "id": "c06_n040"
+  },
+  {
+   "type": "line",
+   "text": "巨大的铁锤拖过石板，带起刺耳的碎裂声。",
+   "id": "c06_n041"
+  },
+  {
+   "type": "line",
+   "text": "黑影咆哮着冲来，狂气暴涨。",
+   "id": "c06_n042"
+  },
+  {
+   "type": "line",
+   "text": "你侧身闪过重击。剑影如黑芒挥出，白光撕裂了雨幕。",
+   "id": "c06_n043"
+  },
+  {
+   "type": "line",
+   "text": "伴随一声沉重的闷响，高大的身躯终于轰然跪倒。",
+   "id": "c06_n044"
+  },
+  {
+   "type": "stage",
+   "title": "老兵的记忆",
+   "id": "c06_n045"
+  },
+  {
+   "type": "stage",
+   "music": "village_quiet",
+   "id": "c06_n046"
+  },
+  {
+   "type": "line",
+   "text": "你伸出手，白光自掌心静静泛起。",
+   "id": "c06_n047"
+  },
+  {
+   "type": "line",
+   "text": "「曾经被称为都城第一骑士的高大男人。」「格落特是乡村里有名的英雄，一直为他人而费尽全力。」「英雄的结局总是寂寞的。」",
+   "id": "c06_n048"
+  },
+  {
+   "type": "line",
+   "text": "我闭上眼，听见苍老而疲惫的声音在白光深处回响。",
+   "id": "c06_n049"
+  },
+  {
+   "type": "stage",
+   "cg": "gerold_memory",
+   "id": "c06_n050"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "gerold",
+   "text": "小屋外传来村民的声音」「声音里含有恐惧，对老身这沦为秽鬼，从堡垒之战归来的怪物的恐惧」「为了守护大家，决定进入不死骑士团的，是老身自己的选择",
+   "id": "c06_n051"
+  },
+  {
+   "type": "line",
+   "expression": "worried",
+   "speaker": "gerold",
+   "text": "有时候会希望被净化，渴望解脱」「老身岂能增加泉之白巫女的重担",
+   "id": "c06_n052"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "gerold",
+   "text": "过了一会儿声音再次传来」「这次是泉之白巫女和女孩的声音」「那小娃儿现在已是堂堂的白巫女",
+   "id": "c06_n053"
+  },
+  {
+   "type": "line",
+   "expression": "normal",
+   "speaker": "gerold",
+   "text": "即便是忘了笑容的老身，意识到这一点也想要笑一笑",
+   "id": "c06_n054"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "gerold",
+   "text": "老身彻底沦陷，抓狂之时，背负重担的，或许是这幼小的女孩」「不知这老骨头还能坚持到何时",
+   "id": "c06_n055"
+  },
+  {
+   "type": "line",
+   "expression": "serious",
+   "speaker": "gerold",
+   "text": "但只要意识不灭，老身便会一直当守护着她的盾」「只要想起孩子们，一切的痛苦不算什么",
+   "id": "c06_n056"
+  },
+  {
+   "type": "stage",
+   "cg": "",
+   "set": {
+    "cleared_village": true
+   },
+   "id": "c06_n057"
+  },
+  {
+   "type": "line",
+   "groan": true,
+   "expression": "serious",
+   "speaker": "gerold",
+   "text": "秽鬼……竟敢……竟敢……",
+   "id": "c06_n058"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "他一定是一名为了守护村庄奋战到底的勇士……」「记忆中的那两名巫女，你以前常和妈妈一起来吗……？",
+   "reactions": {
+    "lily": "soft"
+   },
+   "id": "c06_n059"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "原来她跟村里的孩子们一起被藏到这里……」「一定很痛苦吧……",
+   "id": "c06_n060"
+  },
+  {
+   "type": "line",
+   "expression": "soft",
+   "speaker": "knight",
+   "text": "巫女啊，安息吧",
+   "id": "c06_n061"
+  },
+  {
+   "type": "stage",
+   "title": "前往魔女森林",
+   "id": "c06_n062"
+  },
+  {
+   "type": "stage",
+   "bg": "village_hut",
+   "id": "c06_n063"
+  },
+  {
+   "type": "stage",
+   "set": {
+    "relic_2": true
+   },
+   "id": "c06_n064"
+  },
+  {
+   "type": "line",
+   "text": "第二枚石板上的古老咒文流转着温润的光芒，悄然融入白巫女的护身符中。",
+   "id": "c06_n065"
+  },
+  {
+   "type": "line",
+   "text": "残破的木柱上钉着一张泛黄的委托书，指向悬崖下方的密林深处。",
+   "id": "c06_n066"
+  },
+  {
+   "type": "line",
+   "text": "「目标：森林里巨大的怪物」「希望无所畏惧的勇敢战士能接受这任务」「悬崖村附近的森林里潜藏着巨大的怪物，连国王的士兵也曾受到伤害」「成功追踪并且讨伐怪物者将会获得奖励」「一起为国家而战斗吧！」「堡垒骑士赫默儒」",
+   "id": "c06_n067"
+  },
+  {
+   "type": "line",
+   "text": "雨水依旧下着，但前方的道路已然显现。",
+   "id": "c06_n068"
   },
   {
    "type": "stage",
