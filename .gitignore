@@ -7,3 +7,6 @@
 
 # 导出产物（构建生成）
 export/
+
+# 引擎二进制（不入库）
+Godot_v4.7.2-stable_win64.exe/

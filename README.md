@@ -8,7 +8,7 @@
 
 ## 运行
 
-1. 安装 [Godot 4.4+](https://godotengine.org/download)（标准版即可，不用 .NET 版）
+1. 安装 [Godot 4.7+](https://godotengine.org/download)（4.7.2 已验证；标准版即可，不用 .NET 版）
 2. 用 Godot 打开本目录（含 `project.godot` 的文件夹）
 3. 按 F5 运行
 

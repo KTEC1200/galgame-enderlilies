@@ -36,7 +36,10 @@
 - 剧情计划 v0.4 修订：`docs/剧情规划.md`（改编边界、事件依赖表、资料包规范、
   分阶段验收、发布授权关卡）。
 - Windows 导出包 v0.4.0 已验证（干净用户数据环境 SMOKE PASS，exit 0）；
-  `export/ENDERLILIES-VN-v0.4.0-Windows-x64.zip`（未入 git）。v0.3.1 旧包仅作存档。
+  `export/ENDERLIES-VN-v0.4.0-Windows-x64.zip`（未入 git）。v0.3.1 旧包仅作存档。
+- **2026-10-31 起工具链统一 Godot 4.7.2**（4.7.2 冒烟 PASS）。用户数据目录已改
+  自定义 `user:// → %APPDATA%\enderlilies_vn_data`（原因见坑 10），4.5 时代的旧进度
+  档案因拦截无法继承、已弃用；下次导出前需另装 4.7.2 导出模板。
 
 ## 3. 怎么跑（在 `game/` 目录）
 
@@ -57,11 +60,12 @@ godot --headless --path . --export-release "Windows Desktop" export/enderlilies-
 
 ## 4. 环境备注（换会话可能失效，重取方式在括号里）
 
-- Godot 4.5 二进制本次放在 `/tmp/godot-dl/Godot_v4.5-stable_win64_console.exe`（临时区，
-  会清）。重取：`https://github.com/godotengine/godot-builds/releases/download/4.5-stable/Godot_v4.5-stable_win64.exe.zip`，
-  本机 GitHub 直连不稳，前缀 `https://ghfast.top/` 镜像可用（git 克隆用 `https://gitclone.com/github.com/...`）。
-- 导出模板已装到 `%APPDATA%\Godot\export_templates\4.5.stable\`（丢失则重新下载
-  `Godot_v4.5-stable_export_templates.tpz`）。
+- Godot 4.7.2 二进制在 `game/Godot_v4.7.2-stable_win64.exe/`（已 gitignore）。
+  4.5 备用二进制在 `/tmp/godot-dl/`（临时区会清，且已非标准工具链）。重取 4.7.2：
+  `https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip`，
+  本机 GitHub 直连不稳，前缀 `https://ghfast.top/` 镜像可用。
+- 导出模板目前只有 `4.5.stable`（`%APPDATA%\Godot\export_templates\`）——**下次导出前
+  需装 4.7.2 模板**（`Godot_v4.7.2-stable_export_templates.tpz`）。
 - git 身份已配好（全局 user.name=KTEC1200）；推送偶发 `repository exists` 报错，重试即可。
 
 ## 5. 已踩过的坑（不要重蹈）
@@ -75,6 +79,11 @@ godot --headless --path . --export-release "Windows Desktop" export/enderlilies-
 7. 选项下缩进的 `@when` 是**该选项**的条件；页面块首的 `@when` 作用于整页——别混用。
 8. **指令必须独立成块**：`@bg/@cg/@music` 与正文之间空行分隔，`##小标题` 独占一块（否则报错或曾静默吞内容）；`@reaction` 例外，须与作用的台词同块。
 9. **行尾（亡语）标记**写在台词 」 之后（编译器剥离并打 groan 标记）；冒烟查流程不查渲染内容——引用逐字核对必须人工/脚本做，冒烟不能替代。
+10. **安全软件按"应用身份"拦截新引擎写旧数据**：4.7.2 写 `%APPDATA%\Godot\app_userdata\enderlilies-vn\`
+    与同名目录、以及 4.5 时代创建的 `el_*.json` 全部 err=12（4.5 正常；日志可写、数据被拦，
+    玩家侧表现为存档静默失败）。解法（已实施）：`project.godot` 启用
+    `use_custom_user_dir` + `custom_user_dir_name="enderlilies_vn_data"`，且**不复用旧文件**、
+    由 4.7.2 自建自拥。换引擎大版本时若存档再现写入失败，优先怀疑此机制。
 
 ## 6. 下一阶段任务（按优先级）
 
