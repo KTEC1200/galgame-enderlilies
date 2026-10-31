@@ -389,6 +389,10 @@ func _build_ui() -> void:
 	choice_box.add_theme_constant_override("separation", 12)
 	hud.add_child(choice_box)
 
+	# 先建标题层再建弹窗层：GUI 命中测试按子节点树序（后建者先），不看 z_index；
+	# 若标题层排在后面，标题界面打开的存档弹窗会「看得见点不到」。
+	_build_title_screen()
+
 	overlay = Control.new()
 	overlay.name = "Overlay"
 	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -410,8 +414,6 @@ func _build_ui() -> void:
 	overlay_box = VBoxContainer.new()
 	overlay_box.add_theme_constant_override("separation", 10)
 	card.add_child(overlay_box)
-
-	_build_title_screen()
 
 func _build_title_screen() -> void:
 	title_screen = Control.new()
