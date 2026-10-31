@@ -30,10 +30,15 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
+ "c01_n006": {
+  "arts": [
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
  "c01_n007": {
   "arts": [
-   "background/church_nave",
-   "sprite/lily/surprised",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -41,14 +46,33 @@
  },
  "c01_n008": {
   "arts": [
-   "background/church_nave",
-   "sprite/lily/surprised",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
  "c01_n009": {
+  "arts": [
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n010": {
+  "arts": [
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n011": {
+  "arts": [
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n013": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -57,7 +81,25 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n010": {
+ "c01_n014": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n015": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n016": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -84,7 +126,7 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n013": {
+ "c01_n019": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -93,7 +135,7 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n014": {
+ "c01_n020": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -102,7 +144,61 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n015": {
+ "c01_n021": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n022": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n023": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n024": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n025": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n026": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n027": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -120,7 +216,7 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n018": {
+ "c01_n030": {
   "arts": [
    "background/church_nave",
    "sprite/lily/surprised",
@@ -129,7 +225,52 @@
   "title": "长眠者之堂",
   "chapter": "第一章"
  },
- "c01_n022": {
+ "c01_n031": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n032": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n033": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n034": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n035": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/surprised",
+   "sprite/knight/normal"
+  ],
+  "title": "长眠者之堂",
+  "chapter": "第一章"
+ },
+ "c01_n039": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal"
@@ -137,7 +278,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n023": {
+ "c01_n040": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -146,7 +287,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n024": {
+ "c01_n041": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -155,7 +296,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n025": {
+ "c01_n042": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -164,7 +305,52 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n026": {
+ "c01_n043": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨之大圣堂",
+  "chapter": "第一章"
+ },
+ "c01_n044": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨之大圣堂",
+  "chapter": "第一章"
+ },
+ "c01_n045": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨之大圣堂",
+  "chapter": "第一章"
+ },
+ "c01_n046": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨之大圣堂",
+  "chapter": "第一章"
+ },
+ "c01_n047": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨之大圣堂",
+  "chapter": "第一章"
+ },
+ "c01_n048": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -173,7 +359,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n027": {
+ "c01_n049": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -182,7 +368,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n028": {
+ "c01_n050": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -191,7 +377,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n029": {
+ "c01_n051": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -200,7 +386,7 @@
   "title": "雨之大圣堂",
   "chapter": "第一章"
  },
- "c01_n032": {
+ "c01_n054": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -209,7 +395,25 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n033": {
+ "c01_n055": {
+  "arts": [
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "钟楼之上",
+  "chapter": "第一章"
+ },
+ "c01_n056": {
+  "arts": [
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "钟楼之上",
+  "chapter": "第一章"
+ },
+ "c01_n057": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -219,7 +423,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n034": {
+ "c01_n058": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -229,7 +433,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n035": {
+ "c01_n059": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -239,7 +443,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n036": {
+ "c01_n060": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -249,7 +453,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n037": {
+ "c01_n061": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -259,7 +463,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n038": {
+ "c01_n062": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -269,7 +473,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n039": {
+ "c01_n063": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -279,7 +483,7 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n041": {
+ "c01_n064": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -289,7 +493,27 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n042": {
+ "c01_n065": {
+  "arts": [
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/siegrid/normal"
+  ],
+  "title": "钟楼之上",
+  "chapter": "第一章"
+ },
+ "c01_n067": {
+  "arts": [
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/siegrid/normal"
+  ],
+  "title": "钟楼之上",
+  "chapter": "第一章"
+ },
+ "c01_n068": {
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
@@ -299,292 +523,237 @@
   "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n046": {
+ "c01_n069": {
   "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/siegrid/normal"
   ],
-  "title": "净化的记忆",
+  "title": "钟楼之上",
   "chapter": "第一章"
  },
- "c01_n047": {
+ "c01_n070": {
   "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/siegrid/normal"
   ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n048": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n049": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n051": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n052": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n053": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n054": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n055": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n056": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n057": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n058": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n059": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n060": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n061": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n062": {
-  "arts": [
-   "background/church_nave",
-   "cg/cg_awaken"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n064": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n065": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n066": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
-  "chapter": "第一章"
- },
- "c01_n067": {
-  "arts": [
-   "background/church_nave",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "净化的记忆",
+  "title": "钟楼之上",
   "chapter": "第一章"
  },
  "c01_n071": {
   "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_bell",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/siegrid/normal"
   ],
-  "title": "祭坛的祷言",
-  "chapter": "第一章"
- },
- "c01_n072": {
-  "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "祭坛的祷言",
-  "chapter": "第一章"
- },
- "c01_n073": {
-  "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "祭坛的祷言",
-  "chapter": "第一章"
- },
- "c01_n074": {
-  "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "祭坛的祷言",
+  "title": "钟楼之上",
   "chapter": "第一章"
  },
  "c01_n075": {
   "arts": [
-   "background/church_alcove",
+   "background/church_nave",
    "sprite/lily/soft",
    "sprite/knight/normal"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n076": {
   "arts": [
-   "background/church_alcove",
+   "background/church_nave",
    "sprite/lily/soft",
    "sprite/knight/normal"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n077": {
   "arts": [
-   "background/church_alcove",
+   "background/church_nave",
    "sprite/lily/soft",
    "sprite/knight/normal"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n078": {
   "arts": [
-   "background/church_alcove",
+   "background/church_nave",
    "sprite/lily/soft",
    "sprite/knight/normal"
   ],
-  "title": "祭坛的祷言",
-  "chapter": "第一章"
- },
- "c01_n079": {
-  "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
-  ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n080": {
   "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_nave",
+   "cg/cg_awaken"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n081": {
   "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_nave",
+   "cg/cg_awaken"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n082": {
   "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_nave",
+   "cg/cg_awaken"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n083": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n084": {
   "arts": [
-   "background/church_alcove",
-   "sprite/lily/soft",
-   "sprite/knight/normal"
+   "background/church_nave",
+   "cg/cg_awaken"
   ],
-  "title": "祭坛的祷言",
+  "title": "净化的记忆",
   "chapter": "第一章"
  },
  "c01_n085": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n086": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n087": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n088": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n089": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n090": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n091": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n092": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n093": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n094": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n095": {
+  "arts": [
+   "background/church_nave",
+   "cg/cg_awaken"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n097": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n098": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n099": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n100": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "净化的记忆",
+  "chapter": "第一章"
+ },
+ "c01_n104": {
   "arts": [
    "background/church_alcove",
    "sprite/lily/soft",
@@ -593,7 +762,196 @@
   "title": "祭坛的祷言",
   "chapter": "第一章"
  },
- "c01_n088": {
+ "c01_n105": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n106": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n107": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n108": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n109": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n110": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n111": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n112": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n113": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n114": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n115": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n116": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n117": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n118": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n119": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n120": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n121": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n122": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n123": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n125": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n126": {
+  "arts": [
+   "background/church_alcove",
+   "sprite/lily/soft",
+   "sprite/knight/normal"
+  ],
+  "title": "祭坛的祷言",
+  "chapter": "第一章"
+ },
+ "c01_n129": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal"
@@ -601,7 +959,70 @@
   "title": "离开白教区",
   "chapter": "第一章"
  },
- "c01_n089": {
+ "c01_n130": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n131": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n132": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n133": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n134": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n135": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n136": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n137": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -628,11 +1049,83 @@
   "title": "离开白教区",
   "chapter": "第一章"
  },
+ "c01_n140": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n141": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n142": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n143": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
  "c01_nod": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
    "sprite/knight/soft"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n146": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n147": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n148": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n149": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -646,7 +1139,43 @@
   "title": "离开白教区",
   "chapter": "第一章"
  },
- "c01_n096": {
+ "c01_n152": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n153": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n154": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n155": {
+  "arts": [
+   "background/church_nave",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "离开白教区",
+  "chapter": "第一章"
+ },
+ "c01_n156": {
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
@@ -740,7 +1269,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -749,7 +1278,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/soft"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -763,9 +1292,18 @@
   "title": "雨蚀的村道",
   "chapter": "第二章"
  },
+ "c06_n015": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
  "c06_n016": {
   "arts": [
-   "background/village_hut",
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
@@ -774,6 +1312,24 @@
  },
  "c06_n017": {
   "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n018": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "雨蚀的村道",
+  "chapter": "第二章"
+ },
+ "c06_n020": {
+  "arts": [
    "background/village_hut",
    "sprite/lily/normal",
    "sprite/knight/normal"
@@ -781,40 +1337,13 @@
   "title": "雨蚀的村道",
   "chapter": "第二章"
  },
- "c06_n020": {
-  "arts": [
-   "background/village_cliff",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "残响的村落",
-  "chapter": "第二章"
- },
  "c06_n021": {
   "arts": [
-   "background/village_cliff",
+   "background/village_hut",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "残响的村落",
-  "chapter": "第二章"
- },
- "c06_n022": {
-  "arts": [
-   "background/village_cliff",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "残响的村落",
-  "chapter": "第二章"
- },
- "c06_n023": {
-  "arts": [
-   "background/village_cliff",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "残响的村落",
+  "title": "雨蚀的村道",
   "chapter": "第二章"
  },
  "c06_n024": {
@@ -848,7 +1377,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -857,7 +1386,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -875,7 +1404,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -893,7 +1422,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -925,76 +1454,94 @@
   "title": "残响的村落",
   "chapter": "第二章"
  },
- "c06_n039": {
+ "c06_n036": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n037": {
+  "arts": [
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/serious"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n038": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
+  "chapter": "第二章"
+ },
+ "c06_n039": {
+  "arts": [
+   "background/village_cliff",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n040": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n041": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n042": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n043": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n044": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "村落广场",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
- "c06_n047": {
+ "c06_n045": {
   "arts": [
-   "background/village_square",
+   "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/soft"
   ],
-  "title": "老兵的记忆",
-  "chapter": "第二章"
- },
- "c06_n048": {
-  "arts": [
-   "background/village_square",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "老兵的记忆",
+  "title": "残响的村落",
   "chapter": "第二章"
  },
  "c06_n049": {
@@ -1003,50 +1550,91 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "老兵的记忆",
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n050": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "村落广场",
   "chapter": "第二章"
  },
  "c06_n051": {
   "arts": [
    "background/village_square",
-   "cg/gerold_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "老兵的记忆",
+  "title": "村落广场",
   "chapter": "第二章"
  },
  "c06_n052": {
   "arts": [
    "background/village_square",
-   "cg/gerold_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "老兵的记忆",
+  "title": "村落广场",
   "chapter": "第二章"
  },
  "c06_n053": {
   "arts": [
    "background/village_square",
-   "cg/gerold_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "老兵的记忆",
+  "title": "村落广场",
   "chapter": "第二章"
  },
  "c06_n054": {
   "arts": [
    "background/village_square",
-   "cg/gerold_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "老兵的记忆",
+  "title": "村落广场",
   "chapter": "第二章"
  },
  "c06_n055": {
   "arts": [
    "background/village_square",
-   "cg/gerold_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "村落广场",
+  "chapter": "第二章"
+ },
+ "c06_n058": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n056": {
+ "c06_n059": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n060": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n062": {
   "arts": [
    "background/village_square",
    "cg/gerold_memory"
@@ -1054,7 +1642,47 @@
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n058": {
+ "c06_n063": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n064": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n065": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n066": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n067": {
+  "arts": [
+   "background/village_square",
+   "cg/gerold_memory"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n069": {
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
@@ -1064,7 +1692,7 @@
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n059": {
+ "c06_n070": {
   "arts": [
    "background/village_square",
    "sprite/lily/soft",
@@ -1074,7 +1702,7 @@
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n060": {
+ "c06_n071": {
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
@@ -1084,7 +1712,7 @@
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n061": {
+ "c06_n072": {
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
@@ -1094,7 +1722,37 @@
   "title": "老兵的记忆",
   "chapter": "第二章"
  },
- "c06_n065": {
+ "c06_n073": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n074": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n075": {
+  "arts": [
+   "background/village_square",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/gerold/normal"
+  ],
+  "title": "老兵的记忆",
+  "chapter": "第二章"
+ },
+ "c06_n079": {
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
@@ -1104,7 +1762,7 @@
   "title": "前往魔女森林",
   "chapter": "第二章"
  },
- "c06_n066": {
+ "c06_n080": {
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
@@ -1114,7 +1772,7 @@
   "title": "前往魔女森林",
   "chapter": "第二章"
  },
- "c06_n067": {
+ "c06_n081": {
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
@@ -1124,7 +1782,27 @@
   "title": "前往魔女森林",
   "chapter": "第二章"
  },
- "c06_n068": {
+ "c06_n082": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
+ "c06_n083": {
+  "arts": [
+   "background/village_hut",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/gerold/normal"
+  ],
+  "title": "前往魔女森林",
+  "chapter": "第二章"
+ },
+ "c06_n084": {
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
@@ -1161,35 +1839,80 @@
   "title": "魔女森林",
   "chapter": "第三章"
  },
- "c07_n006": {
+ "c07_n004": {
   "arts": [
-   "background/forest_flooded",
+   "background/forest_path",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "水下遗迹",
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c07_n005": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c07_n006": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女森林",
   "chapter": "第三章"
  },
  "c07_n007": {
   "arts": [
-   "background/forest_flooded",
+   "background/forest_path",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "水下遗迹",
+  "title": "魔女森林",
   "chapter": "第三章"
  },
  "c07_n008": {
   "arts": [
-   "background/forest_flooded",
+   "background/forest_path",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "水下遗迹",
+  "title": "魔女森林",
   "chapter": "第三章"
  },
  "c07_n009": {
   "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c07_n010": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c07_n011": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女森林",
+  "chapter": "第三章"
+ },
+ "c07_n014": {
+  "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
    "sprite/knight/normal"
@@ -1197,40 +1920,40 @@
   "title": "水下遗迹",
   "chapter": "第三章"
  },
- "c07_n012": {
+ "c07_n015": {
   "arts": [
-   "background/forest_flowers",
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n016": {
+  "arts": [
+   "background/forest_flooded",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "花之回廊",
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
- "c07_n013": {
+ "c07_n017": {
   "arts": [
-   "background/forest_flowers",
-   "sprite/lily/normal",
-   "sprite/knight/soft"
-  ],
-  "title": "花之回廊",
-  "chapter": "第三章"
- },
- "c07_n014": {
-  "arts": [
-   "background/forest_flowers",
+   "background/forest_flooded",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "花之回廊",
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n018": {
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/soft"
   ],
-  "title": "魔女的工坊",
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n019": {
@@ -1239,7 +1962,25 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "魔女的工坊",
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n020": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n021": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n022": {
@@ -1248,34 +1989,415 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "魔女的记忆",
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n023": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n024": {
   "arts": [
    "background/forest_flooded",
-   "cg/elaine_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "魔女的记忆",
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n025": {
   "arts": [
    "background/forest_flooded",
-   "cg/elaine_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "魔女的记忆",
+  "title": "水下遗迹",
   "chapter": "第三章"
  },
  "c07_n026": {
   "arts": [
    "background/forest_flooded",
-   "cg/elaine_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n027": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n028": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n029": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n030": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n031": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n032": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n033": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n034": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n035": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "水下遗迹",
+  "chapter": "第三章"
+ },
+ "c07_n038": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n039": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n040": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n041": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n042": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n043": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n044": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n045": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n046": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n047": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n048": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n049": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n050": {
+  "arts": [
+   "background/forest_flowers",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "花之回廊",
+  "chapter": "第三章"
+ },
+ "c07_n053": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n054": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n055": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n056": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n058": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n059": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n060": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n061": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n062": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n063": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n064": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n065": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n066": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n067": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n068": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n069": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n070": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的工坊",
+  "chapter": "第三章"
+ },
+ "c07_n073": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n027": {
+ "c07_n074": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n076": {
   "arts": [
    "background/forest_flooded",
    "cg/elaine_memory"
@@ -1283,7 +2405,136 @@
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n029": {
+ "c07_n077": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n078": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n079": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n080": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n081": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n082": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n083": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n084": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n085": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n086": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n087": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n088": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n089": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n090": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n091": {
+  "arts": [
+   "background/forest_flooded",
+   "cg/elaine_memory"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n093": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n094": {
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
@@ -1293,7 +2544,27 @@
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n030": {
+ "c07_n095": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n096": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n097": {
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
@@ -1303,7 +2574,7 @@
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n031": {
+ "c07_n098": {
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
@@ -1313,7 +2584,7 @@
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n032": {
+ "c07_n099": {
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
@@ -1323,7 +2594,57 @@
   "title": "魔女的记忆",
   "chapter": "第三章"
  },
- "c07_n036": {
+ "c07_n100": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n101": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n102": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n103": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n104": {
+  "arts": [
+   "background/forest_flooded",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "魔女的记忆",
+  "chapter": "第三章"
+ },
+ "c07_n108": {
   "arts": [
    "background/forest_path",
    "sprite/lily/soft",
@@ -1333,7 +2654,87 @@
   "title": "探寻深渊",
   "chapter": "第三章"
  },
- "c07_n038": {
+ "c07_n109": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n110": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n111": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n112": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n113": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n115": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n116": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n117": {
+  "arts": [
+   "background/forest_path",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/elaine/normal"
+  ],
+  "title": "探寻深渊",
+  "chapter": "第三章"
+ },
+ "c07_n118": {
   "arts": [
    "background/forest_path",
    "sprite/lily/normal",
@@ -1370,35 +2771,71 @@
   "title": "地下墓穴",
   "chapter": "第四章"
  },
- "c08_n006": {
+ "c08_n004": {
   "arts": [
-   "background/catacomb_room",
+   "background/catacomb_hall",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "废墟深处",
+  "title": "地下墓穴",
+  "chapter": "第四章"
+ },
+ "c08_n005": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下墓穴",
+  "chapter": "第四章"
+ },
+ "c08_n006": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下墓穴",
   "chapter": "第四章"
  },
  "c08_n007": {
   "arts": [
-   "background/catacomb_room",
+   "background/catacomb_hall",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "废墟深处",
+  "title": "地下墓穴",
   "chapter": "第四章"
  },
  "c08_n008": {
   "arts": [
-   "background/catacomb_room",
+   "background/catacomb_hall",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "废墟深处",
+  "title": "地下墓穴",
   "chapter": "第四章"
  },
  "c08_n009": {
   "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下墓穴",
+  "chapter": "第四章"
+ },
+ "c08_n010": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下墓穴",
+  "chapter": "第四章"
+ },
+ "c08_n013": {
+  "arts": [
    "background/catacomb_room",
    "sprite/lily/normal",
    "sprite/knight/normal"
@@ -1406,25 +2843,241 @@
   "title": "废墟深处",
   "chapter": "第四章"
  },
- "c08_n012": {
+ "c08_n014": {
   "arts": [
-   "background/catacomb_hall",
+   "background/catacomb_room",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "悲鸣的回廊",
+  "title": "废墟深处",
   "chapter": "第四章"
  },
- "c08_n013": {
+ "c08_n015": {
   "arts": [
-   "background/catacomb_hall",
+   "background/catacomb_room",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "悲鸣的回廊",
+  "title": "废墟深处",
   "chapter": "第四章"
  },
  "c08_n016": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n017": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n018": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n019": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n020": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n021": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n022": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n023": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n024": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n025": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n026": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n027": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n028": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n029": {
+  "arts": [
+   "background/catacomb_room",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "废墟深处",
+  "chapter": "第四章"
+ },
+ "c08_n032": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n033": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n034": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n035": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n036": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n037": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n038": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n039": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n040": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n041": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "悲鸣的回廊",
+  "chapter": "第四章"
+ },
+ "c08_n044": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1433,7 +3086,52 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n017": {
+ "c08_n045": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n046": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n047": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n048": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n049": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n050": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/worried",
@@ -1442,7 +3140,7 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n018": {
+ "c08_n051": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1451,7 +3149,7 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n019": {
+ "c08_n052": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1460,7 +3158,7 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n021": {
+ "c08_n053": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1469,7 +3167,7 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n022": {
+ "c08_n054": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1478,7 +3176,115 @@
   "title": "地下教堂",
   "chapter": "第四章"
  },
- "c08_n025": {
+ "c08_n056": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n057": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n058": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n059": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n060": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n061": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n062": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n063": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n064": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n065": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n066": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n067": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地下教堂",
+  "chapter": "第四章"
+ },
+ "c08_n070": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1487,7 +3293,52 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n027": {
+ "c08_n071": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n072": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n073": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n074": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n075": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n077": {
   "arts": [
    "background/catacomb_church",
    "cg/shilda_memory"
@@ -1495,7 +3346,7 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n028": {
+ "c08_n078": {
   "arts": [
    "background/catacomb_church",
    "cg/shilda_memory"
@@ -1503,7 +3354,7 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n029": {
+ "c08_n079": {
   "arts": [
    "background/catacomb_church",
    "cg/shilda_memory"
@@ -1511,7 +3362,7 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n030": {
+ "c08_n080": {
   "arts": [
    "background/catacomb_church",
    "cg/shilda_memory"
@@ -1519,7 +3370,95 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n032": {
+ "c08_n081": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n082": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n083": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n084": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n085": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n086": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n087": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n088": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n089": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n090": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n091": {
+  "arts": [
+   "background/catacomb_church",
+   "cg/shilda_memory"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n093": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1529,7 +3468,37 @@
   "title": "守护者的记忆",
   "chapter": "第四章"
  },
- "c08_n035": {
+ "c08_n094": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shilda/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n095": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n096": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal"
+  ],
+  "title": "守护者的记忆",
+  "chapter": "第四章"
+ },
+ "c08_n099": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1539,7 +3508,27 @@
   "title": "泉之幻影",
   "chapter": "第四章"
  },
- "c08_n036": {
+ "c08_n100": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n101": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n102": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1550,7 +3539,7 @@
   "title": "泉之幻影",
   "chapter": "第四章"
  },
- "c08_n037": {
+ "c08_n103": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1561,7 +3550,7 @@
   "title": "泉之幻影",
   "chapter": "第四章"
  },
- "c08_n038": {
+ "c08_n104": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1572,7 +3561,7 @@
   "title": "泉之幻影",
   "chapter": "第四章"
  },
- "c08_n039": {
+ "c08_n105": {
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
@@ -1583,7 +3572,172 @@
   "title": "泉之幻影",
   "chapter": "第四章"
  },
- "c08_n043": {
+ "c08_n106": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n107": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n108": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n109": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n110": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n111": {
+  "arts": [
+   "background/catacomb_church",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "泉之幻影",
+  "chapter": "第四章"
+ },
+ "c08_n115": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n116": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n117": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n118": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n119": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/worried",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n120": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n121": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n122": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n123": {
+  "arts": [
+   "background/catacomb_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shilda/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "深渊的暗门",
+  "chapter": "第四章"
+ },
+ "c08_n124": {
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
@@ -1612,16 +3766,70 @@
   "title": "地牢",
   "chapter": "第五章"
  },
+ "c09_n003": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c09_n004": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
  "c09_n005": {
   "arts": [
-   "background/dungeon_flower",
+   "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
-  "title": "幽暗中的微光",
+  "title": "地牢",
   "chapter": "第五章"
  },
  "c09_n006": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c09_n007": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c09_n008": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c09_n009": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "地牢",
+  "chapter": "第五章"
+ },
+ "c09_n012": {
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
@@ -1630,7 +3838,43 @@
   "title": "幽暗中的微光",
   "chapter": "第五章"
  },
- "c09_n007": {
+ "c09_n013": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n014": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n015": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n016": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n017": {
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/worried",
@@ -1639,7 +3883,7 @@
   "title": "幽暗中的微光",
   "chapter": "第五章"
  },
- "c09_n008": {
+ "c09_n018": {
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
@@ -1648,7 +3892,25 @@
   "title": "幽暗中的微光",
   "chapter": "第五章"
  },
- "c09_n009": {
+ "c09_n019": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n020": {
+  "arts": [
+   "background/dungeon_flower",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n021": {
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
@@ -1657,104 +3919,493 @@
   "title": "幽暗中的微光",
   "chapter": "第五章"
  },
- "c09_n012": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/serious"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n013": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n014": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n015": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/serious"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n016": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n017": {
-  "arts": [
-   "background/dungeon_cell",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "囚徒的回廊",
-  "chapter": "第五章"
- },
- "c09_n021": {
-  "arts": [
-   "background/dungeon_execution",
-   "sprite/lily/normal",
-   "sprite/knight/normal"
-  ],
-  "title": "深渊之刑场",
-  "chapter": "第五章"
- },
  "c09_n022": {
   "arts": [
-   "background/dungeon_execution",
+   "background/dungeon_flower",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/soft"
   ],
-  "title": "深渊之刑场",
+  "title": "幽暗中的微光",
   "chapter": "第五章"
  },
- "c09_n025": {
+ "c09_n023": {
   "arts": [
-   "background/dungeon_execution",
+   "background/dungeon_flower",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "深渊守卫的记忆",
+  "title": "幽暗中的微光",
+  "chapter": "第五章"
+ },
+ "c09_n026": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
   "chapter": "第五章"
  },
  "c09_n027": {
   "arts": [
-   "background/dungeon_execution",
-   "cg/helnir_memory"
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
-  "title": "深渊守卫的记忆",
+  "title": "囚徒的回廊",
   "chapter": "第五章"
  },
  "c09_n028": {
   "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n029": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n030": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n031": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n032": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n033": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n034": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n035": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n036": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n037": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n038": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n039": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n040": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n041": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n042": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n043": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n044": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n045": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n046": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n047": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n048": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n049": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n050": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n051": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n052": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n053": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n054": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n055": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n056": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n057": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n058": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "囚徒的回廊",
+  "chapter": "第五章"
+ },
+ "c09_n062": {
+  "arts": [
    "background/dungeon_execution",
-   "cg/helnir_memory"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n063": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n064": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n065": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n066": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n067": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n068": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n069": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n070": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n071": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n072": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n073": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n074": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊之刑场",
+  "chapter": "第五章"
+ },
+ "c09_n077": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "深渊守卫的记忆",
   "chapter": "第五章"
  },
- "c09_n029": {
+ "c09_n078": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n079": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n080": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n081": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n082": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n084": {
   "arts": [
    "background/dungeon_execution",
    "cg/helnir_memory"
@@ -1762,7 +4413,79 @@
   "title": "深渊守卫的记忆",
   "chapter": "第五章"
  },
- "c09_n031": {
+ "c09_n085": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n086": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n087": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n088": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n089": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n090": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n091": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n092": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n093": {
+  "arts": [
+   "background/dungeon_execution",
+   "cg/helnir_memory"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n095": {
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
@@ -1772,7 +4495,47 @@
   "title": "深渊守卫的记忆",
   "chapter": "第五章"
  },
- "c09_n035": {
+ "c09_n096": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/helnir/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n097": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n098": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n099": {
+  "arts": [
+   "background/dungeon_execution",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "深渊守卫的记忆",
+  "chapter": "第五章"
+ },
+ "c09_n103": {
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
@@ -1782,7 +4545,37 @@
   "title": "禁区的边缘",
   "chapter": "第五章"
  },
- "c09_n036": {
+ "c09_n104": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n105": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n106": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n107": {
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/soft",
@@ -1792,7 +4585,97 @@
   "title": "禁区的边缘",
   "chapter": "第五章"
  },
- "c09_n038": {
+ "c09_n108": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n109": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n110": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n112": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n113": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n114": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n115": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n116": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n117": {
+  "arts": [
+   "background/dungeon_cell",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/helnir/normal"
+  ],
+  "title": "禁区的边缘",
+  "chapter": "第五章"
+ },
+ "c09_n118": {
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
@@ -1838,25 +4721,115 @@
   "title": "禁区",
   "chapter": "第六章"
  },
- "c10_n007": {
+ "c10_n005": {
   "arts": [
-   "background/forbidden_lab",
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n006": {
+  "arts": [
+   "background/forbidden_pool",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "禁忌的研究室",
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n007": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "禁区",
   "chapter": "第六章"
  },
  "c10_n008": {
   "arts": [
-   "background/forbidden_lab",
+   "background/forbidden_pool",
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "禁忌的研究室",
+  "title": "禁区",
   "chapter": "第六章"
  },
  "c10_n009": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n010": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n011": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n012": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n013": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n014": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n015": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n016": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁区",
+  "chapter": "第六章"
+ },
+ "c10_n019": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1865,7 +4838,88 @@
   "title": "禁忌的研究室",
   "chapter": "第六章"
  },
- "c10_n010": {
+ "c10_n020": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n021": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n022": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n023": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n024": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n025": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n026": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n027": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n028": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n029": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1874,7 +4928,7 @@
   "title": "禁忌的研究室",
   "chapter": "第六章"
  },
- "c10_n011": {
+ "c10_n030": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1883,7 +4937,7 @@
   "title": "禁忌的研究室",
   "chapter": "第六章"
  },
- "c10_n012": {
+ "c10_n031": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1892,7 +4946,52 @@
   "title": "禁忌的研究室",
   "chapter": "第六章"
  },
- "c10_n013": {
+ "c10_n032": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n033": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n034": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n035": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n036": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n037": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1902,7 +5001,57 @@
   "title": "禁忌的研究室",
   "chapter": "第六章"
  },
- "c10_n016": {
+ "c10_n038": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n039": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n040": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n041": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n042": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "禁忌的研究室",
+  "chapter": "第六章"
+ },
+ "c10_n045": {
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
@@ -1912,7 +5061,17 @@
   "title": "浸毒的牢狱",
   "chapter": "第六章"
  },
- "c10_n017": {
+ "c10_n046": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n047": {
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
@@ -1922,7 +5081,97 @@
   "title": "浸毒的牢狱",
   "chapter": "第六章"
  },
- "c10_n021": {
+ "c10_n048": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n049": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n050": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n051": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n052": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n053": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n054": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n055": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n056": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal"
+  ],
+  "title": "浸毒的牢狱",
+  "chapter": "第六章"
+ },
+ "c10_n060": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1932,7 +5181,7 @@
   "title": "异端实验场",
   "chapter": "第六章"
  },
- "c10_n022": {
+ "c10_n061": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1942,7 +5191,127 @@
   "title": "异端实验场",
   "chapter": "第六章"
  },
- "c10_n025": {
+ "c10_n062": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n063": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n064": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n065": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n066": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n067": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/worried",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n068": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n069": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n070": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n071": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n072": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n073": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端实验场",
+  "chapter": "第六章"
+ },
+ "c10_n076": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1952,7 +5321,57 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n027": {
+ "c10_n077": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n078": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n079": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n080": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n081": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n083": {
   "arts": [
    "background/forbidden_lab",
    "cg/faden_memory"
@@ -1960,7 +5379,7 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n028": {
+ "c10_n084": {
   "arts": [
    "background/forbidden_lab",
    "cg/faden_memory"
@@ -1968,7 +5387,7 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n029": {
+ "c10_n085": {
   "arts": [
    "background/forbidden_lab",
    "cg/faden_memory"
@@ -1976,7 +5395,7 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n030": {
+ "c10_n086": {
   "arts": [
    "background/forbidden_lab",
    "cg/faden_memory"
@@ -1984,7 +5403,63 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n032": {
+ "c10_n087": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n088": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n089": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n090": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n091": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n092": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n093": {
+  "arts": [
+   "background/forbidden_lab",
+   "cg/faden_memory"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n095": {
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
@@ -1995,7 +5470,40 @@
   "title": "异端者的记忆",
   "chapter": "第六章"
  },
- "c10_n036": {
+ "c10_n096": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n097": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n098": {
+  "arts": [
+   "background/forbidden_lab",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "异端者的记忆",
+  "chapter": "第六章"
+ },
+ "c10_n102": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
@@ -2006,7 +5514,7 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n037": {
+ "c10_n103": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
@@ -2017,7 +5525,7 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n038": {
+ "c10_n104": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/worried",
@@ -2028,7 +5536,18 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n039": {
+ "c10_n105": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n106": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
@@ -2039,7 +5558,18 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n040": {
+ "c10_n107": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n108": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
@@ -2050,7 +5580,7 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n041": {
+ "c10_n109": {
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
@@ -2061,7 +5591,161 @@
   "title": "残骸的墓所",
   "chapter": "第六章"
  },
- "c10_n045": {
+ "c10_n110": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n111": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n112": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n113": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n114": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n115": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n116": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n117": {
+  "arts": [
+   "background/forbidden_bones",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "残骸的墓所",
+  "chapter": "第六章"
+ },
+ "c10_n121": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n122": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n123": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n124": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n125": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n126": {
+  "arts": [
+   "background/forbidden_pool",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/miriel/normal",
+   "sprite/faden/normal"
+  ],
+  "title": "双生之路",
+  "chapter": "第六章"
+ },
+ "c10_n127": {
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
@@ -2102,13 +5786,31 @@
  "c11_n004": {
   "arts": [
    "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c11_n005": {
+  "arts": [
+   "background/fort_wall",
    "sprite/lily/worried",
    "sprite/knight/worried"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
  },
- "c11_n005": {
+ "c11_n006": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c11_n007": {
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
@@ -2123,16 +5825,16 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "积雪的回廊",
+  "title": "双生堡垒",
   "chapter": "第七章"
  },
  "c11_n009": {
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/soft"
   ],
-  "title": "积雪的回廊",
+  "title": "双生堡垒",
   "chapter": "第七章"
  },
  "c11_n010": {
@@ -2141,16 +5843,16 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "积雪的回廊",
+  "title": "双生堡垒",
   "chapter": "第七章"
  },
  "c11_n011": {
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/normal"
+   "sprite/knight/serious"
   ],
-  "title": "积雪的回廊",
+  "title": "双生堡垒",
   "chapter": "第七章"
  },
  "c11_n012": {
@@ -2159,10 +5861,244 @@
    "sprite/lily/normal",
    "sprite/knight/normal"
   ],
-  "title": "积雪的回廊",
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c11_n013": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c11_n014": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "双生堡垒",
   "chapter": "第七章"
  },
  "c11_n015": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "双生堡垒",
+  "chapter": "第七章"
+ },
+ "c11_n018": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n019": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n020": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n021": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n022": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n023": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n024": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n025": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n026": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n027": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n028": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n029": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n030": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n031": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n032": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n033": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n034": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n035": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n036": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n037": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n038": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n039": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n040": {
+  "arts": [
+   "background/fort_wall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "积雪的回廊",
+  "chapter": "第七章"
+ },
+ "c11_n043": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2171,7 +6107,7 @@
   "title": "雪之花田",
   "chapter": "第七章"
  },
- "c11_n016": {
+ "c11_n044": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2180,7 +6116,7 @@
   "title": "雪之花田",
   "chapter": "第七章"
  },
- "c11_n017": {
+ "c11_n045": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2189,7 +6125,7 @@
   "title": "雪之花田",
   "chapter": "第七章"
  },
- "c11_n019": {
+ "c11_n046": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2198,7 +6134,16 @@
   "title": "雪之花田",
   "chapter": "第七章"
  },
- "c11_n020": {
+ "c11_n047": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n048": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2207,7 +6152,133 @@
   "title": "雪之花田",
   "chapter": "第七章"
  },
- "c11_n023": {
+ "c11_n050": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n051": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n052": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n053": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n054": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n055": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n056": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/worried"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n057": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n058": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n059": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n060": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n061": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n062": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n063": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雪之花田",
+  "chapter": "第七章"
+ },
+ "c11_n066": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2216,7 +6287,61 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n025": {
+ "c11_n067": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n068": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n069": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n070": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n071": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n072": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n074": {
   "arts": [
    "background/fort_snowfield",
    "cg/wolf_memory"
@@ -2224,7 +6349,7 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n026": {
+ "c11_n075": {
   "arts": [
    "background/fort_snowfield",
    "cg/wolf_memory"
@@ -2232,7 +6357,7 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n027": {
+ "c11_n076": {
   "arts": [
    "background/fort_snowfield",
    "cg/wolf_memory"
@@ -2240,7 +6365,7 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n028": {
+ "c11_n077": {
   "arts": [
    "background/fort_snowfield",
    "cg/wolf_memory"
@@ -2248,7 +6373,79 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n030": {
+ "c11_n078": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n079": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n080": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n081": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n082": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n083": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n084": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n085": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n086": {
+  "arts": [
+   "background/fort_snowfield",
+   "cg/wolf_memory"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n088": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2258,7 +6455,37 @@
   "title": "狂骑士的记忆",
   "chapter": "第七章"
  },
- "c11_n034": {
+ "c11_n089": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n090": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n091": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "狂骑士的记忆",
+  "chapter": "第七章"
+ },
+ "c11_n095": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2268,7 +6495,17 @@
   "title": "风雪中的余音",
   "chapter": "第七章"
  },
- "c11_n036": {
+ "c11_n096": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n097": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
@@ -2278,11 +6515,171 @@
   "title": "风雪中的余音",
   "chapter": "第七章"
  },
- "c11_n037": {
+ "c11_n098": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n099": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n100": {
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
    "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n101": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n102": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n104": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n105": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n106": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n107": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n108": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n109": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n110": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n111": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n112": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n113": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n114": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/wolf/normal"
+  ],
+  "title": "风雪中的余音",
+  "chapter": "第七章"
+ },
+ "c11_n115": {
+  "arts": [
+   "background/fort_snowfield",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -2315,7 +6712,106 @@
   "title": "边陲之都城",
   "chapter": "第八章"
  },
+ "c12_n004": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n005": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
  "c12_n006": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n007": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n008": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n009": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n010": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n011": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n012": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n013": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n014": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "边陲之都城",
+  "chapter": "第八章"
+ },
+ "c12_n017": {
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
@@ -2324,7 +6820,79 @@
   "title": "雨蚀的长廊",
   "chapter": "第八章"
  },
- "c12_n009": {
+ "c12_n018": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n019": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n020": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n021": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n022": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n023": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n024": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n025": {
+  "arts": [
+   "background/castle_hall",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "雨蚀的长廊",
+  "chapter": "第八章"
+ },
+ "c12_n028": {
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
@@ -2333,7 +6901,61 @@
   "title": "王家寝宫",
   "chapter": "第八章"
  },
- "c12_n010": {
+ "c12_n029": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n030": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n031": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n032": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n033": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n034": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n035": {
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
@@ -2351,7 +6973,88 @@
   "title": "王家寝宫",
   "chapter": "第八章"
  },
- "c12_n017": {
+ "c12_n037": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n038": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n039": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n040": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n041": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n042": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n044": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/soft"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n045": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n046": {
+  "arts": [
+   "background/castle_bedroom",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王家寝宫",
+  "chapter": "第八章"
+ },
+ "c12_n051": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2360,7 +7063,7 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n018": {
+ "c12_n052": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2369,7 +7072,7 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n019": {
+ "c12_n053": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2378,7 +7081,106 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n020": {
+ "c12_n054": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n055": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n056": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n057": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n058": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n059": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n060": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n061": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n062": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n063": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n064": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n065": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2388,7 +7190,7 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n021": {
+ "c12_n066": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2398,7 +7200,17 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n022": {
+ "c12_n067": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n068": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2408,7 +7220,117 @@
   "title": "王座大殿",
   "chapter": "第八章"
  },
- "c12_n025": {
+ "c12_n069": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n070": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n071": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n072": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n073": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n074": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n075": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n076": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n077": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n078": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n079": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "王座大殿",
+  "chapter": "第八章"
+ },
+ "c12_n082": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2418,7 +7340,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n026": {
+ "c12_n083": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2428,7 +7350,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n027": {
+ "c12_n084": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2438,7 +7360,47 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n029": {
+ "c12_n085": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n086": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n087": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n088": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n090": {
   "arts": [
    "background/castle_throne",
    "cg/julius_memory"
@@ -2446,7 +7408,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n030": {
+ "c12_n091": {
   "arts": [
    "background/castle_throne",
    "cg/julius_memory"
@@ -2454,7 +7416,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n031": {
+ "c12_n092": {
   "arts": [
    "background/castle_throne",
    "cg/julius_memory"
@@ -2462,7 +7424,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n032": {
+ "c12_n093": {
   "arts": [
    "background/castle_throne",
    "cg/julius_memory"
@@ -2470,7 +7432,7 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n033": {
+ "c12_n094": {
   "arts": [
    "background/castle_throne",
    "cg/julius_memory"
@@ -2478,7 +7440,87 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n035": {
+ "c12_n095": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n096": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n097": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n098": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n099": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n100": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n101": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n102": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n103": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n104": {
+  "arts": [
+   "background/castle_throne",
+   "cg/julius_memory"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n106": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2489,7 +7531,40 @@
   "title": "骑士长的记忆",
   "chapter": "第八章"
  },
- "c12_n039": {
+ "c12_n107": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n108": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n109": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "骑士长的记忆",
+  "chapter": "第八章"
+ },
+ "c12_n113": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2500,7 +7575,7 @@
   "title": "王座之后",
   "chapter": "第八章"
  },
- "c12_n040": {
+ "c12_n114": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2511,7 +7586,139 @@
   "title": "王座之后",
   "chapter": "第八章"
  },
- "c12_n041": {
+ "c12_n115": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n116": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n117": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n118": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n119": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n120": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n121": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n122": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n123": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n124": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n125": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n126": {
+  "arts": [
+   "background/castle_throne",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/shield/normal",
+   "sprite/julius/normal"
+  ],
+  "title": "王座之后",
+  "chapter": "第八章"
+ },
+ "c12_n127": {
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
@@ -2551,6 +7758,196 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
+ "c13_n004": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n005": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n006": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n007": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n008": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n009": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n010": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n011": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n012": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n013": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n014": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n015": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n016": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n017": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n018": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n019": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n020": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n021": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n022": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
  "c13_reminiscence": {
   "arts": [
    "background/spring",
@@ -2571,7 +7968,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n006": {
+ "c13_n025": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2581,7 +7978,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n007": {
+ "c13_n026": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2591,7 +7988,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n008": {
+ "c13_n027": {
   "arts": [
    "background/spring",
    "sprite/lily/worried",
@@ -2601,7 +7998,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n009": {
+ "c13_n028": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2611,7 +8008,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n010": {
+ "c13_n029": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2621,7 +8018,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n011": {
+ "c13_n030": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2631,7 +8028,257 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n013": {
+ "c13_n031": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n032": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n033": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n034": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n035": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n036": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n037": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n038": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n039": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n040": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n041": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n042": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n043": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n044": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n045": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n046": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n047": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n048": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n049": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n050": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n051": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n052": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n053": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n054": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/serious",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n055": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/soft",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n057": {
   "arts": [
    "background/spring",
    "cg/fretia_memory"
@@ -2639,7 +8286,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n014": {
+ "c13_n058": {
   "arts": [
    "background/spring",
    "cg/fretia_memory"
@@ -2647,7 +8294,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n015": {
+ "c13_n059": {
   "arts": [
    "background/spring",
    "cg/fretia_memory"
@@ -2655,7 +8302,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n016": {
+ "c13_n060": {
   "arts": [
    "background/spring",
    "cg/fretia_memory"
@@ -2683,7 +8330,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n020": {
+ "c13_n064": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2693,27 +8340,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n021": {
-  "arts": [
-   "background/spring",
-   "sprite/lily/normal",
-   "sprite/knight/normal",
-   "sprite/fretia/soft"
-  ],
-  "title": "边境之泉",
-  "chapter": "终章"
- },
- "c13_n022": {
-  "arts": [
-   "background/spring",
-   "sprite/lily/normal",
-   "sprite/knight/normal",
-   "sprite/fretia/worried"
-  ],
-  "title": "边境之泉",
-  "chapter": "终章"
- },
- "c13_n023": {
+ "c13_n065": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2723,7 +8350,27 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n024": {
+ "c13_n066": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/worried"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n067": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/soft"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n068": {
   "arts": [
    "background/spring",
    "sprite/lily/normal",
@@ -2733,7 +8380,27 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n028": {
+ "c13_n069": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n070": {
+  "arts": [
+   "background/spring",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n074": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2743,7 +8410,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n029": {
+ "c13_n075": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2753,7 +8420,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n030": {
+ "c13_n076": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2763,7 +8430,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n031": {
+ "c13_n077": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2773,7 +8440,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n032": {
+ "c13_n078": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2783,7 +8450,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n033": {
+ "c13_n079": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2793,7 +8460,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n034": {
+ "c13_n080": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2803,7 +8470,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n035": {
+ "c13_n081": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2813,7 +8480,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n036": {
+ "c13_n082": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2823,7 +8490,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n037": {
+ "c13_n083": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2833,7 +8500,27 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n038": {
+ "c13_n084": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n085": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n086": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2853,7 +8540,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n041": {
+ "c13_n089": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2863,7 +8550,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n042": {
+ "c13_n090": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2873,7 +8560,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n043": {
+ "c13_n091": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2883,7 +8570,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n044": {
+ "c13_n092": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2893,7 +8580,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n045": {
+ "c13_n093": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2903,7 +8590,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n046": {
+ "c13_n094": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2913,7 +8600,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n047": {
+ "c13_n095": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2923,7 +8610,7 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n048": {
+ "c13_n096": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
@@ -2933,7 +8620,27 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_n049": {
+ "c13_n097": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n098": {
+  "arts": [
+   "background/abyss",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
+   "sprite/fretia/normal"
+  ],
+  "title": "边境之泉",
+  "chapter": "终章"
+ },
+ "c13_n099": {
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
