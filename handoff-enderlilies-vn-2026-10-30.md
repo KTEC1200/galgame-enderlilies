@@ -116,6 +116,18 @@
     粘贴（含风格基座与构图要求）；要点 = 务必附参考图（renders 底图 / Atlas-Recollection
     缩略图集）、出图无透明通道（立绘要求纯白底，**生成后交回合入侧批量抠图入库**）、
     立绘竖 2:3 / 背景 CG 横 16:9。
+  - **浏览器自动生图管线已跑通（2026-11-02）**：合入侧通过 CDP 驱动作者指定的
+    Twinkstar 浏览器（`--remote-debugging-port=9222` + playwright-core）自动操作
+    生图站 l0veyou.com/chat（GPT Image 2.5 满血版）。工具在 `D:\K\zcode\tools\browser-gen\`
+    （gen.js=生成含上传失败自动重试、grab.js=捞图、matt.py=白底泛洪抠图+裁边+
+    垫 1280×1960 画布、batch_p2/p3.sh=批量含断点续跑）。**坑**：①参考图多张同传
+    会「参考图上传失败」，单张 JPEG 可靠；②发送必须点 `.composer button.send`，
+    Enter 不可靠；③生成约 5~10 分钟/张；④新对话会重置模型，每次需重选 2.5 满血版；
+    ⑤结果图 CDN 下载要 node 侧 fetch（页面内跨域被拦）。
+  - **P1 完成（2026-11-02）**：fretia normal/soft/worried + julius normal/worried
+    五张整卡已生成、抠图、入库 `assets/sprites/`，质量与一致性验收通过
+    （成品 `D:\K\zcode\enderlilies_art\sprites\`，原图 raw\）。P2（15 差分）与
+    P3（25 背景+9 CG+标题）批量链在后台串行跑（约 8h），完成后同样处理入库。
 - **验收工具链**：`tools/check_quotes.py` 引用核对（必引/可选/备选分级）已纳入
   每章合入流程；`tools/build_story.py --check` 只读校验。
 - **素材许可已取得（2026-10-31，作者确认）**：OST 配乐方案保留，发布关卡中的
