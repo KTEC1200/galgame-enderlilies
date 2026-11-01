@@ -188,10 +188,17 @@ func _display_name(actor_id: String) -> String:
 # ---------------------------------------------------------------- UI 构建
 
 func _build_theme() -> void:
-	var font := SystemFont.new()
-	font.font_names = PackedStringArray(["Microsoft YaHei UI", "Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "sans-serif"])
 	var theme_new := Theme.new()
-	theme_new.default_font = font
+	var fallback := SystemFont.new()
+	fallback.font_names = PackedStringArray(["Microsoft YaHei UI", "Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "sans-serif"])
+	# 自定义字体（assets/fonts/lily.ttf）；个别缺字回退到系统字体链
+	var font := load("res://assets/fonts/lily.ttf") as FontFile
+	if font != null:
+		font.fallbacks = [fallback]
+		theme_new.default_font = font
+	else:
+		push_warning("自定义字体加载失败，回退系统字体")
+		theme_new.default_font = fallback
 	theme_new.default_font_size = 24
 	theme = theme_new
 
