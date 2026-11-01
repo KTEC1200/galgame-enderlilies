@@ -99,6 +99,12 @@
     fretia（normal+soft+worried）、julius（normal+worried）两张整卡 +
     其余角色表情差分 12 张（可用渲染 normal 当 img2img 底图保画风）+
     背景 25 / 标题 1 / CG 9（无游戏数据，维持原计划）。
+  - **10 角色 normal 已渲染完成（2026-11-01）**：`D:\K\zcode\enderlilies_spine\renders\<vn>.png`
+    （lily/knight/siegrid/shilda/elaine/gerold/helnir/faden/wolf/shield，透明底已自动裁边，
+    原始帧在 renders/raw/）。批量脚本 `D:\K\zcode\tools\SpineExtract\render_batch.sh`
+    （自动选 idle 动画+空图重试，可重跑）。注意：Boss 们是**污化战斗待机形态**
+    （红眼/持武器，Boss 战场景直接可用）；faden 只有坐姿动画（游戏数据如此），
+    记忆场景需要的"生前干净形态/温柔站姿"仍需按渲染底图生图。
 - **验收工具链**：`tools/check_quotes.py` 引用核对（必引/可选/备选分级）已纳入
   每章合入流程；`tools/build_story.py --check` 只读校验。
 - **素材许可已取得（2026-10-31，作者确认）**：OST 配乐方案保留，发布关卡中的
