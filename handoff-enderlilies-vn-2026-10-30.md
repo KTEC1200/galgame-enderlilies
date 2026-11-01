@@ -1,6 +1,6 @@
 # 交接文档 — ENDER LILIES 同人视觉小说（galgame-enderlilies）
 
-> 生成：2026-10-30；更新：2026-11-01（**全篇扩写完成：935 对话页 + 通读终审修复**）。
+> 生成：2026-10-30；更新：2026-11-01（**全篇扩写完成：935 对话页 + 通读终审修复；同日原作素材提取完成，美术清单大减**）。
 > **本文在仓库根目录，随 git 持久化，以此为准。**
 > 当前阶段：**全篇实玩验收 → 美术/音乐 → 发布（授权已解决）**。
 > 本文只写"在哪、怎么跑、坑在哪"，细节一律指向仓库内文档。
@@ -76,6 +76,29 @@
   - **自定义字体已接入（2026-11-01）**：`assets/fonts/lily.ttf`（作者提供，3.4MB），
     `_build_theme()` 里作为全游戏主题主字体，缺字回退链 = 微软雅黑 UI → 雅黑 → SimHei；
     已截图验证标题/菜单/对话框全部生效，SMOKE PASS。改字体只动 `_build_theme()` 一处。
+- **原作素材提取完成（2026-11-01，授权已解决）**：
+  - 产出在 `D:\K\zcode\enderlilies_spine\<角色>\`：**123 角色 × (.skel + .atlas + .png)**
+    三件套，骨骼为 **Spine 3.8.99** 二进制（含全部动画）。VN 需要的 12 角色全齐：
+    lily=p0001~p0006_Lily（六套皮肤）、knight=s5000_Unknown、siegrid=e5030_Leader、
+    shilda=e5020_Old_Sister（+妹妹 e5010）、elaine=e5040_Witch、gerold=e5050_Giant、
+    helnir=e5060_Assassin、wolf=e5070_Killer、shield=e2030_Big_Knight、faden=n5080_Alchemist。
+    游戏源数据在 `D:\HY\EnderLilies`，FModel 在 `D:\K\galgame\UE`。
+  - **渲染已验证**：`D:\K\galgame\UE\SpineViewer\SpineViewerCLI.exe export <skel>
+    --atlas <atlas> -f Png -o out.png -a "locomotion/idle" --skins "<包名>"
+    --color "#00000000"` → 透明站姿 PNG（Lily 实测成功）。`--skins` 必须指定
+    （默认无皮肤=空图）；动画列表用 `query <skel> --animation` 查；颜色只认
+    `#RRGGBB`/`#AARRGGBB` 格式。
+  - 提取工具 `D:\K\zcode\tools\SpineExtract\`（C# net8 + CUE4Parse 1.2.2，
+    `dotnet run` 即可重导）。**坑**：①本 pak 是 IoStore+Zlib，CUE4Parse 不自动初始化
+    原生解压库，需下载 `zlib-ng2.dll` 进 exe 目录并反射调
+    `ZlibHelper.Initialize(path)`；②骨骼不在独立资产，在每角色包内
+    `SpineSkeletonDataAsset` 导出的 **`rawData`** 字节属性里（组件上的 `skeletonData`
+    只是对象引用）；③79/120 贴图顶 mip 不在本地文件，只有**半分辨率**（atlas 坐标
+    是归一化 UV 所以渲染正确，游戏实机即此清晰度；生图补正可用渲染帧当底图）。
+  - **美术清单影响**：10/12 角色 normal 可骨骼渲染，无需生图；**仍需生图** =
+    fretia（normal+soft+worried）、julius（normal+worried）两张整卡 +
+    其余角色表情差分 12 张（可用渲染 normal 当 img2img 底图保画风）+
+    背景 25 / 标题 1 / CG 9（无游戏数据，维持原计划）。
 - **验收工具链**：`tools/check_quotes.py` 引用核对（必引/可选/备选分级）已纳入
   每章合入流程；`tools/build_story.py --check` 只读校验。
 - **素材许可已取得（2026-10-31，作者确认）**：OST 配乐方案保留，发布关卡中的
@@ -137,10 +160,11 @@ Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-
 1. **全篇实玩验收（作者）**：A/B/C 三结局各通一遍（一周目约 919 页）+ 试一次
    「故意漏石板 → 终章追忆补齐」；重点感受扩写后各章的节奏（战斗序列/支线/回忆），
    记录问题交合入侧修。攻略见 `docs/攻略.md`。
-2. **美术**：清单见 `docs/美术需求.md`（P0 验证包 9 张先做：lily 3 表情 + knight 2 +
-   siegrid 1 + 背景 spring + CG cg_awaken，我这边跑实玩验证规格后再批量）；
-   通过后按 `data/art_index.json`（已随扩写自动增长，以编译产物为准）分批替换
-   占位图，覆盖同名文件即可。
+2. **美术**：清单见 `docs/美术需求.md`。**（2026-11-01 更新）原作骨骼数据已提取**
+   （见第 2 节）：10/12 角色 normal 由骨骼渲染直出（不再生图），作者只需生图
+   **fretia/julius 整卡 5 张 + 表情差分 12 张** + 背景/标题/CG（P3 量不变）。
+   合入侧批量渲染 → auto-crop → 入 `assets/sprites/` 覆盖占位，覆盖同名文件即替换，
+   缺表情自动回退 normal，可随时分批验证。
 3. **音乐调整**（作者提出的待办）；BGM 双声道交叉淡化已内建。UI 美化 v0.5 已完成，
    后续微调直接改 Main.gd 调色板常量与 Extras.gd 小部件。
 4. **发布**：装 4.7.2 导出模板 → 出新版本包（建议 v0.6.0，同步三处版本号：
