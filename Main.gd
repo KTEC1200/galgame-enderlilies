@@ -37,6 +37,15 @@ const SPEAKER_COLORS := {
 	"": "8b95a3",
 }
 
+# 立绘默认面朝方向（据原作骨骼渲染图目测）：left/right/front。
+# 用于舞台布局自动翻面——避免两人并立时背对对话对象。
+const ACTOR_FACING := {
+	"lily": "right", "true_lily": "right", "wolf": "right", "elaine": "right",
+	"fretia": "front", "faden": "front",
+	"knight": "left", "siegrid": "left", "shilda": "left", "gerold": "left",
+	"helnir": "left", "shield": "left", "julius": "left",
+}
+
 # ---- 剧情数据与运行状态 ----
 var data: Dictionary = {}
 var nodes: Array = []
@@ -157,6 +166,8 @@ func _ready() -> void:
 		_run_smoke()
 	elif OS.get_cmdline_user_args().has("--shots"):
 		_run_shots()
+	elif OS.get_cmdline_user_args().has("--cast-shots"):
+		_run_cast_shots()
 
 func _load_derived_data() -> void:
 	var art_file := FileAccess.open(ART_INDEX_PATH, FileAccess.READ)
@@ -537,6 +548,8 @@ func _show_title() -> void:
 	ui_hidden = false
 	hud.visible = false
 	actors.visible = false
+	cast = []
+	_reset_stage()
 	cg.visible = false
 	choice_box.visible = false
 	title_screen.visible = true
@@ -549,6 +562,7 @@ func start() -> void:
 	cursor = 0
 	flags = data.get("initial_flags", {}).duplicate(true)
 	cast = []
+	_reset_stage()
 	bg_id = "black"
 	cg_id = ""
 	chapter = ""
@@ -869,11 +883,80 @@ func _flow_rewind(block_id: String) -> void:
 	_update_playback_buttons()
 	_apply_snapshot(snapshot)
 
+# ---- 舞台立绘（v0.7：常驻节点 + 稳定登场次序 + 平滑槽位）----
+var actor_nodes: Dictionary = {}   # id -> TextureRect（常驻，切表情不重建）
+var stage_order: Array = []        # id 登场次序（新登场者排尾，不打乱已在场者）
+
+func _reset_stage() -> void:
+	stage_order = []
+	for key in actor_nodes.keys():
+		var node: TextureRect = actor_nodes[key]
+		actor_nodes.erase(key)
+		node.queue_free()
+
+func _find_actor(id: String) -> Dictionary:
+	for actor in cast:
+		if str(actor["id"]) == id:
+			return actor
+	return {}
+
+func _actor_texture(actor: Dictionary) -> Texture2D:
+	# 缺表情时回退该角色 normal（文件探测而非纹理探测：_texture 对缺文件会返回渐变占位）
+	var actor_id := str(actor["id"])
+	var expression := str(actor.get("expression", "normal"))
+	var form := str(actor.get("form", "normal"))
+	var base := "chibi/" if form == "chibi" else "sprites/"
+	var path := ART + base + actor_id + "/" + expression + ".png"
+	if not expression.is_empty() and expression != "normal" and not _art_exists(path):
+		path = ART + base + actor_id + "/normal.png"
+	return _texture(path)
+
+func _art_exists(path: String) -> bool:
+	return ResourceLoader.exists(path) or FileAccess.file_exists(path)
+
+func _sync_stage_order() -> void:
+	# 稳定次序：已在场者保持相对次序；新登场者按 cast 顺序排尾。
+	var present := {}
+	for actor in cast:
+		present[str(actor["id"])] = true
+	stage_order = stage_order.filter(func(id): return present.has(id))
+	for actor in cast:
+		var id := str(actor["id"])
+		if not stage_order.has(id):
+			stage_order.append(id)
+
 func _draw_cast(speaker: String) -> void:
-	for child in actors.get_children():
-		actors.remove_child(child)
-		child.free()
-	var count := cast.size()
+	_sync_stage_order()
+	# 1) 同步节点集合（退场者淡出释放）
+	var present := {}
+	for actor in cast:
+		present[str(actor["id"])] = actor
+	for key in actor_nodes.keys():
+		if not present.has(key):
+			var gone: TextureRect = actor_nodes[key]
+			actor_nodes.erase(key)
+			var tw: Tween = gone.create_tween()
+			tw.tween_property(gone, "modulate:a", 0.0, 0.15)
+			tw.tween_callback(gone.queue_free)
+	for id in present.keys():
+		if not actor_nodes.has(id):
+			var node := TextureRect.new()
+			node.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			node.stretch_mode = TextureRect.STRETCH_SCALE
+			node.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			node.modulate = Color(1, 1, 1, 0)
+			actor_nodes[id] = node
+			actors.add_child(node)
+	# 2) 更新表情纹理（节点常驻，只换纹理不重建，切换不闪烁）
+	for id in present.keys():
+		var node: TextureRect = actor_nodes[id]
+		var tex := _actor_texture(present[id])
+		if tex != null:
+			node.texture = tex
+	_layout_actors(speaker)
+
+func _layout_actors(speaker: String) -> void:
+	var count := stage_order.size()
 	if count == 0:
 		return
 	var centres: Array = []
@@ -884,31 +967,51 @@ func _draw_cast(speaker: String) -> void:
 	else:
 		for i in range(count):
 			centres.append(200.0 + 880.0 * float(i) / float(count - 1))
-	# 说话人最后绘制（在最上层），其余压暗。
-	var ordered: Array = []
-	for actor in cast:
-		if str(actor["id"]) != speaker:
-			ordered.append(actor)
-	for actor in cast:
-		if str(actor["id"]) == speaker:
-			ordered.append(actor)
-	for actor in ordered:
-		var actor_id := str(actor["id"])
-		var expression := str(actor.get("expression", "normal"))
+	# z 序：非说话人按登场序，说话人置顶（最后绘制）
+	var z := 0
+	for id in stage_order:
+		if str(id) != speaker:
+			var n: TextureRect = actor_nodes.get(id)
+			if n != null:
+				actors.move_child(n, z)
+			z += 1
+	if speaker != "" and actor_nodes.has(speaker):
+		actors.move_child(actor_nodes[speaker], z)
+	var instant := _is_skipping()
+	for i in range(count):
+		var id: String = stage_order[i]
+		var node: TextureRect = actor_nodes.get(id)
+		if node == null or node.texture == null:
+			continue
+		var actor := _find_actor(id)
 		var form := str(actor.get("form", "normal"))
-		var path: String = ART + (("chibi/" if form == "chibi" else "sprites/") + actor_id + "/" + expression + ".png")
-		var portrait := TextureRect.new()
-		portrait.texture = _texture(path)
-		if portrait.texture == null and expression != "normal":
-			path = ART + (("chibi/" if form == "chibi" else "sprites/") + actor_id + "/normal.png")
-			portrait.texture = _texture(path)
-		portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		portrait.size = Vector2(320, 460) if form == "chibi" else Vector2(640, 980)
-		portrait.position = Vector2(centres[cast.find(actor)] - portrait.size.x / 2.0, -120.0)
-		portrait.modulate = Color.WHITE if speaker == "" or actor_id == speaker else Color(0.55, 0.60, 0.70)
-		actors.add_child(portrait)
+		# 说话人轻微放大（脚底不动向上顶）更醒目
+		var emph := 1.04 if (id == speaker and speaker != "") else 1.0
+		var disp_h: float = 460.0 if form == "chibi" else 980.0 * emph
+		var w: float = disp_h * node.texture.get_width() / max(node.texture.get_height(), 1)
+		var target_pos := Vector2(centres[i] - w / 2.0, 860.0 - disp_h)
+		var dim := speaker != "" and id != speaker
+		var target_mod := Color(0.55, 0.60, 0.70) if dim else Color.WHITE
+		node.size = Vector2(w, disp_h)
+		# 自动翻面：站在最左槽却面朝左（或最右槽却面朝右）时镜像，保证面对同伴
+		var facing: String = ACTOR_FACING.get(id, "front")
+		node.flip_h = (i == 0 and facing == "left" and count > 1) \
+			or (i == count - 1 and facing == "right" and count > 1)
+		var is_new := is_equal_approx(node.modulate.a, 0.0)
+		if instant:
+			node.position = target_pos
+			node.modulate = target_mod
+			continue
+		if is_new:
+			node.position = target_pos
+		# 平滑滑动 + 明暗过渡（快速跳过时瞬时到位；新登场者淡入）
+		if node.has_meta("layout_tween"):
+			(node.get_meta("layout_tween") as Tween).kill()
+		var tw := node.create_tween()
+		node.set_meta("layout_tween", tw)
+		if not is_new:
+			tw.tween_property(node, "position", target_pos, 0.28).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+		tw.tween_property(node, "modulate", target_mod, 0.22)
 
 func choose(option: Dictionary) -> void:
 	if in_title or _is_modal():
@@ -1194,6 +1297,7 @@ func _apply_snapshot(saved: Dictionary) -> void:
 		merged_flags[key] = saved_flags[key]
 	flags = merged_flags
 	cast = saved.get("cast", []).duplicate(true)
+	_reset_stage()
 	bg_id = str(saved.get("bg", "black"))
 	cg_id = str(saved.get("cg", ""))
 	chapter = str(saved.get("chapter", ""))
@@ -1574,4 +1678,41 @@ func _run_shots() -> void:
 	active_flow = saved_active
 	extras.close()
 	print("SHOTS saved to " + dir)
+	get_tree().quit(0)
+
+## 立绘组合截图调试：Godot --path . -- --cast-shots（SHOTS_DIR 指定输出目录）
+## 渲染典型 cast 组合（双人/三人/宽幅 Boss/坐姿/true_lily），供立绘规格排查用。
+func _run_cast_shots() -> void:
+	var dir := OS.get_environment("SHOTS_DIR")
+	if dir.is_empty():
+		dir = "cast_shots"
+	DirAccess.make_dir_recursive_absolute(dir)
+	start()
+	await get_tree().process_frame
+	var bg_tex := _texture(ART + "backgrounds/church_nave.png")
+	var combos := [
+		{"name": "1_duo_knight_speaks", "cast": [{"id": "lily", "expression": "soft"}, {"id": "knight", "expression": "serious"}], "speaker": "knight"},
+		{"name": "2_trio_lily_speaks", "cast": [{"id": "lily", "expression": "worried"}, {"id": "knight", "expression": "normal"}, {"id": "siegrid", "expression": "normal"}], "speaker": "lily"},
+		{"name": "3_boss_gerold_solo", "cast": [{"id": "gerold", "expression": "normal"}], "speaker": "gerold"},
+		{"name": "4_faden_sit", "cast": [{"id": "faden", "expression": "normal"}, {"id": "lily", "expression": "normal"}], "speaker": "faden"},
+		{"name": "5_true_lily", "cast": [{"id": "true_lily", "expression": "normal"}], "speaker": "true_lily"},
+		{"name": "6_elaine_big", "cast": [{"id": "elaine", "expression": "normal"}, {"id": "lily", "expression": "surprised"}], "speaker": "elaine"},
+	]
+	# 双人朝向矩阵：lily 固定居左，检查各角色面朝方向是否与站位匹配
+	for other in ["knight", "siegrid", "shilda", "gerold", "helnir", "wolf", "shield", "faden", "fretia", "julius", "true_lily"]:
+		combos.append({
+			"name": "m_lily_left_" + other,
+			"cast": [{"id": "lily", "expression": "normal"}, {"id": other, "expression": "normal"}],
+			"speaker": other,
+		})
+	for c in combos:
+		cast = c["cast"]
+		bg.texture = bg_tex
+		_reset_stage()
+		actors.visible = true
+		_draw_cast(str(c["speaker"]))
+		await get_tree().create_timer(0.6).timeout
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png(dir + "/" + str(c["name"]) + ".png")
+	print("CAST_SHOTS saved to " + dir)
 	get_tree().quit(0)

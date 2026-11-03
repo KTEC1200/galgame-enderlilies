@@ -1,6 +1,6 @@
 # 交接文档 — ENDER LILIES 同人视觉小说（galgame-enderlilies）
 
-> 生成：2026-10-30；更新：2026-11-01（**全篇扩写完成：935 对话页 + 通读终审修复；同日原作素材提取完成，美术清单大减**）。
+> 生成：2026-10-30；更新：2026-11-03（**v0.7 立绘系统重做：规格规范化 + 舞台布局重构；美术源目录迁至 `C:\Users\27025\Desktop\EnderLilies`**）。
 > **本文在仓库根目录，随 git 持久化，以此为准。**
 > 当前阶段：**全篇实玩验收 → 美术/音乐 → 发布（授权已解决）**。
 > 本文只写"在哪、怎么跑、坑在哪"，细节一律指向仓库内文档。
@@ -11,8 +11,35 @@
 |---|---|---|
 | `C:\Users\27025\Desktop\iii\enderlilies\game\` | 游戏工程本体 = 独立 git 仓库，remote `git@github.com:KTEC1200/galgame-enderlilies.git`，分支 main | **所有工作都在本仓库内**；改动一律提交推送（含音频与剧情文本） |
 | `C:\Users\27025\Desktop\iii\enderlilies\` | 剧情知识库（Obsidian vault，GitHub 同步） | **只读**（剧情和台词原文不许动）；`sources/ENDER LILIES 文本集.md` 是台词唯一权威来源 |
+| `C:\Users\27025\Desktop\EnderLilies\` | **美术源目录（2026-11-03 迁入）**：`enderlilies_art\`（生图成品/raw/ref）、`enderlilies_spine\`（骨骼三件套+renders）、`Characters\`、`UI\` | 原 `D:\K\zcode\enderlilies_*` 已整体迁来；SpineViewerCLI 仍在 `D:\K\galgame\UE\SpineViewer\` |
 
-## 2. 当前状态（2026-10-31 深夜）
+## 1.5 v0.7 立绘系统重做（2026-11-03）
+
+- **立绘规格规范化**：新工具 `tools/normalize_sprites.py` 把 `assets/sprites/` 全部立绘统一为
+  「画布高 1960、角色底对齐画布底、同角色各表情高恒定（TARGET_H 表）」，幂等可重跑。
+  此前三类来源（骨骼渲染紧裁剪 / 生图 1280×1960 带留白 / 640×980 占位）混入同一
+  640×980 显示盒，导致宽幅角色被垂直居中→**悬浮**、表情切换→**大小跳变**。
+- **引擎布局重写（Main.gd `_draw_cast`）**：立绘节点常驻（切表情只换纹理不重建）；
+  槽位按纹理实际宽高比×980 显示高，**脚底恒对齐 y=860 地面线**；位置变化 tween 平滑；
+  说话人轻微放大置顶、非说话人压暗；快速跳过时瞬时到位。
+- **稳定登场次序**：`stage_order`——已在场者相对次序不动，新登场者排尾；
+  「人物出现顺序」从左到右 = 登场顺序，说话人自动登场不再打乱全场站位。
+- **自动翻面**：`ACTOR_FACING` 朝向表（据渲染图目测），站最左槽却面朝左 /
+  最右槽却面朝右时 `flip_h` 镜像，保证面对对话对象（wolf 修复案例）。
+- **占位残留清理**：`make_placeholders.py` 时代的 20 张灰占位（true_lily 全套 7 张 +
+  knight/lily/siegrid 的 13 张表情）已删——**缺表情文件运行时回退 normal**
+  （原 `_draw_cast` 的回退分支因 `_texture` 对缺文件返回渐变占位而从未生效，已改为文件探测）。
+- **true_lily 入库**：白巫女（幼年莉莉）用 p0001_Lily 干净形态骨骼渲染直出
+  （`assets/sprites/true_lily/normal.png`），差分 happy/soft 剧情用到时回退 normal。
+- **调试命令**：`Godot --path . -- --cast-shots`（SHOTS_DIR 指定输出）渲染
+  双人/三人/宽幅 Boss/坐姿/朝向矩阵等典型 cast 组合，立绘排查专用。
+- 验证：SMOKE PASS（919/909 页）+ cast-shots 六组合实机截图人工核对。
+
+## 2. 当前状态（2026-11-03）
+
+- **v0.7 立绘系统重做（2026-11-03，见第 1.5 节）**：40 张立绘规格规范化（悬浮/跳变/占位
+  三问题清零）、舞台布局重构（稳定次序/平滑移动/说话人突出/自动翻面）、true_lily 骨骼
+  渲染入库、--cast-shots 调试模式。SMOKE PASS。美术源目录迁至 `C:\Users\27025\Desktop\EnderLilies`。
 
 - **剧情全部完成**：第一章（`01_白教区.md`，由 01~05 合并的单文件版）+ 06~12 七个
   区域章 + 13 终章三结局。9 个场景文件 / 466 节点 / **322 页** / 18 选项 / 21 flag；
@@ -147,12 +174,14 @@
 ```bash
 python tools/build_story.py [--check]   # 源稿 → data/*.json；--check 只读校验不写产物
 python tools/check_quotes.py            # 引用核对（必引缺漏=错误，池外项人工判断）
+python tools/normalize_sprites.py       # 立绘规格规范化（幂等；换立绘后跑一次）
 python tools/build_music_catalog.py     # 重扫 ../music 生成音乐目录（一般不用跑）
-python tools/make_placeholders.py       # 重新生成占位美术
+python tools/make_placeholders.py       # 重新生成占位美术（历史工具，v0.7 起立绘占位已弃用）
 # 冒烟测试
 Godot --headless --path . --import   # 首次/资源变更后
 Godot --headless --path . -- --smoke # 必须 SMOKE PASS（双分支全篇+终章路由+回溯+面板+设置）
 Godot --path . -- --shots            # UI 截图调试（SHOTS_DIR 指定输出目录，弹真窗口几秒）
+Godot --path . -- --cast-shots       # 立绘组合截图（双人/三人/宽幅 Boss/朝向矩阵）
 # 导出（先装 4.7.2 导出模板）
 Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-vn.exe
 ```
@@ -189,6 +218,12 @@ Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-
     用「调整创建顺序」而不是 z_index，真窗口验证别信无头合成事件（进不了 GUI 命中）。
 13. **按钮路由 kind 与 `_menu()` 的 match 分支不匹配 = 静默无效果**（菜单按钮死了一个
     大版本才发现）。新增按钮先把 kind 在 match 里补上；GDScript 对未命中分支零警告。
+14. **`_texture()` 对缺文件返回渐变占位（非 null）**——"纹理为 null 才回退 normal"的
+    分支永远不触发。判断表情是否缺失必须用 `ResourceLoader.exists()` / 文件探测。
+15. **宽幅渲染图（Boss 战斗姿态）在竖立绘盒里 KEEP_ASPECT_CENTERED 会垂直居中悬浮**。
+    立绘必须底对齐；规格统一交给 `normalize_sprites.py`（画布高 1960 底对齐）。
+16. **bash 里给 Godot 传绝对路径 `C:/...` 当 SHOTS_DIR 会 save_png 失败**（静默或报
+    Can't save PNG）；用工程内相对路径（如 `SHOTS_DIR=cast_shots`）最稳。
 
 ## 6. 下一阶段任务（按优先级）
 
