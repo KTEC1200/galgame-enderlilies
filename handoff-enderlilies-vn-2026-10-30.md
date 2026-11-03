@@ -1,6 +1,6 @@
 # 交接文档 — ENDER LILIES 同人视觉小说（galgame-enderlilies）
 
-> 生成：2026-10-30；更新：2026-11-03（**v0.7 立绘系统重做：规格规范化 + 舞台布局重构；美术源目录迁至 `C:\Users\27025\Desktop\EnderLilies`**）。
+> 生成：2026-10-30；更新：2026-11-04（**v0.8 立绘对应/朝向修复 + 标题页「设定档案」「文本集」双新模块**）。
 > **本文在仓库根目录，随 git 持久化，以此为准。**
 > 当前阶段：**全篇实玩验收 → 美术/音乐 → 发布（授权已解决）**。
 > 本文只写"在哪、怎么跑、坑在哪"，细节一律指向仓库内文档。
@@ -10,8 +10,41 @@
 | 位置 | 内容 | 注意 |
 |---|---|---|
 | `C:\Users\27025\Desktop\iii\enderlilies\game\` | 游戏工程本体 = 独立 git 仓库，remote `git@github.com:KTEC1200/galgame-enderlilies.git`，分支 main | **所有工作都在本仓库内**；改动一律提交推送（含音频与剧情文本） |
-| `C:\Users\27025\Desktop\iii\enderlilies\` | 剧情知识库（Obsidian vault，GitHub 同步） | **只读**（剧情和台词原文不许动）；`sources/ENDER LILIES 文本集.md` 是台词唯一权威来源 |
-| `C:\Users\27025\Desktop\EnderLilies\` | **美术源目录（2026-11-03 迁入）**：`enderlilies_art\`（生图成品/raw/ref）、`enderlilies_spine\`（骨骼三件套+renders）、`Characters\`、`UI\` | 原 `D:\K\zcode\enderlilies_*` 已整体迁来；SpineViewerCLI 仍在 `D:\K\galgame\UE\SpineViewer\` |
+| `C:\Users\27025\Desktop\iii\enderlilies\` | 剧情知识库（Obsidian vault，GitHub 同步） | **只读**（剧情和台词原文不许动）；`sources/ENDER LILIES 文本集.md` 是台词唯一权威来源，也是「文本集」模块数据源 |
+| `C:\Users\27025\Desktop\EnderLilies\` | **美术源目录（2026-11-03 迁入）**：`enderlilies_art\`（生图成品/raw/ref）、`enderlilies_spine\`（骨骼三件套+renders）、`Characters\`、`UI\`、**`设定集图片\`（官方 Art Book 汉化扫描版 118 页：P13~33 登场角色、P34~46 敌人，是立绘↔人物对应的权威依据）** | 原 `D:\K\zcode\enderlilies_*` 已整体迁来；SpineViewerCLI 仍在 `D:\K\galgame\UE\SpineViewer\` |
+
+## 1.4 v0.8 立绘修复 + 设定档案/文本集（2026-11-04）
+
+- **官方设定集定位成功**（作者购入的《The Art of ENDER LILIES》汉化扫描版）：
+  逐张对照审计后发现 v0.7 的骨骼包映射表有一处关键错误——**`e5030_Leader` 实为
+  骑士长尤利乌斯（Leader=骑士长），不是西丽德**。修复：
+  - `e5010_Younger_Sister` 渲染真·西丽德（白头巾修女+锁链铁球）入 `siegrid/`；
+  - 原 `siegrid/normal.png`（官方尤利乌斯渲染）移入 `julius/`；julius 的 3 张
+    AI 老骑士图与 siegrid 的 2 张错底图差分全部移入 `backup/ai_sprites_2026-11-04/`（.gdignore，不删）。
+  - **fretia×3 / wolf×3 按官方设定重生成**（芙莉蒂雅=遮脸白发+素白宽袖袍 P30；
+    狼=红长发+兽姿 P26），浏览器管线适配站点改版后重跑成功。
+  - **朝向逐张核实**：lily/true_lily/wolf 原生朝左（原配置 right 导致边缘槽位背对
+    同伴）、elaine 正面漂浮（原 right 导致右槽被无谓镜像）——已修并经 cast-shots 14 张目检。
+- **集中映射配置 `data/character_map.json`**（唯一权威表）：id→显示名/骨骼包来源/
+  朝向/隶属势力+登场次序规则；引擎 `_load_character_map()` 启动时加载覆盖
+  `ACTOR_FACING` 兜底表。**作者后续给对应顺序表 → 只改这个 JSON**。
+- **标题页新模块一「设定档案」（DlcPanel.gd + GraphView.gd）**：
+  势力/人物/事件线三标签 → 列表 → 详情（实体详情带官方立绘、亡语、相关人物；
+  事件线按 vault「事件时间线」七纪排序、未收录者标※时间待确认）；
+  人物关系图谱 = 弦图布局（同势力连续占弧、内外双圈，节点零重叠），
+  拖拽平移/滚轮缩放/右键复位/悬停 tooltip（姓名+隶属势力）/点击进详情。
+- **标题页新模块二「文本集」（TextSet.gd）**：只收人物和记忆(30)/笔记内容(70)/
+  遗物(35) 共 135 条，**「对话剧情」整章不解析**；左侧分类折叠+标题搜索、
+  右侧阅读区（描述=▎引用块斜体、正文逐行、空行分段、结局英文诗原样保留）；
+  条目切换回顶、选中黄绿高亮；窄屏(<900) 列表/阅读区自动切换；
+  与设定档案同名人物互跳（entry.entity_id / entity.text_entry_ids）。
+- **数据管线**（vault 只读，运行时不触碰绝对路径）：
+  `python tools/build_text_collection.py` → `data/text_collection.json`；
+  `python tools/build_dlc.py` → `data/dlc.json`（concepts 10/entities 40/events 6/
+  时间线七纪+时间待确认组/关系边 26 条/图谱坐标）。wiki 链接在编译期转纯文本，
+  关系边来自实体 md 的「关联人物」小节（`[[目标]] — 说明`）+ frontmatter related。
+- **调试**：`--shots` 扩至 9 张（含 DLC 三视图/图谱/tooltip 合成/文本集/事件线）；
+  `--shots`/`--cast-shots` 期间 `debug_shots=true` 锁输入（防真窗口被滚轮误触开回看）。
 
 ## 1.5 v0.7 立绘系统重做（2026-11-03）
 
@@ -179,12 +212,14 @@
 python tools/build_story.py [--check]   # 源稿 → data/*.json；--check 只读校验不写产物
 python tools/check_quotes.py            # 引用核对（必引缺漏=错误，池外项人工判断）
 python tools/normalize_sprites.py       # 立绘规格规范化（幂等；换立绘后跑一次）
+python tools/build_text_collection.py   # 文本集 md → data/text_collection.json（vault 只读；v0.8）
+python tools/build_dlc.py               # vault 三目录 → data/dlc.json（含关系图谱坐标；v0.8）
 python tools/build_music_catalog.py     # 重扫 ../music 生成音乐目录（一般不用跑）
 python tools/make_placeholders.py       # 重新生成占位美术（历史工具，v0.7 起立绘占位已弃用）
 # 冒烟测试
 Godot --headless --path . --import   # 首次/资源变更后
 Godot --headless --path . -- --smoke # 必须 SMOKE PASS（双分支全篇+终章路由+回溯+面板+设置）
-Godot --path . -- --shots            # UI 截图调试（SHOTS_DIR 指定输出目录，弹真窗口几秒）
+Godot --path . -- --shots            # UI 截图调试（SHOTS_DIR 指定输出目录，弹真窗口几秒；v0.8 起含 DLC/文本集 9 张）
 Godot --path . -- --cast-shots       # 立绘组合+结局CG截图（输出 .cast_shots，Godot 不扫描点目录）
 # 导出（先装 4.7.2 导出模板）
 Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-vn.exe
@@ -228,24 +263,35 @@ Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-
     立绘必须底对齐；规格统一交给 `normalize_sprites.py`（画布高 1960 底对齐）。
 16. **bash 里给 Godot 传绝对路径 `C:/...` 当 SHOTS_DIR 会 save_png 失败**（静默或报
     Can't save PNG）；用工程内相对路径（如 `SHOTS_DIR=cast_shots`）最稳。
+17. **骨骼包英文代号 ≠ 角色名**：`e5030_Leader` 是"骑士长"尤利乌斯而非"守护者之长"
+    西丽德（姐妹是 e5010_Younger_Sister=西丽德 / e5020_Old_Sister=西丽亚）。换立绘
+    前先对照 `设定集图片\` 官方图核验外观，权威映射表在 `data/character_map.json`。
+18. **Twinkstar 内核是 Chromium 98**：新版 playwright 的 actionability 检查会调
+    `element.checkVisibility()` 直接抛 TypeError——CDP 自动化一律用
+    `page.evaluate` 做 DOM 点击/`DataTransfer` 注入文件，别用 locator.click；
+    生图站 2026-11 改版后比例按钮已移除（跟随参考图竖幅）、默认模型 gpt-5.6-sol。
 
 ## 6. 下一阶段任务（按优先级）
 
-1. **全篇实玩验收（作者）**：A/B/C 三结局各通一遍（一周目约 919 页）+ 试一次
+0. **v0.8 验收（作者）**：实机点一遍标题页「设定档案」「文本集」（三标签/详情/图谱
+   悬停与点击/搜索/互跳/窄屏），并实玩确认第 1 章西丽德、终章芙莉蒂雅立绘观感；
+   **人物出现顺序表**给到后只需改 `data/character_map.json`（见 1.4 节）。
+1. **TODO（美术）**：①狼的三张差分各自独立生成，面具细节略有出入（同角色一致性
+   可再收），如在意可用管线按同一底图重跑；②尤利乌斯目前只有 normal（官方渲染），
+   剧情如需表情需按 P24 底图补差分；③真·西丽德只有 normal（骨骼包无表情差分，
+   剧情现无需要）。旧图备份都在 `backup/ai_sprites_2026-11-04/`。
+2. **全篇实玩验收（作者）**：A/B/C 三结局各通一遍（一周目约 919 页）+ 试一次
    「故意漏石板 → 终章追忆补齐」；重点感受扩写后各章的节奏（战斗序列/支线/回忆），
    记录问题交合入侧修。攻略见 `docs/攻略.md`。
-2. **美术**：清单见 `docs/美术需求.md`。**（2026-11-01 更新）原作骨骼数据已提取**
-   （见第 2 节）：10/12 角色 normal 由骨骼渲染直出（不再生图），作者只需生图
-   **fretia/julius 整卡 5 张 + 表情差分 12 张** + 背景/标题/CG（P3 量不变）。
-   合入侧批量渲染 → auto-crop → 入 `assets/sprites/` 覆盖占位，覆盖同名文件即替换，
-   缺表情自动回退 normal，可随时分批验证。
-3. **音乐调整**（作者提出的待办）；BGM 双声道交叉淡化已内建。UI 美化 v0.5 已完成，
+3. **美术**：清单见 `docs/美术需求.md`。10/12 角色 normal 由骨骼渲染直出（不再生图），
+   fretia/wolf/julius/siegrid 已按官方设定集修复（2026-11-04）。
+4. **音乐调整**（作者提出的待办）；BGM 双声道交叉淡化已内建。UI 美化 v0.5 已完成，
    后续微调直接改 Main.gd 调色板常量与 Extras.gd 小部件。
-4. **发布**：装 4.7.2 导出模板 → 出新版本包（建议 v0.6.0，同步三处版本号：
+5. **发布**：装 4.7.2 导出模板 → 出新版本包（建议 v0.8.0，同步三处版本号：
    project.godot / build_story.py / README）→ 导出前清
    `%APPDATA%\enderlilies_vn_data\logs\`（坑 3）→ itch.io 上架（授权已解决；
    页面署名按许可范围核对）。
-5. **发布前全篇验收矩阵**：A/B/C 条件矩阵、缺石板矩阵、条件选项存读档一致性、
+6. **发布前全篇验收矩阵**：A/B/C 条件矩阵、缺石板矩阵、条件选项存读档一致性、
    跨版本存档验证（旧档按「章节+标题」迁移）、干净环境导出包实读。
 
 ## 7. 建议技能（本环境可用）
