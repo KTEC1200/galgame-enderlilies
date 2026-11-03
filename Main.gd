@@ -116,6 +116,8 @@ var body_label: RichTextLabel
 var choice_box: VBoxContainer
 var hint: Label
 var title_screen: Control
+var dlc: Control                 # 设定档案（DLC 面板，DlcPanel.gd）
+var textset: Control             # 文本集（TextSet.gd）
 var continue_button: Button
 var overlay: Control
 var overlay_box: VBoxContainer
@@ -152,6 +154,13 @@ func _ready() -> void:
 	extras = load("res://Extras.gd").new()
 	extras.game = self
 	add_child(extras)
+	# 设定档案 / 文本集（后挂载 → 命中优先级在 Extras 之上，Esc/右键可关）
+	dlc = load("res://DlcPanel.gd").new()
+	dlc.game = self
+	add_child(dlc)
+	textset = load("res://TextSet.gd").new()
+	textset.game = self
+	add_child(textset)
 	typewriter_timer = Timer.new()
 	typewriter_timer.wait_time = 1.0 / text_speed
 	typewriter_timer.timeout.connect(_typewriter_tick)
@@ -514,33 +523,33 @@ func _build_title_screen() -> void:
 	tagline.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(tagline)
 
-	# 菜单：左侧蓝竖线，悬停时黄绿箭头滑入
+	# 菜单：左侧蓝竖线，悬停时黄绿箭头滑入（9 项：原 7 项 + 设定档案 + 文本集）
 	var menu_line := ColorRect.new()
 	menu_line.color = Color(COL_BLUE)
-	menu_line.position = Vector2(88, 342)
-	menu_line.size = Vector2(3, 280)
+	menu_line.position = Vector2(88, 322)
+	menu_line.size = Vector2(3, 350)
 	menu_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(menu_line)
 	var arrow := Label.new()
 	arrow.text = "▶"
 	arrow.add_theme_font_size_override("font_size", 20)
 	arrow.add_theme_color_override("font_color", Color(COL_LIME))
-	arrow.position = Vector2(102, 348)
+	arrow.position = Vector2(102, 328)
 	arrow.visible = false
 	arrow.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(arrow)
 	var menu := VBoxContainer.new()
-	menu.position = Vector2(122, 336)
-	menu.add_theme_constant_override("separation", 15)
+	menu.position = Vector2(122, 316)
+	menu.add_theme_constant_override("separation", 9)
 	title_screen.add_child(menu)
-	for item in [["继续游戏", "continue"], ["从头开始", "start"], ["读取存档", "load"], ["旅途图库", "gallery"], ["剧情分支树", "flowchart"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
+	for item in [["继续游戏", "continue"], ["从头开始", "start"], ["读取存档", "load"], ["旅途图库", "gallery"], ["剧情分支树", "flowchart"], ["设定档案", "dlc"], ["文本集", "textset"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
 		var b := Button.new()
 		b.text = item[0]
 		b.focus_mode = Control.FOCUS_NONE
 		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 		b.custom_minimum_size = Vector2(280, 0)
-		b.add_theme_font_size_override("font_size", 22)
+		b.add_theme_font_size_override("font_size", 21)
 		b.add_theme_color_override("font_color", Color("b9c4d6"))
 		b.add_theme_color_override("font_hover_color", Color("ffffff"))
 		b.add_theme_color_override("font_pressed_color", Color(COL_LIME))
@@ -610,7 +619,7 @@ func start() -> void:
 	_show_next()
 
 func _is_modal() -> bool:
-	return modal_open or extras.visible
+	return modal_open or extras.visible or dlc.visible or textset.visible
 
 func _open_overlay(title: String, buttons: Array) -> void:
 	modal_open = true
@@ -681,6 +690,10 @@ func _menu(kind: String) -> void:
 			extras.open("gallery")
 		"flowchart":
 			extras.open("flowchart")
+		"dlc":
+			dlc.open()
+		"textset":
+			textset.open()
 		"settings":
 			extras.open("settings")
 		"auto":
@@ -1462,6 +1475,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			if _is_modal():
 				if modal_open:
 					_close_overlay()
+				elif dlc.visible:
+					dlc.close()
+				elif textset.visible:
+					textset.close()
 				else:
 					extras.close()
 			elif not in_title:
@@ -1695,6 +1712,38 @@ func _run_shots() -> void:
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(dir + "/4_flowchart.png")
 	extras.close()
+	# 设定档案 / 文本集 / 关系图谱
+	dlc.open("entities")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/5_dlc_entities.png")
+	dlc.open_entity("ent-西丽德")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/6_dlc_detail.png")
+	dlc.open("entities")
+	dlc._show_graph()
+	await get_tree().create_timer(0.4).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/7_dlc_graph.png")
+	# 合成悬停验证：直接触发 tooltip 回调（真实鼠标悬停路径相同）
+	if dlc.graph_view != null and not dlc.graph_view.nodes.is_empty():
+		dlc._on_graph_hover(dlc.graph_view.nodes[5], Vector2(620, 320))
+		await get_tree().process_frame
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png(dir + "/7b_dlc_tooltip.png")
+		dlc._on_graph_hover({}, Vector2.ZERO)
+	dlc.close()
+	textset.open()
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/8_textset.png")
+	textset.close()
+	dlc.open("events")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/9_dlc_events.png")
+	dlc.close()
 	# 锁定态预览：临时只把前 4 块记为已走过，截完立即恢复（不落盘）
 	var saved_seen: Dictionary = profile["flow_seen"].duplicate(true)
 	var saved_active: String = active_flow

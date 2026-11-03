@@ -94,6 +94,8 @@ def parse_blocks(body: str):
 
     for line in body.split("\n"):
         s = line.strip()
+        if s.startswith("# "):
+            continue  # 一级标题与 frontmatter title 重复，不进正文
         if s.startswith("|"):
             flush_para(); flush_quote()
             table.append(s)
@@ -284,43 +286,20 @@ def build_graph(entities):
             seen.add(key)
             edges.append({"a": e["title"], "b": t, "label": r["label"][:40]})
 
-    # ---- 确定性力导向布局（同势力初始聚簇）----
+    # ---- 弦图式布局（确定性、保证无重叠）：同势力节点连续占一段弧，
+    #      内外双圈交替拉开标签间距；连线为弦，跨势力关系一目了然 ----
     factions = []
     for e in entities:
         if e["faction"] not in factions:
             factions.append(e["faction"])
-    fi = {e["title"]: factions.index(e["faction"]) for e in entities}
-    n = len(entities)
+    order = sorted(entities, key=lambda e: (factions.index(e["faction"]), e["title"]))
+    n = len(order)
     pos = {}
-    for i, e in enumerate(entities):
-        ang = 2 * math.pi * fi[e["title"]] / max(len(factions), 1)
-        cx, cy = 0.5 + 0.34 * math.cos(ang), 0.5 + 0.34 * math.sin(ang)
-        k, m = divmod(i, 7)
-        pos[e["title"]] = [cx + 0.05 * math.cos(2 * math.pi * m / 7 + k), cy + 0.05 * math.sin(2 * math.pi * m / 7 + k)]
-    adj = {e["title"]: [] for e in entities}
-    for ed in edges:
-        adj[ed["a"]].append(ed["b"])
-        adj[ed["b"]].append(ed["a"])
-    for _ in range(160):
-        for a in names:
-            fx = fy = 0.0
-            for b in names:
-                if a == b:
-                    continue
-                dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
-                d2 = max(dx * dx + dy * dy, 1e-6)
-                f = 0.0009 / d2
-                fx += f * dx; fy += f * dy
-            for b in adj[a]:
-                dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
-                d = max(math.hypot(dx, dy), 1e-4)
-                f = (d - 0.16) * 0.06 / d
-                fx += f * dx; fy += f * dy
-            # 向心 + 阻尼
-            fx += (0.5 - pos[a][0]) * 0.012
-            fy += (0.5 - pos[a][1]) * 0.012
-            pos[a][0] = min(0.98, max(0.02, pos[a][0] + max(-0.02, min(0.02, fx))))
-            pos[a][1] = min(0.98, max(0.02, pos[a][1] + max(-0.02, min(0.02, fy))))
+    cx, cy, rx, ry = 0.5, 0.5, 0.38, 0.33
+    for i, e in enumerate(order):
+        ang = 2 * math.pi * i / n - math.pi / 2
+        ring = 1.0 if i % 2 == 0 else 0.72
+        pos[e["title"]] = [cx + rx * ring * math.cos(ang), cy + ry * ring * math.sin(ang)]
     nodes = [{"id": e["id"], "title": e["title"], "faction": e["faction"],
               "x": round(pos[e["title"]][0], 4), "y": round(pos[e["title"]][1], 4)} for e in entities]
     return {"nodes": nodes, "edges": edges, "factions": factions}
