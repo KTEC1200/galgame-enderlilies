@@ -13,6 +13,7 @@ const STORY_PATH := "res://data/story.json"
 const MUSIC_PATH := "res://data/music_catalog.json"
 const ART_INDEX_PATH := "res://data/art_index.json"
 const FLOW_PATH := "res://data/flowchart.json"
+const CHARACTER_MAP_PATH := "res://data/character_map.json"
 const ART := "res://assets/"
 const SAVE_VERSION := "el-vn-1"
 const SLOT_PREFIX := "el_slot_"
@@ -37,14 +38,17 @@ const SPEAKER_COLORS := {
 	"": "8b95a3",
 }
 
-# 立绘默认面朝方向（据原作骨骼渲染图目测）：left/right/front。
-# 用于舞台布局自动翻面——避免两人并立时背对对话对象。
+# 立绘默认面朝方向（left/right/front），用于舞台布局自动翻面——避免两人并立时背对对话对象。
+# 权威表在 data/character_map.json（_ready 时加载覆盖）；此处只是 JSON 缺失时的兜底。
+# 2026-11-04 对照官方设定集逐张核实：lily/true_lily/wolf 原生朝左（原误标 right 导致
+# 边缘槽位背对同伴）、elaine 为正面漂浮（原误标 right 导致右槽被无谓镜像）。
 const ACTOR_FACING := {
-	"lily": "right", "true_lily": "right", "wolf": "right", "elaine": "right",
+	"lily": "left", "true_lily": "left", "wolf": "left", "elaine": "front",
 	"fretia": "front", "faden": "front",
 	"knight": "left", "siegrid": "left", "shilda": "left", "gerold": "left",
 	"helnir": "left", "shield": "left", "julius": "left",
 }
+var actor_facing: Dictionary = ACTOR_FACING.duplicate()
 
 # ---- 剧情数据与运行状态 ----
 var data: Dictionary = {}
@@ -62,6 +66,7 @@ var finished: bool = false
 var in_title: bool = true
 var ui_hidden: bool = false
 var modal_open: bool = false
+var debug_shots: bool = false       # --shots / --cast-shots 调试模式：锁输入防干扰截图
 
 # ---- 打字机 ----
 var typewriter_enabled: bool = true
@@ -92,6 +97,7 @@ var backlog: Array = []
 var art_index: Dictionary = {}      # node_id -> {arts:[], title, chapter}
 var gallery_items: Dictionary = {}  # art_key -> {category, title, locations:[]}
 var flow_data: Dictionary = {}
+var character_map: Dictionary = {}   # id -> {display_name, faction, spine, note}（DLC/朝向共用）
 var active_flow: String = ""
 var checkpoint_flow: String = ""
 
@@ -135,6 +141,7 @@ func _ready() -> void:
 		lookup[str(nodes[i]["id"])] = i
 	_load_derived_data()
 	_load_profile()
+	_load_character_map()
 	bgm = load("res://BgmPlayer.gd").new()
 	add_child(bgm)
 	var catalog: Variant = JSON.parse_string(FileAccess.get_file_as_string(MUSIC_PATH))
@@ -168,6 +175,24 @@ func _ready() -> void:
 		_run_shots()
 	elif OS.get_cmdline_user_args().has("--cast-shots"):
 		_run_cast_shots()
+
+func _load_character_map() -> void:
+	# 角色集中映射（data/character_map.json）：朝向表 + 显示名/势力（DLC 面板共用）。
+	# 文件缺失或损坏时保持内置兜底表，不阻断启动。
+	if not FileAccess.file_exists(CHARACTER_MAP_PATH):
+		return
+	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(CHARACTER_MAP_PATH))
+	if not (parsed is Dictionary) or not (parsed.get("characters") is Dictionary):
+		push_warning("character_map.json 格式异常，使用内置朝向兜底表")
+		return
+	character_map = parsed["characters"]
+	var facings: Dictionary = {}
+	for id in character_map:
+		var info: Variant = character_map[id]
+		if info is Dictionary and info.get("facing") is String:
+			facings[id] = info["facing"]
+	if not facings.is_empty():
+		actor_facing = facings
 
 func _load_derived_data() -> void:
 	var art_file := FileAccess.open(ART_INDEX_PATH, FileAccess.READ)
@@ -994,7 +1019,7 @@ func _layout_actors(speaker: String) -> void:
 		var target_mod := Color(0.55, 0.60, 0.70) if dim else Color.WHITE
 		node.size = Vector2(w, disp_h)
 		# 自动翻面：站在最左槽却面朝左（或最右槽却面朝右）时镜像，保证面对同伴
-		var facing: String = ACTOR_FACING.get(id, "front")
+		var facing: String = actor_facing.get(id, "front")
 		node.flip_h = (i == 0 and facing == "left" and count > 1) \
 			or (i == count - 1 and facing == "right" and count > 1)
 		var is_new := is_equal_approx(node.modulate.a, 0.0)
@@ -1424,6 +1449,8 @@ func _render_error_once(detail: String) -> void:
 # ---------------------------------------------------------------- 输入
 
 func _unhandled_input(event: InputEvent) -> void:
+	if debug_shots:
+		return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode == KEY_H and not in_title and not _is_modal():
 			_hide_ui(not ui_hidden)
@@ -1461,6 +1488,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 
 func _input(event: InputEvent) -> void:
+	if debug_shots:
+		return
 	if event is InputEventKey and event.keycode == KEY_CTRL and not event.echo:
 		skip_held = event.pressed
 		_schedule_auto()
@@ -1634,6 +1663,7 @@ func _run_smoke() -> void:
 ## UI 截图调试：Godot --path . -- --shots（输出到 SHOTS_DIR，默认 user://shots）
 ## 依次截取标题 / 对话页 / 设置 / 分支树，供美术排查用，不参与剧情流程。
 func _run_shots() -> void:
+	debug_shots = true
 	var dir := OS.get_environment("SHOTS_DIR")
 	if dir.is_empty():
 		dir = OS.get_user_data_dir() + "/shots"
@@ -1683,6 +1713,7 @@ func _run_shots() -> void:
 ## 立绘组合截图调试：Godot --path . -- --cast-shots（SHOTS_DIR 指定输出目录）
 ## 渲染典型 cast 组合（双人/三人/宽幅 Boss/坐姿/true_lily），供立绘规格排查用。
 func _run_cast_shots() -> void:
+	debug_shots = true
 	var dir := OS.get_environment("SHOTS_DIR")
 	if dir.is_empty():
 		dir = ".cast_shots"

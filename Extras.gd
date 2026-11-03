@@ -72,7 +72,9 @@ func _ready() -> void:
 	box.add_child(content)
 
 func _input(event: InputEvent) -> void:
-	# 右键单击返回：附加面板打开时任意位置右键即关闭
+	# 右键单击返回：附加面板打开时任意位置右键即关闭（调试截图模式锁输入）
+	if game.debug_shots:
+		return
 	if visible and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
 		close()
 		get_viewport().set_input_as_handled()
