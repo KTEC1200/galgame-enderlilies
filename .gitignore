@@ -13,4 +13,4 @@ Godot_v4.7.2-stable_win64.exe/
 
 # 截图调试输出
 shots_tmp/
-cast_shots/
+.cast_shots/

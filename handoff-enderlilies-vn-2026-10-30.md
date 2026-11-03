@@ -161,6 +161,10 @@
     --shots 标题/立绘实机验证通过。** `docs/美术需求.md` 已转为资产档案
     （含完成记录与可选项：单张重生成 / 干净形态 / 高清重制）。
     本轮 git：777fef5（P1）、bcc2e9a（55 张全量）、后续为 P4 收尾提交。
+- **真·终幕 CG（2026-11-03）**：原作"花冠"图入 `assets/cg/ending.png`，挂 `#coda` 页
+  （三结局共通最后一页）`@cg ending`，全屏显示 + 图库自动解锁（CG 槽位 9→10）。
+  ⚠️ 作者给的 `Desktop\ending.png` 实为 JPEG 冒充扩展名，Godot 导入会失败且留下
+  `valid=false` 的脏 `.import`——已转真 PNG 并清理重导；以后收图先验文件头。
 - **验收工具链**：`tools/check_quotes.py` 引用核对（必引/可选/备选分级）已纳入
   每章合入流程；`tools/build_story.py --check` 只读校验。
 - **素材许可已取得（2026-10-31，作者确认）**：OST 配乐方案保留，发布关卡中的
@@ -181,7 +185,7 @@ python tools/make_placeholders.py       # 重新生成占位美术（历史工�
 Godot --headless --path . --import   # 首次/资源变更后
 Godot --headless --path . -- --smoke # 必须 SMOKE PASS（双分支全篇+终章路由+回溯+面板+设置）
 Godot --path . -- --shots            # UI 截图调试（SHOTS_DIR 指定输出目录，弹真窗口几秒）
-Godot --path . -- --cast-shots       # 立绘组合截图（双人/三人/宽幅 Boss/朝向矩阵）
+Godot --path . -- --cast-shots       # 立绘组合+结局CG截图（输出 .cast_shots，Godot 不扫描点目录）
 # 导出（先装 4.7.2 导出模板）
 Godot --headless --path . --export-release "Windows Desktop" export/enderlilies-vn.exe
 ```

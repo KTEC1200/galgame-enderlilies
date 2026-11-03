@@ -6694,9 +6694,14 @@
    "next": "c13_coda"
   },
   {
+   "type": "stage",
+   "cg": "ending",
+   "id": "c13_coda"
+  },
+  {
    "type": "line",
    "text": "—— ENDER LILIES · 终焉之雨 完 ——",
-   "id": "c13_coda"
+   "id": "c13_n104"
   }
  ]
 }

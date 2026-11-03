@@ -1685,7 +1685,7 @@ func _run_shots() -> void:
 func _run_cast_shots() -> void:
 	var dir := OS.get_environment("SHOTS_DIR")
 	if dir.is_empty():
-		dir = "cast_shots"
+		dir = ".cast_shots"
 	DirAccess.make_dir_recursive_absolute(dir)
 	start()
 	await get_tree().process_frame
@@ -1705,14 +1705,23 @@ func _run_cast_shots() -> void:
 			"cast": [{"id": "lily", "expression": "normal"}, {"id": other, "expression": "normal"}],
 			"speaker": other,
 		})
+	# 结局 CG（全屏，无立绘）
+	combos.append({"name": "7_ending_cg", "cast": [], "speaker": "", "cg": "ending"})
 	for c in combos:
 		cast = c["cast"]
 		bg.texture = bg_tex
 		_reset_stage()
 		actors.visible = true
+		if c.has("cg"):
+			cg.texture = _texture(ART + "cg/" + str(c["cg"]) + ".png")
+			cg.visible = true
+			actors.visible = false
+		else:
+			cg.visible = false
 		_draw_cast(str(c["speaker"]))
 		await get_tree().create_timer(0.6).timeout
 		await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png(dir + "/" + str(c["name"]) + ".png")
+	cg.visible = false
 	print("CAST_SHOTS saved to " + dir)
 	get_tree().quit(0)

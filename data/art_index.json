@@ -8796,12 +8796,10 @@
   "title": "边境之泉",
   "chapter": "终章"
  },
- "c13_coda": {
+ "c13_n104": {
   "arts": [
    "background/abyss",
-   "sprite/lily/normal",
-   "sprite/knight/normal",
-   "sprite/fretia/normal"
+   "cg/ending"
   ],
   "title": "边境之泉",
   "chapter": "终章"
