@@ -20,22 +20,23 @@ const SLOT_PREFIX := "el_slot_"
 const RESUME_PATH := "user://el_resume.json"
 const PROFILE_PATH := "user://el_profile.json"
 
-# ---- UI 调色板（深底 / 蓝主色 / 黄绿点缀）----
-const COL_BG := "070a10"
-const COL_BLUE := "2e6bff"
-const COL_BLUE_SOFT := "7d93b5"
-const COL_LIME := "c8f000"
-const COL_TEXT := "e8edf6"
-const COL_TEXT_DIM := "9aa5b8"
-const COL_TEXT_FAINT := "5f6c80"
+# ---- UI 调色板（黑白红三色：黑底 / 白字 / 红点缀，灰阶为黑白过渡）----
+const COL_BG := "0a0a0c"
+const COL_RED := "c23b44"          # 主强调红
+const COL_RED_BRIGHT := "ff5a62"   # 悬停亮红
+const COL_RED_DEEP := "7e262d"     # 暗红（按下/深色块）
+const COL_WHITE := "f2f2f4"        # 主文字白
+const COL_GREY := "a6a6ae"         # 次级文字灰白
+const COL_GREY_DIM := "5f5f68"     # 弱文字灰
+const COL_LINE := "3a3a42"         # 边框灰
 
 const SPEAKER_COLORS := {
-	"lily": "dfe6f0",
-	"knight": "9db4d8",
-	"siegrid": "c9b8dd",
-	"true_lily": "f0e6f0",
-	"我": "a8c4b2",
-	"": "8b95a3",
+	"lily": "f2f2f4",
+	"knight": "d6d6da",
+	"siegrid": "e4e4e8",
+	"true_lily": "f2f2f4",
+	"我": "c4c4ca",
+	"": "9a9aa2",
 }
 
 # 立绘默认面朝方向（left/right/front），用于舞台布局自动翻面——避免两人并立时背对对话对象。
@@ -85,9 +86,11 @@ var skip_mode: String = "read"          # read=已读跳过 / all=全部跳过
 var current_was_read: bool = false
 var auto_timer: Timer
 var dialogue_size: int = 26
+var dialogue_opacity: float = 0.93      # 对话框背景不透明度（0.15~1.0，设置页可调）
+var dialogue_panel_style: StyleBoxFlat  # 对话框背景样式引用（透明度实时更新用）
 
 # ---- 进度数据（持久化到 user://el_profile.json）----
-var profile: Dictionary = {"version": 1, "unlocked": {}, "read": {}, "speed": 1.0, "typewriter": true, "volume": 0.8, "flow_seen": {}, "checkpoints": {}, "text_speed": 45.0, "skip_mode": "read", "display": "window"}
+var profile: Dictionary = {"version": 1, "unlocked": {}, "read": {}, "speed": 1.0, "typewriter": true, "volume": 0.8, "flow_seen": {}, "checkpoints": {}, "text_speed": 45.0, "skip_mode": "read", "display": "window", "dialogue_opacity": 0.93}
 var progress_dirty: bool = false
 var resume_dirty: bool = false
 var progress_timer: Timer
@@ -264,28 +267,28 @@ func _panel_style(fill: Color, border: Color, radius: int = 10, shadow: int = 0)
 	return s
 
 func _button(text: String, action: Callable) -> Button:
-	# 卡片按钮：左侧蓝条 + 悬停亮边 + 按下黄绿，配轻投影提供立体感
+	# 卡片按钮：左侧红条 + 悬停亮边 + 按下亮红，配轻投影提供立体感
 	var b := Button.new()
 	b.text = text
 	b.focus_mode = Control.FOCUS_NONE
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-	b.add_theme_color_override("font_color", Color("c9d4e4"))
-	b.add_theme_color_override("font_hover_color", Color("f2f6fc"))
-	b.add_theme_color_override("font_pressed_color", Color(COL_LIME))
-	b.add_theme_color_override("font_disabled_color", Color("5c6674"))
-	var normal := _panel_style(Color("141b2ae6"), Color("2c3650"), 8)
+	b.add_theme_color_override("font_color", Color("d2d2d8"))
+	b.add_theme_color_override("font_hover_color", Color("ffffff"))
+	b.add_theme_color_override("font_pressed_color", Color(COL_RED_BRIGHT))
+	b.add_theme_color_override("font_disabled_color", Color("5e5e66"))
+	var normal := _panel_style(Color("16161ae6"), Color("35353d"), 8)
 	normal.border_width_left = 3
 	normal.shadow_color = Color(0, 0, 0, 0.3)
 	normal.shadow_size = 3
 	normal.shadow_offset = Vector2(0, 2)
 	b.add_theme_stylebox_override("normal", normal)
-	var hover := _panel_style(Color("1c2639f2"), Color(COL_BLUE_SOFT), 8)
+	var hover := _panel_style(Color("1e1e24f2"), Color("8a8a94"), 8)
 	hover.border_width_left = 3
 	b.add_theme_stylebox_override("hover", hover)
-	var pressed := _panel_style(Color("22304a"), Color(COL_LIME), 8)
+	var pressed := _panel_style(Color("26161a"), Color(COL_RED), 8)
 	pressed.border_width_left = 3
 	b.add_theme_stylebox_override("pressed", pressed)
-	var disabled := _panel_style(Color("10151d80"), Color("2c354255"), 8)
+	var disabled := _panel_style(Color("12121680"), Color("2e2e3555"), 8)
 	disabled.border_width_left = 3
 	b.add_theme_stylebox_override("disabled", disabled)
 	b.pressed.connect(action)
@@ -298,13 +301,13 @@ func _flat_button(text: String, action: Callable) -> Button:
 	b.focus_mode = Control.FOCUS_NONE
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	b.add_theme_font_size_override("font_size", 15)
-	b.add_theme_color_override("font_color", Color("9aa5b8"))
-	b.add_theme_color_override("font_hover_color", Color(COL_LIME))
+	b.add_theme_color_override("font_color", Color("9a9aa2"))
+	b.add_theme_color_override("font_hover_color", Color(COL_RED_BRIGHT))
 	b.add_theme_color_override("font_pressed_color", Color("ffffff"))
 	b.add_theme_stylebox_override("normal", StyleBoxEmpty.new())
 	b.add_theme_stylebox_override("focus", StyleBoxEmpty.new())
 	var hover := StyleBoxFlat.new()
-	hover.bg_color = Color("1c2639b0")
+	hover.bg_color = Color("232328b0")
 	hover.set_corner_radius_all(6)
 	hover.content_margin_left = 10
 	hover.content_margin_right = 10
@@ -339,7 +342,7 @@ func _image(parent: Node) -> TextureRect:
 
 func _build_ui() -> void:
 	var black := ColorRect.new()
-	black.color = Color("070a10")
+	black.color = Color(COL_BG)
 	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(black)
@@ -359,26 +362,27 @@ func _build_ui() -> void:
 	header.name = "Header"
 	header.position = Vector2(24, 14)
 	header.add_theme_font_size_override("font_size", 17)
-	header.add_theme_color_override("font_color", Color("6c7a92"))
+	header.add_theme_color_override("font_color", Color("8a8a92"))
 	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(header)
 
-	# 对话框：深底 + 蓝边 + 投影，左上/右下角标呼应参考图
+	# 对话框：深底 + 红边 + 投影，左上/右下角标呼应参考图
 	var panel := Panel.new()
 	panel.name = "DialoguePanel"
 	panel.position = Vector2(30, 466)
 	panel.size = Vector2(1220, 214)
 	panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	panel.add_theme_stylebox_override("panel", _panel_style(Color("0a0f18ee"), Color("2e6bff7a"), 12, 14))
+	dialogue_panel_style = _panel_style(Color(Color("0d0d10"), dialogue_opacity), Color("c23b447a"), 12, 14)
+	panel.add_theme_stylebox_override("panel", dialogue_panel_style)
 	hud.add_child(panel)
 	var accent := FrameAccent.new()
 	accent.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	accent.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	panel.add_child(accent)
 
-	# 说话人名牌：黄绿短标 + 名字
+	# 说话人名牌：红色短标 + 名字
 	name_bar = ColorRect.new()
-	name_bar.color = Color(COL_LIME)
+	name_bar.color = Color(COL_RED)
 	name_bar.position = Vector2(56, 448)
 	name_bar.size = Vector2(5, 24)
 	name_bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -395,7 +399,7 @@ func _build_ui() -> void:
 	body_label.bbcode_enabled = false
 	body_label.scroll_active = false
 	body_label.add_theme_font_size_override("normal_font_size", 24)
-	body_label.add_theme_color_override("default_color", Color("dde4ee"))
+	body_label.add_theme_color_override("default_color", Color("e6e6ea"))
 	body_label.add_theme_constant_override("line_separation", 7)
 	body_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(body_label)
@@ -404,7 +408,7 @@ func _build_ui() -> void:
 	hint.position = Vector2(74, 644)
 	hint.text = "点击 / 空格推进　·　滚轮↑ 历史　·　Esc 菜单"
 	hint.add_theme_font_size_override("font_size", 14)
-	hint.add_theme_color_override("font_color", Color(COL_TEXT_FAINT))
+	hint.add_theme_color_override("font_color", Color(COL_GREY_DIM))
 	hint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hud.add_child(hint)
 
@@ -412,7 +416,7 @@ func _build_ui() -> void:
 	pulse_label = Label.new()
 	pulse_label.text = "▶"
 	pulse_label.add_theme_font_size_override("font_size", 20)
-	pulse_label.add_theme_color_override("font_color", Color(COL_LIME))
+	pulse_label.add_theme_color_override("font_color", Color(COL_RED))
 	pulse_label.position = Vector2(1204, 642)
 	pulse_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	pulse_label.visible = false
@@ -460,7 +464,7 @@ func _build_ui() -> void:
 	card.set_anchors_preset(Control.PRESET_CENTER)
 	card.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	card.grow_vertical = Control.GROW_DIRECTION_BOTH
-	card.add_theme_stylebox_override("panel", _panel_style(Color("0c1220f7"), Color("2e6bff88"), 16, 22))
+	card.add_theme_stylebox_override("panel", _panel_style(Color("101013f7"), Color("c23b4488"), 16, 22))
 	card.custom_minimum_size = Vector2(540, 0)
 	overlay.add_child(card)
 	overlay_box = VBoxContainer.new()
@@ -478,7 +482,7 @@ func _build_title_screen() -> void:
 	var shade := TextureRect.new()
 	var grad := Gradient.new()
 	grad.offsets = PackedFloat32Array([0.0, 0.6, 1.0])
-	grad.colors = PackedColorArray([Color("05070de8"), Color("05070d99"), Color("05070d00")])
+	grad.colors = PackedColorArray([Color("060607e8"), Color("06060799"), Color("06060700")])
 	var grad_tex := GradientTexture2D.new()
 	grad_tex.gradient = grad
 	grad_tex.width = 128
@@ -491,9 +495,9 @@ func _build_title_screen() -> void:
 	shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(shade)
 
-	# 标题组：黄绿短杠 + 英文副题 + 大标题（蓝色错位阴影）
+	# 标题组：红色短杠 + 英文副题 + 大标题（红色错位阴影）
 	var bar := ColorRect.new()
-	bar.color = Color(COL_LIME)
+	bar.color = Color(COL_RED)
 	bar.position = Vector2(88, 116)
 	bar.size = Vector2(56, 8)
 	bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -502,15 +506,15 @@ func _build_title_screen() -> void:
 	sub_label.text = "ENDER LILIES FAN VISUAL NOVEL"
 	sub_label.position = Vector2(88, 136)
 	sub_label.add_theme_font_size_override("font_size", 17)
-	sub_label.add_theme_color_override("font_color", Color(COL_BLUE_SOFT))
+	sub_label.add_theme_color_override("font_color", Color(COL_GREY))
 	sub_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(sub_label)
 	var name_label := Label.new()
 	name_label.text = "终焉之雨"
 	name_label.position = Vector2(82, 166)
 	name_label.add_theme_font_size_override("font_size", 84)
-	name_label.add_theme_color_override("font_color", Color("f2f6fc"))
-	name_label.add_theme_color_override("shadow_color", Color("2e6bff8c"))
+	name_label.add_theme_color_override("font_color", Color("f5f5f7"))
+	name_label.add_theme_color_override("shadow_color", Color("c23b448c"))
 	name_label.add_theme_constant_override("shadow_offset_x", 4)
 	name_label.add_theme_constant_override("shadow_offset_y", 4)
 	name_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -519,21 +523,21 @@ func _build_title_screen() -> void:
 	tagline.text = "把悲哀带往世界尽头 —— 同人视觉小说"
 	tagline.position = Vector2(88, 284)
 	tagline.add_theme_font_size_override("font_size", 17)
-	tagline.add_theme_color_override("font_color", Color(COL_TEXT_DIM))
+	tagline.add_theme_color_override("font_color", Color(COL_GREY))
 	tagline.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(tagline)
 
-	# 菜单：左侧蓝竖线，悬停时黄绿箭头滑入（9 项：原 7 项 + 设定档案 + 文本集）
+	# 菜单：左侧红竖线，悬停时红色箭头滑入（8 项：标题页不含旅途图库）
 	var menu_line := ColorRect.new()
-	menu_line.color = Color(COL_BLUE)
+	menu_line.color = Color(COL_RED)
 	menu_line.position = Vector2(88, 322)
-	menu_line.size = Vector2(3, 350)
+	menu_line.size = Vector2(3, 312)
 	menu_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(menu_line)
 	var arrow := Label.new()
 	arrow.text = "▶"
 	arrow.add_theme_font_size_override("font_size", 20)
-	arrow.add_theme_color_override("font_color", Color(COL_LIME))
+	arrow.add_theme_color_override("font_color", Color(COL_RED))
 	arrow.position = Vector2(102, 328)
 	arrow.visible = false
 	arrow.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -542,7 +546,7 @@ func _build_title_screen() -> void:
 	menu.position = Vector2(122, 316)
 	menu.add_theme_constant_override("separation", 9)
 	title_screen.add_child(menu)
-	for item in [["继续游戏", "continue"], ["从头开始", "start"], ["读取存档", "load"], ["旅途图库", "gallery"], ["剧情分支树", "flowchart"], ["设定档案", "dlc"], ["文本集", "textset"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
+	for item in [["继续游戏", "continue"], ["从头开始", "start"], ["读取存档", "load"], ["剧情分支树", "flowchart"], ["设定档案", "dlc"], ["文本集", "textset"], ["游戏设置", "settings"], ["离开游戏", "quit"]]:
 		var b := Button.new()
 		b.text = item[0]
 		b.focus_mode = Control.FOCUS_NONE
@@ -550,10 +554,10 @@ func _build_title_screen() -> void:
 		b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 		b.custom_minimum_size = Vector2(280, 0)
 		b.add_theme_font_size_override("font_size", 21)
-		b.add_theme_color_override("font_color", Color("b9c4d6"))
+		b.add_theme_color_override("font_color", Color("c8c8ce"))
 		b.add_theme_color_override("font_hover_color", Color("ffffff"))
-		b.add_theme_color_override("font_pressed_color", Color(COL_LIME))
-		b.add_theme_color_override("font_disabled_color", Color("4d5666"))
+		b.add_theme_color_override("font_pressed_color", Color(COL_RED))
+		b.add_theme_color_override("font_disabled_color", Color("565660"))
 		for state in ["normal", "hover", "pressed", "disabled", "focus"]:
 			b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 		b.pressed.connect(_menu.bind(item[1]))
@@ -569,7 +573,7 @@ func _build_title_screen() -> void:
 	footer.text = "v%s // 终焉之雨 · ENDER LILIES 同人作品 · 免费发布 · © Live Wire / Adglobe" % ProjectSettings.get_setting("application/config/version", "0.5")
 	footer.position = Vector2(88, 676)
 	footer.add_theme_font_size_override("font_size", 13)
-	footer.add_theme_color_override("font_color", Color(COL_TEXT_FAINT))
+	footer.add_theme_color_override("font_color", Color(COL_GREY_DIM))
 	footer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_screen.add_child(footer)
 
@@ -629,7 +633,7 @@ func _open_overlay(title: String, buttons: Array) -> void:
 	var caption := Label.new()
 	caption.text = title
 	caption.add_theme_font_size_override("font_size", 24)
-	caption.add_theme_color_override("font_color", Color(COL_TEXT))
+	caption.add_theme_color_override("font_color", Color(COL_WHITE))
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	overlay_box.add_child(caption)
 	for item in buttons:
@@ -719,10 +723,10 @@ func _game_menu() -> void:
 func _update_playback_buttons() -> void:
 	if auto_button != null:
 		auto_button.text = "自动·开" if auto_mode else "自动"
-		auto_button.add_theme_color_override("font_color", Color(COL_LIME) if auto_mode else Color("9aa5b8"))
+		auto_button.add_theme_color_override("font_color", Color(COL_RED_BRIGHT) if auto_mode else Color("9a9aa2"))
 	if skip_button != null:
 		skip_button.text = "快进·开" if skip_active else "快进"
-		skip_button.add_theme_color_override("font_color", Color(COL_LIME) if skip_active else Color("9aa5b8"))
+		skip_button.add_theme_color_override("font_color", Color(COL_RED_BRIGHT) if skip_active else Color("9a9aa2"))
 
 
 # ---------------------------------------------------------------- 剧情执行
@@ -853,9 +857,9 @@ func _render(d: Dictionary) -> void:
 	speaker_label.text = _display_name(who) if who != "我" else who
 	speaker_label.visible = who != ""
 	name_bar.visible = who != ""
-	speaker_label.add_theme_color_override("font_color", Color(SPEAKER_COLORS.get(who, "aeb8c6")))
+	speaker_label.add_theme_color_override("font_color", Color(SPEAKER_COLORS.get(who, "b8b8c0")))
 	var is_narration := who == ""
-	body_label.add_theme_color_override("default_color", Color("aebac9") if is_narration else Color("e2e8f2"))
+	body_label.add_theme_color_override("default_color", Color("a8a8b0") if is_narration else Color("eceff4"))
 	# 进度记录：已读 / 图库解锁 / 回看 / 分支树
 	var node_id := str(d["id"])
 	current_was_read = profile["read"].has(node_id)
@@ -920,6 +924,15 @@ func _flow_rewind(block_id: String) -> void:
 	skip_active = false
 	_update_playback_buttons()
 	_apply_snapshot(snapshot)
+
+func _block_bg_key(block_id: String) -> String:
+	# 分支树悬浮卡片用：按 owner 反查场景块内第一个带 bg 的 stage 节点
+	for n in nodes:
+		if str(flow_data.get("owner", {}).get(str(n["id"]), "")) != block_id:
+			continue
+		if n.get("type") == "stage" and str(n.get("bg", "")) != "":
+			return str(n["bg"])
+	return ""
 
 # ---- 舞台立绘（v0.7：常驻节点 + 稳定登场次序 + 平滑槽位）----
 var actor_nodes: Dictionary = {}   # id -> TextureRect（常驻，切表情不重建）
@@ -1029,7 +1042,7 @@ func _layout_actors(speaker: String) -> void:
 		var w: float = disp_h * node.texture.get_width() / max(node.texture.get_height(), 1)
 		var target_pos := Vector2(centres[i] - w / 2.0, 860.0 - disp_h)
 		var dim := speaker != "" and id != speaker
-		var target_mod := Color(0.55, 0.60, 0.70) if dim else Color.WHITE
+		var target_mod := Color(0.52, 0.52, 0.56) if dim else Color.WHITE
 		node.size = Vector2(w, disp_h)
 		# 自动翻面：站在最左槽却面朝左（或最右槽却面朝右）时镜像，保证面对同伴
 		var facing: String = actor_facing.get(id, "front")
@@ -1158,6 +1171,13 @@ func _set_dialogue_size(value: int) -> void:
 	profile["dialogue_size"] = dialogue_size
 	if body_label != null:
 		body_label.add_theme_font_size_override("normal_font_size", dialogue_size)
+	_progress_changed()
+
+func _set_dialogue_opacity(value: float) -> void:
+	dialogue_opacity = clampf(value, 0.15, 1.0)
+	profile["dialogue_opacity"] = dialogue_opacity
+	if dialogue_panel_style != null:
+		dialogue_panel_style.bg_color = Color(Color("0d0d10"), dialogue_opacity)
 	_progress_changed()
 
 func _set_skip_mode(mode: String) -> void:
@@ -1362,9 +1382,9 @@ func _load_profile() -> void:
 			for key in ["unlocked", "read", "flow_seen", "checkpoints"]:
 				if stored.get(key) is Dictionary:
 					profile[key] = stored[key]
-			for key in ["speed", "volume", "typewriter", "dialogue_size", "text_speed", "skip_mode", "display"]:
-				if stored.has(key):
-					profile[key] = stored[key]
+		for key in ["speed", "volume", "typewriter", "dialogue_size", "text_speed", "skip_mode", "display", "dialogue_opacity"]:
+			if stored.has(key):
+				profile[key] = stored[key]
 			# 旧版「快进跳过未读」开关 → 跳过模式迁移
 			if not stored.has("skip_mode") and bool(stored.get("skip_unread", false)):
 				profile["skip_mode"] = "all"
@@ -1372,6 +1392,7 @@ func _load_profile() -> void:
 	typewriter_enabled = bool(profile.get("typewriter", true))
 	dialogue_size = clampi(int(profile.get("dialogue_size", 26)), 20, 40)
 	text_speed = clampf(float(profile.get("text_speed", 45.0)), 10.0, 90.0)
+	dialogue_opacity = clampf(float(profile.get("dialogue_opacity", 0.93)), 0.15, 1.0)
 	skip_mode = "all" if str(profile.get("skip_mode", "read")) == "all" else "read"
 	profile["skip_mode"] = skip_mode
 	# 剧情重编译后场景块 id 会变：清掉已失效的「已走过」记录，避免分支树
@@ -1440,12 +1461,12 @@ func _texture(path: String) -> Texture2D:
 	return tex
 
 func _placeholder_for(path: String) -> Texture2D:
+	# 黑白红基调：缺图占位一律灰阶（不再出现随机彩色渐变）
 	var seed_text := path.replace(ART, "").replace(".png", "")
-	var hue := float(abs(hash(seed_text) % 360)) / 360.0
-	var base := Color.from_hsv(hue, 0.18, 0.42)
+	var v := 0.30 + float(abs(hash(seed_text) % 18)) / 100.0
 	var gradient := Gradient.new()
 	gradient.offsets = PackedFloat32Array([0.0, 1.0])
-	gradient.colors = PackedColorArray([base.darkened(0.35), base.lightened(0.15)])
+	gradient.colors = PackedColorArray([Color(v * 0.7, v * 0.7, v * 0.74), Color(v + 0.12, v + 0.12, v + 0.15)])
 	var tex := GradientTexture2D.new()
 	tex.gradient = gradient
 	tex.width = 16
@@ -1478,7 +1499,8 @@ func _unhandled_input(event: InputEvent) -> void:
 				elif dlc.visible:
 					dlc.close()
 				elif textset.visible:
-					textset.close()
+					# 文本集：键盘 Esc 只收起追加的档案内容，不关闭面板（防误触退出）
+					textset.handle_escape()
 				else:
 					extras.close()
 			elif not in_title:
@@ -1526,15 +1548,15 @@ func _update_pulse() -> void:
 			and not auto_mode and not _is_skipping() and not current.is_empty()
 	pulse_label.visible = show and not typewriter_active and current.get("choices", []).is_empty()
 
-## 对话框边框角标：左上蓝 L、右下黄绿 L（参考图样式）
+## 对话框边框角标：左上白 L、右下红 L（黑白红风格）
 class FrameAccent extends Control:
 	func _draw() -> void:
-		var blue := Color("4a86ff")
-		var lime := Color("c8f000")
-		draw_line(Vector2(1, 26), Vector2(1, 1), blue, 2.0)
-		draw_line(Vector2(1, 1), Vector2(30, 1), blue, 2.0)
-		draw_line(Vector2(size.x - 1, size.y - 26), Vector2(size.x - 1, size.y - 1), lime, 2.0)
-		draw_line(Vector2(size.x - 30, size.y - 1), Vector2(size.x - 1, size.y - 1), lime, 2.0)
+		var white := Color("d8d8de")
+		var red := Color("c23b44")
+		draw_line(Vector2(1, 26), Vector2(1, 1), white, 2.0)
+		draw_line(Vector2(1, 1), Vector2(30, 1), white, 2.0)
+		draw_line(Vector2(size.x - 1, size.y - 26), Vector2(size.x - 1, size.y - 1), red, 2.0)
+		draw_line(Vector2(size.x - 30, size.y - 1), Vector2(size.x - 1, size.y - 1), red, 2.0)
 
 # ---------------------------------------------------------------- 冒烟测试
 ## godot --headless --path . -- --smoke
@@ -1645,13 +1667,16 @@ func _run_smoke() -> void:
 	_set_dialogue_size(30)
 	_set_skip_mode("all")
 	_set_display_mode("window")
-	if playback_speed != 4.0 or dialogue_size != 30 or skip_mode != "all" or text_speed != 90.0:
+	_set_dialogue_opacity(0.5)
+	if playback_speed != 4.0 or dialogue_size != 30 or skip_mode != "all" or text_speed != 90.0 \
+			or not is_equal_approx(dialogue_opacity, 0.5):
 		all_ok = false
 		print("SMOKE 设置项未生效")
 	_set_speed(1.0)
 	_set_text_speed(45.0)
 	_set_dialogue_size(26)
 	_set_skip_mode("read")
+	_set_dialogue_opacity(0.93)
 	# 附加面板：逐个打开再关闭，确保不崩溃
 	for view in ["gallery", "flowchart", "backlog", "settings"]:
 		extras.open(view)
@@ -1721,6 +1746,24 @@ func _run_shots() -> void:
 	await get_tree().create_timer(0.3).timeout
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(dir + "/6_dlc_detail.png")
+	# 悬浮卡片（人物卡=立绘 / 势力卡=程序化纹章）：直接触发悬停回调后截图
+	dlc._show_list()
+	await get_tree().create_timer(0.2).timeout
+	dlc.debug_hover_card(0)
+	await get_tree().create_timer(0.2).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/6b_dlc_card_entity.png")
+	dlc.debug_hover_card(1)
+	await get_tree().create_timer(0.2).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/6d_dlc_card_sprite.png")
+	dlc.open("concepts")
+	await get_tree().create_timer(0.2).timeout
+	dlc.debug_hover_card(0)
+	await get_tree().create_timer(0.2).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/6c_dlc_card_concept.png")
+	dlc._hide_card()
 	dlc.open("entities")
 	dlc._show_graph()
 	await get_tree().create_timer(0.4).timeout
@@ -1744,6 +1787,42 @@ func _run_shots() -> void:
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(dir + "/9_dlc_events.png")
 	dlc.close()
+	# 旅途回看：章节号在标题旁 + 条目无方括号（按章节场景分组）
+	extras.open("backlog")
+	await get_tree().create_timer(0.3).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/10_backlog.png")
+	extras.close()
+	# 文本集：点击查看档案 → 阅读区追加显示（不弹面板）；Esc 收起
+	textset.open_entry("characters-守护者西丽德")
+	await get_tree().create_timer(0.2).timeout
+	textset._append_entity()
+	await get_tree().create_timer(0.2).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/11_textset_entity.png")
+	textset.handle_escape()
+	await get_tree().process_frame
+	if textset.entity_shown or not textset.visible:
+		print("SHOTS 文本集 Esc 行为异常: shown=%s visible=%s" % [str(textset.entity_shown), str(textset.visible)])
+	textset.close()
+	# 需求9验证：设定档案右键 = 详情返回列表 / 列表关闭面板（合成事件直调 _input）
+	var saved_debug := debug_shots
+	debug_shots = false
+	dlc.open_entity("ent-西丽德")
+	await get_tree().process_frame
+	var rmb := InputEventMouseButton.new()
+	rmb.button_index = MOUSE_BUTTON_RIGHT
+	rmb.pressed = true
+	rmb.position = Vector2(640, 360)
+	dlc._input(rmb)
+	await get_tree().process_frame
+	if dlc.current_kind != "list" or not dlc.visible:
+		print("SHOTS 设定档案右键返回列表失败: kind=%s visible=%s" % [dlc.current_kind, str(dlc.visible)])
+	dlc._input(rmb)
+	await get_tree().process_frame
+	if dlc.visible:
+		print("SHOTS 设定档案右键关闭失败")
+	debug_shots = saved_debug
 	# 锁定态预览：临时只把前 4 块记为已走过，截完立即恢复（不落盘）
 	var saved_seen: Dictionary = profile["flow_seen"].duplicate(true)
 	var saved_active: String = active_flow
@@ -1753,6 +1832,12 @@ func _run_shots() -> void:
 	await get_tree().create_timer(0.3).timeout
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(dir + "/5_flowchart_locked.png")
+	# 分支树悬浮卡片（背景图）
+	extras.debug_hover_block_card("c07")
+	await get_tree().create_timer(0.25).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(dir + "/5b_flowchart_card.png")
+	extras._hide_block_card()
 	profile["flow_seen"] = saved_seen
 	active_flow = saved_active
 	extras.close()

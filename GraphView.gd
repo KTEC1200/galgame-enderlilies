@@ -65,7 +65,7 @@ func _node_radius(i: int) -> float:
 func _draw() -> void:
 	if nodes.is_empty():
 		var hint := "暂无图谱数据（tools/build_dlc.py）"
-		draw_string(_font, Vector2(24, 40), hint, HORIZONTAL_ALIGNMENT_LEFT, -1, 16, Color("6a7488"))
+		draw_string(_font, Vector2(24, 40), hint, HORIZONTAL_ALIGNMENT_LEFT, -1, 16, Color("6a6a72"))
 		return
 	if not fitted:
 		_fit_view()
@@ -76,18 +76,18 @@ func _draw() -> void:
 		if ia < 0 or ib < 0:
 			continue
 		var highlight := hover_idx == ia or hover_idx == ib
-		var col := Color("3a4a66") if not highlight else Color("7d93b5")
+		var col := Color("3a3a44") if not highlight else Color("ff5a62")
 		draw_line(_screen(ia), _screen(ib), col, 2.0 if highlight else 1.0)
 	# 节点
 	for i in range(nodes.size()):
 		var p := _screen(i)
 		var n: Dictionary = nodes[i]
 		var faction: String = str(n.get("faction", ""))
-		var base: Color = colors.get(faction, Color("8fa0b8"))
+		var base: Color = colors.get(faction, Color("b8b8c0"))
 		var r := _node_radius(i)
 		if i == hover_idx:
 			draw_circle(p, r + 5.0, Color(base, 0.25))
-		draw_circle(p, r, Color("101828"))
+		draw_circle(p, r, Color("141418"))
 		draw_arc(p, r, 0.0, TAU, 40, base, 2.5 if i == hover_idx else 1.8)
 		# 名字：沿半径向外排布（弦图样式），按方向决定对齐
 		var label: String = str(n.get("title"))
@@ -106,7 +106,7 @@ func _draw() -> void:
 			if radial.y > 0.0:
 				lp.y += ts.y * 0.85
 		draw_string(_font, lp, label, HORIZONTAL_ALIGNMENT_LEFT, -1, fs,
-			Color("eef3fa") if i == hover_idx else Color("b9c4d6"))
+			Color("f2f2f4") if i == hover_idx else Color("c4c4ca"))
 
 
 func _index_of(title: String) -> int:

@@ -3,6 +3,10 @@ extends Control
 ## 数据来自 data/text_collection.json（tools/build_text_collection.py 编译，跳过对话剧情）。
 ## 只含三个固定分类：人物和记忆 / 笔记内容 / 遗物；支持标题搜索、分类折叠、
 ## 与「设定档案」互跳（同名人物）。窄屏时左列表与阅读区切换显示。
+##
+## v0.9 交互：点击「查看人物档案」不再弹出设定档案面板，而是在阅读区
+## 正文后面追加显示档案内容（再次点击收起）；键盘 Esc 只收起档案、
+## 不关闭整个面板（防误触），关闭走「关闭 (Esc)」按钮或鼠标右键。
 
 const TC_PATH := "res://data/text_collection.json"
 const CAT_ORDER := [["characters", "人物和记忆"], ["notes", "笔记内容"], ["relics", "遗物"]]
@@ -25,6 +29,7 @@ var collapsed := {}            # cat_id -> true 折叠
 var current_entry: Dictionary = {}
 var current_button: Button
 var narrow := false
+var entity_shown := false      # 阅读区是否正在追加显示人物档案
 
 
 func _ready() -> void:
@@ -35,7 +40,7 @@ func _ready() -> void:
 	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(root)
 	var dim := ColorRect.new()
-	dim.color = Color("050810d9")
+	dim.color = Color("060607d9")
 	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	dim.mouse_filter = Control.MOUSE_FILTER_STOP
 	dim.gui_input.connect(func(event: InputEvent):
@@ -49,8 +54,8 @@ func _ready() -> void:
 	panel.grow_vertical = Control.GROW_DIRECTION_BOTH
 	panel.custom_minimum_size = Vector2(1180, 700)
 	var style := StyleBoxFlat.new()
-	style.bg_color = Color("0c1218f7")
-	style.border_color = Color("2e6bff80")
+	style.bg_color = Color("0f0f12f7")
+	style.border_color = Color("c23b4480")
 	style.set_border_width_all(1)
 	style.set_corner_radius_all(16)
 	style.shadow_color = Color(0, 0, 0, 0.5)
@@ -70,7 +75,7 @@ func _ready() -> void:
 	var title_label := Label.new()
 	title_label.text = "文本集 · 人物和记忆 / 笔记内容 / 遗物"
 	title_label.add_theme_font_size_override("font_size", 26)
-	title_label.add_theme_color_override("font_color", Color("eef3fa"))
+	title_label.add_theme_color_override("font_color", Color("f2f2f4"))
 	title_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	head.add_child(title_label)
 	var close_b := _button("关闭 (Esc)")
@@ -112,7 +117,7 @@ func _ready() -> void:
 	reader_side.add_child(reader_top)
 	reader_jump = _button("◈ 查看人物档案")
 	reader_jump.visible = false
-	reader_jump.pressed.connect(_jump_to_entity)
+	reader_jump.pressed.connect(_toggle_entity_append)
 	reader_top.add_child(reader_jump)
 	var back_list := _button("← 返回列表")
 	back_list.visible = false
@@ -122,7 +127,7 @@ func _ready() -> void:
 	reader_title.text = ""
 	reader_title.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	reader_title.add_theme_font_size_override("font_size", 24)
-	reader_title.add_theme_color_override("font_color", Color("eef3fa"))
+	reader_title.add_theme_color_override("font_color", Color("f2f2f4"))
 	reader_side.add_child(reader_title)
 	var reader_scroll := ScrollContainer.new()
 	reader_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -168,6 +173,78 @@ func open_entry(entry_id: String) -> void:
 
 func close() -> void:
 	visible = false
+	entity_shown = false
+	if reader_jump != null:
+		reader_jump.text = "◈ 查看人物档案"
+
+
+## 键盘 Esc：只收起阅读区追加的档案内容，不关闭面板（防误触退出）
+func handle_escape() -> void:
+	if entity_shown:
+		_collapse_entity()
+
+
+func _toggle_entity_append() -> void:
+	if entity_shown:
+		_collapse_entity()
+	else:
+		_append_entity()
+
+
+func _append_entity() -> void:
+	# 不弹出设定档案面板：把档案内容追加显示在文本集正文后面
+	var entity := _find_entity(str(current_entry.get("entity_id", "")))
+	if entity.is_empty():
+		return
+	entity_shown = true
+	reader_jump.text = "◂ 收起档案"
+	reader_title.text = "%s　·　档案已追加在正文后" % str(current_entry.get("title"))
+	reader_rtl.text = _entry_bbcode(current_entry) + "\n[color=#c23b44]══════　◆ 设定档案　══════[/color]\n\n" + _entity_bbcode(entity)
+	reader_rtl.get_parent().scroll_vertical = 0
+
+
+func _collapse_entity() -> void:
+	entity_shown = false
+	reader_jump.text = "◈ 查看人物档案"
+	reader_title.text = str(current_entry.get("title"))
+	reader_rtl.text = _entry_bbcode(current_entry)
+	reader_rtl.get_parent().scroll_vertical = 0
+
+
+func _find_entity(entity_id: String) -> Dictionary:
+	if entity_id == "" or game == null or game.get("dlc") == null:
+		return {}
+	for e in game.dlc.data.get("entities", []):
+		if str(e.get("id")) == entity_id:
+			return e
+	return {}
+
+
+func _entity_bbcode(e: Dictionary) -> String:
+	# 档案内容（与设定档案详情同构的精简版）
+	var out := ""
+	out += "[b][font_size=22][color=#f2f2f4]%s[/color][/font_size][/b]\n" % _esc(str(e.get("title")))
+	var faction: String = str(e.get("faction", ""))
+	if faction != "":
+		out += "[color=#c23b44]◈ 隶属势力：%s[/color]\n" % _esc(faction)
+	out += "\n"
+	for b in e.get("blocks", []):
+		match str(b.get("t")):
+			"h2":
+				out += "\n[b][color=#a6a6ae]◆ %s[/color][/b]\n" % _esc(str(b.get("text")))
+			"p":
+				out += "%s\n\n" % _esc(str(b.get("text")))
+			"quote":
+				for line in b.get("lines", []):
+					out += "[i][color=#9a9aa2]▎ %s[/color][/i]\n" % _esc(str(line))
+				out += "\n"
+			"li":
+				out += "[color=#d2d2d8]• %s[/color]\n" % _esc(str(b.get("text")))
+			"table":
+				for row in b.get("rows", []):
+					out += "[color=#a6a6ae]%s[/color]\n" % _esc(" ｜ ".join(row))
+				out += "\n"
+	return out
 
 
 func _first_entry() -> Dictionary:
@@ -201,7 +278,7 @@ func _rebuild_list() -> void:
 		var head_b := _button(("▸ " if collapsed.get(cat_id, false) else "▾ ") + cat_name)
 		head_b.custom_minimum_size = Vector2(0, 38)
 		head_b.add_theme_font_size_override("font_size", 18)
-		head_b.add_theme_color_override("font_color", Color("7d93b5"))
+		head_b.add_theme_color_override("font_color", Color("8a8a94"))
 		head_b.pressed.connect(func():
 			collapsed[cat_id] = not collapsed.get(cat_id, false)
 			_rebuild_list())
@@ -217,16 +294,16 @@ func _rebuild_list() -> void:
 			b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 			b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 			b.add_theme_font_size_override("font_size", 15)
-			b.add_theme_color_override("font_color", Color("c9d4e4"))
-			b.add_theme_color_override("font_hover_color", Color("f2f6fc"))
+			b.add_theme_color_override("font_color", Color("d2d2d8"))
+			b.add_theme_color_override("font_hover_color", Color("ffffff"))
 			var normal := StyleBoxFlat.new()
-			normal.bg_color = Color("10182800")
+			normal.bg_color = Color("10101000")
 			normal.content_margin_left = 14
 			normal.content_margin_right = 8
 			normal.content_margin_top = 5
 			normal.content_margin_bottom = 5
 			var hov := normal.duplicate()
-			hov.bg_color = Color("16223ae6")
+			hov.bg_color = Color("1e1e24e6")
 			b.add_theme_stylebox_override("normal", normal)
 			b.add_theme_stylebox_override("hover", hov)
 			b.add_theme_stylebox_override("pressed", hov)
@@ -239,13 +316,15 @@ func _rebuild_list() -> void:
 
 func _mark_selected(b: Button) -> void:
 	if current_button != null:
-		current_button.add_theme_color_override("font_color", Color("c9d4e4"))
+		current_button.add_theme_color_override("font_color", Color("d2d2d8"))
 	current_button = b
-	b.add_theme_color_override("font_color", Color("c8f000"))
+	b.add_theme_color_override("font_color", Color("c23b44"))
 
 
 func _select(entry: Dictionary, button: Button) -> void:
 	current_entry = entry
+	entity_shown = false
+	reader_jump.text = "◈ 查看人物档案"
 	reader_title.text = str(entry.get("title"))
 	reader_rtl.text = _entry_bbcode(entry)
 	reader_rtl.get_parent().scroll_vertical = 0   # 切换条目回到顶部
@@ -266,7 +345,7 @@ func _entry_bbcode(e: Dictionary) -> String:
 			if str(line) == "":
 				out += "\n"
 			else:
-				out += "[i][color=#8a94ab]▎ %s[/color][/i]\n" % _esc(str(line))
+				out += "[i][color=#9a9aa2]▎ %s[/color][/i]\n" % _esc(str(line))
 		out += "\n"
 	for line in e.get("lines", []):
 		if str(line) == "":
@@ -280,9 +359,13 @@ func _esc(s: String) -> String:
 	return s.replace("[", "[lb]")
 
 
-func _jump_to_entity() -> void:
-	if game != null and game.get("dlc") != null:
-		game.dlc.open_entity(str(current_entry.get("entity_id")))
+func _input(event: InputEvent) -> void:
+	# 右键单击关闭面板（与附加面板一致；调试截图模式锁输入）
+	if game.debug_shots:
+		return
+	if visible and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+		close()
+		get_viewport().set_input_as_handled()
 
 
 # ---- 窄屏：列表 / 阅读区切换 ----
@@ -314,12 +397,12 @@ func _button(text: String) -> Button:
 	b.text = text
 	b.focus_mode = Control.FOCUS_NONE
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-	b.add_theme_color_override("font_color", Color("c9d4e4"))
-	b.add_theme_color_override("font_hover_color", Color("f2f6fc"))
-	b.add_theme_color_override("font_pressed_color", Color("c8f000"))
+	b.add_theme_color_override("font_color", Color("d2d2d8"))
+	b.add_theme_color_override("font_hover_color", Color("ffffff"))
+	b.add_theme_color_override("font_pressed_color", Color("c23b44"))
 	var normal := StyleBoxFlat.new()
-	normal.bg_color = Color("141b2ae6")
-	normal.border_color = Color("2c3650")
+	normal.bg_color = Color("16161ae6")
+	normal.border_color = Color("35353d")
 	normal.border_width_left = 3
 	normal.set_corner_radius_all(6)
 	normal.content_margin_left = 12
@@ -327,7 +410,7 @@ func _button(text: String) -> Button:
 	normal.content_margin_top = 5
 	normal.content_margin_bottom = 5
 	var hov := normal.duplicate()
-	hov.border_color = Color("2e6bff")
+	hov.border_color = Color("c23b44")
 	b.add_theme_stylebox_override("normal", normal)
 	b.add_theme_stylebox_override("hover", hov)
 	b.add_theme_stylebox_override("pressed", hov.duplicate())
