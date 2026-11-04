@@ -24,6 +24,17 @@ CATEGORIES = [
     ("relics", "遗物"),
 ]
 SKIPPED_SECTIONS = {"对话剧情"}  # 整章忽略
+# 作者 2026-11-04 指定：结局 A / 结局 C 条目不进文本集（归一化比较，A/B/C 仅命中所列结局）
+EXCLUDE_KEYWORDS = ["结局A", "结局C"]
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", "", s)
+
+
+def excluded_title(title: str) -> bool:
+    t = _norm(title)
+    return any(kw in t for kw in EXCLUDE_KEYWORDS)
 
 
 def slugify(title: str) -> str:
@@ -68,6 +79,10 @@ def parse(md_path: str) -> dict:
         def flush():
             nonlocal cur
             if cur is not None:
+                if excluded_title(cur["title"]):
+                    print(f"[text-collection] 排除条目：{cur['title']}")
+                    cur = None
+                    return
                 slug = slugify(cur["title"]) or "entry"
                 n = seen_titles.get(slug, 0) + 1
                 seen_titles[slug] = n

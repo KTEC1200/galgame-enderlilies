@@ -336,15 +336,25 @@ def main():
     tc_path = os.path.join(ROOT, "data", "text_collection.json")
     if os.path.exists(tc_path):
         tc = json.load(open(tc_path, encoding="utf-8"))
-        ent_names = sorted((e["title"] for e in entities), key=len, reverse=True)
+
+        def _norm(s):
+            return re.sub(r"\s+", "", s)
+
+        def _core(s):
+            # 去空白 + 剥掉尾部括号注记（如「黑色骑士费林（开端）」→「黑色骑士费林」）
+            return re.sub(r"[（(][^（）()]*[）)]$", "", _norm(s))
+
+        ent_norm = {e["title"]: _norm(e["title"]) for e in entities}
+        ent_names = sorted(ent_norm, key=lambda n: len(ent_norm[n]), reverse=True)
         for cat in tc.get("categories", []):
             if cat.get("id") != "characters":
                 continue
             for entry in cat.get("entries", []):
-                t = entry["title"]
-                match = next((n for n in ent_names if n in t or t.rstrip("）(（") in n), None)
+                t_core = _core(entry["title"])
+                match = next((n for n in ent_names
+                              if ent_norm[n] in t_core or t_core in ent_norm[n]), None)
                 if match:
-                    entry["entity_id"] = "ent-" + re.sub(r"\s+", "", match)
+                    entry["entity_id"] = "ent-" + ent_norm[match]
                     ent = next(e for e in entities if e["title"] == match)
                     ent.setdefault("text_entry_ids", []).append(entry["id"])
         json.dump(tc, open(tc_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

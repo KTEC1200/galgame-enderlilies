@@ -1145,7 +1145,10 @@
      "text": "她为白巫女们制作的护身符群 → 最终形态为光耀的守护宝具"
     }
    ],
-   "engine_id": "elaine"
+   "engine_id": "elaine",
+   "text_entry_ids": [
+    "characters-黑色魔女伊莱恩"
+   ]
   },
   {
    "id": "ent-巫女儿汝莉德",
@@ -2214,7 +2217,10 @@
      "text": "无专属遗物；相关者佩戴不死骑士的徽章（荣耀与诅咒一体两面）"
     }
    ],
-   "engine_id": "julius"
+   "engine_id": "julius",
+   "text_entry_ids": [
+    "characters-骑士长尤利乌斯"
+   ]
   },
   {
    "id": "ent-异变的守卫",
@@ -2895,7 +2901,10 @@
      "text": "巨人的戒指 — 边陲之国巨型勇士所携（关联为推测）"
     }
    ],
-   "engine_id": "gerold"
+   "engine_id": "gerold",
+   "text_entry_ids": [
+    "characters-老战士格落特"
+   ]
   },
   {
    "id": "ent-魔术师梅尔维尔",
@@ -3118,7 +3127,10 @@
      "text": "古代石板残片（文本集书信）——修复宝具与解读古代咒术的关键"
     }
    ],
-   "engine_id": "faden"
+   "engine_id": "faden",
+   "text_entry_ids": [
+    "characters-异端者法腾"
+   ]
   },
   {
    "id": "ent-深渊的守卫海尼尔",
@@ -3227,7 +3239,10 @@
      "text": "执行人的手套 — 暗部执行人的标志性魔术皮手套（暗部身份与罪孽的象征）"
     }
    ],
-   "engine_id": "helnir"
+   "engine_id": "helnir",
+   "text_entry_ids": [
+    "characters-深渊的守卫海尼尔"
+   ]
   },
   {
    "id": "ent-狂骑士狼",
@@ -3345,7 +3360,10 @@
      "text": "古龙爪 — 堡垒骑士间的传说之物"
     }
    ],
-   "engine_id": "wolf"
+   "engine_id": "wolf",
+   "text_entry_ids": [
+    "characters-狂骑士狼"
+   ]
   },
   {
    "id": "ent-白教区的莉莉（真莉莉）",
@@ -4025,7 +4043,10 @@
      "text": "白巫女娃娃、污秽的幻影 — 民众的爱与她的苦难投影"
     }
    ],
-   "engine_id": "fretia"
+   "engine_id": "fretia",
+   "text_entry_ids": [
+    "characters-泉之白巫女芙莉蒂雅"
+   ]
   },
   {
    "id": "ent-花之魔女",
@@ -4879,7 +4900,10 @@
      "text": "儿汝莉德的戒指 — 与他相关的定情信物（跨生死的爱恋）"
     }
    ],
-   "engine_id": "knight"
+   "engine_id": "knight",
+   "text_entry_ids": [
+    "characters-黑色骑士费林开端"
+   ]
   },
   {
    "id": "ent-迷瑞尔",
