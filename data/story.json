@@ -116,7 +116,7 @@
    "cast": [
     {
      "id": "lily",
-     "expression": "surprised"
+     "expression": "normal"
     }
    ],
    "id": "c01_n012"
@@ -177,7 +177,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……先看了四周，再回应我。很好。在如今的边陲，谨慎是难得的美德。",
    "id": "c01_n020"
@@ -339,7 +339,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "浓郁的污秽气息……小心点儿……",
    "id": "c01_n048"
@@ -389,14 +389,14 @@
   },
   {
    "type": "line",
-   "expression": "angry",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "为……了……守护……",
    "id": "c01_n057"
   },
   {
    "type": "line",
-   "expression": "angry",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "粉碎……粉碎……粉碎，粉……碎……",
    "id": "c01_n058"
@@ -460,14 +460,14 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "应该是我……是我要守护好的……",
    "id": "c01_n068"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『应该是我』——到死都在自责的人，教出来的孩子，该有多温柔。",
    "id": "c01_n069"
@@ -479,7 +479,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "安息吧，守护者。你的钟，我们替你听着。",
    "id": "c01_n071"
@@ -502,7 +502,7 @@
    "cast": [
     {
      "id": "lily",
-     "expression": "soft"
+     "expression": "normal"
     }
    ],
    "id": "c01_n074"
@@ -542,14 +542,14 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "泉之白巫女大人是我敬仰的对象。她是我们对抗不死之秽鬼唯一的希望。",
    "id": "c01_n081"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "大人她坚强又温柔，即便身负重担，却依然面带微笑，照耀着大家。",
    "id": "c01_n082"
@@ -568,21 +568,21 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "就在那时候，雨开始下了。",
    "id": "c01_n085"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "同时也传来了凄惨的哭号。守护者之长称之为——死亡之雨。",
    "id": "c01_n086"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "siegrid",
    "text": "死亡之雨，无止无休。",
    "id": "c01_n087"
@@ -599,28 +599,28 @@
   },
   {
    "type": "line",
-   "expression": "happy",
+   "expression": "normal",
    "speaker": "true_lily",
    "text": "我叫莉莉。是母亲给我的、宝贵的名字。",
    "id": "c01_n090"
   },
   {
    "type": "line",
-   "expression": "happy",
+   "expression": "normal",
    "speaker": "true_lily",
    "text": "我长大后要成为白巫女，去帮帮母亲……",
    "id": "c01_n091"
   },
   {
    "type": "line",
-   "expression": "happy",
+   "expression": "normal",
    "speaker": "true_lily",
    "text": "只有西丽德在，这里真闷对不对？……醒来后一定要一起玩玩哦！",
    "id": "c01_n092"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "true_lily",
    "text": "我会再来的！",
    "id": "c01_n093"
@@ -632,7 +632,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "被这么多人惦记着的孩子……她说过『我会再来的』。",
    "id": "c01_n095"
@@ -651,7 +651,7 @@
       "curious": true
      },
      "speaker": "knight",
-     "expression": "soft",
+     "expression": "normal",
      "text": "……先弄清自己再往前走，不算逃避。有些名字，本来就该慢慢想起来。"
     }
    ],
@@ -901,7 +901,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "不必道谢。护送巫女，本就是我的誓约。",
    "id": "c01_thanks"
@@ -913,7 +913,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……非要谢的话，就谢你自己吧。肯向陌生人伸出手的人——我等了几百年。",
    "id": "c01_n141"
@@ -935,7 +935,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……无言也是一种回答。走吧。",
    "id": "c01_nod"
@@ -947,7 +947,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "记着这里就好。不必记着我。",
    "id": "c01_n147"
@@ -969,7 +969,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "旅途才刚刚开始。莉莉。",
    "id": "c01_epilogue"
@@ -992,7 +992,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "下一站的守门人，是个老战士。脾气硬，心软——见了他，你就懂这座国家了。",
    "id": "c01_n155"
@@ -1027,14 +1027,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "招来污秽的……死亡之雨……」「来到这里的时候，这边已经是这般惨况」「每个人不是被雨化为秽鬼……就是被秽鬼杀掉了吧……",
    "id": "c06_n002"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这雨……毫无停下来的样子」「死亡之雨不停，这国家的祸难也不息",
    "id": "c06_n003"
@@ -1053,17 +1053,17 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……你那是什么表情啊」「我看起来像是那种会袖手旁观，让小孩子在雨中自生自灭的家伙吗？",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c06_n006"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别逞强，你还无法发出声音对吧？」「……我们走吧",
    "id": "c06_n007"
@@ -1092,14 +1092,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这里曾是村庄的入口。看那边，那是都城第一骑士与风之白巫女并肩作战后，为了纪念友谊与胜利而立下的石碑。",
    "id": "c06_n012"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『以此石证，勇武与仁慈永固。』……如今碑文半塌，那股能撼动山岳的巨人之力，终究也敌不过这无尽的死亡之雨吗。真是讽刺。",
    "id": "c06_n013"
@@ -1121,7 +1121,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "你刚才在那涂鸦前驻足，是因为想看清曾经那些活生生的笑脸吗？可如今这世界，除了污秽与死寂，确实什么也看不清了。",
    "id": "c06_n017",
@@ -1131,7 +1131,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "笔画背后的笑声已经消失在雨里了。但你的好奇心还在，这很好……在这种令人窒息的绝望中，这是极其珍贵的火种。",
    "id": "c06_n018",
@@ -1183,14 +1183,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "一路上，我见到了太多这样的残响。从白教区到这里，通往希望的道路上，除了发疯的秽鬼，一个活人也没能剩下。",
    "id": "c06_n027"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这孩子的呼救声，大概在很久以前就永远停在了这段未竟的半路上。无论白教区是否还有救赎，他都已经等不到了。",
    "id": "c06_n028"
@@ -1212,7 +1212,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "西边的商路早已被雨水冲断，这些异国的货物曾是世界繁荣的证明。如今这扇通往外面的门已经关上了，我们被锁在了这片墓地里。",
    "id": "c06_n032"
@@ -1239,7 +1239,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "秽鬼不都是因雨而生的……",
    "id": "c06_n037"
@@ -1274,7 +1274,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "为了守住对防卫至关紧要的双生堡垒，骑士们服下了那种名为灵药的剧毒。他们原本以为，不死之身能换来永恒的荣耀与骄傲。",
    "id": "c06_n043"
@@ -1287,7 +1287,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "白教赐予护卫银念珠，用誓言与信仰将他们紧紧束缚。但在这种漫无边际的暴雨中，堕落与忠诚……往往只隔着一瞬的动摇。",
    "id": "c06_n045"
@@ -1315,7 +1315,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这是广场么，到处都是秽鬼……",
    "id": "c06_n050"
@@ -1377,14 +1377,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "gerold",
    "text": "小屋外传来村民的声音」「声音里含有恐惧，对老身这沦为秽鬼，从堡垒之战归来的怪物的恐惧」「为了守护大家，决定进入不死骑士团的，是老身自己的选择",
    "id": "c06_n062"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "gerold",
    "text": "有时候会希望被净化，渴望解脱」「老身岂能增加泉之白巫女的重担",
    "id": "c06_n063"
@@ -1405,14 +1405,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "gerold",
    "text": "老身彻底沦陷，抓狂之时，背负重担的，或许是这幼小的女孩」「不知这老骨头还能坚持到何时",
    "id": "c06_n066"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "gerold",
    "text": "但只要意识不灭，老身便会一直当守护着她的盾」「只要想起孩子们，一切的痛苦不算什么",
    "id": "c06_n067"
@@ -1428,31 +1428,31 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "gerold",
    "text": "秽鬼……竟敢……竟敢……",
    "id": "c06_n069"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他一定是一名为了守护村庄奋战到底的勇士……」「记忆中的那两名巫女，你以前常和妈妈一起来吗……？",
    "reactions": {
-    "lily": "soft"
+    "lily": "normal"
    },
    "id": "c06_n070"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "原来她跟村里的孩子们一起被藏到这里……」「一定很痛苦吧……",
    "id": "c06_n071"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "巫女啊，安息吧",
    "id": "c06_n072"
@@ -1464,7 +1464,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他的记忆比我预想的要深。要看清一位守护者的结局，得先看清——他是怎么走回来的。",
    "id": "c06_n074"
@@ -1486,7 +1486,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "凯旋的骑士回来了。可村子里欢迎他的，只有熄掉的灯。",
    "id": "c06_n078"
@@ -1508,7 +1508,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『英雄的结局总是寂寞的』——老骑士们的书上，把这句话写在最后一页。写下它的人，一定见过这样的村子。",
    "id": "c06_n082"
@@ -1536,7 +1536,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "守护过的东西一个一个被夺走。先是名字，然后是脸，最后是笑。污秽还没碰他，他已经先被寂寞侵蚀了。",
    "id": "c06_n087"
@@ -1548,7 +1548,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "然后，有一天的记忆，颜色不太一样。你仔细看。",
    "id": "c06_n089"
@@ -1570,7 +1570,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "那小娃儿如今已是堂堂的白巫女。可那一天，她只是个把花递给陌生爷爷的孩子。",
    "id": "c06_n093"
@@ -1582,7 +1582,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "从那天起，他把守护她，当成了比堡垒更重的誓约。记忆里的声音没有骗你——『只要想起孩子们，一切的痛苦不算什么』。",
    "id": "c06_n095"
@@ -1594,7 +1594,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "寂寞淹了他半辈子。可他把最后一寸甲，还是留给了别人。这就是守护者——白教什么都教，唯独不教他们，怎么替自己求饶。",
    "id": "c06_n097"
@@ -1638,14 +1638,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『堡垒骑士赫默儒』……这种严谨甚至有些死板的公文口吻，确实还带着旧日秩序的残影。可是你看这纸张上的霉斑。",
    "id": "c06_n105"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "纸张边缘甚至还有肉瘤挤压留下的暗红色痕迹。发单的人，恐怕也没等到讨伐的那一天。",
    "id": "c06_n106"
@@ -1680,7 +1680,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "好一片茂密的树林，但几乎全被水淹没了……",
    "id": "c07_n002"
@@ -1719,7 +1719,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "花开得有些反常……你听，这森林深处传来了细微的嗡鸣声。",
    "id": "c07_n009"
@@ -1752,7 +1752,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "哪怕只剩下形骸，也要被这病态的术式拖着走吗……散开！",
    "id": "c07_n015"
@@ -1769,7 +1769,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这里埋葬的并不是什么怪物，而是被这场雨困在求知途中的学者。",
    "id": "c07_n018"
@@ -1937,7 +1937,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "来晚了么……",
    "id": "c07_n049"
@@ -1965,7 +1965,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别让它们近身——这里的每一具，生前都是她的同门！",
    "id": "c07_n054"
@@ -1977,7 +1977,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "哪怕化作秽鬼，那种发自心底的同门之谊，到死都没有忘记啊。",
    "id": "c07_n056"
@@ -1995,7 +1995,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "那是守护结界的纹样……那是她为之奋斗一生的轨迹。」「她将原本只能覆盖一室的术式，硬生生撑到了如今这种能够守护整座协会的规模。",
    "id": "c07_n059"
@@ -2012,7 +2012,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别硬接！那结界里混杂着极强的反噬魔力——借石柱走位，寻找她的间隙！",
    "id": "c07_n062"
@@ -2024,7 +2024,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她不是在发动攻击……她只是要把一切外界的东西都挡开。」「在她的感知里，连想要救赎她的我们，也成了必须被拦截在外的『威胁』。",
    "id": "c07_n064"
@@ -2036,7 +2036,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "就是这个瞬间——用你手中的白光，去唤醒那颗沉睡的心！",
    "id": "c07_n066"
@@ -2053,7 +2053,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "即便核心已经破碎，这覆盖整座森林的结界依然没有崩塌。」「她的魔术……直到今天，都还在履行着『守护』的职责啊。",
    "id": "c07_n069"
@@ -2111,7 +2111,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "elaine",
    "text": "魔术协会被雨淹没」「唯一一个让我拼了命守护的地方」「我所建立起来的一切，化为乌有",
    "id": "c07_n080"
@@ -2129,7 +2129,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "elaine",
    "text": "拼了一切只为守护她」「芙莉蒂雅……你可不能有事」「我第一个，也是唯一一个的朋友",
    "id": "c07_n083"
@@ -2164,7 +2164,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "elaine",
    "text": "一切功亏一篑吗……岂能如此」「片刻也行，直到雨停那天，能守护多久就多久，持续吧」「我细心凝聚而成的魔法」「一切为了这一刻，这瞬间",
    "id": "c07_n089"
@@ -2193,7 +2193,7 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "elaine",
    "text": "我的魔术师之道……竟然在这种地方……」「你……在那里吗？……",
    "id": "c07_n094"
@@ -2211,7 +2211,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "就算她的意识消失，守护协会的结界也不会消失吧……」「这好像是巫女的房间，她曾在这里生活吗……？",
    "id": "c07_n097"
@@ -2273,11 +2273,11 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "幸存者能做的也就只有继承她们的遗愿……",
    "reactions": {
-    "lily": "soft"
+    "lily": "normal"
    },
    "id": "c07_n108"
   },
@@ -2368,7 +2368,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "虽然不死的我也许不能算是幸存者」「但我曾经是古老民族的战士」「战败后过了一段时间，醒来时……」「只有我的不死契约没有消失……」「身为唯一幸存者的心情……我也很有感受",
    "id": "c08_n003"
@@ -2479,7 +2479,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "挡路的，就送他们归位！",
    "id": "c08_n023"
@@ -2491,7 +2491,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "睡吧。这一次，没有人再吵醒你们。",
    "id": "c08_n025"
@@ -2561,7 +2561,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "连死都不肯放过他们……退后！",
    "id": "c08_n038"
@@ -2573,7 +2573,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他们只是想把那句话说完。……现在，说完了。",
    "id": "c08_n040"
@@ -2624,11 +2624,11 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "负责泉之白巫女护卫的守护者……」「那么，应该就在这附近……」「污秽的侵蚀果然加深了……」「巫女受污秽侵蚀也不会失去自我意识」「但是污秽所带来的痛苦……」「虽然净化重要，也该为自己着想」「存活下来的，可能也就剩你了……」「没有人会责怪你……」「选择逃走并不是什么可耻的事」「我希望你能活着逃离这国家……",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c08_n049"
   },
@@ -2665,7 +2665,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她到现在还守着这里——别从正面撩拨，先让她看见你的光。",
    "id": "c08_n056"
@@ -2687,7 +2687,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "根是活的——盯住她甲胄之下那团核心！",
    "id": "c08_n060"
@@ -2699,7 +2699,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她认得守护者的职分——连狂化之后，都在替这扇门挡着东西。这个破绽，只能由白巫女的光来撬。",
    "id": "c08_n062"
@@ -2716,7 +2716,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "守护者的职责，从这里开始由我们接手。安息吧。",
    "id": "c08_n065"
@@ -2773,14 +2773,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "shilda",
    "text": "我不配当泉之白巫女的守护者」「以为自己找到了摆脱污秽的解救之法」「最后除了逃跑我什么都没做到",
    "id": "c08_n076"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『不配』——她说得那么认真。把最危险的担子抢过去，用妹妹最恨的方式：这不是不配，这是深爱。",
    "id": "c08_n077"
@@ -2792,7 +2792,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "shilda",
    "text": "污秽之根泛滥……吞噬了很多……」「地下教堂的信徒和守护者……全都变成了秽鬼」「……被一种莫名的力量操控，仿佛不是自己的身体一样",
    "id": "c08_n079"
@@ -2815,14 +2815,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "shilda",
    "text": "魔术师们说……服用他们的药……是为了帮助白巫女」「一切都是谎言……不只没帮上什么……甚至亲手断送了许多生命……」「这是污秽带来的狂气吗……？，还是真实的我？",
    "id": "c08_n083"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "魔术师的药、王国的许可、守护者的名字——层层叠叠的『为了她好』，最后压垮的都是站在最前面的人。",
    "id": "c08_n084"
@@ -2839,14 +2839,14 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "shilda",
    "text": "在意识消失之前……好想见西丽德最后一面……」「我真正想要守护的……」「我亲爱的妹妹，用这……双……手……",
    "id": "c08_n087"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她托人给妹妹做过一件七彩羽毛的头饰，颜色鲜亮得不像她会挑的东西。可那孩子一次也没有戴上——礼物越重，墙越高。",
    "id": "c08_n088"
@@ -2869,14 +2869,14 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "shilda",
    "text": "西丽德，你在那里吗……？」「……对不起，让你……增添了负担……」「对不起，对不起……",
    "id": "c08_n092"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『对不起』说了一辈子的人，到最后想的还是对不起。这句话，请你带到她妹妹听得见的地方去。",
    "id": "c08_n093"
@@ -2920,7 +2920,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "你本不应该醒来……」「可是，只能托付给你了……」「原谅我……",
    "id": "c08_n101"
@@ -2938,7 +2938,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "那是……",
    "id": "c08_n104"
@@ -2966,7 +2966,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "幻影消失的地方没有足迹。可她托付下来的重量，是真的。",
    "id": "c08_n109"
@@ -3016,7 +3016,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "地牢——王国关押重刑犯的地方。只是这几年，审判的名单一年比一年长，送进去的人，很少再有出来的。",
    "id": "c08_n118"
@@ -3028,7 +3028,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "忍着点。地牢的路，比这里更黑。",
    "id": "c08_n120"
@@ -3073,7 +3073,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这里挺暗的……得小心前进」「死亡之雨降临之前，想必有许多受污秽感染的人被关在这里……",
    "id": "c09_n002"
@@ -3085,7 +3085,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "审判在这里结束。可这些年，很多人不是被审判进来的——是『被需要』进来的。",
    "id": "c09_n004"
@@ -3097,7 +3097,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "往下走。风是从底下来的——地牢的下层，还连着别的东西。",
    "id": "c09_n006"
@@ -3114,7 +3114,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "听见了么？有些牢房里的，已经不喊了。不喊的，比喊的更叫人难受。",
    "id": "c09_n009"
@@ -3136,7 +3136,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "幻光之花不挑地方——越是黑的地方，它开得越认真。",
    "id": "c09_n013"
@@ -3148,7 +3148,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "竟然没有枯萎……」「那是幻光之花」「在阴暗的地方发光的……不可思议的花……",
    "id": "c09_n015"
@@ -3161,11 +3161,11 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "与你无关，所以不必操心」「怎么了……生气了吗？",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c09_n017"
   },
@@ -3186,14 +3186,14 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "是因为……没叫过你的名字？」「……好吧，莉莉……",
    "id": "c09_n021"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……这样，往后的每一步，就都算数了。",
    "id": "c09_n022"
@@ -3215,7 +3215,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "被污秽吞噬的古老民族的战士……」「沦为秽鬼后被关在这里么……」「泉之白巫女应该在更深处的某个地方……」「禁区么……",
    "id": "c09_n026"
@@ -3227,7 +3227,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "退后！这里的门，已经锁不住它们了！",
    "id": "c09_n028"
@@ -3244,7 +3244,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "门到最后才被打开。可惜，对他们来说已经太迟了。",
    "id": "c09_n031"
@@ -3272,7 +3272,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……怀恋。隔着污秽还认得出故人的气味。这片土地记住的东西，比任何人都长情。",
    "id": "c09_n036"
@@ -3289,14 +3289,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "暗部——在暗夜里裁断罪人的影子。罪犯看见手套上的标志会先跪下去：他们知道，自己的案子在暗部眼里小不了。",
    "id": "c09_n039"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "手套的主人没留下名字。暗部的人，名字都随案卷一起销掉了。",
    "id": "c09_n040"
@@ -3313,14 +3313,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这里是……刑场……」「竟然把白巫女作为实验体……",
    "id": "c09_n043"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『实验体』……白巫女的名字，不该出现在这种地方。往下的路，走稳些。",
    "id": "c09_n044"
@@ -3382,7 +3382,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别让他们过去——拦下！",
    "id": "c09_n055"
@@ -3394,7 +3394,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "同僚的路数。……他们生前，大概也是暗部的人。",
    "id": "c09_n057"
@@ -3427,7 +3427,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "深渊的守卫——他守的不是刑场，是从这里通往更下层的路。",
    "id": "c09_n063"
@@ -3449,7 +3449,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他的爪法是军中的路数——别拼力，跟他抢时辰！",
    "id": "c09_n067"
@@ -3461,7 +3461,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他不躲净化……他在拖。拖到我们力竭，好让我们自己回头。",
    "id": "c09_n069"
@@ -3483,7 +3483,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "守卫的最后一岗，从这里开始由我们接手。",
    "id": "c09_n073"
@@ -3540,7 +3540,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "helnir",
    "text": "源自地下的污秽泛滥，淹没一切时」「抱着原本该是遥不可及的白巫女，我试图逃脱」「为了逃脱秽鬼抵达的地方……」「竟然是我最熟悉的刑场",
    "id": "c09_n084"
@@ -3558,7 +3558,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "helnir",
    "text": "我忘不了……那天在禁区的地下深处……」「看到的泉之白巫女……」「不嫌弃暗部的我们，背负我们的污秽，而拯救了我们同伴的她」「求着谁能去救救白巫女们的，最后的那句话……",
    "id": "c09_n087"
@@ -3588,7 +3588,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "荣耀、土地、妻儿，一切永无缘——他背弃的正是这一条。他把妹妹留下的孩子藏起来抚养成人，这件事，比任何一桩案子都重。",
    "id": "c09_n092"
@@ -3606,14 +3606,14 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "helnir",
    "text": "白巫女……没事……就好了……",
    "id": "c09_n095"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "白巫女……没事就好了。他到死，一句都没提自己。",
    "id": "c09_n096"
@@ -3653,7 +3653,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "应该是被暗部的执行人带着从地下室逃出来的吧」「可惜就差那一步……",
    "id": "c09_n103"
@@ -3676,11 +3676,11 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "终于能够出去了……",
    "reactions": {
-    "lily": "soft"
+    "lily": "normal"
    },
    "id": "c09_n107"
   },
@@ -3764,7 +3764,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "前方的污秽之雾，只要吸入一点儿就有危险」「要是有能够抵御雾气的魔术工具就好了……",
    "id": "c10_n002"
@@ -3777,14 +3777,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "现在却充斥着如此浓郁的污秽……」「是触犯了操魂大忌的咒术所制造出来的么……",
    "id": "c10_n004"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "共存的尽头是什么——那时候，我们谁都没有想过。现在，答案就摆在眼前了。",
    "id": "c10_n005"
@@ -3796,7 +3796,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "闻到了么？药味。底下的东西，在药里泡了太久了。",
    "id": "c10_n007"
@@ -3808,7 +3808,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "跟紧我。这里的雾呛人，还会缠人——走散了，就再也找不回来了。",
    "id": "c10_n009"
@@ -3825,7 +3825,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "国家魔术师团——以秽鬼研究为名的组织。这地方的一切，都是从『研究』两个字里长出来的。",
    "id": "c10_n012"
@@ -3918,7 +3918,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "被污秽吞噬的古老民族的战士……」「兄弟啊，一路好走……",
    "id": "c10_n029"
@@ -3951,7 +3951,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……回来了。可惜，回来得太迟了。",
    "id": "c10_n035"
@@ -3969,7 +3969,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "倒在这条路上的人，只有一个原因——在等人。等一个人的脚步声。",
    "id": "c10_n038"
@@ -3987,7 +3987,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "安息吧。这一次，替他们把话说完。",
    "id": "c10_n041"
@@ -4014,7 +4014,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『连死亡都不被应许』……牢狱两个字，都说轻了。",
    "id": "c10_n046"
@@ -4026,7 +4026,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "忍一忍。这里每一寸水面都带毒——别让它们碰到你的皮肤。",
    "id": "c10_n048"
@@ -4059,7 +4059,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别让它们抱住你——沾上药渍就麻烦了！",
    "id": "c10_n054"
@@ -4071,7 +4071,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "泡了太多年……连怨气，都被药泡淡了。",
    "id": "c10_n056"
@@ -4104,7 +4104,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "异端者……他对污秽做过的事，比这片沼泽装下的还要多。小心他手里的东西。",
    "id": "c10_n062"
@@ -4121,7 +4121,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他的术式以自己为中心——散开，从两翼包上去！",
    "id": "c10_n065"
@@ -4133,7 +4133,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他隔着面具也在笑——递药的手却稳不下来。这个人，早就分不清自己是在研究，还是在赎罪了。",
    "id": "c10_n067"
@@ -4145,7 +4145,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他护着身后那扇门——那就是破绽。逼他转身！",
    "id": "c10_n069"
@@ -4162,7 +4162,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "深处那扇门，始终没有开。他护到最后的东西，替我们留下来了。",
    "id": "c10_n072"
@@ -4219,7 +4219,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "faden",
    "text": "迷瑞尔……我曾经的助手和恋人……你变成了秽鬼」「但是到现在从未攻击过我」「即使沦为秽鬼，变成不死之身，也未必会失去灵魂及意识」「你亲自替我证明了这一点",
    "id": "c10_n083"
@@ -4237,7 +4237,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "faden",
    "text": "为了让她恢复正常我尝试了无数的实验，但是这已经是我的极限了……」「污秽的研究成就了不死骑士团……」「就连白巫女……都被卷了进来」「最后连国王也成为敌人……被逐出这里是迟早的事吧……",
    "id": "c10_n086"
@@ -4255,7 +4255,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "faden",
    "text": "呵……呵呵呵……」「看来我没有迷瑞尔还真的是什么也做不到……」「……尽管如此我还是不能放弃」「必须完成她的希望……拯救白巫女……",
    "id": "c10_n089"
@@ -4273,14 +4273,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "faden",
    "text": "迷瑞尔……求求你……」「让我听一听你的声音……",
    "id": "c10_n092"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他想听的那句话，她早就写下来了。只是他，没能读到。",
    "id": "c10_n093"
@@ -4293,7 +4293,7 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "faden",
    "text": "已经……太迟了……",
    "id": "c10_n095"
@@ -4338,24 +4338,24 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我曾经负责守护巫女，但那孩子被夺走」「我也被困在这里」「和巫女立下的不死契约还存在」「但靠仅存的力量，连动都动不了……」「过了一段时间，觉醒后……",
    "id": "c10_n103"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "找到了继承不死契约的白巫女时」「那时候其实想过为了斩断不死的诅咒……」「……用这双手结束白巫女的生命」「但是和她在一起我明白了一件事……」「这国家的白巫女和我以前守护的巫女一样」「因为她继承了巫女的意志……」「所以说，她也可以算是古老民族最后的希望",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c10_n104"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我守护过的巫女、后来的白巫女、还有你——模样会换，名字会换，托付不会。这条血脉，一直在把同一句话往下传。",
    "id": "c10_n105"
@@ -4368,7 +4368,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "把这句话说出口，就不算太迟了。走吧。",
    "id": "c10_n107"
@@ -4385,7 +4385,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……我听着。",
    "id": "c10_n110"
@@ -4402,7 +4402,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "诸位——契约还在，我也还在。这份托付，不会断在我手里。",
    "id": "c10_n113"
@@ -4424,7 +4424,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "走吧。他们看过了，可以放心了。",
    "id": "c10_n117"
@@ -4469,7 +4469,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "上面的路会冷。别逞强。",
    "id": "c10_n125"
@@ -4509,32 +4509,32 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "死亡之雨到这里变成了雪」「死亡之雨降临之前，这堡垒应该抵御了不少秽鬼的来袭……",
    "id": "c11_n002"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "连天灾到了这座堡垒，都得先减三分锋芒——好地方。",
    "id": "c11_n003"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "虽然你看起来完全不辛苦……但不冷吗？」「要是护身符连寒冷都能抵御，也真是太方便了",
    "id": "c11_n004"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我最怕冷了……」「虽然这身体解决了怕冷的问题」「完全没有知觉总像是少了些什么",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c11_n005"
   },
@@ -4545,7 +4545,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……先休息一会儿，暖和一下身体再上路吧",
    "id": "c11_n007"
@@ -4557,7 +4557,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这座堡垒借风之白巫女之力所建——两座主塔互为犄角，风在这里被驯成了守城的兵。",
    "id": "c11_n009"
@@ -4569,7 +4569,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "那场防御战打了很多天。墙上的每一支箭，都是一天。",
    "id": "c11_n011"
@@ -4581,7 +4581,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "旗收起来了。守旗的人，不在了。",
    "id": "c11_n013"
@@ -4593,7 +4593,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "巡逻的足迹。走到一半，人就没了。堡垒失守，不是一朝一夕的事。",
    "id": "c11_n015"
@@ -4616,7 +4616,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "分发灵药的『异端魔术师』……又一个熟悉的影子。这条线，越往都城越粗。",
    "id": "c11_n019"
@@ -4634,7 +4634,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "不许住进都城的孩子，被送到堡垒里学当骑士——王族的血，在这座堡垒里也分着贵贱。",
    "id": "c11_n022"
@@ -4656,7 +4656,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "翼兵——它们会扑高！贴墙走！",
    "id": "c11_n026"
@@ -4668,7 +4668,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "这就是那些『提高了身体素质』的药——把人，改成了别的东西。",
    "id": "c11_n028"
@@ -4690,7 +4690,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "连求救都带着军礼的腔调……这座堡垒的人，到最后都没有散。",
    "id": "c11_n032"
@@ -4702,7 +4702,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "敬礼吧。用你的方式就行——他们看得见。",
    "id": "c11_n034"
@@ -4719,7 +4719,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "空甲也照打不误——挑它的持枪手！",
    "id": "c11_n037"
@@ -4731,7 +4731,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "人到不了的地方，甲替他站着岗。……都结束了。",
    "id": "c11_n039"
@@ -4758,7 +4758,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "竟然在这种地方找到花田……」「那骑士……」「你守护的这花田……",
    "id": "c11_n044"
@@ -4776,7 +4776,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "雪之花——堡垒的骑士们信这个。花语是『真挚的心与过去的回忆』。",
    "id": "c11_n047"
@@ -4799,7 +4799,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "狂骑士……别碰他的正面。他那一剑，能把人连雪带花劈进土里。",
    "id": "c11_n051"
@@ -4816,7 +4816,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别看他的剑，看他的脚——狂化的人，步子不会骗人！",
    "id": "c11_n054"
@@ -4828,7 +4828,7 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他在花田里收着力……连狂化，都挑着落脚的地方。这家伙……",
    "id": "c11_n056"
@@ -4850,7 +4850,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "看。到最后一刻，他都没有让剑，落在花上。",
    "id": "c11_n060"
@@ -4922,14 +4922,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "wolf",
    "text": "堡垒之战是老子经历过最长，最艰难的战役」「虽然干掉了秽鬼大军，成功保护了国家，没有一个家伙会说自己高兴」「不死之身的我们，和秽鬼有啥不同」「在战场上一直想着怎样去死的老子，现在是想挂也挂不掉的臭怪物",
    "id": "c11_n074"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "想要一个战死的机会而不得——他把『想死』说得那么痛快。可他要是真不想活了，守花田的，不会是他。",
    "id": "c11_n075"
@@ -4948,7 +4948,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他不识字。所以白巫女教他的东西，都是不用字的——花名，是名字里最轻的那种。",
    "id": "c11_n078"
@@ -4972,7 +4972,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "团里的人躲着他走，他也不恼——对狼来说，离群不是委屈，是本分。直到有人不怕他。",
    "id": "c11_n082"
@@ -4984,14 +4984,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "wolf",
    "text": "这次打完后，应该就不会再见面了」「想一想这也好吧」「泉之白巫女说她喜欢这花田」「要是以后她来的时候花田还在，她一定会开心吧",
    "id": "c11_n084"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『要是以后她来的时候花田还在』——他把一辈子没说出口的话，都说给花听了。",
    "id": "c11_n085"
@@ -5009,14 +5009,14 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "wolf",
    "text": "花……花田，给……女 也……",
    "id": "c11_n088"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『给女……』——他想说的是『给白巫女也看看』。这几个字他练了很多遍，最后还是没能说全。",
    "id": "c11_n089"
@@ -5028,7 +5028,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "守了那么久的约定，总得有人，替他送到。",
    "id": "c11_n091"
@@ -5057,7 +5057,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "堡垒里有一间忏悔室——战前，骑士们把不敢说的话都留在那里。他守的花田，就在那扇窗下。",
    "id": "c11_n096"
@@ -5069,14 +5069,14 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "是孩子的笔迹——『狼先生，花开了，你要记得浇水』。落款被雪水洇掉了。",
    "id": "c11_n098"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "被安置在堡垒的那些孩子里，有一个不许乱走的。她的朋友，只有一位狂骑士。",
    "id": "c11_n099"
@@ -5105,7 +5105,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "第七枚石板上的字被冻裂了几道——可每一笔都刻得很深。想留住的东西，冻不住。",
    "id": "c11_n104"
@@ -5117,7 +5117,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "都城的轮廓看得见了。这座国家的心脏，还剩最后一跳。",
    "id": "c11_n106"
@@ -5129,7 +5129,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "吊桥还肯放下来，说明机关没有锈死——堡垒到最后一刻，都在等人回来。",
    "id": "c11_n108"
@@ -5156,7 +5156,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "回头看一眼吧。花田在雪里，开得跟约好的时候一样。",
    "id": "c11_n113"
@@ -5168,7 +5168,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "走吧。别让它们，等太久。",
    "id": "c11_n115"
@@ -5198,14 +5198,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "真令人意外……没想到竟会有这么巨大的都城」「看样子都城里有幸存者的希望也……",
    "id": "c12_n002"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『幸存者』……希望这两个字，在这座城里说出来，比在别处都沉。",
    "id": "c12_n003"
@@ -5217,7 +5217,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "住着几十万人的都城——雨下到第七天，街上就只剩雨水自己的声音了。",
    "id": "c12_n005"
@@ -5229,7 +5229,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "王之盾的岗哨设在这里。往上看，每一个箭口都对准城内——他们防的，从来不只是外人。",
    "id": "c12_n007"
@@ -5241,7 +5241,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "请……安息……",
    "id": "c12_n009"
@@ -5253,7 +5253,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "走吧。王座的方向，雨下得更大了。",
    "id": "c12_n011"
@@ -5290,14 +5290,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『父王……为什么……』——喊这句话的孩子，到死都没等到回答。",
    "id": "c12_n018"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "王之盾瓦解……被雨侵蚀的人还在守着王。",
    "id": "c12_n019"
@@ -5319,7 +5319,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "往深处走——寝宫在侧翼。有声音，在喊谁的名字。",
    "id": "c12_n023"
@@ -5356,7 +5356,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "是狗的叫声……还有人在念一个名字。声音很小，像是怕吵醒谁。",
    "id": "c12_n030"
@@ -5373,7 +5373,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "两边的路都通向王座。想先去哪里——你定。",
    "id": "c12_n033"
@@ -5406,7 +5406,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她叫的是『莉莉』……不是叫你，也不是叫谁。她只是想让这个名字，再多留一会儿。",
    "id": "c12_n037"
@@ -5418,7 +5418,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "狗没有跑。它守到最后一刻——在这里，忠诚这种东西，比人活得长。",
    "id": "c12_n039"
@@ -5447,7 +5447,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "走吧。别让她们等急了——王座那边，还有一场债要清。",
    "id": "c12_n044"
@@ -5490,7 +5490,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "都城的魂，就在这扇门后面。",
    "id": "c12_n052"
@@ -5507,7 +5507,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "听——不止一个人的呼吸。王座前，还站着守卫。",
    "id": "c12_n055"
@@ -5524,7 +5524,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "从里面撞开的门……都城最后的日子，是从这里面开始的。",
    "id": "c12_n058"
@@ -5536,7 +5536,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "前方应该就是王座大殿吧……",
    "id": "c12_n060"
@@ -5553,7 +5553,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他的队友在他背后动的手——被雨泡疯的人，连『背后』是什么都忘了。",
    "id": "c12_n063"
@@ -5566,7 +5566,7 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "shield",
    "text": "还没……还没有结束，国王呢……王在哪里……",
    "id": "c12_n065"
@@ -5578,7 +5578,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "王在哪里——他问了一辈子。现在由我们替他，去问最后一声。",
    "id": "c12_n067"
@@ -5595,7 +5595,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "骑士长尤利乌斯……双生堡垒的人。不死骑士的气息，同源相认——从我们踏进都城起，他就知道巫女来了。",
    "id": "c12_n070"
@@ -5607,7 +5607,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他是这座国家最后一位骑士长——动手吧。让他以骑士的方式，卸甲。",
    "id": "c12_n072"
@@ -5629,7 +5629,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "尊重对手，是骑士最后的体面。他记得，我也记得。",
    "id": "c12_n076"
@@ -5661,7 +5661,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "边陲之国的国王……」「一个出生为国王之子」「被逐出都城的骑士……」「竟被如此刻骨的怨恨吞噬……」「残杀同族么……",
    "id": "c12_n082"
@@ -5698,7 +5698,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "后来，他把堡垒里那些无处可去的孩子，一个一个，接到了自己身后。有个丫头，是他亲自去接的。",
    "id": "c12_n089"
@@ -5710,14 +5710,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "julius",
    "text": "边陲之国面临亡国之患」「本该被守护的国民沦为不死的怪物，奋战到底的同胞们也疯了，消失于雨中",
    "id": "c12_n091"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『国民沦为不死的怪物』——写下这句话的人，自己第一个服了药。他必须比谁都快。",
    "id": "c12_n092"
@@ -5729,14 +5729,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "julius",
    "text": "艰难地维护着自己衰弱的意识，我来到了王座大殿」「我把剑锋对准了自己本该守护的国王",
    "id": "c12_n094"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "本该守护的——这四个字有多重，只有握过枪的人才称得出。",
    "id": "c12_n095"
@@ -5748,14 +5748,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "julius",
    "text": "国王身体抖了抖，呻吟道难听的狂言」「鞠躬尽瘁，为国家做出种种牺牲的骑士与泉之白巫女不过是无关紧要的炮灰」「我看清了令国王疯狂着迷的不死力量所带来的后果」「充斥着自私及仇恨的言语无疑是国王吐露出来的真相",
    "id": "c12_n097"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "炮灰——这两个字他忍了一辈子。从私生子到骑士长，他等的从来不是封赏，是一句承认。",
    "id": "c12_n098"
@@ -5767,14 +5767,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "julius",
    "text": "我明白的很，因为我体内也流着相同的王族血统」「我也一样，一切都是为了自己，而不是因为想要捍卫国土」「我只不过是想逼他承认抛弃我是他的愚昧，有眼无珠",
    "id": "c12_n100"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他把自己的私心也招了。敢在记忆里认这一句的人，比不认的人干净。",
    "id": "c12_n101"
@@ -5793,7 +5793,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "被正眼看了一次——就一次。他要的，原来这么少。",
    "id": "c12_n104"
@@ -5811,14 +5811,14 @@
   {
    "type": "line",
    "groan": true,
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "julius",
    "text": "……对不起，又让你……背负……",
    "id": "c12_n107"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "他背了一辈子的东西，到死还在说对不起。让你背负的——是这整个国家。",
    "id": "c12_n108"
@@ -5857,7 +5857,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "结束了。这座殿里的债，一笔一笔，都清了。",
    "id": "c12_n115"
@@ -5874,7 +5874,7 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "连扔下它的人，都没再回头看一眼——这里早就没有王了，只剩一个抱着王座不肯走的影子。",
    "id": "c12_n118"
@@ -5891,28 +5891,28 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "第一代国王的字。他写过：最初遇上不死战士的时候，魔术灭不掉，只能封住。",
    "id": "c12_n121"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "封住——几百年过去，这国家用的，还是同一个办法。",
    "id": "c12_n122"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "走吧。一切的源头与终点，都在那片最初的泉水之中。",
    "id": "c12_n123"
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "秘龛里的石板认得你——它们等这一路，等了比这座城还久。",
    "id": "c12_n124"
@@ -5924,7 +5924,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "边境之泉……最后一程了。",
    "id": "c12_n126"
@@ -5970,7 +5970,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "泉水倒映着一路走来的景象。若是还有未被唤醒的石板记忆，就试着在此补全吧。",
    "id": "c13_n003"
@@ -5982,7 +5982,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "白教区的石板。它记着守护者的银念珠、黎明之白巫女的像，还有信徒们为想念白巫女捏的小小娃娃。……被记住的东西，不会真的消失。",
    "id": "c13_n005"
@@ -6188,14 +6188,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……充斥四方的污秽」「也许这已超出你能承受的范围……",
    "id": "c13_memory_converge"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "莉莉……」「污秽……在被净化……",
    "id": "c13_n025"
@@ -6208,31 +6208,31 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我只能陪你走到这里……」「很久以前和巫女立下的不死契约的效果依在……」「我会照顾好这里的事……",
    "reactions": {
-    "lily": "worried"
+    "lily": "normal"
    },
    "id": "c13_n027"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "泉之白巫女的遗愿就靠你了」「那也是我无法实现的愿望」「你替我做……我已经做不到的事情吧……",
    "id": "c13_n028"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "希望你……自由地……」「……活下去」「别这样……」「这旅途挺辛苦的对吧……",
    "id": "c13_n029"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "但是，对我而言，和你一路走来挺不错的……」「契约总有一天会有所牵引」「只要还活着……",
    "id": "c13_n030"
@@ -6245,7 +6245,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "把契约交给我的那位巫女……她叫，儿汝莉德。",
    "id": "c13_n032"
@@ -6268,14 +6268,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "她的族人败了，故乡没了，连巫女都没能留住。她把女儿托付给我，把契约印留在血脉里——然后，把一切都交给了时间。",
    "id": "c13_n036"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我抱着她唯一的孩子，走了很远。那孩子叫宁菲莉雅——后来的人，叫她黎明之白巫女。",
    "id": "c13_n037"
@@ -6310,7 +6310,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "『终于找到你了……巫女的后人啊』——这句话，我在心里说了几百年。说出口的时候，你听见了。",
    "id": "c13_n043"
@@ -6339,7 +6339,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "我的名字，你是从别人那里听来的。也好——名字是留给会告别的人的。而我，一开始就没打算告别。",
    "id": "c13_n048"
@@ -6362,14 +6362,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "……走吧。该去做的事，就快到了。",
    "id": "c13_n052"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "别怕。这条契约走到今天，每一次交接，都有人哭过，也都有人笑过。你不会是例外。",
    "id": "c13_n053"
@@ -6381,14 +6381,14 @@
   },
   {
    "type": "line",
-   "expression": "serious",
+   "expression": "normal",
    "speaker": "knight",
    "text": "到了下面，无论看见什么——记住，你不是一个人来的。从来，都不是。",
    "id": "c13_n055"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "儿汝莉德……如果她看得见，她会喜欢你。这一点，我可以拿几百年的岁月担保。",
    "id": "c13_n056"
@@ -6400,28 +6400,28 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "我好像已经沉睡了好久」「也不知道算是活着还是死了」「只知道永无止尽的痛苦」「我醒过来时躺在黑色的台子上",
    "id": "c13_n058"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "发现手里传来温暖的感觉」「幼小的白巫女们紧握着我的手」「这些白巫女是为了替我承受污秽而被复制出来的",
    "id": "c13_n059"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "隐隐约约地可以听到魔术师们的声音」「他们想要进行转移污秽的仪式」「白巫女们什么都不知道，向我靠过来」「为了苟活……牺牲这些孩子们……」「有意义吗……？",
    "id": "c13_n060"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "与这些孩子们一同度过的时光……才是我唯一的救赎」「如果说这些孩子……是替代我的存在……」「我想交给她们的是希望……而不是污秽……",
    "id": "c13_n061"
@@ -6470,7 +6470,7 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "knight",
    "text": "有人在这里说过，『我会再来的』。……看，这一次，真的有人回来了。",
    "id": "c13_n065"
@@ -6482,21 +6482,21 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "我一直都在看着你……」「你和大家一样……努力想要拯救我」「但是……这不是你应该承担的",
    "id": "c13_n067"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "这充斥着污秽的世界，是我自己」「是我招来的灾难……」「你存在的意义只不过为了背负别人的污秽……那也太可悲了吧？",
    "id": "c13_n068"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "要是你能诞生在遥远的未来」「一个污秽被净化的未来，那会有多好啊」「现在只希望……你能」「自由地……活着……",
    "id": "c13_n069"
@@ -6544,14 +6544,14 @@
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "这里……来不得啊」「快逃，你不能有事」「我已经",
    "id": "c13_n078"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "为什么……」「为什么啊，莉莉……」「错的是我……」「我根本不值得谁来救我……」「住手吧，这样下去……」「你会被我的污秽吞噬……",
    "id": "c13_n079"
@@ -6570,28 +6570,28 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "虽然这么说已经没什么意义了……」「但是，真希望你能生活在一个无需背负污秽的世界……」「因为我的分身，就只……剩你了……",
    "id": "c13_n082"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "knight",
    "text": "莉莉……即使如此……」「你还是想要陪伴泉之白巫女」「一起背负……污秽……",
    "id": "c13_n083"
   },
   {
    "type": "line",
-   "expression": "worried",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "唔……」「怎么能……」「这种痛苦，我一个人承担就好……」「听我的好吗，别这样……」「拜托了……",
    "id": "c13_n084"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "莉莉……」「原来如此……」「你……就是我啊」「对不起……」「还有，谢谢……」「……我……终于……能够安眠了……",
    "id": "c13_n085"
@@ -6628,42 +6628,42 @@
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "……这道光是……」「怎么可能……这是怎么一回事……」「只靠白巫女一个人的力量……」「……难道是，那个护身符……",
    "id": "c13_n092"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "你收集了所需的一切，把它们合在一起……」「就连我不知道的过去也都……」「从今以后……难道全部都由你背负……」「原来如此……",
    "id": "c13_n093"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "你和大家携手来到了这里……」「……谢谢」「……你解放了大家」「也解放了我……」「莉莉……",
    "id": "c13_n094"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "……我，终于有点儿明白了」「我并不孤单……」「大家都在帮我……」「通过你……我终于看清了这一点」「莉莉……后事就托付给你吧",
    "id": "c13_n095"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "你完成了我所做不到的事情……」「我之前说错了一件事」「……“边陲之巫女”」「你就是你，不是什么我的分身……",
    "id": "c13_n096"
   },
   {
    "type": "line",
-   "expression": "soft",
+   "expression": "normal",
    "speaker": "fretia",
    "text": "……你长大了……」「……是时候了……我差不多该走了」「我会一直……看守着你……」「无论什么时候都……一直在你身旁……",
    "id": "c13_n097"

@@ -75,7 +75,7 @@
  "c01_n013": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -84,7 +84,7 @@
  "c01_n014": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -93,7 +93,7 @@
  "c01_n015": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -102,7 +102,7 @@
  "c01_n016": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -111,7 +111,7 @@
  "c01_choice_start": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -120,7 +120,7 @@
  "c01_look_around": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -129,7 +129,7 @@
  "c01_n019": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -138,8 +138,8 @@
  "c01_n020": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
-   "sprite/knight/soft"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
   "chapter": "第一章"
@@ -147,7 +147,7 @@
  "c01_n021": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -156,7 +156,7 @@
  "c01_n022": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -165,7 +165,7 @@
  "c01_n023": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -174,7 +174,7 @@
  "c01_n024": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -183,7 +183,7 @@
  "c01_n025": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -192,7 +192,7 @@
  "c01_n026": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -201,7 +201,7 @@
  "c01_n027": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -210,7 +210,7 @@
  "c01_follow_voice": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -219,7 +219,7 @@
  "c01_n030": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -228,7 +228,7 @@
  "c01_n031": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -237,7 +237,7 @@
  "c01_n032": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -246,7 +246,7 @@
  "c01_n033": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -255,7 +255,7 @@
  "c01_n034": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -264,7 +264,7 @@
  "c01_n035": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/surprised",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "长眠者之堂",
@@ -354,7 +354,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雨之大圣堂",
   "chapter": "第一章"
@@ -418,7 +418,7 @@
    "background/church_bell",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/siegrid/angry"
+   "sprite/siegrid/normal"
   ],
   "title": "钟楼之上",
   "chapter": "第一章"
@@ -428,7 +428,7 @@
    "background/church_bell",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/siegrid/angry"
+   "sprite/siegrid/normal"
   ],
   "title": "钟楼之上",
   "chapter": "第一章"
@@ -518,7 +518,7 @@
    "background/church_bell",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/siegrid/soft"
+   "sprite/siegrid/normal"
   ],
   "title": "钟楼之上",
   "chapter": "第一章"
@@ -527,7 +527,7 @@
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/siegrid/normal"
   ],
   "title": "钟楼之上",
@@ -547,7 +547,7 @@
   "arts": [
    "background/church_bell",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/siegrid/normal"
   ],
   "title": "钟楼之上",
@@ -556,7 +556,7 @@
  "c01_n075": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -565,7 +565,7 @@
  "c01_n076": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -574,7 +574,7 @@
  "c01_n077": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -583,7 +583,7 @@
  "c01_n078": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -720,7 +720,7 @@
  "c01_n097": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -729,7 +729,7 @@
  "c01_n098": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -738,7 +738,7 @@
  "c01_n099": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -747,7 +747,7 @@
  "c01_n100": {
   "arts": [
    "background/church_nave",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "净化的记忆",
@@ -756,7 +756,7 @@
  "c01_n104": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -765,7 +765,7 @@
  "c01_n105": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -774,7 +774,7 @@
  "c01_n106": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -783,7 +783,7 @@
  "c01_n107": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -792,7 +792,7 @@
  "c01_n108": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -801,7 +801,7 @@
  "c01_n109": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -810,7 +810,7 @@
  "c01_n110": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -819,7 +819,7 @@
  "c01_n111": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -828,7 +828,7 @@
  "c01_n112": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -837,7 +837,7 @@
  "c01_n113": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -846,7 +846,7 @@
  "c01_n114": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -855,7 +855,7 @@
  "c01_n115": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -864,7 +864,7 @@
  "c01_n116": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -873,7 +873,7 @@
  "c01_n117": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -882,7 +882,7 @@
  "c01_n118": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -891,7 +891,7 @@
  "c01_n119": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -900,7 +900,7 @@
  "c01_n120": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -909,7 +909,7 @@
  "c01_n121": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -918,7 +918,7 @@
  "c01_n122": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -927,7 +927,7 @@
  "c01_n123": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -936,7 +936,7 @@
  "c01_n125": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -945,7 +945,7 @@
  "c01_n126": {
   "arts": [
    "background/church_alcove",
-   "sprite/lily/soft",
+   "sprite/lily/normal",
    "sprite/knight/normal"
   ],
   "title": "祭坛的祷言",
@@ -1044,7 +1044,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1062,7 +1062,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1089,7 +1089,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1107,7 +1107,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1134,7 +1134,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1170,7 +1170,7 @@
   "arts": [
    "background/church_nave",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "离开白教区",
   "chapter": "第一章"
@@ -1197,7 +1197,7 @@
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "悬崖村",
   "chapter": "第二章"
@@ -1206,7 +1206,7 @@
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "悬崖村",
   "chapter": "第二章"
@@ -1232,8 +1232,8 @@
  "c06_n006": {
   "arts": [
    "background/village_hut",
-   "sprite/lily/worried",
-   "sprite/knight/soft"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "悬崖村",
   "chapter": "第二章"
@@ -1242,7 +1242,7 @@
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "悬崖村",
   "chapter": "第二章"
@@ -1269,7 +1269,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -1278,7 +1278,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -1314,7 +1314,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -1323,7 +1323,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的村道",
   "chapter": "第二章"
@@ -1377,7 +1377,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1386,7 +1386,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1422,7 +1422,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1467,7 +1467,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1521,7 +1521,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1539,7 +1539,7 @@
   "arts": [
    "background/village_cliff",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "残响的村落",
   "chapter": "第二章"
@@ -1557,7 +1557,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "村落广场",
   "chapter": "第二章"
@@ -1687,7 +1687,7 @@
    "background/village_square",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/gerold/serious"
+   "sprite/gerold/normal"
   ],
   "title": "老兵的记忆",
   "chapter": "第二章"
@@ -1695,8 +1695,8 @@
  "c06_n070": {
   "arts": [
    "background/village_square",
-   "sprite/lily/soft",
-   "sprite/knight/soft",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "老兵的记忆",
@@ -1706,7 +1706,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "老兵的记忆",
@@ -1716,7 +1716,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "老兵的记忆",
@@ -1726,7 +1726,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "老兵归乡",
@@ -1766,7 +1766,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "老兵归乡",
@@ -1796,7 +1796,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "寂寞的英雄",
@@ -1846,7 +1846,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "寂寞的英雄",
@@ -1856,7 +1856,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "雨停的那一天",
@@ -1896,7 +1896,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "雨停的那一天",
@@ -1916,7 +1916,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "雨停的那一天",
@@ -1936,7 +1936,7 @@
   "arts": [
    "background/village_square",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "雨停的那一天",
@@ -1986,7 +1986,7 @@
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "前往魔女森林",
@@ -1996,7 +1996,7 @@
   "arts": [
    "background/village_hut",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/gerold/normal"
   ],
   "title": "前往魔女森林",
@@ -2025,7 +2025,7 @@
   "arts": [
    "background/forest_path",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "魔女森林",
   "chapter": "第三章"
@@ -2088,7 +2088,7 @@
   "arts": [
    "background/forest_path",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "魔女森林",
   "chapter": "第三章"
@@ -2124,7 +2124,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "水下遗迹",
   "chapter": "第三章"
@@ -2151,7 +2151,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "水下遗迹",
   "chapter": "第三章"
@@ -2412,7 +2412,7 @@
   "arts": [
    "background/forest_flowers",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "花之回廊",
   "chapter": "第三章"
@@ -2439,7 +2439,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2457,7 +2457,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2475,7 +2475,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2502,7 +2502,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2520,7 +2520,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2538,7 +2538,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2565,7 +2565,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "魔女的工坊",
   "chapter": "第三章"
@@ -2739,7 +2739,7 @@
    "background/forest_flooded",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/elaine/soft"
+   "sprite/elaine/normal"
   ],
   "title": "魔女的记忆",
   "chapter": "第三章"
@@ -2768,7 +2768,7 @@
   "arts": [
    "background/forest_flooded",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/elaine/normal"
   ],
   "title": "魔女的记忆",
@@ -2847,8 +2847,8 @@
  "c07_n108": {
   "arts": [
    "background/forest_path",
-   "sprite/lily/soft",
-   "sprite/knight/soft",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
    "sprite/elaine/normal"
   ],
   "title": "探寻深渊",
@@ -2966,7 +2966,7 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "地下墓穴",
   "chapter": "第四章"
@@ -3128,7 +3128,7 @@
   "arts": [
    "background/catacomb_room",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "废墟深处",
   "chapter": "第四章"
@@ -3146,7 +3146,7 @@
   "arts": [
    "background/catacomb_room",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "废墟深处",
   "chapter": "第四章"
@@ -3245,7 +3245,7 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "悲鸣的回廊",
   "chapter": "第四章"
@@ -3263,7 +3263,7 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "悲鸣的回廊",
   "chapter": "第四章"
@@ -3325,8 +3325,8 @@
  "c08_n049": {
   "arts": [
    "background/catacomb_church",
-   "sprite/lily/worried",
-   "sprite/knight/worried"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "地下教堂",
   "chapter": "第四章"
@@ -3380,7 +3380,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "地下教堂",
   "chapter": "第四章"
@@ -3416,7 +3416,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "地下教堂",
   "chapter": "第四章"
@@ -3434,7 +3434,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "地下教堂",
   "chapter": "第四章"
@@ -3461,7 +3461,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "地下教堂",
   "chapter": "第四章"
@@ -3654,7 +3654,7 @@
    "background/catacomb_church",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shilda/soft"
+   "sprite/shilda/normal"
   ],
   "title": "守护者的记忆",
   "chapter": "第四章"
@@ -3663,7 +3663,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shilda/normal"
   ],
   "title": "守护者的记忆",
@@ -3725,7 +3725,7 @@
    "sprite/lily/normal",
    "sprite/knight/normal",
    "sprite/shilda/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "泉之幻影",
   "chapter": "第四章"
@@ -3756,7 +3756,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shilda/normal",
    "sprite/fretia/normal"
   ],
@@ -3811,7 +3811,7 @@
   "arts": [
    "background/catacomb_church",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shilda/normal",
    "sprite/fretia/normal"
   ],
@@ -3877,7 +3877,7 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/worried",
+   "sprite/knight/normal",
    "sprite/shilda/normal",
    "sprite/fretia/normal"
   ],
@@ -3899,7 +3899,7 @@
   "arts": [
    "background/catacomb_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shilda/normal",
    "sprite/fretia/normal"
   ],
@@ -3952,7 +3952,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "地牢",
   "chapter": "第五章"
@@ -3970,7 +3970,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "地牢",
   "chapter": "第五章"
@@ -3988,7 +3988,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "地牢",
   "chapter": "第五章"
@@ -4015,7 +4015,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "地牢",
   "chapter": "第五章"
@@ -4033,7 +4033,7 @@
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "幽暗中的微光",
   "chapter": "第五章"
@@ -4051,7 +4051,7 @@
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "幽暗中的微光",
   "chapter": "第五章"
@@ -4068,8 +4068,8 @@
  "c09_n017": {
   "arts": [
    "background/dungeon_flower",
-   "sprite/lily/worried",
-   "sprite/knight/worried"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "幽暗中的微光",
   "chapter": "第五章"
@@ -4105,7 +4105,7 @@
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "幽暗中的微光",
   "chapter": "第五章"
@@ -4114,7 +4114,7 @@
   "arts": [
    "background/dungeon_flower",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "幽暗中的微光",
   "chapter": "第五章"
@@ -4132,7 +4132,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4150,7 +4150,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4177,7 +4177,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4222,7 +4222,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4249,7 +4249,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4258,7 +4258,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4285,7 +4285,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4294,7 +4294,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4393,7 +4393,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4411,7 +4411,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "囚徒的回廊",
   "chapter": "第五章"
@@ -4438,7 +4438,7 @@
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "深渊之刑场",
   "chapter": "第五章"
@@ -4474,7 +4474,7 @@
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "深渊之刑场",
   "chapter": "第五章"
@@ -4492,7 +4492,7 @@
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "深渊之刑场",
   "chapter": "第五章"
@@ -4528,7 +4528,7 @@
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "深渊之刑场",
   "chapter": "第五章"
@@ -4681,7 +4681,7 @@
    "background/dungeon_execution",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/helnir/worried"
+   "sprite/helnir/normal"
   ],
   "title": "深渊守卫的记忆",
   "chapter": "第五章"
@@ -4690,7 +4690,7 @@
   "arts": [
    "background/dungeon_execution",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/helnir/normal"
   ],
   "title": "深渊守卫的记忆",
@@ -4730,7 +4730,7 @@
   "arts": [
    "background/dungeon_cell",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/helnir/normal"
   ],
   "title": "禁区的边缘",
@@ -4769,8 +4769,8 @@
  "c09_n107": {
   "arts": [
    "background/dungeon_cell",
-   "sprite/lily/soft",
-   "sprite/knight/soft",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
    "sprite/helnir/normal"
   ],
   "title": "禁区的边缘",
@@ -4879,7 +4879,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -4897,7 +4897,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -4906,7 +4906,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -4924,7 +4924,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -4942,7 +4942,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -4969,7 +4969,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "禁区",
   "chapter": "第六章"
@@ -5104,7 +5104,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "禁忌的研究室",
   "chapter": "第六章"
@@ -5158,7 +5158,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "禁忌的研究室",
   "chapter": "第六章"
@@ -5185,7 +5185,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "禁忌的研究室",
   "chapter": "第六章"
@@ -5212,7 +5212,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "禁忌的研究室",
   "chapter": "第六章"
@@ -5239,7 +5239,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "浸毒的牢狱",
   "chapter": "第六章"
@@ -5257,7 +5257,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "浸毒的牢狱",
   "chapter": "第六章"
@@ -5311,7 +5311,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "浸毒的牢狱",
   "chapter": "第六章"
@@ -5329,7 +5329,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "浸毒的牢狱",
   "chapter": "第六章"
@@ -5356,7 +5356,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "异端实验场",
   "chapter": "第六章"
@@ -5383,7 +5383,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "异端实验场",
   "chapter": "第六章"
@@ -5401,7 +5401,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "异端实验场",
   "chapter": "第六章"
@@ -5419,7 +5419,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "异端实验场",
   "chapter": "第六章"
@@ -5446,7 +5446,7 @@
   "arts": [
    "background/forbidden_lab",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "异端实验场",
   "chapter": "第六章"
@@ -5607,7 +5607,7 @@
    "background/forbidden_lab",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/faden/worried"
+   "sprite/faden/normal"
   ],
   "title": "异端者的记忆",
   "chapter": "第六章"
@@ -5656,7 +5656,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5665,8 +5665,8 @@
  "c10_n104": {
   "arts": [
    "background/forbidden_bones",
-   "sprite/lily/worried",
-   "sprite/knight/soft",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5676,7 +5676,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5696,7 +5696,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5726,7 +5726,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5756,7 +5756,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5796,7 +5796,7 @@
   "arts": [
    "background/forbidden_bones",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "残骸的墓所",
@@ -5846,7 +5846,7 @@
   "arts": [
    "background/forbidden_pool",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/faden/normal"
   ],
   "title": "双生之路",
@@ -5885,7 +5885,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5894,7 +5894,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5903,7 +5903,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5911,8 +5911,8 @@
  "c11_n005": {
   "arts": [
    "background/fort_wall",
-   "sprite/lily/worried",
-   "sprite/knight/worried"
+   "sprite/lily/normal",
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5930,7 +5930,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5948,7 +5948,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5966,7 +5966,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -5984,7 +5984,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -6002,7 +6002,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "双生堡垒",
   "chapter": "第七章"
@@ -6020,7 +6020,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6047,7 +6047,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6083,7 +6083,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6101,7 +6101,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6137,7 +6137,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6155,7 +6155,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6182,7 +6182,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6200,7 +6200,7 @@
   "arts": [
    "background/fort_wall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "积雪的回廊",
   "chapter": "第七章"
@@ -6227,7 +6227,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6254,7 +6254,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6281,7 +6281,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6308,7 +6308,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6326,7 +6326,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/worried"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6362,7 +6362,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雪之花田",
   "chapter": "第七章"
@@ -6566,7 +6566,7 @@
    "background/fort_snowfield",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/wolf/worried"
+   "sprite/wolf/normal"
   ],
   "title": "狂骑士的记忆",
   "chapter": "第七章"
@@ -6575,7 +6575,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "狂骑士的记忆",
@@ -6595,7 +6595,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "狂骑士的记忆",
@@ -6615,7 +6615,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6635,7 +6635,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6645,7 +6645,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6685,7 +6685,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6705,7 +6705,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6725,7 +6725,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6775,7 +6775,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6795,7 +6795,7 @@
   "arts": [
    "background/fort_snowfield",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/wolf/normal"
   ],
   "title": "风雪中的余音",
@@ -6814,7 +6814,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6823,7 +6823,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6841,7 +6841,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6859,7 +6859,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6877,7 +6877,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6895,7 +6895,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "边陲之都城",
   "chapter": "第八章"
@@ -6940,7 +6940,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的长廊",
   "chapter": "第八章"
@@ -6949,7 +6949,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的长廊",
   "chapter": "第八章"
@@ -6985,7 +6985,7 @@
   "arts": [
    "background/castle_hall",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "雨蚀的长廊",
   "chapter": "第八章"
@@ -7030,7 +7030,7 @@
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "王家寝宫",
   "chapter": "第八章"
@@ -7057,7 +7057,7 @@
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王家寝宫",
   "chapter": "第八章"
@@ -7093,7 +7093,7 @@
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "王家寝宫",
   "chapter": "第八章"
@@ -7111,7 +7111,7 @@
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王家寝宫",
   "chapter": "第八章"
@@ -7147,7 +7147,7 @@
   "arts": [
    "background/castle_bedroom",
    "sprite/lily/normal",
-   "sprite/knight/soft"
+   "sprite/knight/normal"
   ],
   "title": "王家寝宫",
   "chapter": "第八章"
@@ -7183,7 +7183,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7210,7 +7210,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7237,7 +7237,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7255,7 +7255,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7282,7 +7282,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious"
+   "sprite/knight/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7301,7 +7301,7 @@
    "background/castle_throne",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/shield/serious"
+   "sprite/shield/normal"
   ],
   "title": "王座大殿",
   "chapter": "第八章"
@@ -7320,7 +7320,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "王座大殿",
@@ -7350,7 +7350,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "王座大殿",
@@ -7370,7 +7370,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "王座大殿",
@@ -7410,7 +7410,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "王座大殿",
@@ -7450,7 +7450,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "骑士长的记忆",
@@ -7520,7 +7520,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal"
   ],
   "title": "骑士长的记忆",
@@ -7652,7 +7652,7 @@
    "sprite/lily/normal",
    "sprite/knight/normal",
    "sprite/shield/normal",
-   "sprite/julius/worried"
+   "sprite/julius/normal"
   ],
   "title": "骑士长的记忆",
   "chapter": "第八章"
@@ -7661,7 +7661,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7705,7 +7705,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7738,7 +7738,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7771,7 +7771,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7782,7 +7782,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7793,7 +7793,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7804,7 +7804,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7826,7 +7826,7 @@
   "arts": [
    "background/castle_throne",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/shield/normal",
    "sprite/julius/normal"
   ],
@@ -7878,7 +7878,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -7898,7 +7898,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8088,7 +8088,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8098,7 +8098,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8117,8 +8117,8 @@
  "c13_n027": {
   "arts": [
    "background/spring",
-   "sprite/lily/worried",
-   "sprite/knight/worried",
+   "sprite/lily/normal",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8128,7 +8128,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8138,7 +8138,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8148,7 +8148,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8168,7 +8168,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8208,7 +8208,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8218,7 +8218,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8278,7 +8278,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8328,7 +8328,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8368,7 +8368,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8378,7 +8378,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8398,7 +8398,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/serious",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8408,7 +8408,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8470,7 +8470,7 @@
   "arts": [
    "background/spring",
    "sprite/lily/normal",
-   "sprite/knight/soft",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8491,7 +8491,7 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8501,7 +8501,7 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/worried"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8511,7 +8511,7 @@
    "background/spring",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8571,7 +8571,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/worried"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8581,7 +8581,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/worried"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8611,7 +8611,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8620,7 +8620,7 @@
   "arts": [
    "background/abyss",
    "sprite/lily/normal",
-   "sprite/knight/worried",
+   "sprite/knight/normal",
    "sprite/fretia/normal"
   ],
   "title": "边境之泉",
@@ -8631,7 +8631,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/worried"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8641,7 +8641,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8701,7 +8701,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8711,7 +8711,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8721,7 +8721,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8731,7 +8731,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8741,7 +8741,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
@@ -8751,7 +8751,7 @@
    "background/abyss",
    "sprite/lily/normal",
    "sprite/knight/normal",
-   "sprite/fretia/soft"
+   "sprite/fretia/normal"
   ],
   "title": "边境之泉",
   "chapter": "终章"
